@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-07T20:50:08Z",
+  "updatedAt": "2026-10-07T20:51:28Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -43,7 +43,7 @@
           "kind": "Technical conversation"
         }
       ],
-      "notes": "Recruiter screen with Jackie Bacic (Sep 14); hiring manager onsite in Lehi with Villi Olafsson & Laura Sacramoni (Sep 21); technical deep dive onsite with Jeff Edwards & Jerry Carson (Sep 28). Oct 5: Kiara Warfield now managing the role while Everpure rebalances roles; awaiting results. Pure Storage family"
+      "notes": "Recruiter screen with Jackie Bacic (Sep 14); hiring manager onsite in Lehi with Villi Olafsson & Laura Sacramoni (Sep 21); technical deep dive onsite with Jeff Edwards & Jerry Carson (Sep 28). Oct 5: Kiara Warfield now managing the role. Oct 7: Kiara called — they're finishing final interviews early next week; expect an update by end of next week (~Oct 16). Pure Storage family"
     },
     {
       "id": "scaleops",
