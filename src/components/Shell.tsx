@@ -17,7 +17,7 @@ export function Shell({ title, subtitle, embed = false, actions, footer, childre
         {!embed ? (
           <div className="flex w-full justify-center">
             <img
-              src="/lee-job-adventure-banner.png"
+              src="/lee-job-adventure-banner-v2.png"
               alt="Lee's Job Adventure!"
               className="h-auto w-full max-w-[1160px] object-contain"
             />
