@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-07T19:56:04Z",
+  "updatedAt": "2026-10-07T20:00:45Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -71,10 +71,18 @@
       "id": "varonis-tam-digital",
       "company": "Varonis",
       "role": "Technical Account Manager - Digital",
-      "status": "Applied",
+      "jobUrl": "https://careers.varonis.com/careers?p=job%2FoVLAAfwA",
+      "status": "Interviewing",
       "appliedOn": "2026-09-28",
       "location": "United States",
-      "interviews": []
+      "notes": "Jobvite oVLAAfwA; interview with Kate Thu Oct 8, 8:00 AM MT",
+      "interviews": [
+        {
+          "id": "int-varonis-1",
+          "at": "2026-10-08T08:00",
+          "kind": "Interview with Kate"
+        }
+      ]
     },
     {
       "id": "microsoft-csa-cloud-ai",
@@ -301,6 +309,7 @@
       "id": "coralogix-tam-dallas",
       "company": "Coralogix",
       "role": "Technical Account Manager",
+      "jobUrl": "https://coralogix.com/careers/co/dallas-tx/90.379/technical-account-manager-dallas/all/",
       "status": "Applied",
       "appliedOn": "2026-10-07",
       "location": "Dallas, TX (remote may be possible)",

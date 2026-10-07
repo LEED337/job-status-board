@@ -314,6 +314,7 @@ export function boardSignature(board: BoardFile): string {
       id: app.id,
       company: app.company.trim(),
       role: app.role.trim(),
+      jobUrl: app.jobUrl?.trim() ?? "",
       status: app.status,
       appliedOn: app.appliedOn,
       location: app.location.trim(),
@@ -342,6 +343,8 @@ export function serializeBoard(board: BoardFile, updatedAt = new Date().toISOStr
         appliedOn: app.appliedOn,
         location: app.location.trim(),
       };
+      const jobUrl = app.jobUrl?.trim();
+      if (jobUrl) row.jobUrl = jobUrl;
       if (app.notes?.trim()) row.notes = app.notes.trim();
       row.interviews = [...app.interviews]
         .map((interview) => ({
@@ -362,6 +365,26 @@ function isRecord(value: unknown): value is Record<string, unknown> {
 
 function isStatus(value: unknown): value is ApplicationStatus {
   return typeof value === "string" && (STATUSES as readonly string[]).includes(value);
+}
+
+export function normalizeJobUrl(value: string): string | null {
+  const trimmed = value.trim();
+  if (!trimmed) return "";
+  try {
+    const url = new URL(trimmed);
+    if (url.protocol === "http:" || url.protocol === "https:") return trimmed;
+  } catch {
+    // Reject anything that is not an absolute http(s) URL.
+  }
+  return null;
+}
+
+function optionalJobUrl(value: unknown, where: string): string | undefined {
+  if (value === undefined || value === null) return undefined;
+  if (typeof value !== "string") throw new Error(`${where}: jobUrl must be a string.`);
+  const jobUrl = normalizeJobUrl(value);
+  if (jobUrl === null) throw new Error(`${where}: jobUrl must be an http(s) URL.`);
+  return jobUrl || undefined;
 }
 
 function parseInterview(input: unknown, where: string, index: number): Interview {
@@ -395,10 +418,12 @@ function parseApplication(input: unknown, index: number): Application {
   }
   if (!Array.isArray(input.interviews)) throw new Error(`${where}: interviews must be a list.`);
   const notes = typeof input.notes === "string" ? input.notes.trim() : "";
+  const jobUrl = optionalJobUrl(input.jobUrl, where);
   return {
     id: typeof input.id === "string" && input.id.trim() ? input.id.trim() : crypto.randomUUID(),
     company,
     role,
+    ...(jobUrl ? { jobUrl } : {}),
     status: input.status,
     appliedOn: input.appliedOn,
     location: typeof input.location === "string" ? input.location.trim() : "",
