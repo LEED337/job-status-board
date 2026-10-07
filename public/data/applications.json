@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-07T20:00:45Z",
+  "updatedAt": "2026-10-07T20:33:20Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -38,7 +38,8 @@
     {
       "id": "scaleops",
       "company": "ScaleOps",
-      "role": "Role TBD (recruiter process)",
+      "role": "Director of Technical Account Management",
+      "jobUrl": "https://scaleops.com/careers/job/4930919101/head-of-technical-account-management/",
       "status": "Interviewing",
       "appliedOn": "2026-10-05",
       "location": "Remote",
@@ -49,7 +50,7 @@
           "kind": "Recruiter screen"
         }
       ],
-      "notes": "Recruiter screen done; awaiting next steps"
+      "notes": "Recruiter Manpreet; Director of TAM role isn't publicly posted, so it links to the Head of TAM posting for now (recruiter says it's a different role). Recruiter screen done; awaiting next steps"
     },
     {
       "id": "adobe-mindlance-tam",
