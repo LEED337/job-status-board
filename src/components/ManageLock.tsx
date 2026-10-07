@@ -30,8 +30,8 @@ export function ManageLock({ embed = false, onUnlock }: ManageLockProps) {
         setError("Wrong password.");
         return;
       }
+      unlockManage(password);
       setPassword("");
-      unlockManage();
       onUnlock();
     } catch {
       setError("Couldn't check the password. Try again.");

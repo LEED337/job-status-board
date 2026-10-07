@@ -308,25 +308,79 @@ export function avatarStyle(name: string): { bg: string; fg: string } {
   return AVATAR_COLORS[hash % AVATAR_COLORS.length];
 }
 
+function applicationSnapshot(app: Application) {
+  return {
+    id: app.id,
+    company: app.company.trim(),
+    role: app.role.trim(),
+    jobUrl: app.jobUrl?.trim() ?? "",
+    status: app.status,
+    appliedOn: app.appliedOn,
+    location: app.location.trim(),
+    notes: app.notes?.trim() ?? "",
+    interviews: app.interviews.map((interview) => ({
+      id: interview.id,
+      at: interview.at.slice(0, 16),
+      kind: interview.kind.trim(),
+    })),
+  };
+}
+
+export function applicationSignature(app: Application): string {
+  return JSON.stringify(applicationSnapshot(app));
+}
+
 export function boardSignature(board: BoardFile): string {
   const applications = board.applications
-    .map((app) => ({
-      id: app.id,
-      company: app.company.trim(),
-      role: app.role.trim(),
-      jobUrl: app.jobUrl?.trim() ?? "",
-      status: app.status,
-      appliedOn: app.appliedOn,
-      location: app.location.trim(),
-      notes: app.notes?.trim() ?? "",
-      interviews: app.interviews.map((interview) => ({
-        id: interview.id,
-        at: interview.at.slice(0, 16),
-        kind: interview.kind.trim(),
-      })),
-    }))
+    .map((app) => applicationSnapshot(app))
     .sort((a, b) => a.id.localeCompare(b.id));
   return JSON.stringify({ owner: board.owner.trim(), applications });
+}
+
+export function upsertApplication(board: BoardFile, application: Application, owner?: string): BoardFile {
+  const index = board.applications.findIndex((item) => item.id === application.id);
+  const applications =
+    index === -1
+      ? [application, ...board.applications]
+      : board.applications.map((item) => (item.id === application.id ? application : item));
+  return {
+    version: 1,
+    owner: owner === undefined ? board.owner : owner,
+    updatedAt: board.updatedAt,
+    applications,
+  };
+}
+
+export function removeApplication(board: BoardFile, id: string, owner?: string): BoardFile {
+  return {
+    version: 1,
+    owner: owner === undefined ? board.owner : owner,
+    updatedAt: board.updatedAt,
+    applications: board.applications.filter((item) => item.id !== id),
+  };
+}
+
+export type LocalDrift = {
+  id: string;
+  kind: "added" | "changed" | "removed";
+  application: Application;
+};
+
+export function localDrifts(draft: BoardFile, published: BoardFile): LocalDrift[] {
+  const publishedById = new Map(published.applications.map((app) => [app.id, app]));
+  const draftById = new Map(draft.applications.map((app) => [app.id, app]));
+  const drifts: LocalDrift[] = [];
+  for (const app of draft.applications) {
+    const current = publishedById.get(app.id);
+    if (!current) drifts.push({ id: app.id, kind: "added", application: app });
+    else if (applicationSignature(app) !== applicationSignature(current)) {
+      drifts.push({ id: app.id, kind: "changed", application: app });
+    }
+  }
+  for (const app of published.applications) {
+    if (!draftById.has(app.id)) drifts.push({ id: app.id, kind: "removed", application: app });
+  }
+  return drifts;
 }
 
 export function serializeBoard(board: BoardFile, updatedAt = new Date().toISOString()): string {
@@ -431,6 +485,125 @@ function parseApplication(input: unknown, index: number): Application {
     interviews: input.interviews.map((item, interviewIndex) =>
       parseInterview(item, where, interviewIndex),
     ),
+  };
+}
+
+export class BoardChangeError extends Error {
+  readonly code: "not_found" | "invalid";
+
+  constructor(code: "not_found" | "invalid", message: string) {
+    super(message);
+    this.name = "BoardChangeError";
+    this.code = code;
+  }
+}
+
+export type SharedEdit =
+  | { op: "upsert"; application: unknown; owner?: string }
+  | { op: "delete"; id: string; owner?: string };
+
+export type SharedEditResult = {
+  text: string;
+  application: Application | null;
+  owner: string;
+  updatedAt: string;
+  id: string;
+  company: string;
+};
+
+function canonicalApplicationJson(application: Application, owner: string, updatedAt: string): Record<string, unknown> {
+  const parsed: unknown = JSON.parse(
+    serializeBoard({ version: 1, owner, updatedAt, applications: [application] }),
+  );
+  if (!isRecord(parsed) || !Array.isArray(parsed.applications) || !isRecord(parsed.applications[0])) {
+    throw new BoardChangeError("invalid", "Couldn't prepare that application.");
+  }
+  return parsed.applications[0];
+}
+
+function parseOneApplication(input: unknown): Application {
+  const board = parseBoard({ version: 1, owner: "Owner", applications: [input] });
+  const application = board.applications[0];
+  if (!application) throw new BoardChangeError("invalid", "Application is required.");
+  return application;
+}
+
+function rawId(item: unknown): string | null {
+  if (!isRecord(item) || typeof item.id !== "string") return null;
+  const id = item.id.trim();
+  return id || null;
+}
+
+export function applySharedOperation(rawText: string, edit: SharedEdit, updatedAt: string): SharedEditResult {
+  let raw: unknown;
+  try {
+    raw = JSON.parse(rawText);
+  } catch {
+    throw new BoardChangeError("invalid", "The shared file is not valid JSON.");
+  }
+  const before = parseBoard(raw);
+  if (!isRecord(raw) || !Array.isArray(raw.applications)) {
+    throw new BoardChangeError("invalid", "The shared file is not a board.");
+  }
+
+  const originalApps = raw.applications;
+  let touchedId = "";
+  let company = "";
+  let saved: Application | null = null;
+  let nextApps: unknown[];
+
+  if (edit.op === "delete") {
+    const id = edit.id.trim();
+    if (!id) throw new BoardChangeError("invalid", "Delete needs an application id.");
+    const existing = before.applications.find((app) => app.id === id);
+    if (!existing) throw new BoardChangeError("not_found", "That application is not on the shared board.");
+    touchedId = id;
+    company = existing.company;
+    nextApps = originalApps.filter((item) => rawId(item) !== id);
+  } else {
+    const application = parseOneApplication(edit.application);
+    saved = application;
+    touchedId = application.id;
+    company = application.company;
+    const replacement = canonicalApplicationJson(application, before.owner, updatedAt);
+    const index = originalApps.findIndex((item) => rawId(item) === application.id);
+    nextApps = [...originalApps];
+    if (index === -1) nextApps.unshift(replacement);
+    else nextApps[index] = replacement;
+  }
+
+  for (const item of originalApps) {
+    const id = rawId(item);
+    if (!id || id === touchedId) continue;
+    if (!nextApps.includes(item)) {
+      throw new BoardChangeError("invalid", "Refusing to change other applications.");
+    }
+  }
+
+  raw.applications = nextApps;
+  if (edit.owner !== undefined) {
+    if (!edit.owner.trim()) throw new BoardChangeError("invalid", "Add an owner name.");
+    raw.owner = edit.owner.trim();
+  }
+  raw.updatedAt = updatedAt;
+
+  for (const item of originalApps) {
+    const id = rawId(item);
+    if (!id || id === touchedId) continue;
+    const after = nextApps.find((candidate) => rawId(candidate) === id);
+    if (after !== item) throw new BoardChangeError("invalid", "Refusing to change other applications.");
+  }
+
+  const board = parseBoard(raw);
+  if (saved) saved = board.applications.find((app) => app.id === touchedId) ?? saved;
+
+  return {
+    text: `${JSON.stringify(raw, null, 2)}\n`,
+    application: saved,
+    owner: board.owner,
+    updatedAt: board.updatedAt,
+    id: touchedId,
+    company,
   };
 }
 

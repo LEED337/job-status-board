@@ -26,8 +26,8 @@ type Draft = {
 type ApplicationDialogProps = {
   application: Application | null;
   onClose: () => void;
-  onSave: (application: Application) => void;
-  onDelete?: () => void;
+  onSave: (application: Application) => void | Promise<void>;
+  onDelete?: () => void | Promise<void>;
 };
 
 const DATE_ONLY = /^\d{4}-\d{2}-\d{2}$/;
@@ -74,6 +74,7 @@ export function ApplicationDialog({ application, onClose, onSave, onDelete }: Ap
   const [draft, setDraft] = useState<Draft>(() => toDraft(application));
   const [error, setError] = useState<string | null>(null);
   const [confirming, setConfirming] = useState(false);
+  const [pending, setPending] = useState<"save" | "delete" | null>(null);
 
   useEffect(() => {
     companyRef.current?.focus();
@@ -125,6 +126,7 @@ export function ApplicationDialog({ application, onClose, onSave, onDelete }: Ap
 
   const submit = (event: FormEvent) => {
     event.preventDefault();
+    if (pending) return;
     const company = draft.company.trim();
     const role = draft.role.trim();
     if (!company || !role) {
@@ -155,17 +157,20 @@ export function ApplicationDialog({ application, onClose, onSave, onDelete }: Ap
     }
     interviews.sort((a, b) => a.at.localeCompare(b.at));
     const notes = draft.notes.trim();
-    onSave({
-      id: draft.id,
-      company,
-      role,
-      ...(jobUrl ? { jobUrl } : {}),
-      status: draft.status,
-      appliedOn: draft.appliedOn,
-      location: draft.location.trim(),
-      ...(notes ? { notes } : {}),
-      interviews,
-    });
+    setPending("save");
+    void Promise.resolve(
+      onSave({
+        id: draft.id,
+        company,
+        role,
+        ...(jobUrl ? { jobUrl } : {}),
+        status: draft.status,
+        appliedOn: draft.appliedOn,
+        location: draft.location.trim(),
+        ...(notes ? { notes } : {}),
+        interviews,
+      }),
+    ).finally(() => setPending(null));
   };
 
   return (
@@ -187,7 +192,7 @@ export function ApplicationDialog({ application, onClose, onSave, onDelete }: Ap
             <h2 id={titleId} className="text-xl font-semibold tracking-[-0.03em]">
               {application ? "Edit application" : "Add application"}
             </h2>
-            <p className="mt-1 text-sm text-muted">Saved in this browser until you export.</p>
+            <p className="mt-1 text-sm text-muted">Publishes this one application to the shared board.</p>
           </div>
           <button
             type="button"
@@ -387,28 +392,47 @@ export function ApplicationDialog({ application, onClose, onSave, onDelete }: Ap
         <div className="flex flex-wrap items-center justify-between gap-3 border-t-[3px] border-black px-6 py-4">
           <div>
             {onDelete && !confirming ? (
-              <button type="button" onClick={() => setConfirming(true)} className="text-sm font-semibold text-closed">
+              <button
+                type="button"
+                onClick={() => setConfirming(true)}
+                disabled={pending !== null}
+                className="text-sm font-semibold text-closed disabled:opacity-40"
+              >
                 Delete
               </button>
             ) : null}
             {onDelete && confirming ? (
               <div className="flex items-center gap-2 text-sm">
                 <span className="text-muted">Delete this application?</span>
-                <button type="button" onClick={onDelete} className="font-semibold text-closed">
-                  Delete
+                <button
+                  type="button"
+                  disabled={pending !== null}
+                  onClick={() => {
+                    if (pending) return;
+                    setPending("delete");
+                    void Promise.resolve(onDelete()).finally(() => setPending(null));
+                  }}
+                  className="font-semibold text-closed disabled:opacity-40"
+                >
+                  {pending === "delete" ? "Deleting…" : "Delete"}
                 </button>
-                <button type="button" onClick={() => setConfirming(false)} className="font-semibold text-muted">
+                <button
+                  type="button"
+                  onClick={() => setConfirming(false)}
+                  disabled={pending !== null}
+                  className="font-semibold text-muted disabled:opacity-40"
+                >
                   Keep
                 </button>
               </div>
             ) : null}
           </div>
           <div className="flex gap-2">
-            <button type="button" onClick={onClose} className={btnSecondary}>
+            <button type="button" onClick={onClose} className={btnSecondary} disabled={pending !== null}>
               Cancel
             </button>
-            <button type="submit" form="application-form" className={btnPrimary}>
-              Save
+            <button type="submit" form="application-form" className={btnPrimary} disabled={pending !== null}>
+              {pending === "save" ? "Saving…" : "Save"}
             </button>
           </div>
         </div>
