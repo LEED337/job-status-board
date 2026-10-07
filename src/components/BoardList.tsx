@@ -18,6 +18,7 @@ import {
 import { cx } from "../lib/styles.ts";
 import { STATUSES, type Application, type ApplicationStatus } from "../types.ts";
 import { ChevronIcon, CloseIcon, SearchIcon } from "./Icons.tsx";
+import { RoleTitle } from "./RoleTitle.tsx";
 import { StatusPill } from "./StatusPill.tsx";
 
 type BoardListProps = {
@@ -412,8 +413,8 @@ function ApplicationRow({
           </div>
         </td>
         <td className="overflow-hidden px-3 py-3.5 text-ink">
-          <p className="leading-5" title={application.role}>
-            {application.role}
+          <p className="leading-5">
+            <RoleTitle role={application.role} jobUrl={application.jobUrl} />
           </p>
         </td>
         <td className="px-3 py-3.5">
@@ -472,7 +473,9 @@ function ApplicationCard({
         <Avatar name={application.company} />
         <div className="min-w-0 flex-1">
           <p className="font-semibold leading-5 text-ink">{application.company}</p>
-          <p className="mt-0.5 text-sm leading-5 text-muted">{application.role}</p>
+          <p className="mt-0.5 text-sm leading-5 text-muted">
+            <RoleTitle role={application.role} jobUrl={application.jobUrl} />
+          </p>
           {application.location ? <p className="mt-0.5 text-xs text-muted">{application.location}</p> : null}
           <div className="mt-2.5">
             <StatusPill status={application.status} />
