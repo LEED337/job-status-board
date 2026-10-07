@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-07T21:15:42Z",
+  "updatedAt": "2026-10-07T22:19:50Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -76,7 +76,18 @@
           "kind": "Panel"
         }
       ],
-      "notes": "Via Mindlance / Intelliswift RTR 37653341; AEM prep"
+      "notes": "Via Mindlance / Intelliswift RTR 37653341; AEM prep. Panel done Wed Oct 7 (3:30–4:00 PM MT); awaiting decision"
+    },
+    {
+      "id": "adobe-sr-tam-r171950",
+      "company": "Adobe",
+      "role": "Senior Technical Account Manager (R171950)",
+      "jobUrl": "https://careers.adobe.com/us/en/job/R171950/Senior-Technical-Account-Manager",
+      "status": "Applied",
+      "appliedOn": "2026-10-07",
+      "location": "Lehi, UT",
+      "interviews": [],
+      "notes": "Applied directly on Adobe careers Oct 7; separate from the Mindlance role. Posting showed 'job has been filled' right after applying"
     },
     {
       "id": "varonis-tam-digital",
