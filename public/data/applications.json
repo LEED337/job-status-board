@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-07T21:04:05Z",
+  "updatedAt": "2026-10-07T21:15:42Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -233,8 +233,14 @@
       "status": "Interviewing",
       "appliedOn": "2026-10-01",
       "location": "Salt Lake City, UT / Oregon Remote",
-      "notes": "Recruiter Paola VargasUnfried (Senior Talent Acquisition) emailed Oct 7 to schedule a phone screen; time not set yet",
-      "interviews": []
+      "notes": "Phone screen with recruiter Paola VargasUnfried (Senior Talent Acquisition), Thu Oct 8 at 10:00 AM MT (email says 11 AM CT; calendar shows 11 AM MT, so confirm). Pay: SLC base $118,400–$177,600 (other US $112,500–$199,800) + bonus/commission + stock",
+      "interviews": [
+        {
+          "id": "int-workday-tam-1",
+          "at": "2026-10-08T10:00",
+          "kind": "Recruiter screen"
+        }
+      ]
     },
     {
       "id": "eon-technical-cs",
