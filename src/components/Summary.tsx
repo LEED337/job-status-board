@@ -8,6 +8,7 @@ import {
 import { STATUS_META } from "../lib/status.ts";
 import { STATUSES, type Application } from "../types.ts";
 import { CalendarIcon } from "./Icons.tsx";
+import { RoleTitle } from "./RoleTitle.tsx";
 
 type SummaryProps = {
   applications: Application[];
@@ -76,7 +77,9 @@ export function Summary({ applications, now }: SummaryProps) {
             <p className="mt-2 text-sm text-muted">{formatConcrete(upcoming.interview.at)}</p>
             <div className="mt-auto border-t border-black/15 pt-4">
               <p className="font-medium text-ink">{upcoming.application.company}</p>
-              <p className="mt-0.5 text-sm text-muted">{upcoming.application.role}</p>
+              <p className="mt-0.5 text-sm text-muted">
+                <RoleTitle role={upcoming.application.role} jobUrl={upcoming.application.jobUrl} />
+              </p>
               <p className="mt-3 inline-flex rounded-full border-[2px] border-black/20 bg-white/70 px-2.5 py-1 text-xs font-medium text-ink">
                 {upcoming.interview.kind}
               </p>

@@ -1,5 +1,5 @@
 import { useEffect, useId, useRef, useState, type FormEvent } from "react";
-import { todayISO } from "../lib/board.ts";
+import { normalizeJobUrl, todayISO } from "../lib/board.ts";
 import { btnPrimary, btnSecondary, cx, fieldClass } from "../lib/styles.ts";
 import { INTERVIEW_KINDS, STATUSES, type Application, type ApplicationStatus, type Interview } from "../types.ts";
 import { CloseIcon } from "./Icons.tsx";
@@ -15,6 +15,7 @@ type Draft = {
   id: string;
   company: string;
   role: string;
+  jobUrl: string;
   status: ApplicationStatus;
   appliedOn: string;
   location: string;
@@ -42,6 +43,7 @@ function toDraft(application: Application | null): Draft {
       id: crypto.randomUUID(),
       company: "",
       role: "",
+      jobUrl: "",
       status: "Applied",
       appliedOn: todayISO(),
       location: "",
@@ -53,6 +55,7 @@ function toDraft(application: Application | null): Draft {
     id: application.id,
     company: application.company,
     role: application.role,
+    jobUrl: application.jobUrl ?? "",
     status: application.status,
     appliedOn: application.appliedOn,
     location: application.location,
@@ -132,6 +135,11 @@ export function ApplicationDialog({ application, onClose, onSave, onDelete }: Ap
       setError("Add the date you applied.");
       return;
     }
+    const jobUrl = normalizeJobUrl(draft.jobUrl);
+    if (jobUrl === null) {
+      setError("Job posting URL must start with http:// or https://.");
+      return;
+    }
     const interviews: Interview[] = [];
     for (const interview of draft.interviews) {
       const kind = interview.kind.trim();
@@ -151,6 +159,7 @@ export function ApplicationDialog({ application, onClose, onSave, onDelete }: Ap
       id: draft.id,
       company,
       role,
+      ...(jobUrl ? { jobUrl } : {}),
       status: draft.status,
       appliedOn: draft.appliedOn,
       location: draft.location.trim(),
@@ -219,6 +228,21 @@ export function ApplicationDialog({ application, onClose, onSave, onDelete }: Ap
               />
             </label>
           </div>
+
+          <label className="block text-xs font-semibold text-muted">
+            Job posting URL
+            <input
+              type="url"
+              inputMode="url"
+              value={draft.jobUrl}
+              onChange={(event) => setDraft({ ...draft, jobUrl: event.target.value })}
+              placeholder="https://company.com/careers/role"
+              autoComplete="off"
+              spellCheck={false}
+              maxLength={2000}
+              className={cx(fieldClass, "mt-1.5")}
+            />
+          </label>
 
           <fieldset>
             <legend className="text-xs font-semibold text-muted">Status</legend>
