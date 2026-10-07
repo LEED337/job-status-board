@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-07T20:33:20Z",
+  "updatedAt": "2026-10-07T20:50:08Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -28,12 +28,22 @@
       "location": "Lehi, UT / MT shift",
       "interviews": [
         {
-          "id": "int-everpure-dse-1",
+          "id": "int-everpure-dse-recruiter",
+          "at": "2026-09-14T14:30",
+          "kind": "Recruiter screen"
+        },
+        {
+          "id": "int-everpure-dse-hm",
+          "at": "2026-09-21T13:30",
+          "kind": "Hiring manager"
+        },
+        {
+          "id": "int-everpure-dse-tech",
           "at": "2026-09-28T14:30",
-          "kind": "Onsite"
+          "kind": "Technical conversation"
         }
       ],
-      "notes": "Awaiting results; Pure Storage family"
+      "notes": "Recruiter screen with Jackie Bacic (Sep 14); hiring manager onsite in Lehi with Villi Olafsson & Laura Sacramoni (Sep 21); technical deep dive onsite with Jeff Edwards & Jerry Carson (Sep 28). Oct 5: Kiara Warfield now managing the role while Everpure rebalances roles; awaiting results. Pure Storage family"
     },
     {
       "id": "scaleops",
