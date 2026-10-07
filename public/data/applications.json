@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-07T17:21:10Z",
+  "updatedAt": "2026-10-07T18:54:14Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -267,6 +267,16 @@
       "appliedOn": "2026-10-05",
       "location": "Remote / Ashby",
       "interviews": []
+    },
+    {
+      "id": "mendix-tam",
+      "company": "Mendix",
+      "role": "Technical Account Manager",
+      "status": "Applied",
+      "appliedOn": "2026-10-07",
+      "location": "Remote \u00b7 Boston, MA listed",
+      "interviews": [],
+      "notes": "Siemens / Intelligence Center X; Lever apply; LinkedIn job 4440447447; $160\u2013270k OTE"
     },
     {
       "id": "localstack-tam",
