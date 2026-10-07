@@ -3,6 +3,54 @@ import { AVATAR_COLORS } from "./status.ts";
 
 const DATE_ONLY = /^(\d{4})-(\d{2})-(\d{2})$/;
 const DATE_TIME = /^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2})/;
+const TIME_ZONE = "America/Denver";
+
+type Civil = {
+  year: number;
+  month: number;
+  day: number;
+  hour: number;
+  minute: number;
+  second: number;
+};
+
+function civilParts(date: Date, timeZone: string): Civil {
+  const fmt = new Intl.DateTimeFormat("en-US", {
+    timeZone,
+    hourCycle: "h23",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+  });
+  const map: Record<string, string> = {};
+  for (const part of fmt.formatToParts(date)) {
+    if (part.type !== "literal") map[part.type] = part.value;
+  }
+  const hour = Number(map.hour);
+  return {
+    year: Number(map.year),
+    month: Number(map.month),
+    day: Number(map.day),
+    hour: hour === 24 ? 0 : hour,
+    minute: Number(map.minute),
+    second: Number(map.second),
+  };
+}
+
+function denverInstant(year: number, month: number, day: number, hour: number, minute: number): Date {
+  const desired = Date.UTC(year, month - 1, day, hour, minute, 0);
+  let utc = desired;
+  for (let pass = 0; pass < 2; pass += 1) {
+    const shown = civilParts(new Date(utc), TIME_ZONE);
+    const shownAsUtc = Date.UTC(shown.year, shown.month - 1, shown.day, shown.hour, shown.minute, shown.second);
+    const offset = shownAsUtc - utc;
+    utc = desired - offset;
+  }
+  return new Date(utc);
+}
 
 export type SortKey = "company" | "role" | "status" | "applied" | "interviews" | "next";
 export type SortDir = "asc" | "desc";
@@ -23,9 +71,9 @@ const STATUS_RANK: Record<ApplicationStatus, number> = {
 export function interviewDate(at: string): Date {
   const match = DATE_TIME.exec(at);
   if (!match) return new Date(NaN);
-  return new Date(
+  return denverInstant(
     Number(match[1]),
-    Number(match[2]) - 1,
+    Number(match[2]),
     Number(match[3]),
     Number(match[4]),
     Number(match[5]),
@@ -33,19 +81,20 @@ export function interviewDate(at: string): Date {
 }
 
 export function todayISO(now = new Date()): string {
-  const month = String(now.getMonth() + 1).padStart(2, "0");
-  const day = String(now.getDate()).padStart(2, "0");
-  return `${now.getFullYear()}-${month}-${day}`;
-}
-
-function dayStart(date: Date): number {
-  return new Date(date.getFullYear(), date.getMonth(), date.getDate()).getTime();
+  const parts = civilParts(now, TIME_ZONE);
+  const month = String(parts.month).padStart(2, "0");
+  const day = String(parts.day).padStart(2, "0");
+  return `${parts.year}-${month}-${day}`;
 }
 
 export function dayDistance(at: string, now: Date): number | null {
   const date = interviewDate(at);
-  if (Number.isNaN(date.getTime())) return null;
-  return Math.round((dayStart(date) - dayStart(now)) / 86_400_000);
+  if (Number.isNaN(date.getTime()) || Number.isNaN(now.getTime())) return null;
+  const interview = civilParts(date, TIME_ZONE);
+  const today = civilParts(now, TIME_ZONE);
+  const interviewDay = Date.UTC(interview.year, interview.month - 1, interview.day);
+  const todayDay = Date.UTC(today.year, today.month - 1, today.day);
+  return Math.round((interviewDay - todayDay) / 86_400_000);
 }
 
 export function formatApplied(iso: string, now = new Date()): string {
@@ -74,6 +123,7 @@ export function formatTime(at: string): string {
   const date = interviewDate(at);
   if (Number.isNaN(date.getTime())) return "";
   return new Intl.DateTimeFormat("en-US", {
+    timeZone: TIME_ZONE,
     hour: "numeric",
     minute: "2-digit",
   }).format(date);
@@ -86,10 +136,11 @@ export function relativeDayLabel(at: string, now: Date): string {
   if (diff === 0) return "Today";
   if (diff === 1) return "Tomorrow";
   if (diff > 1 && diff < 7) {
-    return new Intl.DateTimeFormat("en-US", { weekday: "long" }).format(date);
+    return new Intl.DateTimeFormat("en-US", { timeZone: TIME_ZONE, weekday: "long" }).format(date);
   }
-  const sameYear = date.getFullYear() === now.getFullYear();
+  const sameYear = civilParts(date, TIME_ZONE).year === civilParts(now, TIME_ZONE).year;
   return new Intl.DateTimeFormat("en-GB", {
+    timeZone: TIME_ZONE,
     day: "numeric",
     month: "short",
     ...(sameYear ? {} : { year: "numeric" as const }),
@@ -100,6 +151,7 @@ export function formatConcrete(at: string): string {
   const date = interviewDate(at);
   if (Number.isNaN(date.getTime())) return at;
   const day = new Intl.DateTimeFormat("en-GB", {
+    timeZone: TIME_ZONE,
     weekday: "long",
     day: "numeric",
     month: "short",
@@ -111,6 +163,7 @@ export function formatLong(at: string): string {
   const date = interviewDate(at);
   if (Number.isNaN(date.getTime())) return at;
   const day = new Intl.DateTimeFormat("en-GB", {
+    timeZone: TIME_ZONE,
     weekday: "short",
     day: "numeric",
     month: "short",
