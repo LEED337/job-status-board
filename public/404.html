@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Job search</title>
+    <script>
+      // GitHub Pages serves this file for unknown paths. Send the path back
+      // to the app so /manage survives a refresh on a static host.
+      var path = location.pathname.replace(/^\//, "") + location.search + location.hash;
+      location.replace("/?p=" + encodeURIComponent(path));
+    </script>
+  </head>
+  <body></body>
+</html>

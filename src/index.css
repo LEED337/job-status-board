@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", "Segoe UI", ui-sans-serif, system-ui, sans-serif;
+  --color-wash: #2a2d32;
+  --color-ink: #0a0a0a;
+  --color-muted: #3a3a3a;
+  --color-line: #000000;
+  --color-soft: #e8e8e8;
+  --color-sheet: #f0f0f0;
+  --color-applied: #1d3fb8;
+  --color-quiet: #7a4e12;
+  --color-live: #0d5c38;
+  --color-closed: #8a2f3d;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  color: #0a0a0a;
+  background: #2a2d32;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  color-scheme: light;
+}
+
+::selection {
+  background: #c8c8c8;
+}
+
+.dot-bg {
+  background-color: #2f3338;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.45) 1px, transparent 1px);
+  background-size: 18px 18px;
+}
+
+.num {
+  font-variant-numeric: tabular-nums;
+}
+
+:focus-visible {
+  outline: 3px solid #000000;
+  outline-offset: 2px;
+}
+
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: none;
+}
+
+/* Readable type on white panels; keep dark buttons white-labeled */
+.bg-white {
+  color: #0a0a0a;
+}
+
+.bg-white .text-muted,
+.bg-white [class*="text-muted"] {
+  color: #3a3a3a !important;
+}
+
+.bg-white .text-ink,
+.bg-white [class*="text-ink"] {
+  color: #0a0a0a !important;
+}
+
+.bg-white .text-white,
+.bg-white [class~="text-white"],
+.bg-white .bg-ink,
+.bg-white [class~="bg-ink"] {
+  color: #ffffff !important;
+}
+
+.bg-white .bg-ink .text-muted,
+.bg-white .bg-ink [class*="text-muted"] {
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+
+/* Readable type on the mint "next interview" card */
+.bg-\[\#d4f3e4\] {
+  color: #0a0a0a;
+}
+
+.bg-\[\#d4f3e4\] .text-muted,
+.bg-\[\#d4f3e4\] [class*="text-muted"] {
+  color: #3a3a3a !important;
+}
+
+.bg-\[\#d4f3e4\] .text-ink,
+.bg-\[\#d4f3e4\] [class*="text-ink"] {
+  color: #0a0a0a !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+@media print {
+  body {
+    background: white;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+}

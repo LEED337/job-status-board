@@ -1,0 +1,782 @@
+{
+  "version": 1,
+  "owner": "Lee Denning",
+  "updatedAt": "2026-10-07T17:21:10Z",
+  "applications": [
+    {
+      "id": "app-gc-ai-csm",
+      "company": "GC AI",
+      "role": "Customer Success Manager",
+      "status": "Interviewing",
+      "appliedOn": "2026-10-07",
+      "location": "Remote / TBD",
+      "notes": "Recruiter screen today 11:30 AM MT.",
+      "interviews": [
+        {
+          "id": "int-gc-ai-1",
+          "at": "2026-10-07T11:30",
+          "kind": "Recruiter screen"
+        }
+      ]
+    },
+    {
+      "id": "everpure-dse",
+      "company": "Everpure",
+      "role": "Designated Services Engineer",
+      "status": "Interviewing",
+      "appliedOn": "2026-09-11",
+      "location": "Lehi, UT / MT shift",
+      "interviews": [
+        {
+          "id": "int-everpure-dse-1",
+          "at": "2026-09-28T14:30",
+          "kind": "Onsite"
+        }
+      ],
+      "notes": "Awaiting results; Pure Storage family"
+    },
+    {
+      "id": "scaleops",
+      "company": "ScaleOps",
+      "role": "Role TBD (recruiter process)",
+      "status": "Interviewing",
+      "appliedOn": "2026-10-05",
+      "location": "Remote",
+      "interviews": [
+        {
+          "id": "int-scaleops-1",
+          "at": "2026-10-06T08:30",
+          "kind": "Recruiter screen"
+        }
+      ],
+      "notes": "Recruiter screen done; awaiting next steps"
+    },
+    {
+      "id": "adobe-mindlance-tam",
+      "company": "Adobe",
+      "role": "Technical Account Manager (via Mindlance)",
+      "status": "Interviewing",
+      "appliedOn": "2026-09-29",
+      "location": "Lehi, UT",
+      "interviews": [
+        {
+          "id": "int-adobe-mindlance-1",
+          "at": "2026-10-07T15:30",
+          "kind": "Panel"
+        }
+      ],
+      "notes": "Via Mindlance / Intelliswift RTR 37653341; AEM prep"
+    },
+    {
+      "id": "varonis-tam-digital",
+      "company": "Varonis",
+      "role": "Technical Account Manager - Digital",
+      "status": "Applied",
+      "appliedOn": "2026-09-28",
+      "location": "United States",
+      "interviews": []
+    },
+    {
+      "id": "microsoft-csa-cloud-ai",
+      "company": "Microsoft",
+      "role": "Cloud Solution Architect - Cloud & AI",
+      "status": "Applied",
+      "appliedOn": "2026-09-29",
+      "location": "Remote \u00b7 USA",
+      "interviews": [],
+      "notes": "Internal referral"
+    },
+    {
+      "id": "netflix-sec-eng-5-iam",
+      "company": "Netflix",
+      "role": "Security Engineer 5 \u2013 IAM (JR41731)",
+      "status": "Applied",
+      "appliedOn": "2026-09-29",
+      "location": "Remote \u00b7 USA",
+      "interviews": []
+    },
+    {
+      "id": "nango-csm-founding",
+      "company": "Nango",
+      "role": "Customer Success Manager (Founding)",
+      "status": "Applied",
+      "appliedOn": "2026-09-30",
+      "location": "Remote \u00b7 USA / North America",
+      "interviews": []
+    },
+    {
+      "id": "tailscale-fde",
+      "company": "Tailscale",
+      "role": "Forward Deployed Engineer",
+      "status": "Applied",
+      "appliedOn": "2026-09-30",
+      "location": "Remote \u00b7 USA",
+      "interviews": []
+    },
+    {
+      "id": "traversal-ai-adoption-west",
+      "company": "Traversal",
+      "role": "AI Adoption Engineer - West",
+      "status": "Applied",
+      "appliedOn": "2026-09-30",
+      "location": "Remote",
+      "interviews": []
+    },
+    {
+      "id": "costco-tbd",
+      "company": "Costco Wholesale",
+      "role": "Role TBD",
+      "status": "Applied",
+      "appliedOn": "2026-10-01",
+      "location": "Unknown",
+      "interviews": []
+    },
+    {
+      "id": "gitlab-sre-infra",
+      "company": "GitLab",
+      "role": "Site Reliability Engineer, Infrastructure Platforms \u2014 AMER",
+      "status": "Applied",
+      "appliedOn": "2026-10-01",
+      "location": "Remote \u00b7 US/Canada",
+      "interviews": []
+    },
+    {
+      "id": "jobzmall-assoc-tam",
+      "company": "JobzMall",
+      "role": "Associate Technical Account Manager",
+      "status": "Applied",
+      "appliedOn": "2026-10-01",
+      "location": "Unknown",
+      "interviews": [],
+      "notes": "Employer via JobzMall; title inferred from Scout"
+    },
+    {
+      "id": "jobzmall-tam",
+      "company": "JobzMall",
+      "role": "Technical Account Manager",
+      "status": "Applied",
+      "appliedOn": "2026-10-01",
+      "location": "Unknown",
+      "interviews": [],
+      "notes": "Employer via JobzMall; title inferred from Scout"
+    },
+    {
+      "id": "lambda-technical-success",
+      "company": "Lambda",
+      "role": "Technical Success Engineer",
+      "status": "Applied",
+      "appliedOn": "2026-10-01",
+      "location": "Remote \u00b7 USA",
+      "interviews": []
+    },
+    {
+      "id": "nvidia-hpc-tam",
+      "company": "NVIDIA",
+      "role": "HPC Technical Account Manager",
+      "status": "Applied",
+      "appliedOn": "2026-10-01",
+      "location": "Remote / Workday JR2025875",
+      "interviews": []
+    },
+    {
+      "id": "pwc-aws-cloud-infra-sr-assoc",
+      "company": "PwC",
+      "role": "AWS Cloud Infrastructure Senior Associate",
+      "status": "Applied",
+      "appliedOn": "2026-10-01",
+      "location": "United States",
+      "interviews": []
+    },
+    {
+      "id": "weka-sr-dse",
+      "company": "WEKA",
+      "role": "Senior Designated Services Engineer",
+      "status": "Applied",
+      "appliedOn": "2026-10-01",
+      "location": "Remote \u00b7 USA",
+      "interviews": []
+    },
+    {
+      "id": "workday-tam-slc-oregon",
+      "company": "Workday",
+      "role": "Technical Account Manager (Salt Lake City, UT / Oregon Remote)",
+      "status": "Applied",
+      "appliedOn": "2026-10-01",
+      "location": "Salt Lake City, UT / Oregon Remote",
+      "interviews": []
+    },
+    {
+      "id": "eon-technical-cs",
+      "company": "Eon",
+      "role": "Technical Customer Success",
+      "status": "Applied",
+      "appliedOn": "2026-10-02",
+      "location": "Remote \u00b7 USA",
+      "interviews": []
+    },
+    {
+      "id": "m3-ai-software-engineer",
+      "company": "M3 USA",
+      "role": "AI Software Engineer (Remote)",
+      "status": "Applied",
+      "appliedOn": "2026-10-02",
+      "location": "Remote \u00b7 Lehi, UT",
+      "interviews": []
+    },
+    {
+      "id": "snowflake-assoc-se",
+      "company": "Snowflake",
+      "role": "Associate Solution Engineer",
+      "status": "Applied",
+      "appliedOn": "2026-10-02",
+      "location": "Remote \u00b7 USA",
+      "interviews": []
+    },
+    {
+      "id": "wiz-tam-sled",
+      "company": "Wiz",
+      "role": "Technical Account Manager, SLED",
+      "status": "Applied",
+      "appliedOn": "2026-10-04",
+      "location": "Remote \u00b7 USA",
+      "interviews": []
+    },
+    {
+      "id": "crowdstrike-sr-tam-falcon",
+      "company": "CrowdStrike",
+      "role": "Sr Technical Account Manager - Falcon Cloud Security",
+      "status": "Applied",
+      "appliedOn": "2026-10-05",
+      "location": "Remote",
+      "interviews": []
+    },
+    {
+      "id": "skydio-csm",
+      "company": "Skydio",
+      "role": "Customer Success Manager",
+      "status": "Applied",
+      "appliedOn": "2026-10-05",
+      "location": "Remote / Ashby",
+      "interviews": []
+    },
+    {
+      "id": "skydio-sre",
+      "company": "Skydio",
+      "role": "Site Reliability Engineer",
+      "status": "Applied",
+      "appliedOn": "2026-10-05",
+      "location": "Remote / Ashby",
+      "interviews": []
+    },
+    {
+      "id": "localstack-tam",
+      "company": "LocalStack",
+      "role": "Technical Account Manager",
+      "status": "Haven't heard back",
+      "appliedOn": "2026-09-04",
+      "location": "Remote",
+      "interviews": []
+    },
+    {
+      "id": "netflix-sse-l5-spa",
+      "company": "Netflix",
+      "role": "Support Solutions Engineer (L5) \u2014 Security, Privacy and Assurance",
+      "status": "Haven't heard back",
+      "appliedOn": "2026-09-08",
+      "location": "Remote \u00b7 USA",
+      "interviews": []
+    },
+    {
+      "id": "cloudinary-technical-csm",
+      "company": "Cloudinary",
+      "role": "Technical Customer Success Manager",
+      "status": "Haven't heard back",
+      "appliedOn": "2026-09-09",
+      "location": "Remote",
+      "interviews": []
+    },
+    {
+      "id": "deepgram-cse-americas",
+      "company": "Deepgram",
+      "role": "Customer Success Engineer (Americas)",
+      "status": "Haven't heard back",
+      "appliedOn": "2026-09-11",
+      "location": "Remote \u00b7 Americas",
+      "interviews": []
+    },
+    {
+      "id": "socket-enterprise-tam",
+      "company": "Socket",
+      "role": "Enterprise Technical Account Manager",
+      "status": "Haven't heard back",
+      "appliedOn": "2026-09-13",
+      "location": "Remote \u00b7 USA",
+      "interviews": []
+    },
+    {
+      "id": "newfold-enterprise-tam",
+      "company": "Newfold Digital",
+      "role": "Enterprise Technical Account Manager",
+      "status": "Haven't heard back",
+      "appliedOn": "2026-09-14",
+      "location": "Remote \u00b7 USA",
+      "interviews": [],
+      "notes": "Bluehost / HostGator family"
+    },
+    {
+      "id": "redo-tam",
+      "company": "Redo",
+      "role": "Technical Account Manager",
+      "status": "Haven't heard back",
+      "appliedOn": "2026-09-14",
+      "location": "Draper, UT (On-site)",
+      "interviews": [],
+      "notes": "Listing possibly closed"
+    },
+    {
+      "id": "wgu-sr-cloud-eng",
+      "company": "Western Governors University",
+      "role": "Senior Cloud Engineer",
+      "status": "Haven't heard back",
+      "appliedOn": "2026-09-14",
+      "location": "Salt Lake City metro (On-site)",
+      "interviews": []
+    },
+    {
+      "id": "scout-global-sr-tam",
+      "company": "Scout Global",
+      "role": "Senior Technical Account Manager",
+      "status": "Haven't heard back",
+      "appliedOn": "2026-09-15",
+      "location": "Remote \u00b7 USA",
+      "interviews": []
+    },
+    {
+      "id": "ifs-nexus-black-ai-eng",
+      "company": "IFS Nexus Black",
+      "role": "AI Engineer (US)",
+      "status": "Haven't heard back",
+      "appliedOn": "2026-09-19",
+      "location": "Remote \u00b7 USA",
+      "interviews": []
+    },
+    {
+      "id": "cyberforce-tam",
+      "company": "CyberForce Global",
+      "role": "Technical Account Manager",
+      "status": "Haven't heard back",
+      "appliedOn": "2026-09-20",
+      "location": "Remote \u00b7 USA",
+      "interviews": []
+    },
+    {
+      "id": "opiniion-devops",
+      "company": "Opiniion",
+      "role": "DevOps Engineer",
+      "status": "Haven't heard back",
+      "appliedOn": "2026-09-20",
+      "location": "Lehi, UT (On-site)",
+      "interviews": []
+    },
+    {
+      "id": "sambanova-teqconnect",
+      "company": "SambaNova",
+      "role": "Role TBD (via Teqconnect)",
+      "status": "Not hired",
+      "appliedOn": "2026-09-21",
+      "location": "Unknown",
+      "interviews": [],
+      "notes": "Via Teqconnect; title unclear in logs; Lee confirmed Oct 7: not moving forward with interview."
+    },
+    {
+      "id": "cyera-sr-tam-identity",
+      "company": "Cyera",
+      "role": "Senior Technical Account Manager, Identity Security",
+      "status": "Haven't heard back",
+      "appliedOn": "2026-09-22",
+      "location": "Remote",
+      "interviews": []
+    },
+    {
+      "id": "akamai-sr-tam-microseg",
+      "company": "Akamai Technologies",
+      "role": "Senior Technical Account Manager, Microsegmentation",
+      "status": "Haven't heard back",
+      "appliedOn": "2026-09-25",
+      "location": "Remote \u00b7 US (FlexBase)",
+      "interviews": []
+    },
+    {
+      "id": "openai-ai-deploy-codex",
+      "company": "OpenAI",
+      "role": "AI Deployment Engineer - Codex",
+      "status": "Not hired",
+      "appliedOn": "2026-05-01",
+      "location": "Remote",
+      "interviews": [],
+      "notes": "Rejected May 19; apply date approx"
+    },
+    {
+      "id": "together-ai-cse-gpu",
+      "company": "Together AI",
+      "role": "Customer Success Engineer (CSE), GPU Cluster",
+      "status": "Not hired",
+      "appliedOn": "2026-06-20",
+      "location": "San Francisco / Remote",
+      "interviews": [],
+      "notes": "Post-interview reject Jul 9; apply date approx"
+    },
+    {
+      "id": "openai-ai-success-eng",
+      "company": "OpenAI",
+      "role": "AI Success Engineer - US Remote",
+      "status": "Not hired",
+      "appliedOn": "2026-07-01",
+      "location": "Remote \u00b7 USA",
+      "interviews": [],
+      "notes": "Rejected Aug 11; apply date approx"
+    },
+    {
+      "id": "runway-unknown",
+      "company": "Runway",
+      "role": "Role TBD",
+      "status": "Not hired",
+      "appliedOn": "2026-07-15",
+      "location": "Unknown",
+      "interviews": [],
+      "notes": "Rejected Aug 12; role not named in email; apply date approx"
+    },
+    {
+      "id": "n8n-tam-us",
+      "company": "n8n",
+      "role": "Technical Account Manager (US)",
+      "status": "Not hired",
+      "appliedOn": "2026-07-16",
+      "location": "Remote \u00b7 USA",
+      "interviews": [],
+      "notes": "Rejected Jul 20"
+    },
+    {
+      "id": "snowflake-account-engineer",
+      "company": "Snowflake",
+      "role": "Account Engineer",
+      "status": "Not hired",
+      "appliedOn": "2026-07-18",
+      "location": "Remote",
+      "interviews": [],
+      "notes": "Rejected Jul 20"
+    },
+    {
+      "id": "glean-ai-success-central",
+      "company": "Glean",
+      "role": "AI Success Manager, Central",
+      "status": "Not hired",
+      "appliedOn": "2026-07-20",
+      "location": "Remote \u00b7 Central",
+      "interviews": [],
+      "notes": "Rejected Aug 16 after HM interview; apply date approx"
+    },
+    {
+      "id": "genesys-sr-csm",
+      "company": "Genesys",
+      "role": "Senior Customer Success Manager (JR111511)",
+      "status": "Not hired",
+      "appliedOn": "2026-07-28",
+      "location": "Unknown",
+      "interviews": [],
+      "notes": "Rejected Jul 30 via Ladders Apply4Me"
+    },
+    {
+      "id": "snowflake-aiml-flex-se",
+      "company": "Snowflake",
+      "role": "AI/ML Flex Solution Engineer",
+      "status": "Not hired",
+      "appliedOn": "2026-07-28",
+      "location": "Remote",
+      "interviews": [],
+      "notes": "Rejected Jul 29"
+    },
+    {
+      "id": "akeyless-csa-us",
+      "company": "Akeyless Security",
+      "role": "Customer Success Architect - US",
+      "status": "Not hired",
+      "appliedOn": "2026-08-01",
+      "location": "Remote \u00b7 USA",
+      "interviews": [],
+      "notes": "Post-interview reject Aug 27; apply date approx"
+    },
+    {
+      "id": "nvidia-sr-cse-dgx",
+      "company": "NVIDIA",
+      "role": "Senior Customer Success Engineer - DGX Cloud (JR2022184)",
+      "status": "Not hired",
+      "appliedOn": "2026-08-15",
+      "location": "Remote",
+      "interviews": [],
+      "notes": "Rejected Sep 4; apply date approx"
+    },
+    {
+      "id": "nvidia-sa-jr2019541",
+      "company": "NVIDIA",
+      "role": "Solutions Architect (JR2019541)",
+      "status": "Not hired",
+      "appliedOn": "2026-08-20",
+      "location": "Remote",
+      "interviews": [],
+      "notes": "Rejected Sep 7; apply date approx"
+    },
+    {
+      "id": "openrouter-csm",
+      "company": "OpenRouter",
+      "role": "Customer Success Manager",
+      "status": "Not hired",
+      "appliedOn": "2026-08-20",
+      "location": "Remote \u00b7 USA",
+      "interviews": [],
+      "notes": "Rejected Sep 4; apply date approx"
+    },
+    {
+      "id": "livekit-tam",
+      "company": "LiveKit",
+      "role": "Technical Account Manager",
+      "status": "Not hired",
+      "appliedOn": "2026-08-27",
+      "location": "Remote \u00b7 USA",
+      "interviews": [],
+      "notes": "Rejected Sep 15 after AI interview"
+    },
+    {
+      "id": "dell-consultant-tam",
+      "company": "Dell Technologies",
+      "role": "Consultant, Technical Account Manager (294645)",
+      "status": "Not hired",
+      "appliedOn": "2026-09-01",
+      "location": "Unknown",
+      "interviews": [],
+      "notes": "Rejected Sep 15; apply date not in logs (approx)"
+    },
+    {
+      "id": "dell-sr-advisor-tam",
+      "company": "Dell Technologies",
+      "role": "Senior Advisor, Technical Account Manager (294644)",
+      "status": "Not hired",
+      "appliedOn": "2026-09-01",
+      "location": "Unknown",
+      "interviews": [],
+      "notes": "Rejected Sep 15 (clearance mismatch); apply date approx"
+    },
+    {
+      "id": "lumos-enterprise-csm",
+      "company": "Lumos",
+      "role": "Enterprise Customer Success Manager",
+      "status": "Not hired",
+      "appliedOn": "2026-09-01",
+      "location": "Remote \u00b7 USA",
+      "interviews": [],
+      "notes": "Rejected Sep 18; apply date not in logs (approx)"
+    },
+    {
+      "id": "onepassword-sr-tam",
+      "company": "1Password",
+      "role": "Senior Technical Account Manager",
+      "status": "Not hired",
+      "appliedOn": "2026-09-05",
+      "location": "Remote \u00b7 USA",
+      "interviews": [],
+      "notes": "Rejected Sep 10"
+    },
+    {
+      "id": "adobe-sr-tam-r171531",
+      "company": "Adobe",
+      "role": "Sr. Technical Account Manager (R171531)",
+      "status": "Not hired",
+      "appliedOn": "2026-09-08",
+      "location": "Remote / Adobe careers",
+      "interviews": [],
+      "notes": "Direct Adobe Workday app \u2014 separate from Mindlance panel"
+    },
+    {
+      "id": "nebius-tam-token-factory",
+      "company": "Nebius",
+      "role": "Technical Account Manager - Token Factory",
+      "status": "Not hired",
+      "appliedOn": "2026-09-11",
+      "location": "Remote \u00b7 USA",
+      "interviews": [],
+      "notes": "Rejected Sep 15"
+    },
+    {
+      "id": "docker-sr-tam",
+      "company": "Docker, Inc",
+      "role": "Senior Technical Account Manager",
+      "status": "Not hired",
+      "appliedOn": "2026-09-12",
+      "location": "Remote \u00b7 USA",
+      "interviews": [],
+      "notes": "Rejected Sep 25"
+    },
+    {
+      "id": "netdocuments-staff-cloud",
+      "company": "NetDocuments",
+      "role": "Staff Cloud Engineer",
+      "status": "Not hired",
+      "appliedOn": "2026-09-15",
+      "location": "Unknown",
+      "interviews": [],
+      "notes": "Not hired Sep 29; apply date approx"
+    },
+    {
+      "id": "nice-technical-csm",
+      "company": "NICE",
+      "role": "Technical Customer Success Manager (Conversational / Agentic AI)",
+      "status": "Not hired",
+      "appliedOn": "2026-09-15",
+      "location": "Remote \u00b7 USA",
+      "interviews": [],
+      "notes": "Rejected Sep 22 per Scout"
+    },
+    {
+      "id": "amazon-leo-sr-tam",
+      "company": "Amazon Leo",
+      "role": "Sr. Technical Account Manager - Enterprise",
+      "status": "Not hired",
+      "appliedOn": "2026-09-19",
+      "location": "Remote \u00b7 USA",
+      "interviews": [],
+      "notes": "Rejected Sep 21; amazon.jobs 10507168"
+    },
+    {
+      "id": "amazon-leo-tam",
+      "company": "Amazon Leo",
+      "role": "Technical Account Manager - Enterprise",
+      "status": "Not hired",
+      "appliedOn": "2026-09-19",
+      "location": "Remote \u00b7 USA",
+      "interviews": [],
+      "notes": "Rejected Sep 21; amazon.jobs 10537027"
+    },
+    {
+      "id": "applause-ai-solutions",
+      "company": "Applause",
+      "role": "AI Solutions Engineer",
+      "status": "Not hired",
+      "appliedOn": "2026-09-20",
+      "location": "Unknown",
+      "interviews": [
+        {
+          "id": "int-applause-1",
+          "at": "2026-09-24T12:00",
+          "kind": "Technical conversation"
+        }
+      ],
+      "notes": "Interviewed ~Sep 24; not hired Sep 28"
+    },
+    {
+      "id": "everpure-assoc-sec-eng",
+      "company": "Everpure",
+      "role": "Associate Security Engineer",
+      "status": "Not hired",
+      "appliedOn": "2026-09-20",
+      "location": "Lehi, UT",
+      "interviews": [],
+      "notes": "Pure Storage / Everpure; rejected Sep 28"
+    },
+    {
+      "id": "cast-ai-tam-usa",
+      "company": "Cast AI",
+      "role": "Technical Account Manager | USA",
+      "status": "Not hired",
+      "appliedOn": "2026-09-21",
+      "location": "Remote \u00b7 USA",
+      "interviews": [],
+      "notes": "Position filled / rejected Oct 2"
+    },
+    {
+      "id": "guidepoint-assoc-cloud-sec",
+      "company": "GuidePoint Security",
+      "role": "Associate Cloud Security Engineer \u2014 AWS \u2014 Remote",
+      "status": "Not hired",
+      "appliedOn": "2026-09-22",
+      "location": "Remote \u00b7 USA",
+      "interviews": [],
+      "notes": "Rejected Sep 23"
+    },
+    {
+      "id": "sysdig-sr-cse",
+      "company": "Sysdig",
+      "role": "Senior Customer Solutions Engineer (Central US)",
+      "status": "Not hired",
+      "appliedOn": "2026-09-23",
+      "location": "Remote \u00b7 Central US",
+      "interviews": [
+        {
+          "id": "int-sysdig-1",
+          "at": "2026-09-30T12:00",
+          "kind": "Recruiter screen"
+        }
+      ],
+      "notes": "Interviewed Sep 30; another candidate selected"
+    },
+    {
+      "id": "dataiku-sr-tam-east",
+      "company": "Dataiku",
+      "role": "Sr Technical Account Manager - East",
+      "status": "Not hired",
+      "appliedOn": "2026-09-27",
+      "location": "Remote \u00b7 USA",
+      "interviews": [],
+      "notes": "Rejected Sep 30"
+    },
+    {
+      "id": "digitalocean-sr-tam-aiml-austin",
+      "company": "DigitalOcean",
+      "role": "Senior Technical Account Manager, AI/ML (Austin posting)",
+      "status": "Not hired",
+      "appliedOn": "2026-09-28",
+      "location": "Austin / Remote",
+      "interviews": [],
+      "notes": "Rejected Oct 6"
+    },
+    {
+      "id": "digitalocean-sr-tam-aiml-seattle",
+      "company": "DigitalOcean",
+      "role": "Senior Technical Account Manager, AI/ML (Seattle posting)",
+      "status": "Not hired",
+      "appliedOn": "2026-09-28",
+      "location": "Seattle / Remote",
+      "interviews": [],
+      "notes": "Rejected Oct 6 (same Sr TAM AI/ML reject)"
+    },
+    {
+      "id": "hightouch-tam-enterprise-west",
+      "company": "Hightouch",
+      "role": "Technical Account Manager, Enterprise (West)",
+      "status": "Not hired",
+      "appliedOn": "2026-09-28",
+      "location": "Remote \u00b7 North America",
+      "interviews": [],
+      "notes": "Rejected Sep 30"
+    },
+    {
+      "id": "veeam-sr-cse-data-ai",
+      "company": "Veeam",
+      "role": "Senior Customer Success Engineer - Data & AI Security",
+      "status": "Not hired",
+      "appliedOn": "2026-09-29",
+      "location": "United States",
+      "interviews": [],
+      "notes": "Rejected Oct 1"
+    },
+    {
+      "id": "sumsub-junior-csm",
+      "company": "Sumsub",
+      "role": "Junior Customer Success Manager",
+      "status": "Not hired",
+      "appliedOn": "2026-10-02",
+      "location": "Remote \u00b7 USA",
+      "interviews": [],
+      "notes": "Rejected Oct 7"
+    }
+  ]
+}
