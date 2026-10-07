@@ -1,5 +1,8 @@
-const MANAGE_PASSWORD_SHA256 = "de0c3dc77173186a8e8b3f8fd813df82a20573701a7e4f4a4c01d1aca4c6307c";
+export const MANAGE_PASSWORD_SHA256 = "de0c3dc77173186a8e8b3f8fd813df82a20573701a7e4f4a4c01d1aca4c6307c";
 const SESSION_KEY = "job-search-board:manage-unlocked";
+const PASSWORD_KEY = "job-search-board:manage-password";
+
+let memoryPassword: string | null = null;
 
 function toHex(buffer: ArrayBuffer): string {
   const bytes = new Uint8Array(buffer);
@@ -17,17 +20,40 @@ function hexEqual(left: string, right: string): boolean {
   return mismatch === 0;
 }
 
-export function isManageUnlocked(): boolean {
+export function readManagePassword(): string | null {
   try {
-    return sessionStorage.getItem(SESSION_KEY) === "1";
+    const stored = sessionStorage.getItem(PASSWORD_KEY);
+    if (stored) return stored;
   } catch {
-    return false;
+    // Fall through to the in-memory copy when storage is blocked.
+  }
+  return memoryPassword;
+}
+
+export function clearManagePassword(): void {
+  memoryPassword = null;
+  try {
+    sessionStorage.removeItem(PASSWORD_KEY);
+  } catch {
+    // Nothing else to clear.
   }
 }
 
-export function unlockManage(): void {
+export function isManageUnlocked(): boolean {
+  if (!readManagePassword()) return false;
+  try {
+    if (sessionStorage.getItem(SESSION_KEY) === "1") return true;
+  } catch {
+    // Storage is blocked; the in-memory password still counts.
+  }
+  return memoryPassword !== null;
+}
+
+export function unlockManage(password: string): void {
+  memoryPassword = password;
   try {
     sessionStorage.setItem(SESSION_KEY, "1");
+    sessionStorage.setItem(PASSWORD_KEY, password);
   } catch {
     // The page still unlocks in memory when storage is blocked.
   }
