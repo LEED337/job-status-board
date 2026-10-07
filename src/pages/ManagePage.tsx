@@ -3,19 +3,32 @@ import { Link, useSearchParams } from "react-router-dom";
 import { ApplicationDialog } from "../components/ApplicationDialog.tsx";
 import { BoardList } from "../components/BoardList.tsx";
 import { PlusIcon } from "../components/Icons.tsx";
+import { ManageLock } from "../components/ManageLock.tsx";
 import { Shell } from "../components/Shell.tsx";
 import { BoardSkeleton } from "../components/Skeleton.tsx";
 import { Summary } from "../components/Summary.tsx";
 import { boardSignature, copyText, downloadBoard, serializeBoard } from "../lib/board.ts";
 import { loadPublished, readBoardFile } from "../lib/load.ts";
+import { isManageUnlocked } from "../lib/manageAuth.ts";
 import { btnPrimary, btnSecondary, cx, fieldClass } from "../lib/styles.ts";
 import { clearDraft, readDraft, saveDraft } from "../lib/storage.ts";
+import { useNow } from "../lib/useNow.ts";
 import type { Application, BoardFile } from "../types.ts";
 
 export function ManagePage() {
   const [params] = useSearchParams();
   const embed = params.get("embed") === "1";
-  const [now] = useState(() => new Date());
+  const [unlocked, setUnlocked] = useState(() => isManageUnlocked());
+  if (!unlocked) {
+    return <ManageLock embed={embed} onUnlock={() => setUnlocked(true)} />;
+  }
+  return <ManageEditor />;
+}
+
+function ManageEditor() {
+  const [params] = useSearchParams();
+  const embed = params.get("embed") === "1";
+  const now = useNow();
   const [published, setPublished] = useState<BoardFile | null>(null);
   const [board, setBoard] = useState<BoardFile | null>(null);
   const [error, setError] = useState<string | null>(null);

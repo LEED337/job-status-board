@@ -7,12 +7,13 @@ import { Summary } from "../components/Summary.tsx";
 import { formatUpdated } from "../lib/board.ts";
 import { loadPublished } from "../lib/load.ts";
 import { readDraft } from "../lib/storage.ts";
+import { useNow } from "../lib/useNow.ts";
 import type { BoardFile } from "../types.ts";
 
 export function SharePage() {
   const [params] = useSearchParams();
   const embed = params.get("embed") === "1";
-  const [now] = useState(() => new Date());
+  const now = useNow();
   const [board, setBoard] = useState<BoardFile | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
