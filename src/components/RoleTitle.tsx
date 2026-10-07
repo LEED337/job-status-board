@@ -6,6 +6,15 @@ type RoleTitleProps = {
   className?: string;
 };
 
+/** Drop classes the card CSS forces to near-black with !important, so the link color wins. */
+function withoutInkOverride(className?: string) {
+  if (!className) return undefined;
+  const kept = className
+    .split(/\s+/)
+    .filter((token) => token && !token.includes("text-ink") && !token.includes("text-muted"));
+  return kept.length > 0 ? kept.join(" ") : undefined;
+}
+
 export function RoleTitle({ role, jobUrl, className }: RoleTitleProps) {
   if (!jobUrl) {
     return <span className={className}>{role}</span>;
@@ -18,8 +27,8 @@ export function RoleTitle({ role, jobUrl, className }: RoleTitleProps) {
       rel="noopener noreferrer"
       title={jobUrl}
       className={cx(
-        "text-ink underline-offset-[3px] decoration-black/70 hover:underline focus-visible:underline",
-        className,
+        "text-[#0645ad] underline-offset-[3px] hover:text-[#053a91] hover:underline focus-visible:underline",
+        withoutInkOverride(className),
       )}
     >
       {role}
