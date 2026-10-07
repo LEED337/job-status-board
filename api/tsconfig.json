@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2023"],
+    "module": "ESNext",
+    // Vercel's Node builder transpiles the nearest tsconfig with TypeScript's
+    // transpileModule. NodeNext emit is CommonJS, and package.json "type":
+    // "module" then crashes the function while loading. ESNext keeps import/export.
+    "moduleResolution": "Bundler",
+    "types": ["node"],
+    "verbatimModuleSyntax": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "skipLibCheck": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "erasableSyntaxOnly": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": ["./**/*.ts"]
+}

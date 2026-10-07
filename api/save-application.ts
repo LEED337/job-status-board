@@ -1,6 +1,6 @@
 import { createHash, timingSafeEqual } from "node:crypto";
-import { applySharedOperation, BoardChangeError, type SharedEdit } from "../src/lib/board.ts";
-import { MANAGE_PASSWORD_SHA256 } from "../src/lib/manageAuth.ts";
+import { applySharedOperation, BoardChangeError, type SharedEdit } from "./_lib/boardFile.js";
+import { MANAGE_PASSWORD_SHA256 } from "./_lib/password.js";
 
 const FILE_PATH = "public/data/applications.json";
 const MAX_ATTEMPTS = 4;

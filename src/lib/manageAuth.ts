@@ -1,4 +1,6 @@
-export const MANAGE_PASSWORD_SHA256 = "de0c3dc77173186a8e8b3f8fd813df82a20573701a7e4f4a4c01d1aca4c6307c";
+import { MANAGE_PASSWORD_SHA256 } from "../../api/_lib/password.ts";
+
+export { MANAGE_PASSWORD_SHA256 };
 const SESSION_KEY = "job-search-board:manage-unlocked";
 const PASSWORD_KEY = "job-search-board:manage-password";
 
