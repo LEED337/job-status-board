@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-08T14:13:50Z",
+  "updatedAt": "2026-10-08T14:40:09Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -252,6 +252,17 @@
           "kind": "Recruiter screen"
         }
       ]
+    },
+    {
+      "id": "singlestore-fde",
+      "company": "SingleStore",
+      "role": "Forward Deployment Engineer",
+      "jobUrl": "https://job-boards.greenhouse.io/singlestore-linkedin/jobs/8157697",
+      "status": "Applied",
+      "appliedOn": "2026-10-08",
+      "location": "United States",
+      "interviews": [],
+      "notes": "Applied through Greenhouse via LinkedIn (Greenhouse 8157697). Full-time; base $120K–$200K plus bonus eligibility"
     },
     {
       "id": "eon-technical-cs",
