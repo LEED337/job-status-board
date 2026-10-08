@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-08T17:21:41Z",
+  "updatedAt": "2026-10-08T21:53:09Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -274,6 +274,17 @@
       "location": "Remote US",
       "interviews": [],
       "notes": "Applied through Lever. Full-time; $115,000–$130,000/yr"
+    },
+    {
+      "id": "origin-tam",
+      "company": "Origin",
+      "role": "Technical Account Manager",
+      "jobUrl": "https://jobs.ashbyhq.com/originhq/56958136-4f3f-4f84-b889-03a8cb5dd1d7",
+      "status": "Applied",
+      "appliedOn": "2026-10-08",
+      "location": "Remote (US/Canada)",
+      "interviews": [],
+      "notes": "Applied through Ashby. Full-time; $158K–$250K plus equity"
     },
     {
       "id": "eon-technical-cs",
