@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-08T14:40:09Z",
+  "updatedAt": "2026-10-08T17:21:41Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -244,7 +244,7 @@
       "status": "Interviewing",
       "appliedOn": "2026-10-01",
       "location": "Salt Lake City, UT / Oregon Remote",
-      "notes": "Phone screen with recruiter Paola VargasUnfried (Senior Talent Acquisition), Thu Oct 8 at 10:00 AM MT (email says 11 AM CT; calendar shows 11 AM MT, so confirm). Pay: SLC base $118,400–$177,600 (other US $112,500–$199,800) + bonus/commission + stock",
+      "notes": "Recruiter phone screen with Paola VargasUnfried done Thu Oct 8. She first said fully remote, then said 50% in-office. Comp tops out at $145K base + annual bonus + RSUs (posting range was higher). Lee hoped for $160–170K but would consider near their max. Awaiting next steps. JR-0109357",
       "interviews": [
         {
           "id": "int-workday-tam-1",
@@ -263,6 +263,17 @@
       "location": "United States",
       "interviews": [],
       "notes": "Applied through Greenhouse via LinkedIn (Greenhouse 8157697). Full-time; base $120K–$200K plus bonus eligibility"
+    },
+    {
+      "id": "smile-digital-health-cloud-sec",
+      "company": "Smile Digital Health",
+      "role": "Intermediate Cloud Security Engineer",
+      "jobUrl": "https://jobs.lever.co/smiledigitalhealth/9d72dcf5-328e-4635-8928-946be68bdf2c",
+      "status": "Applied",
+      "appliedOn": "2026-10-08",
+      "location": "Remote US",
+      "interviews": [],
+      "notes": "Applied through Lever. Full-time; $115,000–$130,000/yr"
     },
     {
       "id": "eon-technical-cs",
