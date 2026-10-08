@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-07T22:19:50Z",
+  "updatedAt": "2026-10-08T14:13:50Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -94,10 +94,10 @@
       "company": "Varonis",
       "role": "Technical Account Manager - Digital",
       "jobUrl": "https://careers.varonis.com/careers?p=job%2FoVLAAfwA",
-      "status": "Interviewing",
+      "status": "Not hired",
       "appliedOn": "2026-09-28",
       "location": "United States",
-      "notes": "Jobvite oVLAAfwA; interview with Kate Thu Oct 8, 8:00 AM MT",
+      "notes": "Withdrawn by Lee after recruiter call with Kate on Thu Oct 8: role pays only $120K OTE (80/20), well below target. Open to higher-paying Varonis roles. Jobvite oVLAAfwA",
       "interviews": [
         {
           "id": "int-varonis-1",
