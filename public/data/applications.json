@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-08T21:53:09Z",
+  "updatedAt": "2026-10-08T22:07:09Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -285,6 +285,17 @@
       "location": "Remote (US/Canada)",
       "interviews": [],
       "notes": "Applied through Ashby. Full-time; $158K–$250K plus equity"
+    },
+    {
+      "id": "employers-infosec-assoc-eng",
+      "company": "EMPLOYERS",
+      "role": "Information Security Associate Engineer",
+      "jobUrl": "https://employers.csod.com/ux/ats/careersite/4/home/requisition/499?c=employers",
+      "status": "Applied",
+      "appliedOn": "2026-10-08",
+      "location": "US (no city listed)",
+      "interviews": [],
+      "notes": "Employers Holdings (workers' comp insurer). Applied through Cornerstone careers site via LinkedIn. Full-time; requisition 499. Pay not listed."
     },
     {
       "id": "eon-technical-cs",
