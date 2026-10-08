@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-08T14:40:09Z",
+  "updatedAt": "2026-10-08T16:47:26Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -263,6 +263,17 @@
       "location": "United States",
       "interviews": [],
       "notes": "Applied through Greenhouse via LinkedIn (Greenhouse 8157697). Full-time; base $120K–$200K plus bonus eligibility"
+    },
+    {
+      "id": "smile-digital-health-cloud-sec",
+      "company": "Smile Digital Health",
+      "role": "Intermediate Cloud Security Engineer",
+      "jobUrl": "https://jobs.lever.co/smiledigitalhealth/9d72dcf5-328e-4635-8928-946be68bdf2c",
+      "status": "Applied",
+      "appliedOn": "2026-10-08",
+      "location": "Remote US",
+      "interviews": [],
+      "notes": "Applied through Lever. Full-time; $115,000–$130,000/yr"
     },
     {
       "id": "eon-technical-cs",
