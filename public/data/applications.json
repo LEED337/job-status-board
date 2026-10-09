@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-09T20:26:53Z",
+  "updatedAt": "2026-10-09T20:44:54Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -323,6 +323,17 @@
       "location": "Remote (US; listed Logan, UT)",
       "interviews": [],
       "notes": "Full-time, entry level. Pay not listed."
+    },
+    {
+      "id": "leidos-ai-software-dev",
+      "company": "Leidos",
+      "role": "AI Software Developer - All Levels (Remote)",
+      "jobUrl": "https://careers.leidos.com/jobs/18302779-ai-software-developer-all-levels-remote",
+      "status": "Applied",
+      "appliedOn": "2026-10-09",
+      "location": "Remote (listed Egg Harbor Township, NJ)",
+      "interviews": [],
+      "notes": "Full-time. 100% remote if not within commuting distance. Public Trust and US citizenship required. $87,100–$157,450. Job # R-00193677-OTHLOC-PL-2D0788"
     },
     {
       "id": "eon-technical-cs",
