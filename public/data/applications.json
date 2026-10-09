@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-09T15:04:55Z",
+  "updatedAt": "2026-10-09T16:09:49Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -244,12 +244,17 @@
       "status": "Interviewing",
       "appliedOn": "2026-10-01",
       "location": "Salt Lake City, UT / Oregon Remote",
-      "notes": "Recruiter phone screen with Paola VargasUnfried done Thu Oct 8. She first said fully remote, then said 50% in-office. Comp tops out at $145K base + annual bonus + RSUs (posting range was higher). Lee hoped for $160–170K but would consider near their max. Awaiting next steps. JR-0109357",
+      "notes": "Recruiter phone screen with Paola VargasUnfried done Thu Oct 8. She first said fully remote, then said 50% in-office. Comp tops out at $145K base + annual bonus + RSUs (posting range was higher). Lee hoped for $160–170K but would consider near their max. Awaiting next steps. JR-0109357 Moved forward: hiring manager interview Mon Oct 12 at 2:30 PM MT (interviewer not yet known).",
       "interviews": [
         {
           "id": "int-workday-tam-1",
           "at": "2026-10-08T11:00",
           "kind": "Recruiter screen"
+        },
+        {
+          "id": "int-workday-tam-2",
+          "at": "2026-10-12T14:30",
+          "kind": "Hiring manager"
         }
       ]
     },
