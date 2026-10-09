@@ -1,9 +1,7 @@
-export const STATUSES = [
-  "Applied",
-  "Haven't heard back",
-  "Interviewing",
-  "Not hired",
-] as const;
+export const STATUSES = ["Applied", "Interviewing", "Not hired"] as const;
+
+// Older boards used this for applications that were neither interviewing nor closed.
+const LEGACY_APPLIED_STATUS = "Haven't heard back";
 
 export type ApplicationStatus = (typeof STATUSES)[number];
 
@@ -144,8 +142,12 @@ function isRecord(value: unknown): value is Record<string, unknown> {
   return typeof value === "object" && value !== null && !Array.isArray(value);
 }
 
-function isStatus(value: unknown): value is ApplicationStatus {
-  return typeof value === "string" && (STATUSES as readonly string[]).includes(value);
+function canonicalStatus(value: unknown): ApplicationStatus | null {
+  if (typeof value !== "string") return null;
+  // Straight or curly apostrophe: both mean the old waiting status.
+  if (value === LEGACY_APPLIED_STATUS || value === "Haven’t heard back") return "Applied";
+  if ((STATUSES as readonly string[]).includes(value)) return value as ApplicationStatus;
+  return null;
 }
 
 export function normalizeJobUrl(value: string): string | null {
@@ -189,10 +191,9 @@ function parseApplication(input: unknown, index: number): Application {
   if (!company) throw new Error(`${where}: company is required.`);
   const role = typeof input.role === "string" ? input.role.trim() : "";
   if (!role) throw new Error(`${where}: role is required.`);
-  if (!isStatus(input.status)) {
-    throw new Error(
-      `${where}: status must be Applied, Haven't heard back, Interviewing, or Not hired.`,
-    );
+  const status = canonicalStatus(input.status);
+  if (!status) {
+    throw new Error(`${where}: status must be Applied, Interviewing, or Not hired.`);
   }
   if (typeof input.appliedOn !== "string" || !DATE_ONLY.test(input.appliedOn)) {
     throw new Error(`${where}: appliedOn must be YYYY-MM-DD.`);
@@ -205,7 +206,7 @@ function parseApplication(input: unknown, index: number): Application {
     company,
     role,
     ...(jobUrl ? { jobUrl } : {}),
-    status: input.status,
+    status,
     appliedOn: input.appliedOn,
     location: typeof input.location === "string" ? input.location.trim() : "",
     ...(notes ? { notes } : {}),

@@ -6,7 +6,7 @@ Deploy by importing this repo on Vercel Hobby (build: `npm run build`, output: `
 
 A calm, shareable board for where each application stands. Visitors get a read-only page. Saving on `/manage` publishes that one application to the shared file.
 
-Statuses are **Applied**, **Haven't heard back**, **Interviewing** (interview count and next interview), and **Not hired**.
+Statuses are **Applied** (waiting to hear back), **Interviewing** (interview count and next interview), and **Not hired**.
 
 The first load uses sample applications so the page looks finished. Replace them before you share it as your own search.
 
@@ -62,7 +62,7 @@ Keep `version` at `1`.
 }
 ```
 
-`status` must be one of: `Applied`, `Haven't heard back`, `Interviewing`, `Not hired`.
+`status` must be one of: `Applied`, `Interviewing`, `Not hired`. A saved status of `Haven't heard back` is treated as `Applied`.
 
 `appliedOn` is `YYYY-MM-DD`. Interview `at` is `YYYY-MM-DDTHH:MM` with no timezone, so 10:00 displays as 10:00.
 
