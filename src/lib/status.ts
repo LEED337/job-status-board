@@ -6,25 +6,19 @@ export const STATUS_META: Record<
 > = {
   Applied: {
     color: "#3451c7",
-    bar: "#6f86e4",
+    bar: "#1d4ed8",
     soft: "#e7edfb",
-    caption: "Recently submitted",
-  },
-  "Haven't heard back": {
-    color: "#8a5a1f",
-    bar: "#e0b15a",
-    soft: "#f6efe3",
-    caption: "No reply yet",
+    caption: "Waiting to hear back",
   },
   Interviewing: {
     color: "#15724a",
-    bar: "#3dbe84",
+    bar: "#0e9f4f",
     soft: "#e3f5eb",
     caption: "Active conversations",
   },
   "Not hired": {
     color: "#9d4454",
-    bar: "#e39aa6",
+    bar: "#e11d2e",
     soft: "#f8e9ec",
     caption: "Closed",
   },

@@ -1,4 +1,4 @@
-import { type Application, type ApplicationStatus, type BoardFile, type Interview } from "../types.ts";
+import { STATUSES, type Application, type ApplicationStatus, type BoardFile, type Interview } from "../types.ts";
 import { serializeBoard } from "../../api/_lib/boardFile.ts";
 import { AVATAR_COLORS } from "./status.ts";
 
@@ -78,9 +78,8 @@ export type Scheduled = {
 
 const STATUS_RANK: Record<ApplicationStatus, number> = {
   Interviewing: 0,
-  "Haven't heard back": 1,
-  Applied: 2,
-  "Not hired": 3,
+  Applied: 1,
+  "Not hired": 2,
 };
 
 export function interviewDate(at: string): Date {
@@ -230,12 +229,8 @@ export function upcomingCount(applications: Application[], now = new Date()): nu
 }
 
 export function countByStatus(applications: Application[]): Record<ApplicationStatus, number> {
-  const counts: Record<ApplicationStatus, number> = {
-    Applied: 0,
-    "Haven't heard back": 0,
-    Interviewing: 0,
-    "Not hired": 0,
-  };
+  const counts = {} as Record<ApplicationStatus, number>;
+  for (const status of STATUSES) counts[status] = 0;
   for (const app of applications) counts[app.status] += 1;
   return counts;
 }
