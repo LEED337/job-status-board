@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-09T20:44:54Z",
+  "updatedAt": "2026-10-09T21:45:46Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -334,6 +334,17 @@
       "location": "Remote (listed Egg Harbor Township, NJ)",
       "interviews": [],
       "notes": "Full-time. 100% remote if not within commuting distance. Public Trust and US citizenship required. $87,100–$157,450. Job # R-00193677-OTHLOC-PL-2D0788"
+    },
+    {
+      "id": "podium-ai-csm-smb",
+      "company": "Podium",
+      "role": "AI Customer Success Manager - SMB",
+      "jobUrl": "https://job-boards.greenhouse.io/podium81/jobs/7528142",
+      "status": "Applied",
+      "appliedOn": "2026-10-09",
+      "location": "Lehi, UT (in office 5 days)",
+      "interviews": [],
+      "notes": "Full-time. Pay not listed. Greenhouse 7528142"
     },
     {
       "id": "eon-technical-cs",
