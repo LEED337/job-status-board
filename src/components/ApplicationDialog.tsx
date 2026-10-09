@@ -1,5 +1,6 @@
 import { useEffect, useId, useRef, useState, type FormEvent } from "react";
 import { normalizeJobUrl, todayISO } from "../lib/board.ts";
+import { STATUS_META } from "../lib/status.ts";
 import { btnPrimary, btnSecondary, cx, fieldClass } from "../lib/styles.ts";
 import { INTERVIEW_KINDS, STATUSES, type Application, type ApplicationStatus, type Interview } from "../types.ts";
 import { CloseIcon } from "./Icons.tsx";
@@ -261,10 +262,15 @@ export function ApplicationDialog({ application, onClose, onSave, onDelete }: Ap
                     aria-pressed={selected}
                     onClick={() => setDraft({ ...draft, status })}
                     className={cx(
-                      "rounded-xl px-3 py-2.5 text-left text-sm font-medium ring-1 transition-colors",
+                      "inline-flex items-center gap-2 rounded-xl px-3 py-2.5 text-left text-sm font-medium ring-1 transition-colors",
                       selected ? "bg-ink text-white ring-ink" : "bg-white text-ink ring-black/10 hover:bg-soft",
                     )}
                   >
+                    <span
+                      className="h-2 w-2 shrink-0 rounded-full"
+                      style={{ backgroundColor: STATUS_META[status].color }}
+                      aria-hidden="true"
+                    />
                     {status}
                   </button>
                 );
