@@ -268,7 +268,7 @@ export function ApplicationDialog({ application, onClose, onSave, onDelete }: Ap
                   >
                     <span
                       className="h-2 w-2 shrink-0 rounded-full"
-                      style={{ backgroundColor: STATUS_META[status].color }}
+                      style={{ backgroundColor: STATUS_META[status].text }}
                       aria-hidden="true"
                     />
                     {status}

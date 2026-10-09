@@ -87,7 +87,7 @@ export function BoardList({ applications, now, showNotes = false, onEdit, onDele
             <FilterChip key={status} active={filter === status} onClick={() => setFilter(status)}>
               <span
                 className="h-1.5 w-1.5 shrink-0 rounded-full"
-                style={{ backgroundColor: STATUS_META[status].color }}
+                style={{ backgroundColor: STATUS_META[status].text }}
                 aria-hidden="true"
               />
               {status} <span className="num">{counts[status]}</span>
