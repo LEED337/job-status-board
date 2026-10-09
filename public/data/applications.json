@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-09T16:09:49Z",
+  "updatedAt": "2026-10-09T20:20:11Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -301,6 +301,28 @@
       "location": "US (no city listed)",
       "interviews": [],
       "notes": "Employers Holdings (workers' comp insurer). Applied through Cornerstone careers site via LinkedIn. Full-time; requisition 499. Pay not listed."
+    },
+    {
+      "id": "revblack-ai-solutions-eng",
+      "company": "RevBlack",
+      "role": "AI Solutions Engineer",
+      "jobUrl": "https://bebee.com/us/jobs/ai-solutions-engineer-revblack-heber-city-ut--t7xk-835048010",
+      "status": "Applied",
+      "appliedOn": "2026-10-09",
+      "location": "Heber City, UT (hybrid, 3 days in office)",
+      "interviews": [],
+      "notes": "Entry-level AI specialist role; RevBlack's only AI posting. Full-time. Original post not found; link is a beBee mirror. RevBlack LinkedIn hiring post: https://www.linkedin.com/posts/revblack_hiring-activity-7503048784738709504-OzhO"
+    },
+    {
+      "id": "ifit-junior-ai-eng",
+      "company": "iFIT",
+      "role": "Junior AI Engineer",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4476209299/",
+      "status": "Applied",
+      "appliedOn": "2026-10-09",
+      "location": "Remote (US; listed Logan, UT)",
+      "interviews": [],
+      "notes": "Full-time, entry level. Pay not listed."
     },
     {
       "id": "eon-technical-cs",
