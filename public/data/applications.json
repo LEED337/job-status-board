@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-08T22:07:09Z",
+  "updatedAt": "2026-10-09T05:09:03Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -248,7 +248,7 @@
       "interviews": [
         {
           "id": "int-workday-tam-1",
-          "at": "2026-10-08T10:00",
+          "at": "2026-10-08T11:00",
           "kind": "Recruiter screen"
         }
       ]
