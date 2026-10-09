@@ -15,6 +15,7 @@ import {
   type SortKey,
   type SortState,
 } from "../lib/board.ts";
+import { STATUS_META } from "../lib/status.ts";
 import { cx } from "../lib/styles.ts";
 import { STATUSES, type Application, type ApplicationStatus } from "../types.ts";
 import { ChevronIcon, CloseIcon, SearchIcon } from "./Icons.tsx";
@@ -84,6 +85,11 @@ export function BoardList({ applications, now, showNotes = false, onEdit, onDele
           </FilterChip>
           {STATUSES.map((status) => (
             <FilterChip key={status} active={filter === status} onClick={() => setFilter(status)}>
+              <span
+                className="h-1.5 w-1.5 shrink-0 rounded-full"
+                style={{ backgroundColor: STATUS_META[status].color }}
+                aria-hidden="true"
+              />
               {status} <span className="num">{counts[status]}</span>
             </FilterChip>
           ))}
@@ -214,7 +220,7 @@ function FilterChip({
       onClick={onClick}
       aria-pressed={active}
       className={cx(
-        "rounded-full px-3 py-1.5 text-[13px] font-medium whitespace-nowrap transition-colors",
+        "inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-[13px] font-medium whitespace-nowrap transition-colors",
         active ? "bg-ink text-white" : "bg-soft text-ink hover:bg-[#dcdcdc]",
       )}
     >
