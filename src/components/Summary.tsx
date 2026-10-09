@@ -29,6 +29,7 @@ const RADIUS = 50;
 const CIRC = 2 * Math.PI * RADIUS;
 const CHART_SCALE = 2.15;
 const HOVER_GROWTH = 12;
+const RING_OUTLINE = 3.5;
 
 type Segment = {
   status: ApplicationStatus;
@@ -36,7 +37,7 @@ type Segment = {
   index: number;
   fraction: number;
   cumulative: number;
-  color: string;
+  soft: string;
   width: number;
 };
 
@@ -93,7 +94,7 @@ function buildSegments(counts: Record<ApplicationStatus, number>, total: number)
       index,
       fraction,
       cumulative: index === n - 1 ? 1 : cursor,
-      color: STATUS_META[status].color,
+      soft: STATUS_META[status].soft,
       width: 16 * n - 10 * index,
     };
   });
@@ -266,22 +267,26 @@ function StatusDonut({
               const revealed = segment.cumulative * (progress[segment.index] ?? 0);
               const length = revealed * CIRC;
               const hovered = active === segment.status;
+              const width = hovered ? segment.width + HOVER_GROWTH : segment.width;
+              const ring = {
+                cx: CX,
+                cy: CY,
+                r: RADIUS,
+                fill: "none" as const,
+                strokeLinecap: "butt" as const,
+                pointerEvents: "none" as const,
+                strokeDasharray: `${length} ${CIRC}`,
+              };
+              const widthTransition = { transition: "stroke-width 280ms cubic-bezier(0.22, 1, 0.36, 1)" };
               return (
-                <circle
-                  key={segment.status}
-                  cx={CX}
-                  cy={CY}
-                  r={RADIUS}
-                  fill="none"
-                  stroke={segment.color}
-                  strokeLinecap="butt"
-                  pointerEvents="none"
-                  strokeDasharray={`${length} ${CIRC}`}
-                  style={{
-                    strokeWidth: hovered ? segment.width + HOVER_GROWTH : segment.width,
-                    transition: "stroke-width 280ms cubic-bezier(0.22, 1, 0.36, 1)",
-                  }}
-                />
+                <g key={segment.status}>
+                  <circle
+                    {...ring}
+                    stroke="#111111"
+                    style={{ ...widthTransition, strokeWidth: width + RING_OUTLINE }}
+                  />
+                  <circle {...ring} stroke={segment.soft} style={{ ...widthTransition, strokeWidth: width }} />
+                </g>
               );
             })
           )}
@@ -406,7 +411,7 @@ export function Summary({ applications, now }: SummaryProps) {
                   <div className="w-[46%] text-center">
                     <p
                       className="num font-bold leading-none tracking-[-0.05em]"
-                      style={{ fontSize: "clamp(1.45rem, 11cqi, 2.15rem)", color: STATUS_META[shown].color }}
+                      style={{ fontSize: "clamp(1.45rem, 11cqi, 2.15rem)", color: STATUS_META[shown].onDark }}
                     >
                       {percents[shown]}%
                     </p>
@@ -454,7 +459,7 @@ export function Summary({ applications, now }: SummaryProps) {
                   {counts[status]}
                 </span>
                 <span className="mt-2 flex items-center justify-center gap-1 sm:mt-2.5 sm:gap-1.5">
-                  <span className="h-1.5 w-1.5 shrink-0 rounded-full" style={{ background: meta.color }} />
+                  <span className="h-1.5 w-1.5 shrink-0 rounded-full" style={{ background: meta.text }} />
                   <span className="text-[11px] font-medium leading-none tracking-[-0.03em] text-ink min-[380px]:text-[12px] sm:text-[13px] sm:leading-4 sm:tracking-normal">
                     {status}
                   </span>

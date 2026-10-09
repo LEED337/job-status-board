@@ -1,25 +1,30 @@
 import type { ApplicationStatus } from "../types.ts";
 
 /**
- * One color per status. The summary chart (segments and legend dots) and the
- * status badges all read this value so they cannot drift apart.
- *
- * Interviewing started as the chart green #0e9f4f. White badge text on that
- * green is about 3.4:1, under WCAG AA for small text, so it is darkened just
- * enough to clear 4.5:1. Applied (#1d4ed8, ~6.7:1) and Not hired (#e11d2e, ~4.8:1)
- * already pass and stay as they were.
+ * Shared status colors. Badges use a soft fill with `text` on top. Chart rings
+ * use the same soft fill. Dots use `text`. `onDark` is that text color lifted
+ * just enough to clear WCAG AA on the chart's #10101a center.
  */
-export const STATUS_META: Record<ApplicationStatus, { color: string; caption: string }> = {
+export const STATUS_META: Record<
+  ApplicationStatus,
+  { soft: string; text: string; onDark: string; caption: string }
+> = {
   Applied: {
-    color: "#1d4ed8",
+    soft: "#e7edfb",
+    text: "#3451c7",
+    onDark: "#657bd4",
     caption: "Waiting to hear back",
   },
   Interviewing: {
-    color: "#0c8642",
+    soft: "#e3f5eb",
+    text: "#15724a",
+    onDark: "#448e6e",
     caption: "Active conversations",
   },
   "Not hired": {
-    color: "#e11d2e",
+    soft: "#f8e9ec",
+    text: "#9d4454",
+    onDark: "#b26d79",
     caption: "Closed",
   },
 };
