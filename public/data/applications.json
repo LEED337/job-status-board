@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-10T04:05:03Z",
+  "updatedAt": "2026-10-10T04:52:14Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -505,11 +505,11 @@
       "company": "Newfold Digital",
       "role": "Enterprise Technical Account Manager",
       "jobUrl": "https://www.linkedin.com/jobs/view/4445257040/",
-      "status": "Applied",
+      "status": "Not hired",
       "appliedOn": "2026-09-14",
       "location": "Remote \u00b7 USA",
       "interviews": [],
-      "notes": "Bluehost / HostGator family"
+      "notes": "Bluehost / HostGator family. Turned down (Lee reported Fri Oct 9)."
     },
     {
       "id": "redo-tam",
