@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-09T21:45:46Z",
+  "updatedAt": "2026-10-10T04:05:03Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -345,6 +345,17 @@
       "location": "Lehi, UT (in office 5 days)",
       "interviews": [],
       "notes": "Full-time. Pay not listed. Greenhouse 7528142"
+    },
+    {
+      "id": "weave-csm-mm-ent",
+      "company": "Weave",
+      "role": "Customer Success Manager, Mid-Market/Enterprise",
+      "jobUrl": "https://jobs.ashbyhq.com/weave/37d7b6f9-b7c9-4f43-b204-1dde6f74a093",
+      "status": "Applied",
+      "appliedOn": "2026-10-09",
+      "location": "Lehi, UT (HQ, hybrid)",
+      "interviews": [],
+      "notes": "Applied through Ashby via LinkedIn. Full-time. Pay not listed."
     },
     {
       "id": "eon-technical-cs",
