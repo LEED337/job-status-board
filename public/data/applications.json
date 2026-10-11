@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-10T04:52:14Z",
+  "updatedAt": "2026-10-11T18:18:05Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -356,6 +356,17 @@
       "location": "Lehi, UT (HQ, hybrid)",
       "interviews": [],
       "notes": "Applied through Ashby via LinkedIn. Full-time. Pay not listed."
+    },
+    {
+      "id": "1password-se-smb",
+      "company": "1Password",
+      "role": "Solutions Engineer, SMB",
+      "jobUrl": "https://jobs.ashbyhq.com/1password/a5b083d5-5f82-4316-b5ef-a577f2edb493",
+      "status": "Applied",
+      "appliedOn": "2026-10-11",
+      "location": "Remote (US/Canada)",
+      "interviews": [],
+      "notes": "Applied through Ashby. Full-time; $75K–$105K base plus commission."
     },
     {
       "id": "eon-technical-cs",
