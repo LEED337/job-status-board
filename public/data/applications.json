@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-11T18:28:08Z",
+  "updatedAt": "2026-10-11T18:36:01Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -378,6 +378,17 @@
       "location": "Salt Lake City, UT (onsite 4 days)",
       "interviews": [],
       "notes": "Applied via LinkedIn. Full-time. Base $81K–$128K by zone (top zone $97,920–$127,840)."
+    },
+    {
+      "id": "entrata-csm",
+      "company": "Entrata",
+      "role": "Customer Success Manager",
+      "jobUrl": "https://jobs.lever.co/entrata/3c71a400-0f1a-4609-94e0-551df38f891f",
+      "status": "Applied",
+      "appliedOn": "2026-10-11",
+      "location": "Lehi, UT (Lever tags remote)",
+      "interviews": [],
+      "notes": "Applied via Lever. Full-time; $61,500–$96,900."
     },
     {
       "id": "eon-technical-cs",
