@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-11T18:18:05Z",
+  "updatedAt": "2026-10-11T18:28:08Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -367,6 +367,17 @@
       "location": "Remote (US/Canada)",
       "interviews": [],
       "notes": "Applied through Ashby. Full-time; $75K–$105K base plus commission."
+    },
+    {
+      "id": "atlassian-assoc-csm-dx",
+      "company": "Atlassian",
+      "role": "Associate Customer Success Manager (DX)",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4473272752/",
+      "status": "Applied",
+      "appliedOn": "2026-10-11",
+      "location": "Salt Lake City, UT (onsite 4 days)",
+      "interviews": [],
+      "notes": "Applied via LinkedIn. Full-time. Base $81K–$128K by zone (top zone $97,920–$127,840)."
     },
     {
       "id": "eon-technical-cs",
