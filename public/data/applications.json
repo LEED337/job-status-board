@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-11T18:36:01Z",
+  "updatedAt": "2026-10-11T23:12:00Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -389,6 +389,17 @@
       "location": "Lehi, UT (Lever tags remote)",
       "interviews": [],
       "notes": "Applied via Lever. Full-time; $61,500–$96,900."
+    },
+    {
+      "id": "yerba-madre-talent-community",
+      "company": "Yerba Madre",
+      "role": "Talent Community (general)",
+      "jobUrl": "https://job-boards.greenhouse.io/yerbamadre/jobs/4330623006",
+      "status": "Applied",
+      "appliedOn": "2026-10-11",
+      "location": "United States",
+      "interviews": [],
+      "notes": "Talent community signup via Greenhouse, no specific role."
     },
     {
       "id": "eon-technical-cs",
