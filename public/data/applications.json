@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-12T16:28:34Z",
+  "updatedAt": "2026-10-12T16:38:14Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -421,6 +421,16 @@
       "appliedOn": "2026-10-12",
       "interviews": [],
       "notes": "Stripe job 8160699"
+    },
+    {
+      "id": "paloalto-sr-cse",
+      "company": "Palo Alto Networks",
+      "role": "Senior Customer Success Engineer",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4474409409/",
+      "status": "Applied",
+      "appliedOn": "2026-10-12",
+      "interviews": [],
+      "notes": "Applied via LinkedIn"
     },
     {
       "id": "eon-technical-cs",
