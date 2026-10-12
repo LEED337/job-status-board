@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-12T16:14:17Z",
+  "updatedAt": "2026-10-12T16:28:34Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -411,6 +411,16 @@
       "location": "Salt Lake City, UT (hybrid)",
       "interviews": [],
       "notes": "GRC and third-party risk. Full-time. Pay not listed. Greenhouse 6117122004"
+    },
+    {
+      "id": "stripe-tam-platform",
+      "company": "Stripe",
+      "role": "Technical Account Manager, Platform",
+      "jobUrl": "https://stripe.com/careers/listing/technical-account-manager-platform/8160699",
+      "status": "Applied",
+      "appliedOn": "2026-10-12",
+      "interviews": [],
+      "notes": "Stripe job 8160699"
     },
     {
       "id": "eon-technical-cs",
