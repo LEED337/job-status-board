@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-12T16:38:14Z",
+  "updatedAt": "2026-10-12T19:54:53Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -340,11 +340,11 @@
       "company": "Podium",
       "role": "AI Customer Success Manager - SMB",
       "jobUrl": "https://job-boards.greenhouse.io/podium81/jobs/7528142",
-      "status": "Applied",
+      "status": "Not hired",
       "appliedOn": "2026-10-09",
       "location": "Lehi, UT (in office 5 days)",
       "interviews": [],
-      "notes": "Full-time. Pay not listed. Greenhouse 7528142"
+      "notes": "Full-time. Pay not listed. Greenhouse 7528142 Rejected Oct 12, 2026."
     },
     {
       "id": "weave-csm-mm-ent",
