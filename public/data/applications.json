@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-13T15:20:01Z",
+  "updatedAt": "2026-10-13T16:21:18Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -351,11 +351,11 @@
       "company": "Weave",
       "role": "Customer Success Manager, Mid-Market/Enterprise",
       "jobUrl": "https://jobs.ashbyhq.com/weave/37d7b6f9-b7c9-4f43-b204-1dde6f74a093",
-      "status": "Applied",
+      "status": "Not hired",
       "appliedOn": "2026-10-09",
       "location": "Lehi, UT (HQ, hybrid)",
       "interviews": [],
-      "notes": "Applied through Ashby via LinkedIn. Full-time. Pay not listed."
+      "notes": "Applied through Ashby via LinkedIn. Full-time. Pay not listed. Rejected Oct 13, 2026."
     },
     {
       "id": "1password-se-smb",
