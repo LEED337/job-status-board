@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-13T16:21:18Z",
+  "updatedAt": "2026-10-13T17:01:30Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -60,7 +60,7 @@
           "kind": "Recruiter screen"
         }
       ],
-      "notes": "Recruiter Manpreet; Director of TAM role isn't publicly posted, so it links to the Head of TAM posting for now (recruiter says it's a different role). Recruiter screen done; awaiting next steps"
+      "notes": "Recruiter Manpreet; Director of TAM role isn't publicly posted, so it links to the Head of TAM posting for now (recruiter says it's a different role). Recruiter screen done; awaiting next steps Oct 13: emailed Manpreet a follow-up asking about next steps."
     },
     {
       "id": "adobe-mindlance-tam",
