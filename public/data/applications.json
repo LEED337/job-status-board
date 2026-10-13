@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-12T21:20:17Z",
+  "updatedAt": "2026-10-13T15:20:01Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -417,10 +417,10 @@
       "company": "Stripe",
       "role": "Technical Account Manager, Platform",
       "jobUrl": "https://stripe.com/careers/listing/technical-account-manager-platform/8160699",
-      "status": "Applied",
+      "status": "Not hired",
       "appliedOn": "2026-10-12",
       "interviews": [],
-      "notes": "Stripe job 8160699"
+      "notes": "Stripe job 8160699. Rejected Oct 13, 2026."
     },
     {
       "id": "paloalto-sr-cse",
