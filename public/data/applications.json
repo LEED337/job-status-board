@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-14T16:30:51Z",
+  "updatedAt": "2026-10-14T20:18:49Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -268,11 +268,11 @@
       "company": "SingleStore",
       "role": "Forward Deployment Engineer",
       "jobUrl": "https://job-boards.greenhouse.io/singlestore-linkedin/jobs/8157697",
-      "status": "Applied",
+      "status": "Not hired",
       "appliedOn": "2026-10-08",
       "location": "United States",
       "interviews": [],
-      "notes": "Applied through Greenhouse via LinkedIn (Greenhouse 8157697). Full-time; base $120K–$200K plus bonus eligibility"
+      "notes": "Applied through Greenhouse via LinkedIn (Greenhouse 8157697). Full-time; base $120K–$200K plus bonus eligibility Rejected Oct 14, 2026."
     },
     {
       "id": "smile-digital-health-cloud-sec",
