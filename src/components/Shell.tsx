@@ -3,7 +3,7 @@ import { cx } from "../lib/styles.ts";
 
 type ShellProps = {
   title: string;
-  subtitle: string;
+  subtitle?: string;
   embed?: boolean;
   actions?: ReactNode;
   footer?: ReactNode;
@@ -46,7 +46,7 @@ export function Shell({ title, subtitle, embed = false, actions, footer, childre
                 >
                   {title}
                 </h1>
-                <p className="mt-1.5 text-sm text-muted">{subtitle}</p>
+                {subtitle ? <p className="mt-1.5 text-sm text-muted">{subtitle}</p> : null}
               </div>
             </div>
             {actions ? <div className="flex flex-wrap items-center gap-2">{actions}</div> : null}

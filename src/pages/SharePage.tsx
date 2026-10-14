@@ -58,12 +58,9 @@ export function SharePage() {
     document.title = owner ? `Job search · ${owner}` : "Job search";
   }, [board?.owner]);
 
-  const owner = board?.owner ?? "Job search";
-
   return (
     <Shell
       title="Job search"
-      subtitle={board ? `${owner} · where each application stands` : "Loading the shared board"}
       embed={embed}
       actions={
         <div className="flex items-center gap-4">
