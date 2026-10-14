@@ -17,9 +17,16 @@ export function Shell({ title, subtitle, embed = false, actions, footer, childre
         {!embed ? (
           <div className="flex w-full justify-center">
             <img
-              src="/banner.jpg"
+              src="/banner.png"
               alt="Lee's Job Adventure!"
-              className="h-auto w-full max-w-[1160px] object-contain"
+              className="h-auto w-full max-w-[1160px] overflow-hidden object-contain"
+              style={{
+                // Source radii (px on the 1908×544 image): TL 32, TR 12, BR 8, BL 30.
+                // Horizontal % is of width and vertical % is of height, so each corner
+                // stays circular as the banner scales.
+                borderRadius:
+                  "calc(32 / 1908 * 100%) calc(12 / 1908 * 100%) calc(8 / 1908 * 100%) calc(30 / 1908 * 100%) / calc(32 / 544 * 100%) calc(12 / 544 * 100%) calc(8 / 544 * 100%) calc(30 / 544 * 100%)",
+              }}
             />
           </div>
         ) : null}
