@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-15T17:49:53Z",
+  "updatedAt": "2026-10-15T18:59:40Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -504,10 +504,11 @@
       "company": "Skydio",
       "role": "Customer Success Manager",
       "jobUrl": "https://www.skydio.com/jobs/4254aa25-a9c0-4ea6-9833-d6e4bae27b45",
-      "status": "Applied",
+      "status": "Not hired",
       "appliedOn": "2026-10-05",
       "location": "Remote / Ashby",
-      "interviews": []
+      "interviews": [],
+      "notes": "Rejected Oct 15, 2026."
     },
     {
       "id": "skydio-sre",
