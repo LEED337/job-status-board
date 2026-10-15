@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-14T20:18:49Z",
+  "updatedAt": "2026-10-15T17:49:53Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -463,10 +463,10 @@
       "company": "M3 USA",
       "role": "AI Software Engineer (Remote)",
       "jobUrl": "https://careers.usa.m3.com/search/jobdetails/ai-software-engineer-remote/2c57197c-5fe9-4262-ab6f-edb15c3822ae",
-      "status": "Applied",
+      "status": "Not hired",
       "appliedOn": "2026-10-02",
       "location": "Remote \u00b7 Lehi, UT",
-      "notes": "Re-applied via LinkedIn Oct 9: https://www.linkedin.com/jobs/view/4473955471/ (original application Oct 2 via SmartRecruiters).",
+      "notes": "Re-applied via LinkedIn Oct 9: https://www.linkedin.com/jobs/view/4473955471/ (original application Oct 2 via SmartRecruiters). Declined by email Oct 15, 2026.",
       "interviews": []
     },
     {
