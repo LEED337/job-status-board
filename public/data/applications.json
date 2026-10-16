@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-15T19:54:34Z",
+  "updatedAt": "2026-10-16T15:33:43Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -442,11 +442,11 @@
       "company": "NICE",
       "role": "Senior Technical Account Manager",
       "jobUrl": "https://job-boards.eu.greenhouse.io/nice/jobs/4989946101?gh_jid=4989946101",
-      "status": "Applied",
+      "status": "Not hired",
       "appliedOn": "2026-10-14",
       "location": "USA - Remote",
       "interviews": [],
-      "notes": "Applied via Greenhouse."
+      "notes": "Applied via Greenhouse. Rejected Oct 16, 2026."
     },
     {
       "id": "eon-technical-cs",
