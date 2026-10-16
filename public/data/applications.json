@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-16T15:33:43Z",
+  "updatedAt": "2026-10-16T15:59:26Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -411,11 +411,11 @@
       "company": "Lucid Software",
       "role": "Security Analyst",
       "jobUrl": "https://job-boards.greenhouse.io/lucidsoftware/jobs/6117122004",
-      "status": "Applied",
+      "status": "Not hired",
       "appliedOn": "2026-10-12",
       "location": "Salt Lake City, UT (hybrid)",
       "interviews": [],
-      "notes": "GRC and third-party risk. Full-time. Pay not listed. Greenhouse 6117122004"
+      "notes": "GRC and third-party risk. Full-time. Pay not listed. Greenhouse 6117122004 Rejected Oct 16, 2026."
     },
     {
       "id": "stripe-tam-platform",
