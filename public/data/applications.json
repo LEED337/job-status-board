@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-17T14:08:36Z",
+  "updatedAt": "2026-10-17T14:10:03Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1087,6 +1087,16 @@
       "location": "Remote \u00b7 USA",
       "interviews": [],
       "notes": "Rejected Oct 7"
+    },
+    {
+      "id": "adobe-technology-consultant-r169610",
+      "company": "Adobe",
+      "role": "Technology Consultant (R169610)",
+      "status": "Not hired",
+      "appliedOn": "2026-08-27",
+      "location": "Unknown",
+      "interviews": [],
+      "notes": "Adobe emailed Oct 17, 2026 that it stopped hiring for this position."
     }
   ]
 }
