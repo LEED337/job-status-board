@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-17T14:10:03Z",
+  "updatedAt": "2026-10-19T13:52:31Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1097,6 +1097,17 @@
       "location": "Unknown",
       "interviews": [],
       "notes": "Adobe emailed Oct 17, 2026 that it stopped hiring for this position."
+    },
+    {
+      "id": "ping-identity-tam",
+      "company": "Ping Identity",
+      "role": "Technical Account Manager",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4377546174/",
+      "status": "Applied",
+      "appliedOn": "2026-10-18",
+      "location": "United States - Remote",
+      "interviews": [],
+      "notes": "Applied via LinkedIn Oct 18, 2026; Greenhouse acknowledgment received."
     }
   ]
 }
