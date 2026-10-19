@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-19T17:11:51Z",
+  "updatedAt": "2026-10-19T17:42:49Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1235,6 +1235,17 @@
         }
       ],
       "notes": "Recruiter Alyssa Nannetti (HRBP) reached out Oct 19, 2026; 10\u201315 min recruiter call Oct 19 at 1:00 PM MT. Database software company. In-office Sandy, UT with hybrid option post-onboarding."
+    },
+    {
+      "id": "fusion-risk-agentic-engineer",
+      "company": "Fusion Risk Management",
+      "role": "Agentic Engineer",
+      "jobUrl": "https://recruit.hirebridge.com/v3/careercenter/v2/details.aspx?jid=610083&cid=8052&locvalue=10131013&src=LinkedIn",
+      "status": "Applied",
+      "appliedOn": "2026-10-19",
+      "location": "US-Remote",
+      "interviews": [],
+      "notes": "Applied by Scout Oct 19, 2026 ~11:40 AM MT via Hirebridge Quick Apply with AI resume (job #610083). Pay $150K\u2013$165K base; desired salary entered $165K\u2013$185K."
     }
   ]
 }
