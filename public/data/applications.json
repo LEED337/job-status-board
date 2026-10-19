@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-19T15:25:42Z",
+  "updatedAt": "2026-10-19T17:11:51Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1218,6 +1218,23 @@
       "location": "Remote US",
       "interviews": [],
       "notes": "Applied by Scout Oct 19, 2026 9:25 AM MT with TAM resume. Pay $148.3K\u2013$222.5K base. LinkedIn 4471677550. Separate from the earlier Stripe Platform TAM role."
+    },
+    {
+      "id": "faircom-tam",
+      "company": "FairCom",
+      "role": "Technical Account Manager",
+      "jobUrl": "https://apply.workable.com/faircom/j/8F6D822D68",
+      "status": "Interviewing",
+      "appliedOn": "2026-10-19",
+      "location": "Sandy, UT (in-office; hybrid possible after onboarding)",
+      "interviews": [
+        {
+          "id": "int-faircom-tam-1",
+          "at": "2026-10-19T13:00",
+          "kind": "Recruiter screen"
+        }
+      ],
+      "notes": "Recruiter Alyssa Nannetti (HRBP) reached out Oct 19, 2026; 10\u201315 min recruiter call Oct 19 at 1:00 PM MT. Database software company. In-office Sandy, UT with hybrid option post-onboarding."
     }
   ]
 }
