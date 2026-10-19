@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-19T15:01:31Z",
+  "updatedAt": "2026-10-19T15:06:04Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1130,6 +1130,28 @@
       "location": "Remote US",
       "interviews": [],
       "notes": "Applied Oct 19, 2026 8:59 AM MT via Ashby (CSE resume). $160K-$180K base / $200K-$240K OTE."
+    },
+    {
+      "id": "assured-sr-tam",
+      "company": "Assured",
+      "role": "Senior Technical Account Manager",
+      "jobUrl": "https://jobs.ashbyhq.com/assured/77f3d6d8-e2d1-4281-b162-81f26da6d8e5",
+      "status": "Applied",
+      "appliedOn": "2026-10-19",
+      "location": "Remote US",
+      "interviews": [],
+      "notes": "Applied Oct 19, 2026 9:04 AM MT via Ashby (TAM resume). $165K-$185K + equity."
+    },
+    {
+      "id": "paxos-sr-tam",
+      "company": "Paxos",
+      "role": "Senior Technical Account Manager",
+      "jobUrl": "https://jobs.ashbyhq.com/paxos/473af12a-896d-4caa-a0eb-95e71bfb37fb",
+      "status": "Applied",
+      "appliedOn": "2026-10-19",
+      "location": "Remote US",
+      "interviews": [],
+      "notes": "Applied Oct 19, 2026 ~9:07 AM MT via Ashby (TAM resume); LinkedIn 4454063182. $181K-$207.7K base + 10% bonus + equity."
     }
   ]
 }
