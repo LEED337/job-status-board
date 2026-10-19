@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-19T13:52:31Z",
+  "updatedAt": "2026-10-19T14:45:49Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1108,6 +1108,17 @@
       "location": "United States - Remote",
       "interviews": [],
       "notes": "Applied via LinkedIn Oct 18, 2026; Greenhouse acknowledgment received."
+    },
+    {
+      "id": "cresta-ai-success-manager",
+      "company": "Cresta",
+      "role": "AI Success Manager",
+      "jobUrl": "https://job-boards.greenhouse.io/cresta/jobs/4675710008",
+      "status": "Applied",
+      "appliedOn": "2026-10-19",
+      "location": "United States - Remote",
+      "interviews": [],
+      "notes": "Applied Oct 19, 2026. OTE $130K-$215K + equity."
     }
   ]
 }
