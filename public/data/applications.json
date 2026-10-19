@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-19T19:29:06Z",
+  "updatedAt": "2026-10-19T21:46:53Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1257,6 +1257,28 @@
       "location": "Remote (US)",
       "interviews": [],
       "notes": "Applied by Scout Oct 19, 2026 ~12:40 PM MT via Ashby with TAM resume. Pay $143K\u2013$207K base + commission; asked $185K\u2013$200K base / $200K\u2013$230K OTE. Separate from earlier 1Password applications."
+    },
+    {
+      "id": "nebius-sa-enterprise",
+      "company": "Nebius",
+      "role": "Solutions Architect, Enterprise",
+      "jobUrl": "https://job-boards.greenhouse.io/nebius/jobs/4979798101",
+      "status": "Applied",
+      "appliedOn": "2026-10-19",
+      "location": "Remote US",
+      "interviews": [],
+      "notes": "Applied by Scout Oct 19, 2026 3:45 PM MT via Greenhouse with AI resume. OTE $224.4K\u2013$326.3K. Separate from the earlier Nebius TAM, Token Factory application."
+    },
+    {
+      "id": "cyera-cse-west",
+      "company": "Cyera",
+      "role": "Customer Success Engineer, Rest of West",
+      "jobUrl": "https://www.comeet.com/jobs/cyera/17.008/customer-success-engineer---rest-of-west/3E.46C",
+      "status": "Applied",
+      "appliedOn": "2026-10-19",
+      "location": "Remote (West US)",
+      "interviews": [],
+      "notes": "Applied by Scout Oct 19, 2026 ~3:45 PM MT via Comeet with CSE resume. Pay $140K\u2013$160K total comp; answered $160K. LinkedIn 4481280175. Separate from the Cyera Sr TAM Identity application."
     }
   ]
 }
