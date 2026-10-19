@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-19T14:45:49Z",
+  "updatedAt": "2026-10-19T15:01:31Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1119,6 +1119,17 @@
       "location": "United States - Remote",
       "interviews": [],
       "notes": "Applied Oct 19, 2026. OTE $130K-$215K + equity."
+    },
+    {
+      "id": "fossa-sr-cse",
+      "company": "FOSSA",
+      "role": "Sr. Customer Success Engineer (Central US)",
+      "jobUrl": "https://jobs.ashbyhq.com/fossa/99c89f67-9ce5-4f33-858c-68fb567eefa8",
+      "status": "Applied",
+      "appliedOn": "2026-10-19",
+      "location": "Remote US",
+      "interviews": [],
+      "notes": "Applied Oct 19, 2026 8:59 AM MT via Ashby (CSE resume). $160K-$180K base / $200K-$240K OTE."
     }
   ]
 }
