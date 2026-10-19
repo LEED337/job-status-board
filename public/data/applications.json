@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-19T15:08:55Z",
+  "updatedAt": "2026-10-19T15:23:26Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1174,6 +1174,39 @@
       "location": "US Remote",
       "interviews": [],
       "notes": "Applied Oct 19, 2026 ~9:10 AM MT (CSE resume). OTE $170K-$210K (base $119K-$150.5K)."
+    },
+    {
+      "id": "cyberhaven-tam",
+      "company": "Cyberhaven",
+      "role": "Technical Account Manager",
+      "jobUrl": "https://jobs.ashbyhq.com/cyberhaven/4c459a62-9d6e-465c-aeef-d9ae6e87348a",
+      "status": "Applied",
+      "appliedOn": "2026-10-19",
+      "location": "Remote US",
+      "interviews": [],
+      "notes": "Applied by Scout Oct 19, 2026 9:20 AM MT with TAM resume. Pay $155K\u2013$165K."
+    },
+    {
+      "id": "zscaler-sr-tsm-public-sector",
+      "company": "Zscaler",
+      "role": "Senior Technical Success Manager (US Public Sector)",
+      "jobUrl": "https://job-boards.greenhouse.io/zscaler/jobs/5263586007",
+      "status": "Applied",
+      "appliedOn": "2026-10-19",
+      "location": "Remote US (Eastern/Central hours)",
+      "interviews": [],
+      "notes": "Applied by Scout Oct 19, 2026 9:22 AM MT with TAM resume. Pay $143.5K\u2013$205K base."
+    },
+    {
+      "id": "gitlab-customer-success-architect",
+      "company": "GitLab",
+      "role": "Customer Success Architect",
+      "jobUrl": "https://job-boards.greenhouse.io/gitlab/jobs/8877426002",
+      "status": "Applied",
+      "appliedOn": "2026-10-19",
+      "location": "Remote US",
+      "interviews": [],
+      "notes": "Applied by Scout Oct 19, 2026 9:22 AM MT with CSE resume. Pay not on posting (earlier scan showed $153.5K\u2013$242.9K)."
     }
   ]
 }
