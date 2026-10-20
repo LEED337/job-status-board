@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-20T21:05:51Z",
+  "updatedAt": "2026-10-20T21:18:34Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1327,6 +1327,17 @@
       "location": "Remote (CT/MT/PT)",
       "interviews": [],
       "notes": "Workday req R0005098. Applied via Scout with TAM resume. Pay not posted."
+    },
+    {
+      "id": "elevenlabs-hpc-infra-engineer",
+      "company": "ElevenLabs",
+      "role": "HPC Infrastructure Engineer - GPU Clusters",
+      "jobUrl": "https://jobs.ashbyhq.com/elevenlabs/120da2b3-d88b-4e3c-9b89-d19ff73db9d9",
+      "status": "Applied",
+      "appliedOn": "2026-10-20",
+      "location": "Remote (US)",
+      "interviews": [],
+      "notes": "Applied via Scout through Ashby with AI resume. Pay not posted."
     }
   ]
 }
