@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-20T21:54:20Z",
+  "updatedAt": "2026-10-20T23:45:04Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1276,8 +1276,14 @@
       "status": "Interviewing",
       "appliedOn": "2026-10-19",
       "location": "Remote US",
-      "interviews": [],
-      "notes": "Applied by Scout Oct 19, 2026 3:45 PM MT via Greenhouse with AI resume. OTE $224.4K\u2013$326.3K. Separate from the earlier Nebius TAM, Token Factory application. Oct 20: Nebius requested interview availability; Lee submitted it. Awaiting first interview scheduling."
+      "interviews": [
+        {
+          "id": "int-nebius-sa-enterprise-1",
+          "at": "2026-10-21T16:30",
+          "kind": "Recruiter screen"
+        }
+      ],
+      "notes": "Applied by Scout Oct 19, 2026 3:45 PM MT via Greenhouse with AI resume. OTE $224.4K\u2013$326.3K. Separate from the earlier Nebius TAM, Token Factory application. Oct 20: Nebius requested interview availability; Lee submitted it. Awaiting first interview scheduling. Recruiter phone screen with Lillian Tsui confirmed for Wed Oct 21, 4:30\u20135:00 PM MT."
     },
     {
       "id": "cyera-cse-west",
