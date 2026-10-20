@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-20T04:55:33Z",
+  "updatedAt": "2026-10-20T05:01:23Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1295,6 +1295,17 @@
         }
       ],
       "notes": "Referred by Jason Davis ~Oct 12, 2026 via Ashby. Maggie Tamm (Sr Talent Acquisition Partner) moved Lee forward Oct 19; hiring manager interview with Kyle Johns Fri Oct 23, 11:00\u201311:30 AM MT (Zoom)."
+    },
+    {
+      "id": "everpure-sr-service-account-manager",
+      "company": "Everpure",
+      "role": "Senior Service Account Manager",
+      "jobUrl": "https://job-boards.greenhouse.io/purestorage/jobs/8282192",
+      "status": "Applied",
+      "appliedOn": "2026-10-19",
+      "location": "Remote US",
+      "interviews": [],
+      "notes": "Referred by Lee's friend at Everpure, Oct 19, 2026. Base $97K\u2013$207K. Separate from the earlier Everpure role (Not hired Oct 16)."
     }
   ]
 }
