@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-19T21:46:53Z",
+  "updatedAt": "2026-10-20T04:55:33Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1279,6 +1279,22 @@
       "location": "Remote (West US)",
       "interviews": [],
       "notes": "Applied by Scout Oct 19, 2026 ~3:45 PM MT via Comeet with CSE resume. Pay $140K\u2013$160K total comp; answered $160K. LinkedIn 4481280175. Separate from the Cyera Sr TAM Identity application."
+    },
+    {
+      "id": "lvt-sr-security-engineer",
+      "company": "LVT",
+      "role": "Senior Security Engineer",
+      "status": "Interviewing",
+      "appliedOn": "2026-10-12",
+      "location": "Unknown",
+      "interviews": [
+        {
+          "id": "int-lvt-sr-security-engineer-1",
+          "at": "2026-10-23T11:00",
+          "kind": "Hiring manager"
+        }
+      ],
+      "notes": "Referred by Jason Davis ~Oct 12, 2026 via Ashby. Maggie Tamm (Sr Talent Acquisition Partner) moved Lee forward Oct 19; hiring manager interview with Kyle Johns Fri Oct 23, 11:00\u201311:30 AM MT (Zoom)."
     }
   ]
 }
