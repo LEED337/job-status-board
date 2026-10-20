@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-20T21:18:34Z",
+  "updatedAt": "2026-10-20T21:44:18Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1273,11 +1273,11 @@
       "company": "Nebius",
       "role": "Solutions Architect, Enterprise",
       "jobUrl": "https://job-boards.greenhouse.io/nebius/jobs/4979798101",
-      "status": "Applied",
+      "status": "Interviewing",
       "appliedOn": "2026-10-19",
       "location": "Remote US",
       "interviews": [],
-      "notes": "Applied by Scout Oct 19, 2026 3:45 PM MT via Greenhouse with AI resume. OTE $224.4K\u2013$326.3K. Separate from the earlier Nebius TAM, Token Factory application."
+      "notes": "Applied by Scout Oct 19, 2026 3:45 PM MT via Greenhouse with AI resume. OTE $224.4K\u2013$326.3K. Separate from the earlier Nebius TAM, Token Factory application. Oct 20: Nebius requested interview availability; Lee submitted it. Awaiting first interview scheduling."
     },
     {
       "id": "cyera-cse-west",
@@ -1294,6 +1294,7 @@
       "id": "lvt-sr-security-engineer",
       "company": "LVT",
       "role": "Senior Security Engineer",
+      "jobUrl": "https://jobs.ashbyhq.com/liveview-technologies/d08a6276-3cf6-439f-bda3-dbd352b621ce",
       "status": "Interviewing",
       "appliedOn": "2026-10-12",
       "location": "Unknown",
