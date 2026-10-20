@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-20T21:43:12Z",
+  "updatedAt": "2026-10-20T21:44:18Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1294,6 +1294,7 @@
       "id": "lvt-sr-security-engineer",
       "company": "LVT",
       "role": "Senior Security Engineer",
+      "jobUrl": "https://jobs.ashbyhq.com/liveview-technologies/d08a6276-3cf6-439f-bda3-dbd352b621ce",
       "status": "Interviewing",
       "appliedOn": "2026-10-12",
       "location": "Unknown",
