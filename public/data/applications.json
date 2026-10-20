@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-20T05:01:23Z",
+  "updatedAt": "2026-10-20T17:37:54Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1306,6 +1306,17 @@
       "location": "Remote US",
       "interviews": [],
       "notes": "Referred by Lee's friend at Everpure, Oct 19, 2026. Base $97K\u2013$207K. Separate from the earlier Everpure role (Not hired Oct 16)."
+    },
+    {
+      "id": "qualys-sr-tam-federal",
+      "company": "Qualys",
+      "role": "Senior Technical Account Manager, Federal",
+      "jobUrl": "https://qualys.wd5.myworkdayjobs.com/Careers/job/Virginia/Senior-Technical-Account-Manager--Federal_R0005098",
+      "status": "Applied",
+      "appliedOn": "2026-10-20",
+      "location": "Remote (CT/MT/PT)",
+      "interviews": [],
+      "notes": "Workday req R0005098. Applied via Scout with TAM resume. Pay not posted."
     }
   ]
 }
