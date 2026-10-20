@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-20T17:37:54Z",
+  "updatedAt": "2026-10-20T21:05:51Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -244,7 +244,7 @@
       "status": "Interviewing",
       "appliedOn": "2026-10-01",
       "location": "Salt Lake City, UT / Oregon Remote",
-      "notes": "Recruiter phone screen with Paola VargasUnfried done Thu Oct 8. She first said fully remote, then said 50% in-office. Comp tops out at $145K base + annual bonus + RSUs (posting range was higher). Lee hoped for $160–170K but would consider near their max. Awaiting next steps. JR-0109357 Moved forward: hiring manager interview Mon Oct 12 at 2:30 PM MT (interviewer not yet known). Interviewer per calendar invite: Alan Spencer (Sr Manager, Technical Account Management). Oct 12 hiring manager interview with Alan Spencer went well: role would be Senior TAM, mostly remote (office optional). Awaiting next steps. Passed hiring manager round; technical interview Thu Oct 15 at 1:00 PM MT. Oct 15 technical with Brandon Pack went well: Brandon said Lee has his vote; possible one more manager round next.",
+      "notes": "Recruiter phone screen with Paola VargasUnfried done Thu Oct 8. She first said fully remote, then said 50% in-office. Comp tops out at $145K base + annual bonus + RSUs (posting range was higher). Lee hoped for $160–170K but would consider near their max. Awaiting next steps. JR-0109357 Moved forward: hiring manager interview Mon Oct 12 at 2:30 PM MT (interviewer not yet known). Interviewer per calendar invite: Alan Spencer (Sr Manager, Technical Account Management). Oct 12 hiring manager interview with Alan Spencer went well: role would be Senior TAM, mostly remote (office optional). Awaiting next steps. Passed hiring manager round; technical interview Thu Oct 15 at 1:00 PM MT. Oct 15 technical with Brandon Pack went well: Brandon said Lee has his vote; possible one more manager round next. Round 3 (virtual): Thu Oct 22, 8:15–9:00 AM MT with Cynthia Andal (Sr TAM), and Fri Oct 23, 2:00–2:45 PM MT with Eric Knapp (Manager of TAMs).",
       "interviews": [
         {
           "id": "int-workday-tam-1",
@@ -260,6 +260,16 @@
           "id": "int-workday-tam-3",
           "at": "2026-10-15T13:00",
           "kind": "Technical"
+        },
+        {
+          "id": "int-workday-tam-4",
+          "at": "2026-10-22T08:15",
+          "kind": "Round 3: Sr TAM (Cynthia Andal)"
+        },
+        {
+          "id": "int-workday-tam-5",
+          "at": "2026-10-23T14:00",
+          "kind": "Round 3: Manager of TAMs (Eric Knapp)"
         }
       ]
     },
