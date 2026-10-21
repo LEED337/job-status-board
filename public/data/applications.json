@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-21T21:37:36Z",
+  "updatedAt": "2026-10-21T21:55:12Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1364,6 +1364,17 @@
       "location": "Remote (US), up to 30% travel",
       "interviews": [],
       "notes": "Applied via Scout through Greenhouse with TAM resume. Pay $180K\u2013$247.5K.\nOct 21: Databricks emailed that they're moving forward with other candidates."
+    },
+    {
+      "id": "bigpanda-tam",
+      "company": "BigPanda",
+      "role": "Technical Account Manager",
+      "jobUrl": "https://jobs.gem.com/bigpanda/am9icG9zdDqKly9vUI1r4ZBmfCWb7nB6",
+      "status": "Applied",
+      "appliedOn": "2026-10-21",
+      "location": "Remote, USA",
+      "interviews": [],
+      "notes": "Applied by Scout Oct 21, 2026 ~3:54 PM MT with TAM resume. $125K\u2013$145K OTE (salary plus commission)."
     }
   ]
 }
