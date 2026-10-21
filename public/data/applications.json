@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-21T03:37:44Z",
+  "updatedAt": "2026-10-21T18:19:13Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -161,10 +161,11 @@
       "id": "costco-tbd",
       "company": "Costco Wholesale",
       "role": "Role TBD",
-      "status": "Applied",
+      "status": "Not hired",
       "appliedOn": "2026-10-01",
       "location": "Unknown",
-      "interviews": []
+      "interviews": [],
+      "notes": "Oct 20: Costco emailed that Lee was not selected for hire."
     },
     {
       "id": "gitlab-sre-infra",
@@ -201,10 +202,11 @@
       "company": "Lambda",
       "role": "Technical Success Engineer",
       "jobUrl": "https://jobs.ashbyhq.com/Lambda/2b7fbb56-fc5b-4d9d-91a6-fdfb81a135e8",
-      "status": "Applied",
+      "status": "Not hired",
       "appliedOn": "2026-10-01",
       "location": "Remote \u00b7 USA",
-      "interviews": []
+      "interviews": [],
+      "notes": "Oct 21: Lambda emailed that they received a high volume of applications and aren't moving forward."
     },
     {
       "id": "nvidia-hpc-tam",
@@ -1157,11 +1159,11 @@
       "company": "Paxos",
       "role": "Senior Technical Account Manager",
       "jobUrl": "https://jobs.ashbyhq.com/paxos/473af12a-896d-4caa-a0eb-95e71bfb37fb",
-      "status": "Applied",
+      "status": "Not hired",
       "appliedOn": "2026-10-19",
       "location": "Remote US",
       "interviews": [],
-      "notes": "Applied Oct 19, 2026 ~9:07 AM MT via Ashby (TAM resume); LinkedIn 4454063182. $181K-$207.7K base + 10% bonus + equity."
+      "notes": "Applied Oct 19, 2026 ~9:07 AM MT via Ashby (TAM resume); LinkedIn 4454063182. $181K-$207.7K base + 10% bonus + equity.\nOct 21: Paxos emailed that they've decided to move forward with other candidates."
     },
     {
       "id": "launchdarkly-strategic-csm",
@@ -1351,11 +1353,11 @@
       "company": "Databricks",
       "role": "Delivery Solutions Architect, Public Sector (Federal)",
       "jobUrl": "https://job-boards.greenhouse.io/databricks/jobs/8899464002",
-      "status": "Applied",
+      "status": "Not hired",
       "appliedOn": "2026-10-20",
       "location": "Remote (US), up to 30% travel",
       "interviews": [],
-      "notes": "Applied via Scout through Greenhouse with TAM resume. Pay $180K\u2013$247.5K."
+      "notes": "Applied via Scout through Greenhouse with TAM resume. Pay $180K\u2013$247.5K.\nOct 21: Databricks emailed that they're moving forward with other candidates."
     }
   ]
 }
