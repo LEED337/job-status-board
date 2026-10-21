@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-20T23:45:04Z",
+  "updatedAt": "2026-10-21T03:37:44Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -76,7 +76,7 @@
           "kind": "Panel"
         }
       ],
-      "notes": "Via Mindlance / Intelliswift RTR 37653341; AEM prep. Panel done Wed Oct 7 (3:30–4:00 PM MT); awaiting decision"
+      "notes": "Via Mindlance / Intelliswift RTR 37653341; AEM prep. Panel done Wed Oct 7 (3:30–4:00 PM MT); awaiting decision Oct 20: Shivangi (Mindlance) says no decision yet and the role isn't closed; Adobe is switching MSPs, so things are slow. She'll keep submitting Lee for other roles."
     },
     {
       "id": "adobe-sr-tam-r171950",
