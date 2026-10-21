@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-21T21:22:41Z",
+  "updatedAt": "2026-10-21T21:25:21Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1224,7 +1224,7 @@
           "kind": "Recruiter screening call with Catherine Flagler (30 min)"
         }
       ],
-      "notes": "Applied by Scout Oct 19, 2026 9:22 AM MT with CSE resume. Pay not on posting (earlier scan showed $153.5K\u2013$242.9K).\nOct 21: Recruiter screening call scheduled with Catherine Flagler for Mon Oct 26, 11:00\u201311:30 AM MT."
+      "notes": "Applied by Scout Oct 19, 2026 9:22 AM MT with CSE resume. Pay not on posting.\nOct 21: Recruiter screening call scheduled with Catherine Flagler for Mon Oct 26, 11:00\u201311:30 AM MT."
     },
     {
       "id": "stripe-tam-billing",
