@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-21T21:25:21Z",
+  "updatedAt": "2026-10-21T21:37:36Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -50,7 +50,7 @@
       "company": "ScaleOps",
       "role": "Director of Technical Account Management",
       "jobUrl": "https://scaleops.com/careers/job/4930919101/head-of-technical-account-management/",
-      "status": "Interviewing",
+      "status": "Not hired",
       "appliedOn": "2026-10-05",
       "location": "Remote",
       "interviews": [
@@ -60,7 +60,7 @@
           "kind": "Recruiter screen"
         }
       ],
-      "notes": "Recruiter Manpreet; Director of TAM role isn't publicly posted, so it links to the Head of TAM posting for now (recruiter says it's a different role). Recruiter screen done; awaiting next steps Oct 13: emailed Manpreet a follow-up asking about next steps."
+      "notes": "Recruiter Manpreet; Director of TAM role isn't publicly posted, so it links to the Head of TAM posting for now (recruiter says it's a different role). Recruiter screen done; awaiting next steps Oct 13: emailed Manpreet a follow-up asking about next steps.\nOct 21: Manpreet said ScaleOps isn't hiring for this role right now and has closed the open roles."
     },
     {
       "id": "adobe-mindlance-tam",
