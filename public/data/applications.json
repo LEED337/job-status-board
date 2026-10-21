@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-21T21:55:12Z",
+  "updatedAt": "2026-10-21T22:33:52Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1375,6 +1375,39 @@
       "location": "Remote, USA",
       "interviews": [],
       "notes": "Applied by Scout Oct 21, 2026 ~3:54 PM MT with TAM resume. $125K\u2013$145K OTE (salary plus commission)."
+    },
+    {
+      "id": "level-ai-sr-tam",
+      "company": "Level AI",
+      "role": "Senior Technical Account Manager",
+      "jobUrl": "https://jobs.ashbyhq.com/Level-AI/cb6e798b-eceb-4c51-baa0-e71507c70e77",
+      "status": "Applied",
+      "appliedOn": "2026-10-21",
+      "location": "Remote, United States",
+      "interviews": [],
+      "notes": "Applied by Scout Oct 21, 2026 ~4:30 PM MT with TAM resume. Pay not posted."
+    },
+    {
+      "id": "deepgram-partner-success-engineer",
+      "company": "Deepgram",
+      "role": "Partner Success Engineer (Infrastructure)",
+      "jobUrl": "https://jobs.ashbyhq.com/Deepgram/d75d6f84-1d54-4354-a364-609b48267658",
+      "status": "Applied",
+      "appliedOn": "2026-10-21",
+      "location": "USA, Remote",
+      "interviews": [],
+      "notes": "Applied by Scout Oct 21, 2026 ~4:31 PM MT with AI resume. $195K\u2013$235K plus equity."
+    },
+    {
+      "id": "nightfall-ai-enterprise-csm",
+      "company": "Nightfall AI",
+      "role": "Enterprise Customer Success Manager",
+      "jobUrl": "https://jobs.ashbyhq.com/nightfall-ai/764c742f-8ff2-4aa7-b773-6ff932e8c23c",
+      "status": "Applied",
+      "appliedOn": "2026-10-21",
+      "location": "Remote (US)",
+      "interviews": [],
+      "notes": "Applied by Scout Oct 21, 2026 ~4:32 PM MT with CSE resume. $120K\u2013$180K."
     }
   ]
 }
