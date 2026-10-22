@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-22T21:44:16Z",
+  "updatedAt": "2026-10-22T21:46:30Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -236,7 +236,8 @@
       "status": "Applied",
       "appliedOn": "2026-10-01",
       "location": "Remote \u00b7 USA",
-      "interviews": []
+      "interviews": [],
+      "notes": "Oct 22: Posting retitled to Designated Services Engineer - NCP (same req); re-submitted by Scout ~3:44 PM MT with AI resume."
     },
     {
       "id": "workday-tam-slc-oregon",
