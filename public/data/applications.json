@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-22T03:04:31Z",
+  "updatedAt": "2026-10-22T14:04:07Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1419,6 +1419,17 @@
       "location": "Remote (US)",
       "interviews": [],
       "notes": "Applied by Scout Oct 21, 2026 ~9:00 PM MT with TAM resume. $160K\u2013$200K base plus equity."
+    },
+    {
+      "id": "figma-tam",
+      "company": "Figma",
+      "role": "Technical Account Manager",
+      "jobUrl": "https://job-boards.greenhouse.io/figma/jobs/6181922004",
+      "status": "Applied",
+      "appliedOn": "2026-10-22",
+      "location": "Remote US (also SF/NY hubs)",
+      "interviews": [],
+      "notes": "Applied by Scout Oct 22, 2026 ~8:03 AM MT with TAM resume. $140K\u2013$296K base."
     }
   ]
 }
