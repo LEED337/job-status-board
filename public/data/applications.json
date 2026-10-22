@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-21T22:54:32Z",
+  "updatedAt": "2026-10-22T03:04:31Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1408,6 +1408,17 @@
       "location": "Remote (US)",
       "interviews": [],
       "notes": "Applied by Scout Oct 21, 2026 ~4:32 PM MT with CSE resume. $120K\u2013$180K."
+    },
+    {
+      "id": "northbeam-tam",
+      "company": "Northbeam",
+      "role": "Technical Account Manager",
+      "jobUrl": "https://job-boards.greenhouse.io/northbeam/jobs/4712105006",
+      "status": "Applied",
+      "appliedOn": "2026-10-21",
+      "location": "Remote (US)",
+      "interviews": [],
+      "notes": "Applied by Scout Oct 21, 2026 ~9:00 PM MT with TAM resume. $160K\u2013$200K base plus equity."
     }
   ]
 }
