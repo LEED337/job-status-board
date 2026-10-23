@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-23T16:45:33Z",
+  "updatedAt": "2026-10-23T16:52:02Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1171,11 +1171,11 @@
       "company": "LaunchDarkly",
       "role": "Strategic Customer Success Manager",
       "jobUrl": "https://job-boards.greenhouse.io/launchdarkly/jobs/8034251003",
-      "status": "Applied",
+      "status": "Not hired",
       "appliedOn": "2026-10-19",
       "location": "Remote US",
       "interviews": [],
-      "notes": "Applied Oct 19, 2026 9:07 AM MT via Greenhouse (CSE resume). $145.5K-$200.1K (Utah zone)."
+      "notes": "Applied Oct 19, 2026 9:07 AM MT via Greenhouse (CSE resume). $145.5K-$200.1K (Utah zone). Oct 23, 2026: Lee reported he was not selected."
     },
     {
       "id": "digicert-solutions-engineer",
