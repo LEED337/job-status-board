@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-23T21:30:26Z",
+  "updatedAt": "2026-10-23T21:49:20Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1475,6 +1475,17 @@
       "location": "Remote (East Coast territory)",
       "interviews": [],
       "notes": "Applied by Scout Oct 23, 2026 ~10:44 AM MT with CSE resume. $193K\u2013$242K OTE."
+    },
+    {
+      "id": "sardine-solutions-architect-integrations",
+      "company": "Sardine",
+      "role": "Solutions Architect, Integrations",
+      "jobUrl": "https://jobs.ashbyhq.com/sardine/aabf9a4b-18ef-4932-ac20-4ed07eacd6ca",
+      "status": "Applied",
+      "appliedOn": "2026-10-23",
+      "location": "Remote (US/CA)",
+      "interviews": [],
+      "notes": "Applied by Scout Oct 23, 2026 ~3:48 PM MT via Ashby with CSE resume. $125K-$210K + equity/bonus."
     }
   ]
 }
