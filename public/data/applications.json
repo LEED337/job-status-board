@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-23T21:49:20Z",
+  "updatedAt": "2026-10-23T22:08:37Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1404,11 +1404,11 @@
       "company": "Nightfall AI",
       "role": "Enterprise Customer Success Manager",
       "jobUrl": "https://jobs.ashbyhq.com/nightfall-ai/764c742f-8ff2-4aa7-b773-6ff932e8c23c",
-      "status": "Applied",
+      "status": "Not hired",
       "appliedOn": "2026-10-21",
       "location": "Remote (US)",
       "interviews": [],
-      "notes": "Applied by Scout Oct 21, 2026 ~4:32 PM MT with CSE resume. $120K\u2013$180K."
+      "notes": "Applied by Scout Oct 21, 2026 ~4:32 PM MT with CSE resume. $120K\u2013$180K. Oct 23, 2026: Lee reported he was not selected."
     },
     {
       "id": "northbeam-tam",
