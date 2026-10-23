@@ -101,7 +101,8 @@ function buildSegments(counts: Record<ApplicationStatus, number>, total: number)
 }
 
 function integerPercents(counts: Record<ApplicationStatus, number>, total: number): Record<ApplicationStatus, number> {
-  const result = { Applied: 0, Interviewing: 0, "Not hired": 0 } as Record<ApplicationStatus, number>;
+  const result = {} as Record<ApplicationStatus, number>;
+  for (const status of STATUSES) result[status] = 0;
   if (total <= 0) return result;
   const raw = STATUSES.map((status) => (counts[status] / total) * 100);
   const floors = raw.map((value) => Math.floor(value));
@@ -156,7 +157,7 @@ function wedgePath(startFrac: number, endFrac: number): string {
 function readStatus(target: EventTarget | null): ApplicationStatus | null {
   if (!(target instanceof Element)) return null;
   const value = target.closest("[data-status]")?.getAttribute("data-status");
-  if (value === "Applied" || value === "Interviewing" || value === "Not hired") return value;
+  if (value && (STATUSES as readonly string[]).includes(value)) return value as ApplicationStatus;
   return null;
 }
 
@@ -333,7 +334,7 @@ function DrawnDonut({
 }
 
 export function Summary({ applications, now }: SummaryProps) {
-  const counts = countByStatus(applications);
+  const counts = countByStatus(applications, now);
   const total = applications.length;
   const upcoming = nextUpcoming(applications, now);
   const scheduled = upcomingCount(applications, now);
@@ -428,7 +429,7 @@ export function Summary({ applications, now }: SummaryProps) {
           </div>
         </div>
 
-        <div className="mt-4 grid grid-cols-3 gap-x-1 border-t border-black/15 pt-4 sm:mt-5 sm:gap-x-5 sm:pt-5">
+        <div className="mt-4 grid grid-cols-2 gap-x-1 gap-y-4 border-t border-black/15 pt-4 sm:mt-5 sm:grid-cols-4 sm:gap-x-3 sm:pt-5">
           {STATUSES.map((status) => {
             const meta = STATUS_META[status];
             const dim = active !== null && active !== status;
