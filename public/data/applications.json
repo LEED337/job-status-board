@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-23T16:52:02Z",
+  "updatedAt": "2026-10-23T20:49:36Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -247,7 +247,7 @@
       "status": "Interviewing",
       "appliedOn": "2026-10-01",
       "location": "Salt Lake City, UT / Oregon Remote",
-      "notes": "Recruiter phone screen with Paola VargasUnfried done Thu Oct 8. She first said fully remote, then said 50% in-office. Comp tops out at $145K base + annual bonus + RSUs (posting range was higher). Lee hoped for $160–170K but would consider near their max. Awaiting next steps. JR-0109357 Moved forward: hiring manager interview Mon Oct 12 at 2:30 PM MT (interviewer not yet known). Interviewer per calendar invite: Alan Spencer (Sr Manager, Technical Account Management). Oct 12 hiring manager interview with Alan Spencer went well: role would be Senior TAM, mostly remote (office optional). Awaiting next steps. Passed hiring manager round; technical interview Thu Oct 15 at 1:00 PM MT. Oct 15 technical with Brandon Pack went well: Brandon said Lee has his vote; possible one more manager round next. Round 3 (virtual): Thu Oct 22, 8:15–9:00 AM MT with Cynthia Andal (Sr TAM), and Fri Oct 23, 2:00–2:45 PM MT with Eric Knapp (Manager of TAMs). Oct 22 session with Cynthia Andal seemed to go well.",
+      "notes": "Recruiter phone screen with Paola VargasUnfried done Thu Oct 8. She first said fully remote, then said 50% in-office. Comp tops out at $145K base + annual bonus + RSUs (posting range was higher). Lee hoped for $160–170K but would consider near their max. Awaiting next steps. JR-0109357 Moved forward: hiring manager interview Mon Oct 12 at 2:30 PM MT (interviewer not yet known). Interviewer per calendar invite: Alan Spencer (Sr Manager, Technical Account Management). Oct 12 hiring manager interview with Alan Spencer went well: role would be Senior TAM, mostly remote (office optional). Awaiting next steps. Passed hiring manager round; technical interview Thu Oct 15 at 1:00 PM MT. Oct 15 technical with Brandon Pack went well: Brandon said Lee has his vote; possible one more manager round next. Round 3 (virtual): Thu Oct 22, 8:15–9:00 AM MT with Cynthia Andal (Sr TAM), and Fri Oct 23, 2:00–2:45 PM MT with Eric Knapp (Manager of TAMs). Oct 22 session with Cynthia Andal seemed to go well. Oct 23 session with Eric Knapp (Manager of TAMs) went really well. Lee was the first candidate he met; Workday expects to reach out within about a week after all interviews. Eric said Lee would likely be placed in the Senior TAM position.",
       "interviews": [
         {
           "id": "int-workday-tam-1",
