@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-23T20:49:36Z",
+  "updatedAt": "2026-10-23T21:30:26Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1232,11 +1232,11 @@
       "company": "Stripe",
       "role": "Technical Account Manager, Billing",
       "jobUrl": "https://stripe.com/jobs/search?gh_jid=8142304",
-      "status": "Applied",
+      "status": "Not hired",
       "appliedOn": "2026-10-19",
       "location": "Remote US",
       "interviews": [],
-      "notes": "Applied by Scout Oct 19, 2026 9:25 AM MT with TAM resume. Pay $148.3K\u2013$222.5K base. LinkedIn 4471677550. Separate from the earlier Stripe Platform TAM role."
+      "notes": "Applied by Scout Oct 19, 2026 9:25 AM MT with TAM resume. Pay $148.3K\u2013$222.5K base. LinkedIn 4471677550. Separate from the earlier Stripe Platform TAM role. Oct 23, 2026: Lee reported he was not selected."
     },
     {
       "id": "faircom-tam",
