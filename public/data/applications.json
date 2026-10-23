@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-23T16:12:40Z",
+  "updatedAt": "2026-10-23T16:44:07Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1453,6 +1453,17 @@
       "location": "Lehi, UT (office)",
       "interviews": [],
       "notes": "Applied Oct 22, 2026 via internal referral from a friend. $82K\u2013$171K base. Separate from the earlier Everpure DSE process and the Senior Service Account Manager application."
+    },
+    {
+      "id": "duplocloud-solutions-architect",
+      "company": "DuploCloud",
+      "role": "Solutions Architect",
+      "jobUrl": "https://ats.rippling.com/duplocloud/jobs/1b1dbd89-4e3c-4d31-9d75-895d1082c98f",
+      "status": "Applied",
+      "appliedOn": "2026-10-23",
+      "location": "Remote US",
+      "interviews": [],
+      "notes": "Applied by Scout Oct 23, 2026 ~10:42 AM MT via Rippling with CSE resume. $160K\u2013$190K."
     }
   ]
 }
