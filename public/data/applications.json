@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-22T21:46:30Z",
+  "updatedAt": "2026-10-23T16:12:40Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1327,11 +1327,11 @@
       "company": "Everpure",
       "role": "Senior Service Account Manager",
       "jobUrl": "https://job-boards.greenhouse.io/purestorage/jobs/8282192",
-      "status": "Applied",
+      "status": "Not hired",
       "appliedOn": "2026-10-19",
       "location": "Remote US",
       "interviews": [],
-      "notes": "Referred by Lee's friend at Everpure, Oct 19, 2026. Base $97K\u2013$207K. Separate from the earlier Everpure role (Not hired Oct 16)."
+      "notes": "Referred by Lee's friend at Everpure, Oct 19, 2026. Base $97K\u2013$207K. Separate from the earlier Everpure role (Not hired Oct 16). Oct 23, 2026: Everpure emailed that the role is not an ideal match; not moving forward."
     },
     {
       "id": "qualys-sr-tam-federal",
@@ -1349,11 +1349,11 @@
       "company": "ElevenLabs",
       "role": "HPC Infrastructure Engineer - GPU Clusters",
       "jobUrl": "https://jobs.ashbyhq.com/elevenlabs/120da2b3-d88b-4e3c-9b89-d19ff73db9d9",
-      "status": "Applied",
+      "status": "Not hired",
       "appliedOn": "2026-10-20",
       "location": "Remote (US)",
       "interviews": [],
-      "notes": "Applied via Scout through Ashby with AI resume. Pay not posted."
+      "notes": "Applied via Scout through Ashby with AI resume. Pay not posted. Oct 23, 2026: ElevenLabs emailed that they are not moving forward."
     },
     {
       "id": "databricks-dsa-public-sector",
