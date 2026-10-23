@@ -6,7 +6,7 @@ Deploy by importing this repo on Vercel Hobby (build: `npm run build`, output: `
 
 A calm, shareable board for where each application stands. Visitors get a read-only page. Saving on `/manage` publishes that one application to the shared file.
 
-Statuses are **Applied** (waiting to hear back), **Interviewing** (interview count and next interview), and **Not hired**.
+Statuses are **Applied** (waiting to hear back), **Interviewing** (interview count and next interview), **Not hired**, and **Ghosted**. An Applied row with no upcoming interview becomes Ghosted on the board once `appliedOn` is more than 30 days before today in America/Denver. A stored status of `Ghosted` counts as Ghosted too. Interviewing and Not hired stay as saved.
 
 The first load uses sample applications so the page looks finished. Replace them before you share it as your own search.
 
@@ -62,7 +62,7 @@ Keep `version` at `1`.
 }
 ```
 
-`status` must be one of: `Applied`, `Interviewing`, `Not hired`. A saved status of `Haven't heard back` is treated as `Applied`.
+`status` must be one of: `Applied`, `Interviewing`, `Not hired`, `Ghosted`. A saved status of `Haven't heard back` is treated as `Applied`. Ghosted rows in the file stay Ghosted; other Applied rows are only shown as Ghosted in the UI when the 30-day rule matches.
 
 `appliedOn` is `YYYY-MM-DD`. Interview `at` is `YYYY-MM-DDTHH:MM` with no timezone, so 10:00 displays as 10:00.
 

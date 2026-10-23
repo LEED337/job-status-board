@@ -252,7 +252,7 @@ export function ApplicationDialog({ application, onClose, onSave, onDelete }: Ap
 
           <fieldset>
             <legend className="text-xs font-semibold text-muted">Status</legend>
-            <div className="mt-1.5 grid grid-cols-1 gap-2 sm:grid-cols-3">
+            <div className="mt-1.5 grid grid-cols-2 gap-2">
               {STATUSES.map((status) => {
                 const selected = draft.status === status;
                 return (

@@ -27,6 +27,12 @@ export const STATUS_META: Record<
     onDark: "#b26d79",
     caption: "Closed",
   },
+  Ghosted: {
+    soft: "#eeeef0",
+    text: "#55575d",
+    onDark: "#808186",
+    caption: "No reply after 30 days",
+  },
 };
 
 export const AVATAR_COLORS = [

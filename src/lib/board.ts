@@ -79,8 +79,12 @@ export type Scheduled = {
 const STATUS_RANK: Record<ApplicationStatus, number> = {
   Interviewing: 0,
   Applied: 1,
-  "Not hired": 2,
+  Ghosted: 2,
+  "Not hired": 3,
 };
+
+/** Applied rows with no upcoming interview roll into Ghosted after this many Denver days. */
+export const GHOSTED_AFTER_DAYS = 30;
 
 export function interviewDate(at: string): Date {
   const match = DATE_TIME.exec(at);
@@ -186,6 +190,30 @@ export function formatLong(at: string): string {
   return `${day} · ${formatTime(at)}`;
 }
 
+export function daysSinceApplied(appliedOn: string, now = new Date()): number | null {
+  const match = DATE_ONLY.exec(appliedOn);
+  if (!match) return null;
+  const today = civilParts(now, TIME_ZONE);
+  const appliedDay = Date.UTC(Number(match[1]), Number(match[2]) - 1, Number(match[3]));
+  const todayDay = Date.UTC(today.year, today.month - 1, today.day);
+  return Math.round((todayDay - appliedDay) / 86_400_000);
+}
+
+/**
+ * Status shown on the board. Stored Interviewing and Not hired are unchanged.
+ * Stored Ghosted stays Ghosted. Stored Applied becomes Ghosted when there is
+ * no interview at or after `now` (same cutoff as `nextInterview`) and
+ * `appliedOn` is more than 30 days before today in America/Denver.
+ */
+export function effectiveStatus(app: Application, now = new Date()): ApplicationStatus {
+  if (app.status === "Ghosted") return "Ghosted";
+  if (app.status !== "Applied") return app.status;
+  if (nextInterview(app, now)) return "Applied";
+  const days = daysSinceApplied(app.appliedOn, now);
+  if (days !== null && days > GHOSTED_AFTER_DAYS) return "Ghosted";
+  return "Applied";
+}
+
 export function nextInterview(app: Application, now = new Date()): Interview | null {
   const nowTime = now.getTime();
   let best: Interview | null = null;
@@ -228,10 +256,10 @@ export function upcomingCount(applications: Application[], now = new Date()): nu
   return count;
 }
 
-export function countByStatus(applications: Application[]): Record<ApplicationStatus, number> {
+export function countByStatus(applications: Application[], now = new Date()): Record<ApplicationStatus, number> {
   const counts = {} as Record<ApplicationStatus, number>;
   for (const status of STATUSES) counts[status] = 0;
-  for (const app of applications) counts[app.status] += 1;
+  for (const app of applications) counts[effectiveStatus(app, now)] += 1;
   return counts;
 }
 
@@ -243,8 +271,12 @@ export function matchesQuery(app: Application, query: string): boolean {
   );
 }
 
+function statusRank(app: Application, now: Date): number {
+  return STATUS_RANK[effectiveStatus(app, now)];
+}
+
 function defaultSort(a: Application, b: Application, now: Date): number {
-  const rank = STATUS_RANK[a.status] - STATUS_RANK[b.status];
+  const rank = statusRank(a, now) - statusRank(b, now);
   if (rank !== 0) return rank;
   const aNext = nextInterview(a, now);
   const bNext = nextInterview(b, now);
@@ -266,7 +298,7 @@ function compareApplications(a: Application, b: Application, sort: SortState | n
     case "role":
       return directed(a.role.localeCompare(b.role), sort.dir);
     case "status":
-      return directed(STATUS_RANK[a.status] - STATUS_RANK[b.status], sort.dir);
+      return directed(statusRank(a, now) - statusRank(b, now), sort.dir);
     case "applied":
       return directed(a.appliedOn.localeCompare(b.appliedOn), sort.dir);
     case "interviews":

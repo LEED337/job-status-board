@@ -2,6 +2,8 @@ import { useMemo, useState, type ReactNode } from "react";
 import {
   avatarStyle,
   countByStatus,
+  daysSinceApplied,
+  effectiveStatus,
   formatApplied,
   formatLong,
   formatTime,
@@ -43,8 +45,8 @@ export function BoardList({ applications, now, showNotes = false, onEdit, onDele
     () => applications.filter((app) => matchesQuery(app, query)),
     [applications, query],
   );
-  const counts = useMemo(() => countByStatus(searched), [searched]);
-  const filtered = filter === "All" ? searched : searched.filter((app) => app.status === filter);
+  const counts = useMemo(() => countByStatus(searched, now), [searched, now]);
+  const filtered = filter === "All" ? searched : searched.filter((app) => effectiveStatus(app, now) === filter);
   const rows = useMemo(() => sortApplications(filtered, sort, now), [filtered, sort, now]);
 
   const toggleSort = (key: SortKey) => {
@@ -257,6 +259,25 @@ function SortHeader({
   );
 }
 
+function daysLabel(days: number): string {
+  return days === 1 ? "1 day" : `${days} days`;
+}
+
+function StatusLabel({ application, now }: { application: Application; now: Date }) {
+  const status = effectiveStatus(application, now);
+  const days = status === "Ghosted" ? daysSinceApplied(application.appliedOn, now) : null;
+  return (
+    <span className="inline-flex flex-wrap items-center gap-1.5">
+      <StatusPill status={status} />
+      {days !== null && days >= 0 ? (
+        <span className="num text-xs font-medium text-muted" title="Days since applied">
+          {daysLabel(days)}
+        </span>
+      ) : null}
+    </span>
+  );
+}
+
 function Avatar({ name }: { name: string }) {
   const colors = avatarStyle(name);
   return (
@@ -424,7 +445,7 @@ function ApplicationRow({
           </p>
         </td>
         <td className="px-3 py-3.5">
-          <StatusPill status={application.status} />
+          <StatusLabel application={application} now={now} />
         </td>
         <td className="num px-3 py-3.5 whitespace-nowrap text-muted">{formatApplied(application.appliedOn, now)}</td>
         <td className="num px-3 py-3.5">
@@ -484,7 +505,7 @@ function ApplicationCard({
           </p>
           {application.location ? <p className="mt-0.5 text-xs text-muted">{application.location}</p> : null}
           <div className="mt-2.5">
-            <StatusPill status={application.status} />
+            <StatusLabel application={application} now={now} />
           </div>
           <dl className="mt-3 grid grid-cols-2 gap-2 text-xs">
             <div>
