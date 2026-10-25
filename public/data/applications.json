@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-23T22:08:37Z",
+  "updatedAt": "2026-10-25T18:29:25Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1486,6 +1486,17 @@
       "location": "Remote (US/CA)",
       "interviews": [],
       "notes": "Applied by Scout Oct 23, 2026 ~3:48 PM MT via Ashby with CSE resume. $125K-$210K + equity/bonus."
+    },
+    {
+      "id": "rubrik-cloud-architect-product-management",
+      "company": "Rubrik",
+      "role": "Cloud Architect, Product Management",
+      "jobUrl": "https://job-boards.greenhouse.io/rubrik/jobs/8314327",
+      "status": "Applied",
+      "appliedOn": "2026-10-25",
+      "location": "Remote (US)",
+      "interviews": [],
+      "notes": "Applied by Scout Oct 25, 2026 ~12:28 PM MT via Greenhouse (req 11628) with CSE resume. $164.1K-$246.1K base + bonus/equity."
     }
   ]
 }
