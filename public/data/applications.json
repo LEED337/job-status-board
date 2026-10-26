@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-26T17:44:18Z",
+  "updatedAt": "2026-10-26T18:05:36Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1513,6 +1513,17 @@
       "location": "Remote",
       "interviews": [],
       "notes": "Via Mindlance (recruiter Manjeet Singh), Job ID 37747770. Remote W2 contract at $65/hr. Lee confirmed RTR and sent an adjusted resume Oct 26, 2026. Adobe Experience Cloud portfolio; 6-8 yrs CS/account management. Separate from the Mindlance TAM role and earlier Adobe applications."
+    },
+    {
+      "id": "databricks-ssa-aws-infra-ai",
+      "company": "Databricks",
+      "role": "Specialist Solutions Architect - AWS Infrastructure & AI Platform",
+      "jobUrl": "https://databricks.com/company/careers/open-positions/job?gh_jid=8739506002",
+      "status": "Applied",
+      "appliedOn": "2026-10-26",
+      "location": "Remote (US)",
+      "interviews": [],
+      "notes": "Applied by Scout Oct 26, 2026 ~12:05 PM MT via Greenhouse (8739506002) with CSE resume. $180K-$247.5K. Separate from the Databricks DSA Public Sector role."
     }
   ]
 }
