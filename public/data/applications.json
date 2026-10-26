@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-26T17:41:27Z",
+  "updatedAt": "2026-10-26T17:44:18Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1503,6 +1503,16 @@
       "location": "Remote (US)",
       "interviews": [],
       "notes": "Applied by Scout Oct 25, 2026 ~12:28 PM MT via Greenhouse (req 11628) with CSE resume. $164.1K-$246.1K base + bonus/equity."
+    },
+    {
+      "id": "adobe-customer-success-advisor",
+      "company": "Adobe",
+      "role": "Customer Success Advisor (via Mindlance)",
+      "status": "Interviewing",
+      "appliedOn": "2026-10-26",
+      "location": "Remote",
+      "interviews": [],
+      "notes": "Via Mindlance (recruiter Manjeet Singh), Job ID 37747770. Remote W2 contract at $65/hr. Lee confirmed RTR and sent an adjusted resume Oct 26, 2026. Adobe Experience Cloud portfolio; 6-8 yrs CS/account management. Separate from the Mindlance TAM role and earlier Adobe applications."
     }
   ]
 }
