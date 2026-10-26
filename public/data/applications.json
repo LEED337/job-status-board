@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-26T17:28:33Z",
+  "updatedAt": "2026-10-26T17:41:27Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1316,7 +1316,7 @@
       "company": "LVT",
       "role": "Senior Security Engineer",
       "jobUrl": "https://jobs.ashbyhq.com/liveview-technologies/d08a6276-3cf6-439f-bda3-dbd352b621ce",
-      "status": "Interviewing",
+      "status": "Not hired",
       "appliedOn": "2026-10-12",
       "location": "Unknown",
       "interviews": [
@@ -1326,7 +1326,7 @@
           "kind": "Hiring manager"
         }
       ],
-      "notes": "Referred by Jason Davis ~Oct 12, 2026 via Ashby. Maggie Tamm (Sr Talent Acquisition Partner) moved Lee forward Oct 19; hiring manager interview with Kyle Johns Fri Oct 23, 11:00\u201311:30 AM MT (Zoom)."
+      "notes": "Referred by Jason Davis ~Oct 12, 2026 via Ashby. Maggie Tamm (Sr Talent Acquisition Partner) moved Lee forward Oct 19; hiring manager interview with Kyle Johns Fri Oct 23, 11:00\u201311:30 AM MT (Zoom). Oct 26, 2026: Lee reported he was not selected."
     },
     {
       "id": "everpure-sr-service-account-manager",
