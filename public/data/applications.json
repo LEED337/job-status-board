@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-26T17:27:42Z",
+  "updatedAt": "2026-10-26T17:28:33Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1221,11 +1221,11 @@
       "interviews": [
         {
           "id": "gitlab-csa-recruiter-screen",
-          "at": "2026-10-26T11:00",
+          "at": "2026-10-29T12:30",
           "kind": "Recruiter screening call with Catherine Flagler (30 min)"
         }
       ],
-      "notes": "Applied by Scout Oct 19, 2026 9:22 AM MT with CSE resume. Pay not on posting.\nOct 21: Recruiter screening call scheduled with Catherine Flagler for Mon Oct 26, 11:00\u201311:30 AM MT."
+      "notes": "Applied by Scout Oct 19, 2026 9:22 AM MT with CSE resume. Pay not on posting.\nOct 21: Recruiter screening call scheduled with Catherine Flagler for Mon Oct 26, 11:00\u201311:30 AM MT.\nOct 26: GitLab rescheduled the screen with Catherine Flagler to Thu Oct 29, 12:30-1:00 PM MT."
     },
     {
       "id": "stripe-tam-billing",
