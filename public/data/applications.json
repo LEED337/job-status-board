@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-25T18:29:25Z",
+  "updatedAt": "2026-10-26T17:28:33Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1221,11 +1221,11 @@
       "interviews": [
         {
           "id": "gitlab-csa-recruiter-screen",
-          "at": "2026-10-26T11:00",
+          "at": "2026-10-29T12:30",
           "kind": "Recruiter screening call with Catherine Flagler (30 min)"
         }
       ],
-      "notes": "Applied by Scout Oct 19, 2026 9:22 AM MT with CSE resume. Pay not on posting.\nOct 21: Recruiter screening call scheduled with Catherine Flagler for Mon Oct 26, 11:00\u201311:30 AM MT."
+      "notes": "Applied by Scout Oct 19, 2026 9:22 AM MT with CSE resume. Pay not on posting.\nOct 21: Recruiter screening call scheduled with Catherine Flagler for Mon Oct 26, 11:00\u201311:30 AM MT.\nOct 26: GitLab rescheduled the screen with Catherine Flagler to Thu Oct 29, 12:30-1:00 PM MT."
     },
     {
       "id": "stripe-tam-billing",
@@ -1271,11 +1271,17 @@
       "company": "1Password",
       "role": "Staff Technical Account Manager",
       "jobUrl": "https://jobs.ashbyhq.com/1password/afebc4c1-b5ea-4ffa-b486-df77782d9874",
-      "status": "Applied",
+      "status": "Interviewing",
       "appliedOn": "2026-10-19",
       "location": "Remote (US)",
-      "interviews": [],
-      "notes": "Applied by Scout Oct 19, 2026 ~12:40 PM MT via Ashby with TAM resume. Pay $143K\u2013$207K base + commission; asked $185K\u2013$200K base / $200K\u2013$230K OTE. Separate from earlier 1Password applications."
+      "interviews": [
+        {
+          "id": "1password-staff-tam-int1",
+          "at": "2026-10-29T10:00",
+          "kind": "Interview"
+        }
+      ],
+      "notes": "Applied by Scout Oct 19, 2026 ~12:40 PM MT via Ashby with TAM resume. Pay $143K\u2013$207K base + commission; asked $185K\u2013$200K base / $200K\u2013$230K OTE. Separate from earlier 1Password applications. Oct 26, 2026: Lee scheduled an interview for Thu Oct 29 at 10:00 AM MT."
     },
     {
       "id": "nebius-sa-enterprise",
