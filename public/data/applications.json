@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-26T18:08:14Z",
+  "updatedAt": "2026-10-26T20:42:07Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1535,6 +1535,17 @@
       "location": "Remote (US)",
       "interviews": [],
       "notes": "Applied by Scout Oct 26, 2026 ~12:07 PM MT via Greenhouse (4706246005) with CSE resume. Posted as Technical Success Architect; pay not posted."
+    },
+    {
+      "id": "claroty-tam-public-sector",
+      "company": "Claroty",
+      "role": "Technical Account Manager, Public Sector",
+      "jobUrl": "https://claroty.com/open-positions/9F.F63",
+      "status": "Applied",
+      "appliedOn": "2026-10-26",
+      "location": "Remote (US)",
+      "interviews": [],
+      "notes": "Applied by Scout via Comeet (req 9F.F63) with the TAM resume on Oct 26, 2026. $160K-$190K base. Posting asks for EST/CST hours; Lee will work Central hours."
     }
   ]
 }
