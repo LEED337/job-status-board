@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-27T15:00:08Z",
+  "updatedAt": "2026-10-27T15:08:48Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1487,11 +1487,11 @@
       "company": "Sardine",
       "role": "Solutions Architect, Integrations",
       "jobUrl": "https://jobs.ashbyhq.com/sardine/aabf9a4b-18ef-4932-ac20-4ed07eacd6ca",
-      "status": "Applied",
+      "status": "Not hired",
       "appliedOn": "2026-10-23",
       "location": "Remote (US/CA)",
       "interviews": [],
-      "notes": "Applied by Scout Oct 23, 2026 ~3:48 PM MT via Ashby with CSE resume. $125K-$210K + equity/bonus."
+      "notes": "Applied by Scout Oct 23, 2026 ~3:48 PM MT via Ashby with CSE resume. $125K-$210K + equity/bonus. Oct 26, 2026: Sardine emailed that they decided to move forward with other candidates."
     },
     {
       "id": "rubrik-cloud-architect-product-management",
