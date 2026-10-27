@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-26T20:42:07Z",
+  "updatedAt": "2026-10-27T15:00:08Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1546,6 +1546,50 @@
       "location": "Remote (US)",
       "interviews": [],
       "notes": "Applied by Scout via Comeet (req 9F.F63) with the TAM resume on Oct 26, 2026. $160K-$190K base. Posting asks for EST/CST hours; Lee will work Central hours."
+    },
+    {
+      "id": "teleport-sr-tam",
+      "company": "Teleport",
+      "role": "Senior Technical Account Manager",
+      "jobUrl": "https://jobs.ashbyhq.com/goteleport/2efd60ae-eb92-410b-9fad-9e28b86a7723",
+      "status": "Applied",
+      "appliedOn": "2026-10-27",
+      "location": "Remote (US)",
+      "interviews": [],
+      "notes": "Applied by Scout Oct 27, 2026 ~8:57 AM MT via Ashby with the TAM resume. $173.7K-$211.5K."
+    },
+    {
+      "id": "affirm-sr-tam-strategic-alliances",
+      "company": "Affirm",
+      "role": "Senior Technical Account Manager, Strategic Alliances",
+      "jobUrl": "https://job-boards.greenhouse.io/affirm/jobs/8044928003",
+      "status": "Applied",
+      "appliedOn": "2026-10-27",
+      "location": "Remote (US)",
+      "interviews": [],
+      "notes": "Applied by Scout Oct 27, 2026 ~8:58 AM MT via Greenhouse (8044928003) with the TAM resume. $146K-$206K base ($165K-$225K in top-tier states)."
+    },
+    {
+      "id": "teleport-sr-cse",
+      "company": "Teleport",
+      "role": "Senior Customer Success Engineer",
+      "jobUrl": "https://jobs.ashbyhq.com/goteleport/ea4534a4-6697-4c82-b2d7-2aadf5d0ab1c",
+      "status": "Applied",
+      "appliedOn": "2026-10-27",
+      "location": "Remote (US)",
+      "interviews": [],
+      "notes": "Applied by Scout Oct 27, 2026 ~8:59 AM MT via Ashby with the CSE resume. $173.7K-$235K. Separate from the Teleport Senior TAM application."
+    },
+    {
+      "id": "prime-intellect-tam-ai-infra",
+      "company": "Prime Intellect",
+      "role": "Technical Account Manager - AI Infrastructure",
+      "jobUrl": "https://jobs.ashbyhq.com/primeintellect/d70f38c9-ae8e-4252-933a-666cb900e3b4",
+      "status": "Applied",
+      "appliedOn": "2026-10-27",
+      "location": "Remote (or San Francisco)",
+      "interviews": [],
+      "notes": "Applied by Scout Oct 27, 2026 ~8:59 AM MT via Ashby with the TAM resume. $160K-$200K + equity."
     }
   ]
 }
