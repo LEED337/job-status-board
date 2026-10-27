@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-27T15:36:48Z",
+  "updatedAt": "2026-10-27T19:25:30Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1243,7 +1243,7 @@
       "company": "FairCom",
       "role": "Technical Account Manager",
       "jobUrl": "https://apply.workable.com/faircom/j/8F6D822D68",
-      "status": "Interviewing",
+      "status": "Not hired",
       "appliedOn": "2026-10-19",
       "location": "Sandy, UT (in-office; hybrid possible after onboarding)",
       "interviews": [
@@ -1253,7 +1253,7 @@
           "kind": "Recruiter screen"
         }
       ],
-      "notes": "Recruiter Alyssa Nannetti (HRBP) reached out Oct 19, 2026; 10\u201315 min recruiter call Oct 19 at 1:00 PM MT. Database software company. In-office Sandy, UT with hybrid option post-onboarding. Recruiter call with Alyssa done Oct 19 at 1:00 PM MT. Their range ~$80K\u2013$110K; Lee asked $130K\u2013$150K base plus ~$25K OTE. Alyssa checking with her team on salary; response expected by end of next week (~Oct 30)."
+      "notes": "Recruiter Alyssa Nannetti (HRBP) reached out Oct 19, 2026; 10\u201315 min recruiter call Oct 19 at 1:00 PM MT. Database software company. In-office Sandy, UT with hybrid option post-onboarding. Recruiter call with Alyssa done Oct 19 at 1:00 PM MT. Their range ~$80K\u2013$110K; Lee asked $130K\u2013$150K base plus ~$25K OTE. Alyssa checking with her team on salary; response expected by end of next week (~Oct 30). Oct 27, 2026: Alyssa said FairCom can't offer a competitive enough package (~$100K base) and would like to stay in touch for a more senior role."
     },
     {
       "id": "fusion-risk-agentic-engineer",
