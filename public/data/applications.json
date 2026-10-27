@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-27T14:58:04Z",
+  "updatedAt": "2026-10-27T14:58:39Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1557,6 +1557,17 @@
       "location": "Remote (US)",
       "interviews": [],
       "notes": "Applied by Scout Oct 27, 2026 ~8:57 AM MT via Ashby with the TAM resume. $173.7K-$211.5K."
+    },
+    {
+      "id": "affirm-sr-tam-strategic-alliances",
+      "company": "Affirm",
+      "role": "Senior Technical Account Manager, Strategic Alliances",
+      "jobUrl": "https://job-boards.greenhouse.io/affirm/jobs/8044928003",
+      "status": "Applied",
+      "appliedOn": "2026-10-27",
+      "location": "Remote (US)",
+      "interviews": [],
+      "notes": "Applied by Scout Oct 27, 2026 ~8:58 AM MT via Greenhouse (8044928003) with the TAM resume. $146K-$206K base ($165K-$225K in top-tier states)."
     }
   ]
 }
