@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-27T14:58:39Z",
+  "updatedAt": "2026-10-27T14:59:44Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1568,6 +1568,17 @@
       "location": "Remote (US)",
       "interviews": [],
       "notes": "Applied by Scout Oct 27, 2026 ~8:58 AM MT via Greenhouse (8044928003) with the TAM resume. $146K-$206K base ($165K-$225K in top-tier states)."
+    },
+    {
+      "id": "teleport-sr-cse",
+      "company": "Teleport",
+      "role": "Senior Customer Success Engineer",
+      "jobUrl": "https://jobs.ashbyhq.com/goteleport/ea4534a4-6697-4c82-b2d7-2aadf5d0ab1c",
+      "status": "Applied",
+      "appliedOn": "2026-10-27",
+      "location": "Remote (US)",
+      "interviews": [],
+      "notes": "Applied by Scout Oct 27, 2026 ~8:59 AM MT via Ashby with the CSE resume. $173.7K-$235K. Separate from the Teleport Senior TAM application."
     }
   ]
 }
