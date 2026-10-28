@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-28T00:40:20Z",
+  "updatedAt": "2026-10-28T03:30:13Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1601,6 +1601,17 @@
       "location": "Remote",
       "interviews": [],
       "notes": "Applied by Scout Oct 27, 2026 ~6:39 PM MT via Greenhouse with TAM resume. $134.7K\u2013$195.3K base; salary ask $185K."
+    },
+    {
+      "id": "delinea-sr-tam",
+      "company": "Delinea",
+      "role": "Senior Technical Account Manager",
+      "jobUrl": "https://jobs.ashbyhq.com/delinea/f525b8cf-6894-4d5c-9aef-79bbb672c1ca",
+      "status": "Applied",
+      "appliedOn": "2026-10-27",
+      "location": "Remote (US)",
+      "interviews": [],
+      "notes": "Applied by Scout Oct 27, 2026 ~9:29 PM MT via Ashby with TAM resume. Pay not posted; salary ask $175K."
     }
   ]
 }
