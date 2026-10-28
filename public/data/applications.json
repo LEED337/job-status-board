@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-28T04:23:02Z",
+  "updatedAt": "2026-10-28T04:29:23Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1634,6 +1634,17 @@
       "location": "Remote (US)",
       "interviews": [],
       "notes": "Applied by Scout Oct 27, 2026 ~10:22 PM MT via iCIMS (req 2026-6335) with CSE resume. $94K\u2013$249.3K; no salary field on the application."
+    },
+    {
+      "id": "sunflower-labs-csm-technical",
+      "company": "Sunflower Labs",
+      "role": "Customer Success Manager (Technical)",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4481897904/",
+      "status": "Applied",
+      "appliedOn": "2026-10-27",
+      "location": "Remote (US), 10\u201315% travel",
+      "interviews": [],
+      "notes": "Applied by Scout Oct 27, 2026 ~10:28 PM MT via LinkedIn Easy Apply (JOIN) with CSE resume. Pay not posted; salary ask $165K."
     }
   ]
 }
