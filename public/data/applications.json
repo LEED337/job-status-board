@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-28T04:36:21Z",
+  "updatedAt": "2026-10-28T23:32:51Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1656,6 +1656,50 @@
       "location": "Remote (US)",
       "interviews": [],
       "notes": "Applied Oct 27, 2026 ~10:35 PM MT via Greenhouse with CSE resume (Scout prepared; Lee answered the final question and submitted). $182K\u2013$226K posted."
+    },
+    {
+      "id": "nearmap-csm-lehi",
+      "company": "Nearmap",
+      "role": "Customer Success Manager",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4483749069/",
+      "status": "Applied",
+      "appliedOn": "2026-10-28",
+      "location": "Lehi, UT",
+      "interviews": [],
+      "notes": "Applied Oct 28, 2026 ~2:13 AM MT via LinkedIn (SmartRecruiters confirmation). Pay not posted."
+    },
+    {
+      "id": "cloudelligent-assoc-aws-sa-aiml",
+      "company": "Cloudelligent",
+      "role": "Associate AWS Solutions Architect - AI/ML",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4483678039/",
+      "status": "Applied",
+      "appliedOn": "2026-10-28",
+      "location": "United States",
+      "interviews": [],
+      "notes": "Applied Oct 28, 2026 ~9:52 AM MT via LinkedIn. Pay not posted."
+    },
+    {
+      "id": "prismatic-oct28",
+      "company": "Prismatic",
+      "role": "Role TBD (confirmation email didn't name it)",
+      "jobUrl": "https://prismatic.io/careers/",
+      "status": "Applied",
+      "appliedOn": "2026-10-28",
+      "location": "Remote (US)",
+      "interviews": [],
+      "notes": "Applied Oct 28, 2026 ~3:30 PM MT (confirmation from careers@prismatic.io). Pay not posted."
+    },
+    {
+      "id": "nvidia-ai-compute-engineer-nvis",
+      "company": "NVIDIA",
+      "role": "AI Compute Engineer - NVIS (JR2025216)",
+      "jobUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite?q=JR2025216",
+      "status": "Applied",
+      "appliedOn": "2026-10-28",
+      "location": "Unknown",
+      "interviews": [],
+      "notes": "Applied Oct 28, 2026 ~3:55 PM MT via Workday (req JR2025216). Pay not captured. Separate from the earlier NVIDIA HPC TAM application."
     }
   ]
 }
