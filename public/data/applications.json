@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-28T23:32:51Z",
+  "updatedAt": "2026-10-28T23:35:24Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1664,42 +1664,42 @@
       "jobUrl": "https://www.linkedin.com/jobs/view/4483749069/",
       "status": "Applied",
       "appliedOn": "2026-10-28",
-      "location": "Lehi, UT",
+      "location": "Remote (continental US)",
       "interviews": [],
-      "notes": "Applied Oct 28, 2026 ~2:13 AM MT via LinkedIn (SmartRecruiters confirmation). Pay not posted."
+      "notes": "Pay not posted; asked $165K. LinkedIn Easy Apply (SmartRecruiters), CSE resume, start immediately. Applied ~2:13 AM MT."
     },
     {
       "id": "cloudelligent-assoc-aws-sa-aiml",
       "company": "Cloudelligent",
       "role": "Associate AWS Solutions Architect - AI/ML",
-      "jobUrl": "https://www.linkedin.com/jobs/view/4483678039/",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4483678039",
       "status": "Applied",
       "appliedOn": "2026-10-28",
-      "location": "United States",
+      "location": "Remote (US), occasional travel",
       "interviews": [],
-      "notes": "Applied Oct 28, 2026 ~9:52 AM MT via LinkedIn. Pay not posted."
+      "notes": "Pay not posted. LinkedIn Easy Apply, AI resume. Applied ~9:50 AM MT."
     },
     {
       "id": "prismatic-oct28",
       "company": "Prismatic",
-      "role": "Role TBD (confirmation email didn't name it)",
-      "jobUrl": "https://prismatic.io/careers/",
+      "role": "Technical Account Manager",
+      "jobUrl": "https://job-boards.greenhouse.io/prismatic/jobs/5277652007",
       "status": "Applied",
       "appliedOn": "2026-10-28",
       "location": "Remote (US)",
       "interviews": [],
-      "notes": "Applied Oct 28, 2026 ~3:30 PM MT (confirmation from careers@prismatic.io). Pay not posted."
+      "notes": "$155K base plus equity; asked $165K. Greenhouse, TAM resume; Lee submitted himself ~3:40 PM MT."
     },
     {
       "id": "nvidia-ai-compute-engineer-nvis",
       "company": "NVIDIA",
       "role": "AI Compute Engineer - NVIS (JR2025216)",
-      "jobUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite?q=JR2025216",
+      "jobUrl": "https://jobs.nvidia.com/careers/job/893397641177",
       "status": "Applied",
       "appliedOn": "2026-10-28",
-      "location": "Unknown",
+      "location": "Remote (US) or Santa Clara, up to 20% travel",
       "interviews": [],
-      "notes": "Applied Oct 28, 2026 ~3:55 PM MT via Workday (req JR2025216). Pay not captured. Separate from the earlier NVIDIA HPC TAM application."
+      "notes": "$124K-$195.5K base plus equity; suggested ask $175K. Workday, AI resume; Lee applied ~3:55 PM MT."
     }
   ]
 }
