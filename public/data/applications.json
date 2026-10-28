@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-27T19:33:49Z",
+  "updatedAt": "2026-10-28T00:09:44Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1476,11 +1476,11 @@
       "company": "Pendo",
       "role": "Sr. Customer Engineer",
       "jobUrl": "https://job-boards.greenhouse.io/pendo/jobs/8892623002",
-      "status": "Applied",
+      "status": "Not hired",
       "appliedOn": "2026-10-23",
       "location": "Remote (East Coast territory)",
       "interviews": [],
-      "notes": "Applied by Scout Oct 23, 2026 ~10:44 AM MT with CSE resume. $193K\u2013$242K OTE."
+      "notes": "Applied by Scout Oct 23, 2026 ~10:44 AM MT with CSE resume. $193K\u2013$242K OTE. Oct 27, 2026: Pendo emailed ~2:50 PM MT that they would not move forward."
     },
     {
       "id": "sardine-solutions-architect-integrations",
