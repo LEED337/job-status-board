@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-28T03:36:04Z",
+  "updatedAt": "2026-10-28T04:23:02Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1623,6 +1623,17 @@
       "location": "US (AMER), regular travel",
       "interviews": [],
       "notes": "Applied by Scout Oct 27, 2026 ~9:35 PM MT via Greenhouse with CSE resume. $170K\u2013$230K base; no salary field on the application."
+    },
+    {
+      "id": "github-sr-csa-regulated",
+      "company": "GitHub",
+      "role": "Senior Customer Success Architect (Regulated Industries)",
+      "jobUrl": "https://githubinc.jibeapply.com/jobs/6335",
+      "status": "Applied",
+      "appliedOn": "2026-10-27",
+      "location": "Remote (US)",
+      "interviews": [],
+      "notes": "Applied by Scout Oct 27, 2026 ~10:22 PM MT via iCIMS (req 2026-6335) with CSE resume. $94K\u2013$249.3K; no salary field on the application."
     }
   ]
 }
