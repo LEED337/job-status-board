@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-28T04:29:23Z",
+  "updatedAt": "2026-10-28T04:33:00Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -66,7 +66,7 @@
       "id": "adobe-mindlance-tam",
       "company": "Adobe",
       "role": "Technical Account Manager (via Mindlance)",
-      "status": "Interviewing",
+      "status": "Ghosted",
       "appliedOn": "2026-09-29",
       "location": "Lehi, UT",
       "interviews": [
@@ -76,7 +76,7 @@
           "kind": "Panel"
         }
       ],
-      "notes": "Via Mindlance / Intelliswift RTR 37653341; AEM prep. Panel done Wed Oct 7 (3:30–4:00 PM MT); awaiting decision Oct 20: Shivangi (Mindlance) says no decision yet and the role isn't closed; Adobe is switching MSPs, so things are slow. She'll keep submitting Lee for other roles."
+      "notes": "Via Mindlance / Intelliswift RTR 37653341; AEM prep. Panel done Wed Oct 7 (3:30–4:00 PM MT); awaiting decision Oct 20: Shivangi (Mindlance) says no decision yet and the role isn't closed; Adobe is switching MSPs, so things are slow. She'll keep submitting Lee for other roles. Oct 27, 2026: Lee marked this Ghosted; no decision since the Oct 20 update."
     },
     {
       "id": "adobe-sr-tam-r171950",
