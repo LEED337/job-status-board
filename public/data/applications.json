@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-28T04:33:00Z",
+  "updatedAt": "2026-10-28T04:36:21Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1645,6 +1645,17 @@
       "location": "Remote (US), 10\u201315% travel",
       "interviews": [],
       "notes": "Applied by Scout Oct 27, 2026 ~10:28 PM MT via LinkedIn Easy Apply (JOIN) with CSE resume. Pay not posted; salary ask $165K."
+    },
+    {
+      "id": "grafana-solutions-engineer",
+      "company": "Grafana Labs",
+      "role": "Solutions Engineer (PST or EST US)",
+      "jobUrl": "https://job-boards.greenhouse.io/grafanalabs/jobs/6236204004",
+      "status": "Applied",
+      "appliedOn": "2026-10-27",
+      "location": "Remote (US)",
+      "interviews": [],
+      "notes": "Applied Oct 27, 2026 ~10:35 PM MT via Greenhouse with CSE resume (Scout prepared; Lee answered the final question and submitted). $182K\u2013$226K posted."
     }
   ]
 }
