@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-28T23:35:24Z",
+  "updatedAt": "2026-10-29T04:01:53Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1700,6 +1700,17 @@
       "location": "Remote (US) or Santa Clara, up to 20% travel",
       "interviews": [],
       "notes": "$124K-$195.5K base plus equity; suggested ask $175K. Workday, AI resume; Lee applied ~3:55 PM MT."
+    },
+    {
+      "id": "zscaler-detection-analyst",
+      "company": "Zscaler",
+      "role": "Detection Analyst",
+      "jobUrl": "https://job-boards.greenhouse.io/zscaler/jobs/5219486007",
+      "status": "Applied",
+      "appliedOn": "2026-10-28",
+      "location": "Remote (US)",
+      "interviews": [],
+      "notes": "$96.6K-$138K base; target $135K. Greenhouse, CSE resume. Applied by Scout Oct 28, 2026 ~9:37 PM MT."
     }
   ]
 }
