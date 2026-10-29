@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-29T16:51:42Z",
+  "updatedAt": "2026-10-29T18:05:50Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1645,11 +1645,11 @@
       "company": "Sunflower Labs",
       "role": "Customer Success Manager (Technical)",
       "jobUrl": "https://www.linkedin.com/jobs/view/4481897904/",
-      "status": "Applied",
+      "status": "Not hired",
       "appliedOn": "2026-10-27",
       "location": "Remote (US), 10\u201315% travel",
       "interviews": [],
-      "notes": "Applied by Scout Oct 27, 2026 ~10:28 PM MT via LinkedIn Easy Apply (JOIN) with CSE resume. Pay not posted; salary ask $165K."
+      "notes": "Applied by Scout Oct 27, 2026 ~10:28 PM MT via LinkedIn Easy Apply (JOIN) with CSE resume. Pay not posted; salary ask $165K. Oct 29, 2026: Lee was not selected."
     },
     {
       "id": "grafana-solutions-engineer",
