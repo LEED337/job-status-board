@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-29T04:01:53Z",
+  "updatedAt": "2026-10-29T16:51:42Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1279,9 +1279,14 @@
           "id": "1password-staff-tam-int1",
           "at": "2026-10-29T10:00",
           "kind": "Interview"
+        },
+        {
+          "id": "1password-staff-tam-int2",
+          "at": "2026-11-03T09:00",
+          "kind": "Behavioral & skills interview with Phil Capizzi"
         }
       ],
-      "notes": "Applied by Scout Oct 19, 2026 ~12:40 PM MT via Ashby with TAM resume. Pay $143K\u2013$207K base + commission; asked $185K\u2013$200K base / $200K\u2013$230K OTE. Separate from earlier 1Password applications. Oct 26, 2026: Lee scheduled an interview for Thu Oct 29 at 10:00 AM MT."
+      "notes": "Applied by Scout Oct 19, 2026 ~12:40 PM MT via Ashby with TAM resume. Pay $143K\u2013$207K base + commission; asked $185K\u2013$200K base / $200K\u2013$230K OTE. Separate from earlier 1Password applications. Oct 26, 2026: Lee scheduled an interview for Thu Oct 29 at 10:00 AM MT. Oct 29, 2026: Lee passed the interview with Sophia. Next round Tue Nov 3, 9:00-9:45 AM MT with Phil Capizzi (45-min behavioral and skills). Process target ~2.5 weeks to offer."
     },
     {
       "id": "nebius-sa-enterprise",
