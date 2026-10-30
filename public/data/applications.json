@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-29T18:05:50Z",
+  "updatedAt": "2026-10-30T15:30:59Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1716,6 +1716,116 @@
       "location": "Remote (US)",
       "interviews": [],
       "notes": "$96.6K-$138K base; target $135K. Greenhouse, CSE resume. Applied by Scout Oct 28, 2026 ~9:37 PM MT."
+    },
+    {
+      "id": "material-security-sr-tcsm",
+      "company": "Material Security",
+      "role": "Sr. Technical Customer Success Manager",
+      "jobUrl": "https://jobs.ashbyhq.com/materialsecurity/19ad06ba-1da9-4b3b-bdef-7b970e00f719",
+      "status": "Applied",
+      "appliedOn": "2026-10-29",
+      "location": "Remote-first (US)",
+      "interviews": [],
+      "notes": "$155K-$165K base. Ashby, CSE resume. Applied by Scout Oct 29, 2026 ~9:44 AM MT."
+    },
+    {
+      "id": "island-federal-tam-avetix",
+      "company": "Island (via AvetixCyber)",
+      "role": "Federal Technical Account Manager",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4484488134",
+      "status": "Applied",
+      "appliedOn": "2026-10-29",
+      "location": "Remote (US)",
+      "interviews": [],
+      "notes": "Up to $180K base + 20% bonus + equity. TAM resume. Applied by Scout Oct 29, 2026 ~9:45 AM MT."
+    },
+    {
+      "id": "nutanix-tam-oct29",
+      "company": "Nutanix",
+      "role": "Technical Account Manager",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4484771261",
+      "status": "Applied",
+      "appliedOn": "2026-10-29",
+      "location": "Remote (US)",
+      "interviews": [],
+      "notes": "Pay not posted. Jobvite, TAM resume. Applied by Scout Oct 29, 2026 ~9:48 AM MT."
+    },
+    {
+      "id": "newrelic-technical-success-manager",
+      "company": "New Relic",
+      "role": "Technical Success Manager",
+      "jobUrl": "https://job-boards.greenhouse.io/newrelic/jobs/5462648008",
+      "status": "Applied",
+      "appliedOn": "2026-10-29",
+      "location": "Field role with travel (Atlanta, Charlotte, Chicago, Dallas, Houston; also tagged remote)",
+      "interviews": [],
+      "notes": "$177K-$221K OTE. Greenhouse, TAM resume. Applied by Scout Oct 29, 2026 ~9:49 AM MT."
+    },
+    {
+      "id": "baseten-security-engineer",
+      "company": "Baseten",
+      "role": "Security Engineer",
+      "jobUrl": "https://jobs.ashbyhq.com/baseten/b85e4b1d-6531-46b5-bc8a-238f3761a50e/",
+      "status": "Applied",
+      "appliedOn": "2026-10-29",
+      "location": "Remote (also SF/NY/Seattle/Toronto/Montreal)",
+      "interviews": [],
+      "notes": "$150K-$250K + equity. Ashby, CSE resume. Applied by Scout Oct 29, 2026 ~10:22 PM MT."
+    },
+    {
+      "id": "anrok-partner-solutions-engineer",
+      "company": "Anrok",
+      "role": "Partner Solutions Engineer",
+      "jobUrl": "https://jobs.ashbyhq.com/anrok/a7b9b79d-c91b-436a-94f6-2c5d7a908aca",
+      "status": "Applied",
+      "appliedOn": "2026-10-30",
+      "location": "Hybrid Salt Lake City (3 days/wk)",
+      "interviews": [],
+      "notes": "$144K-$230K. Ashby, CSE resume. Applied by Scout Oct 30, 2026 ~8:37 AM MT."
+    },
+    {
+      "id": "sentinelone-sr-tse",
+      "company": "SentinelOne",
+      "role": "Sr. Technical Success Executive",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4468815214",
+      "status": "Applied",
+      "appliedOn": "2026-10-30",
+      "location": "Remote (US)",
+      "interviews": [],
+      "notes": "$160K-$220K base. Greenhouse, TAM resume. Applied by Scout Oct 30, 2026 ~8:39 AM MT."
+    },
+    {
+      "id": "opal-security-sr-cse",
+      "company": "Opal Security",
+      "role": "Senior Customer Success Engineer",
+      "jobUrl": "https://jobs.ashbyhq.com/opal/c22b5a80-a976-4283-879b-fc919a61be0b",
+      "status": "Applied",
+      "appliedOn": "2026-10-30",
+      "location": "Remote (US)",
+      "interviews": [],
+      "notes": "$120K-$180K. Ashby, CSE resume. Applied by Scout Oct 30, 2026 ~8:40 AM MT."
+    },
+    {
+      "id": "peraton-aws-cloud-engineer",
+      "company": "Peraton",
+      "role": "AWS Cloud Engineer",
+      "jobUrl": "https://careers-peraton.icims.com/jobs/172849/aws-cloud-engineer",
+      "status": "Applied",
+      "appliedOn": "2026-10-30",
+      "location": "Remote",
+      "interviews": [],
+      "notes": "$104K-$166K; asked $155K. iCIMS req 2026-172849, CSE resume. Applied by Scout Oct 30, 2026 ~8:53 AM MT."
+    },
+    {
+      "id": "mattermost-sr-tam-federal",
+      "company": "Mattermost",
+      "role": "Senior Technical Account Manager (Federal)",
+      "jobUrl": "https://job-boards.greenhouse.io/mattermost/jobs/5422430008",
+      "status": "Applied",
+      "appliedOn": "2026-10-30",
+      "location": "Remote (US)",
+      "interviews": [],
+      "notes": "$125K-$165K + commission. Greenhouse, TAM resume. Applied by Scout Oct 30, 2026 ~8:59 AM MT."
     }
   ]
 }
