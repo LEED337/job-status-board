@@ -1,16 +1,16 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-30T15:30:59Z",
+  "updatedAt": "2026-10-30T18:50:27Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
       "company": "GC AI",
       "role": "Customer Success Manager",
-      "status": "Interviewing",
+      "status": "Not hired",
       "appliedOn": "2026-10-07",
       "location": "Remote / TBD",
-      "notes": "Recruiter screen today 11:30 AM MT.",
+      "notes": "Recruiter screen today 11:30 AM MT. Oct 30, 2026: Comp negotiation with Sam stalled ($130-150K OTE offered); Lee marked Not hired. Will revisit if they come back with more.",
       "interviews": [
         {
           "id": "int-gc-ai-1",
