@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-30T19:04:15Z",
+  "updatedAt": "2026-10-30T19:48:56Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1462,8 +1462,14 @@
       "status": "Interviewing",
       "appliedOn": "2026-10-22",
       "location": "Lehi, UT (also Raleigh, NC / Santa Clara, CA)",
-      "interviews": [],
-      "notes": "Applied Oct 22, 2026 via internal referral from a friend. $82K\u2013$171K base. Separate from the earlier Everpure DSE process and the Senior Service Account Manager application. Oct 30, 2026: Recruiter called; since Lee already went through the Everpure interview loop, he'll meet directly with the hiring manager. Likely Wed Nov 4, 2026; time TBD."
+      "interviews": [
+        {
+          "id": "everpure-csm-aas-hm",
+          "at": "2026-11-03T11:00",
+          "kind": "Hiring manager interview with Michael Hurst"
+        }
+      ],
+      "notes": "Applied Oct 22, 2026 via internal referral from a friend. $82K\u2013$171K base. Separate from the earlier Everpure DSE process and the Senior Service Account Manager application. Oct 30, 2026: Recruiter called; since Lee already went through the Everpure interview loop, he'll meet directly with the hiring manager. Likely Wed Nov 4, 2026; time TBD. Oct 30, 2026: Interview confirmed Tue Nov 3, 11:00-11:45 AM MT with hiring manager Michael Hurst."
     },
     {
       "id": "duplocloud-solutions-architect",
@@ -1826,6 +1832,39 @@
       "location": "Remote (US)",
       "interviews": [],
       "notes": "$125K-$165K + commission. Greenhouse, TAM resume. Applied by Scout Oct 30, 2026 ~8:59 AM MT."
+    },
+    {
+      "id": "databricks-sr-deployment-strategist-fde",
+      "company": "Databricks",
+      "role": "Sr. Deployment Strategist, FDE - Manufacturing & High-Tech",
+      "jobUrl": "https://databricks.com/company/careers/open-positions/job?gh_jid=8687861002",
+      "status": "Applied",
+      "appliedOn": "2026-10-30",
+      "location": "Remote (US), 25-50% onsite with customers",
+      "interviews": [],
+      "notes": "$219,765-$302,220. TAM resume. Applied by Scout Oct 30, 2026 ~1:05 PM MT."
+    },
+    {
+      "id": "databricks-sr-sa-customer-lake",
+      "company": "Databricks",
+      "role": "Sr. Solutions Architect, Customer Lake",
+      "jobUrl": "https://www.databricks.com/company/careers/field-engineering---other/sr-solutions-architect-customer-lake-8762360002?gh_jid=8762360002",
+      "status": "Applied",
+      "appliedOn": "2026-10-30",
+      "location": "United States",
+      "interviews": [],
+      "notes": "$219,100-$301,300. Req FEQ327R42, CSE resume. Applied by Scout Oct 30, 2026 ~1:10 PM MT."
+    },
+    {
+      "id": "tailscale-sr-se-enterprise",
+      "company": "Tailscale",
+      "role": "Senior Solutions Engineer, Enterprise",
+      "jobUrl": "https://job-boards.greenhouse.io/tailscale/jobs/4741470005",
+      "status": "Applied",
+      "appliedOn": "2026-10-30",
+      "location": "Remote (US), 10-20% travel",
+      "interviews": [],
+      "notes": "$250K-$300K OTE. Greenhouse, CSE resume + cover letter. Applied by Scout Oct 30, 2026 ~1:10 PM MT."
     }
   ]
 }
