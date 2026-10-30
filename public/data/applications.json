@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-30T18:50:27Z",
+  "updatedAt": "2026-10-30T19:04:15Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1457,13 +1457,13 @@
     {
       "id": "everpure-csm-aas",
       "company": "Everpure",
-      "role": "Customer Success Manager (as-a-Service)",
-      "jobUrl": "https://www.linkedin.com/jobs/view/4481605188",
-      "status": "Applied",
+      "role": "Customer Success Manager - Commercial Segment",
+      "jobUrl": "https://job-boards.greenhouse.io/purestorage/jobs/8310782",
+      "status": "Interviewing",
       "appliedOn": "2026-10-22",
-      "location": "Lehi, UT (office)",
+      "location": "Lehi, UT (also Raleigh, NC / Santa Clara, CA)",
       "interviews": [],
-      "notes": "Applied Oct 22, 2026 via internal referral from a friend. $82K\u2013$171K base. Separate from the earlier Everpure DSE process and the Senior Service Account Manager application."
+      "notes": "Applied Oct 22, 2026 via internal referral from a friend. $82K\u2013$171K base. Separate from the earlier Everpure DSE process and the Senior Service Account Manager application. Oct 30, 2026: Recruiter called; since Lee already went through the Everpure interview loop, he'll meet directly with the hiring manager. Likely Wed Nov 4, 2026; time TBD."
     },
     {
       "id": "duplocloud-solutions-architect",
