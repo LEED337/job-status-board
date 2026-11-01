@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-30T19:48:56Z",
+  "updatedAt": "2026-10-30T20:22:46Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1260,11 +1260,11 @@
       "company": "Fusion Risk Management",
       "role": "Agentic Engineer",
       "jobUrl": "https://recruit.hirebridge.com/v3/careercenter/v2/details.aspx?jid=610083&cid=8052&locvalue=10131013&src=LinkedIn",
-      "status": "Applied",
+      "status": "Not hired",
       "appliedOn": "2026-10-19",
       "location": "US-Remote",
       "interviews": [],
-      "notes": "Applied by Scout Oct 19, 2026 ~11:40 AM MT via Hirebridge Quick Apply with AI resume (job #610083). Pay $150K\u2013$165K base; desired salary entered $165K\u2013$185K."
+      "notes": "Applied by Scout Oct 19, 2026 ~11:40 AM MT via Hirebridge Quick Apply with AI resume (job #610083). Pay $150K\u2013$165K base; desired salary entered $165K\u2013$185K. Oct 30, 2026: Rejection email received."
     },
     {
       "id": "1password-staff-tam",
