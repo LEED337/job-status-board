@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-10-30T20:22:46Z",
+  "updatedAt": "2026-11-01T17:07:38Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1138,11 +1138,11 @@
       "company": "FOSSA",
       "role": "Sr. Customer Success Engineer (Central US)",
       "jobUrl": "https://jobs.ashbyhq.com/fossa/99c89f67-9ce5-4f33-858c-68fb567eefa8",
-      "status": "Applied",
+      "status": "Not hired",
       "appliedOn": "2026-10-19",
       "location": "Remote US",
       "interviews": [],
-      "notes": "Applied Oct 19, 2026 8:59 AM MT via Ashby (CSE resume). $160K-$180K base / $200K-$240K OTE."
+      "notes": "Applied Oct 19, 2026 8:59 AM MT via Ashby (CSE resume). $160K-$180K base / $200K-$240K OTE. Oct 30, 2026: Rejection email received."
     },
     {
       "id": "assured-sr-tam",
@@ -1225,7 +1225,7 @@
           "kind": "Recruiter screening call with Catherine Flagler (30 min)"
         }
       ],
-      "notes": "Applied by Scout Oct 19, 2026 9:22 AM MT with CSE resume. Pay not on posting.\nOct 21: Recruiter screening call scheduled with Catherine Flagler for Mon Oct 26, 11:00\u201311:30 AM MT.\nOct 26: GitLab rescheduled the screen with Catherine Flagler to Thu Oct 29, 12:30-1:00 PM MT."
+      "notes": "Applied by Scout Oct 19, 2026 9:22 AM MT with CSE resume. Pay not on posting.\nOct 21: Recruiter screening call scheduled with Catherine Flagler for Mon Oct 26, 11:00\u201311:30 AM MT.\nOct 26: GitLab rescheduled the screen with Catherine Flagler to Thu Oct 29, 12:30-1:00 PM MT.\nOct 30, 2026: Passed recruiter screen. Next interview with Gavin Peltz (Manager, Customer Success Management); Lee submitted availability Oct 30, time TBD."
     },
     {
       "id": "stripe-tam-billing",
@@ -1865,6 +1865,26 @@
       "location": "Remote (US), 10-20% travel",
       "interviews": [],
       "notes": "$250K-$300K OTE. Greenhouse, CSE resume + cover letter. Applied by Scout Oct 30, 2026 ~1:10 PM MT."
+    },
+    {
+      "id": "netflix-sec-eng-5-cloud-arch",
+      "company": "Netflix",
+      "role": "Security Engineer 5 - Cloud Architecture, Tooling and Security",
+      "status": "Applied",
+      "appliedOn": "2026-10-31",
+      "location": "Remote (US)",
+      "interviews": [],
+      "notes": "Application confirmation received Oct 31, 2026 ~7:56 AM MT. Separate from the Security Engineer 5 - IAM role."
+    },
+    {
+      "id": "nice-senior-tam-oct30",
+      "company": "NICE",
+      "role": "Senior Technical Account Manager",
+      "status": "Applied",
+      "appliedOn": "2026-10-30",
+      "location": "Remote (US)",
+      "interviews": [],
+      "notes": "Greenhouse application confirmation received Oct 30, 2026 ~10:45 PM MT. New application, separate from the Oct 14 Senior TAM application (Not hired Oct 16)."
     }
   ]
 }
