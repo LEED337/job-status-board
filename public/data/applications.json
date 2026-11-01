@@ -1,16 +1,16 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-11-01T17:07:38Z",
+  "updatedAt": "2026-11-01T18:29:47Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
       "company": "GC AI",
       "role": "Customer Success Manager",
-      "status": "Not hired",
+      "status": "Interviewing",
       "appliedOn": "2026-10-07",
       "location": "Remote / TBD",
-      "notes": "Recruiter screen today 11:30 AM MT. Oct 30, 2026: Comp negotiation with Sam stalled ($130-150K OTE offered); Lee marked Not hired. Will revisit if they come back with more.",
+      "notes": "Recruiter screen today 11:30 AM MT. Oct 30, 2026: Comp negotiation with Sam stalled ($130-150K OTE offered); Lee marked Not hired. Will revisit if they come back with more. Nov 1, 2026: Back in process. GC AI sent a form asking for Lee's info and interview availability ahead of the next conversation; time TBD.",
       "interviews": [
         {
           "id": "int-gc-ai-1",
@@ -1885,6 +1885,17 @@
       "location": "Remote (US)",
       "interviews": [],
       "notes": "Greenhouse application confirmation received Oct 30, 2026 ~10:45 PM MT. New application, separate from the Oct 14 Senior TAM application (Not hired Oct 16)."
+    },
+    {
+      "id": "huntress-tam-ii",
+      "company": "Huntress",
+      "role": "Technical Account Manager II",
+      "jobUrl": "https://job-boards.greenhouse.io/huntress/jobs/8044660003",
+      "status": "Applied",
+      "appliedOn": "2026-11-01",
+      "location": "Remote (US)",
+      "interviews": [],
+      "notes": "$160K-$170K OTE (80/20) plus equity. Applied Nov 1, 2026 ~10:10 AM MT."
     }
   ]
 }
