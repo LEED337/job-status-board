@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-11-02T15:05:20Z",
+  "updatedAt": "2026-11-02T17:02:29Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1204,11 +1204,11 @@
       "company": "Zscaler",
       "role": "Senior Technical Success Manager (US Public Sector)",
       "jobUrl": "https://job-boards.greenhouse.io/zscaler/jobs/5263586007",
-      "status": "Applied",
+      "status": "Not hired",
       "appliedOn": "2026-10-19",
       "location": "Remote US (Eastern/Central hours)",
       "interviews": [],
-      "notes": "Applied by Scout Oct 19, 2026 9:22 AM MT with TAM resume. Pay $143.5K\u2013$205K base."
+      "notes": "Applied by Scout Oct 19, 2026 9:22 AM MT with TAM resume. Pay $143.5K\u2013$205K base. Nov 2, 2026: Not selected (Lee confirmed)."
     },
     {
       "id": "gitlab-customer-success-architect",
@@ -1896,6 +1896,39 @@
       "location": "Remote (US)",
       "interviews": [],
       "notes": "$160K-$170K OTE (80/20) plus equity. Applied Nov 1, 2026 ~10:10 AM MT."
+    },
+    {
+      "id": "camunda-tam-usa",
+      "company": "Camunda",
+      "role": "Technical Account Manager - USA",
+      "jobUrl": "https://jobs.ashbyhq.com/camunda/cdc6bcf5-ba9a-48c7-901b-865ecf854c2e",
+      "status": "Applied",
+      "appliedOn": "2026-11-02",
+      "location": "Remote (US)",
+      "interviews": [],
+      "notes": "$150.1K-$242K; ask $185K. TAM resume. Applied Nov 2, 2026 9:08 AM MT."
+    },
+    {
+      "id": "atlassian-sr-solutions-architect",
+      "company": "Atlassian",
+      "role": "Senior Solutions Architect (REQ-2026-2424)",
+      "jobUrl": "https://careers-americas.icims.com/jobs/26716/senior-solutions-architect/job",
+      "status": "Applied",
+      "appliedOn": "2026-11-02",
+      "location": "Remote (US)",
+      "interviews": [],
+      "notes": "$149.4K-$235K. CSE resume. Applied Nov 2, 2026 ~9:18 AM MT."
+    },
+    {
+      "id": "peraton-sr-aws-cloud-architect",
+      "company": "Peraton",
+      "role": "Sr. AWS Cloud Architect (2026-173038)",
+      "jobUrl": "https://careers-peraton.icims.com/jobs/173038/sr.-aws-cloud-architect/job",
+      "status": "Applied",
+      "appliedOn": "2026-11-02",
+      "location": "Remote",
+      "interviews": [],
+      "notes": "$112K-$179K; ask $170K. CSE resume. Applied Nov 2, 2026 ~9:30 AM MT."
     }
   ]
 }
