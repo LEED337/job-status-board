@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-11-02T17:02:29Z",
+  "updatedAt": "2026-11-02T19:49:06Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1929,6 +1929,39 @@
       "location": "Remote",
       "interviews": [],
       "notes": "$112K-$179K; ask $170K. CSE resume. Applied Nov 2, 2026 ~9:30 AM MT."
+    },
+    {
+      "id": "stripe-cloud-security-engineer",
+      "company": "Stripe",
+      "role": "Cloud Security Engineer",
+      "jobUrl": "https://stripe.com/jobs/listing/cloud-security-engineer/7867389",
+      "status": "Applied",
+      "appliedOn": "2026-11-02",
+      "location": "Remote (US)",
+      "interviews": [],
+      "notes": "$144.3K-$216.5K base. CSE resume. Applied Nov 2, 2026 ~11:15 AM MT."
+    },
+    {
+      "id": "instacart-detection-engineer-ii",
+      "company": "Instacart",
+      "role": "Detection Engineer II",
+      "jobUrl": "https://instacart.careers/job/?gh_jid=8080512",
+      "status": "Applied",
+      "appliedOn": "2026-11-02",
+      "location": "Remote (US)",
+      "interviews": [],
+      "notes": "$142K-$150K base (Utah). CSE resume. Applied Nov 2, 2026 ~11:45 AM MT."
+    },
+    {
+      "id": "bitwarden-it-security-admin",
+      "company": "Bitwarden",
+      "role": "IT Security Administrator",
+      "jobUrl": "https://bitwarden.com/careers/7770756003/?gh_jid=7770756003",
+      "status": "Applied",
+      "appliedOn": "2026-11-02",
+      "location": "Remote (US)",
+      "interviews": [],
+      "notes": "$115K-$145K base. CSE resume. Applied Nov 2, 2026 ~11:50 AM MT."
     }
   ]
 }
