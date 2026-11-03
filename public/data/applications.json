@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-11-02T19:49:06Z",
+  "updatedAt": "2026-11-03T00:08:49Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1880,11 +1880,11 @@
       "id": "nice-senior-tam-oct30",
       "company": "NICE",
       "role": "Senior Technical Account Manager",
-      "status": "Applied",
+      "status": "Not hired",
       "appliedOn": "2026-10-30",
       "location": "Remote (US)",
       "interviews": [],
-      "notes": "Greenhouse application confirmation received Oct 30, 2026 ~10:45 PM MT. New application, separate from the Oct 14 Senior TAM application (Not hired Oct 16)."
+      "notes": "Greenhouse application confirmation received Oct 30, 2026 ~10:45 PM MT. New application, separate from the Oct 14 Senior TAM application (Not hired Oct 16). Nov 2, 2026: Rejection received (Lee confirmed)."
     },
     {
       "id": "huntress-tam-ii",
@@ -1962,6 +1962,28 @@
       "location": "Remote (US)",
       "interviews": [],
       "notes": "$115K-$145K base. CSE resume. Applied Nov 2, 2026 ~11:50 AM MT."
+    },
+    {
+      "id": "orca-sr-devops-fedramp",
+      "company": "Orca Security",
+      "role": "Senior DevOps Engineer (FedRAMP)",
+      "jobUrl": "https://orca.security/about/careers/6117749004/?gh_jid=6117749004",
+      "status": "Applied",
+      "appliedOn": "2026-11-02",
+      "location": "Remote (US, East Coast preferred)",
+      "interviews": [],
+      "notes": "$170K-$200K base + equity; ask $180K. CSE resume. Applied Nov 2, 2026 ~1:09 PM MT."
+    },
+    {
+      "id": "scaleops-tam",
+      "company": "ScaleOps",
+      "role": "Technical Account Manager",
+      "jobUrl": "https://scaleops.com/careers/job/4919331101/technical-account-manager/",
+      "status": "Applied",
+      "appliedOn": "2026-11-02",
+      "location": "Remote (US)",
+      "interviews": [],
+      "notes": "No pay posted. TAM resume. Applied Nov 2, 2026 ~2:14 PM MT. Separate from the earlier Director of TAM (Not hired)."
     }
   ]
 }
