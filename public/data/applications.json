@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-11-03T00:08:49Z",
+  "updatedAt": "2026-11-03T19:28:47Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -247,7 +247,7 @@
       "status": "Interviewing",
       "appliedOn": "2026-10-01",
       "location": "Salt Lake City, UT / Oregon Remote",
-      "notes": "Recruiter phone screen with Paola VargasUnfried done Thu Oct 8. She first said fully remote, then said 50% in-office. Comp tops out at $145K base + annual bonus + RSUs (posting range was higher). Lee hoped for $160–170K but would consider near their max. Awaiting next steps. JR-0109357 Moved forward: hiring manager interview Mon Oct 12 at 2:30 PM MT (interviewer not yet known). Interviewer per calendar invite: Alan Spencer (Sr Manager, Technical Account Management). Oct 12 hiring manager interview with Alan Spencer went well: role would be Senior TAM, mostly remote (office optional). Awaiting next steps. Passed hiring manager round; technical interview Thu Oct 15 at 1:00 PM MT. Oct 15 technical with Brandon Pack went well: Brandon said Lee has his vote; possible one more manager round next. Round 3 (virtual): Thu Oct 22, 8:15–9:00 AM MT with Cynthia Andal (Sr TAM), and Fri Oct 23, 2:00–2:45 PM MT with Eric Knapp (Manager of TAMs). Oct 22 session with Cynthia Andal seemed to go well. Oct 23 session with Eric Knapp (Manager of TAMs) went really well. Lee was the first candidate he met; Workday expects to reach out within about a week after all interviews. Eric said Lee would likely be placed in the Senior TAM position.",
+      "notes": "Recruiter phone screen with Paola VargasUnfried done Thu Oct 8. She first said fully remote, then said 50% in-office. Comp tops out at $145K base + annual bonus + RSUs (posting range was higher). Lee hoped for $160–170K but would consider near their max. Awaiting next steps. JR-0109357 Moved forward: hiring manager interview Mon Oct 12 at 2:30 PM MT (interviewer not yet known). Interviewer per calendar invite: Alan Spencer (Sr Manager, Technical Account Management). Oct 12 hiring manager interview with Alan Spencer went well: role would be Senior TAM, mostly remote (office optional). Awaiting next steps. Passed hiring manager round; technical interview Thu Oct 15 at 1:00 PM MT. Oct 15 technical with Brandon Pack went well: Brandon said Lee has his vote; possible one more manager round next. Round 3 (virtual): Thu Oct 22, 8:15–9:00 AM MT with Cynthia Andal (Sr TAM), and Fri Oct 23, 2:00–2:45 PM MT with Eric Knapp (Manager of TAMs). Oct 22 session with Cynthia Andal seemed to go well. Oct 23 session with Eric Knapp (Manager of TAMs) went really well. Lee was the first candidate he met; Workday expects to reach out within about a week after all interviews. Eric said Lee would likely be placed in the Senior TAM position. Nov 3, 2026: Recruiter says the process is taking longer than expected; final decision expected by end of next week (~Fri Nov 13).",
       "interviews": [
         {
           "id": "int-workday-tam-1",
@@ -549,11 +549,11 @@
       "company": "Coralogix",
       "role": "Technical Account Manager",
       "jobUrl": "https://coralogix.com/careers/co/dallas-tx/90.379/technical-account-manager-dallas/all/",
-      "status": "Applied",
+      "status": "Not hired",
       "appliedOn": "2026-10-07",
       "location": "Dallas, TX (remote may be possible)",
       "interviews": [],
-      "notes": "Referred by old AWS colleague; resume to recruiter ~10:32 AM MT Oct 7; JD https://coralogix.com/careers/co/dallas-tx/90.379/technical-account-manager-dallas/all/; awaiting response"
+      "notes": "Referred by old AWS colleague; resume to recruiter ~10:32 AM MT Oct 7; JD https://coralogix.com/careers/co/dallas-tx/90.379/technical-account-manager-dallas/all/; awaiting response Nov 3, 2026: Declined (Lee confirmed)."
     },
     {
       "id": "localstack-tam",
@@ -1286,7 +1286,7 @@
           "kind": "Behavioral & skills interview with Phil Capizzi"
         }
       ],
-      "notes": "Applied by Scout Oct 19, 2026 ~12:40 PM MT via Ashby with TAM resume. Pay $143K\u2013$207K base + commission; asked $185K\u2013$200K base / $200K\u2013$230K OTE. Separate from earlier 1Password applications. Oct 26, 2026: Lee scheduled an interview for Thu Oct 29 at 10:00 AM MT. Oct 29, 2026: Lee passed the interview with Sophia. Next round Tue Nov 3, 9:00-9:45 AM MT with Phil Capizzi (45-min behavioral and skills). Process target ~2.5 weeks to offer."
+      "notes": "Applied by Scout Oct 19, 2026 ~12:40 PM MT via Ashby with TAM resume. Pay $143K\u2013$207K base + commission; asked $185K\u2013$200K base / $200K\u2013$230K OTE. Separate from earlier 1Password applications. Oct 26, 2026: Lee scheduled an interview for Thu Oct 29 at 10:00 AM MT. Oct 29, 2026: Lee passed the interview with Sophia. Next round Tue Nov 3, 9:00-9:45 AM MT with Phil Capizzi (45-min behavioral and skills). Process target ~2.5 weeks to offer. Nov 3, 2026: Completed the round with Phil Capizzi; outcome pending."
     },
     {
       "id": "nebius-sa-enterprise",
@@ -1984,6 +1984,17 @@
       "location": "Remote (US)",
       "interviews": [],
       "notes": "No pay posted. TAM resume. Applied Nov 2, 2026 ~2:14 PM MT. Separate from the earlier Director of TAM (Not hired)."
+    },
+    {
+      "id": "torq-cse-west",
+      "company": "Torq",
+      "role": "Customer Success Engineer, West Coast U.S.",
+      "jobUrl": "https://job-boards.greenhouse.io/torq/jobs/6240590004",
+      "status": "Applied",
+      "appliedOn": "2026-11-03",
+      "location": "Remote (US)",
+      "interviews": [],
+      "notes": "Applied by Scout Nov 3, 2026 ~11:50 AM MT via Greenhouse with CSE resume. Pay not posted."
     }
   ]
 }
