@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-11-03T19:28:47Z",
+  "updatedAt": "2026-11-04T14:37:17Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1891,11 +1891,11 @@
       "company": "Huntress",
       "role": "Technical Account Manager II",
       "jobUrl": "https://job-boards.greenhouse.io/huntress/jobs/8044660003",
-      "status": "Applied",
+      "status": "Not hired",
       "appliedOn": "2026-11-01",
       "location": "Remote (US)",
       "interviews": [],
-      "notes": "$160K-$170K OTE (80/20) plus equity. Applied Nov 1, 2026 ~10:10 AM MT."
+      "notes": "$160K-$170K OTE (80/20) plus equity. Applied Nov 1, 2026 ~10:10 AM MT. Nov 4, 2026: Not selected (Lee confirmed)."
     },
     {
       "id": "camunda-tam-usa",
@@ -1995,6 +1995,69 @@
       "location": "Remote (US)",
       "interviews": [],
       "notes": "Applied by Scout Nov 3, 2026 ~11:50 AM MT via Greenhouse with CSE resume. Pay not posted."
+    },
+    {
+      "id": "netcraft-cybercrime-analyst",
+      "company": "Netcraft",
+      "role": "Cybercrime Analyst",
+      "jobUrl": "https://job-boards.eu.greenhouse.io/netcraft/jobs/5008339101",
+      "status": "Applied",
+      "appliedOn": "2026-11-03",
+      "location": "Lehi, UT (Hybrid)",
+      "interviews": [],
+      "notes": "Applied by Scout Nov 3, 2026 ~9:50 PM MT via Greenhouse (job 5008339101) with CSE resume and cover letter. Pay $50K. Nov 4, 2026: Netcraft emailed asking Lee to complete an aptitude test."
+    },
+    {
+      "id": "journeyteam-assoc-dev-bc",
+      "company": "JourneyTeam",
+      "role": "Associate Developer, Business Central",
+      "jobUrl": "https://journeyteam.prismhr-hire.com/job/1063458/associate-developer-business-central",
+      "status": "Applied",
+      "appliedOn": "2026-11-03",
+      "location": "Remote (Draper, UT)",
+      "interviews": [],
+      "notes": "Applied by Scout Nov 3, 2026 ~1:32 PM MT with Dev resume. Pay $65K-$95K plus bonus."
+    },
+    {
+      "id": "acl-front-end-dev-flutter",
+      "company": "American Cruise Lines",
+      "role": "Front End Developer (Flutter)",
+      "jobUrl": "https://www.aclcareers.com/apply?gnk=job&gni=8a78859ea0f425eb01a10dc94822191b",
+      "status": "Applied",
+      "appliedOn": "2026-11-03",
+      "location": "Sandy, UT (On-site)",
+      "interviews": [],
+      "notes": "Applied by Scout Nov 3, 2026 ~1:36 PM MT with Dev resume. Pay not posted."
+    },
+    {
+      "id": "snap-finance-swe-applied-ai",
+      "company": "Snap Finance",
+      "role": "Software Engineer - Applied AI",
+      "status": "Applied",
+      "appliedOn": "2026-11-03",
+      "location": "West Valley City, UT",
+      "interviews": [],
+      "notes": "Applied by Scout Nov 3, 2026 ~1:48 PM MT via Workday (R-2928) with Dev resume. Desired pay $95K."
+    },
+    {
+      "id": "aegisai-security-admin",
+      "company": "AegisAI",
+      "role": "Security Administrator",
+      "status": "Applied",
+      "appliedOn": "2026-11-03",
+      "location": "Remote (US)",
+      "interviews": [],
+      "notes": "Applied by Scout Nov 3, 2026 ~7:44 PM MT via Ashby with CSE resume. Pay not posted."
+    },
+    {
+      "id": "ice-analyst-cyber-dfir",
+      "company": "ICE",
+      "role": "Analyst, Cybersecurity DFIR",
+      "status": "Applied",
+      "appliedOn": "2026-11-03",
+      "location": "Provo, UT (On-site)",
+      "interviews": [],
+      "notes": "Applied by Scout Nov 3, 2026 ~9:54 PM MT via iCIMS (job 2026-14156) with CSE resume. Salary ask $100K."
     }
   ]
 }
