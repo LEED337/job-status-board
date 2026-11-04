@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-11-04T14:59:57Z",
+  "updatedAt": "2026-11-04T16:48:11Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -2063,6 +2063,82 @@
       "location": "Provo, UT (On-site)",
       "interviews": [],
       "notes": "Applied by Scout Nov 3, 2026 ~9:54 PM MT via iCIMS (job 2026-14156) with CSE resume. Salary ask $100K."
+    },
+    {
+      "id": "posit-sr-solutions-engineer",
+      "company": "Posit",
+      "role": "Senior Solutions Engineer (Post-Sales)",
+      "jobUrl": "https://job-boards.greenhouse.io/rstudio/jobs/8015591003",
+      "status": "Applied",
+      "appliedOn": "2026-11-04",
+      "location": "Remote (US)",
+      "interviews": [],
+      "notes": "Applied by Scout Nov 4, 2026 ~8:56 AM MT via Greenhouse with CSE resume. Pay $141.8K-$187.1K."
+    },
+    {
+      "id": "cribl-cse-scaled",
+      "company": "Cribl",
+      "role": "Customer Success Engineer, Scaled",
+      "jobUrl": "https://job-boards.greenhouse.io/cribl/jobs/6240800004",
+      "status": "Applied",
+      "appliedOn": "2026-11-04",
+      "location": "Remote (Western US)",
+      "interviews": [],
+      "notes": "Applied by Scout Nov 4, 2026 ~9:00 AM MT via Greenhouse with CSE resume. Pay $110K-$150K."
+    },
+    {
+      "id": "starburst-tse-us-west",
+      "company": "Starburst",
+      "role": "Technical Support Engineer (US West)",
+      "jobUrl": "https://job-boards.greenhouse.io/starburst/jobs/5470188008",
+      "status": "Applied",
+      "appliedOn": "2026-11-04",
+      "location": "Remote (US)",
+      "interviews": [],
+      "notes": "Applied by Scout Nov 4, 2026 ~9:03 AM MT via Greenhouse with CSE resume. Pay not posted."
+    },
+    {
+      "id": "precisely-assoc-swe-python-ai",
+      "company": "Precisely",
+      "role": "Associate Software Engineer (Python AI)",
+      "status": "Applied",
+      "appliedOn": "2026-11-04",
+      "location": "Remote (US)",
+      "interviews": [],
+      "notes": "Applied by Scout Nov 4, 2026 ~9:10 AM MT via Greenhouse with Dev resume. Pay not posted."
+    },
+    {
+      "id": "github-sr-csm",
+      "company": "GitHub",
+      "role": "Senior Customer Success Manager",
+      "jobUrl": "https://githubinc.jibeapply.com/jobs/6301",
+      "status": "Applied",
+      "appliedOn": "2026-11-04",
+      "location": "Remote (US)",
+      "interviews": [],
+      "notes": "Applied by Scout Nov 4, 2026 ~9:30 AM MT (iCIMS 2026-6301). Separate from the Oct 27 Sr CSA application (2026-6335)."
+    },
+    {
+      "id": "akamai-sr-tam-cloud-compute",
+      "company": "Akamai",
+      "role": "Senior Technical Account Manager, Cloud Compute",
+      "jobUrl": "https://fa-extu-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/4015",
+      "status": "Applied",
+      "appliedOn": "2026-11-04",
+      "location": "Remote (US)",
+      "interviews": [],
+      "notes": "Applied by Scout Nov 4, 2026 ~9:37 AM MT with TAM resume. Pay $140.6K-$253.1K. Separate from the Sep 25 Microsegmentation TAM application (3692)."
+    },
+    {
+      "id": "ping-identity-sr-tam",
+      "company": "Ping Identity",
+      "role": "Senior Technical Account Manager",
+      "jobUrl": "https://job-boards.greenhouse.io/pingidentity/jobs/8770571002",
+      "status": "Applied",
+      "appliedOn": "2026-11-04",
+      "location": "Remote (US)",
+      "interviews": [],
+      "notes": "Applied by Scout Nov 4, 2026 ~9:41 AM MT via Greenhouse with TAM resume. Pay $155K-$180K. Separate from the Oct 18 Ping TAM application."
     }
   ]
 }
