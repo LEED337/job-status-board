@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-11-04T14:37:17Z",
+  "updatedAt": "2026-11-04T14:59:57Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1223,9 +1223,14 @@
           "id": "gitlab-csa-recruiter-screen",
           "at": "2026-10-29T12:30",
           "kind": "Recruiter screening call with Catherine Flagler (30 min)"
+        },
+        {
+          "id": "gitlab-csa-gavin-peltz",
+          "at": "2026-11-09T15:00",
+          "kind": "Interview with Gavin Peltz (Manager, Customer Success Managers)"
         }
       ],
-      "notes": "Applied by Scout Oct 19, 2026 9:22 AM MT with CSE resume. Pay not on posting.\nOct 21: Recruiter screening call scheduled with Catherine Flagler for Mon Oct 26, 11:00\u201311:30 AM MT.\nOct 26: GitLab rescheduled the screen with Catherine Flagler to Thu Oct 29, 12:30-1:00 PM MT.\nOct 30, 2026: Passed recruiter screen. Next interview with Gavin Peltz (Manager, Customer Success Management); Lee submitted availability Oct 30, time TBD.\nNov 2, 2026: GitLab said Lee's submitted times don't work this week; interview with Gavin Peltz expected sometime next week (week of Nov 9), time TBD."
+      "notes": "Applied by Scout Oct 19, 2026 9:22 AM MT with CSE resume. Pay not on posting.\nOct 21: Recruiter screening call scheduled with Catherine Flagler for Mon Oct 26, 11:00\u201311:30 AM MT.\nOct 26: GitLab rescheduled the screen with Catherine Flagler to Thu Oct 29, 12:30-1:00 PM MT.\nOct 30, 2026: Passed recruiter screen. Next interview with Gavin Peltz (Manager, Customer Success Management); Lee submitted availability Oct 30, time TBD.\nNov 2, 2026: GitLab said Lee's submitted times don't work this week; interview with Gavin Peltz expected sometime next week (week of Nov 9), time TBD. Nov 4, 2026: Interview with Gavin Peltz scheduled Mon Nov 9, 3:00-3:30 PM MT (Zoom)."
     },
     {
       "id": "stripe-tam-billing",
