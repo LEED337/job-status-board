@@ -207,7 +207,7 @@ export function ApplicationDialog({ application, onClose, onSave, onDelete }: Ap
 
         <form id="application-form" onSubmit={submit} className="space-y-4 overflow-y-auto px-6 py-4">
           {error ? (
-            <p className="rounded-xl bg-[#f8e9ec] px-3 py-2 text-sm text-closed" role="alert">
+            <p className="rounded-xl bg-[var(--chip-closed-bg)] px-3 py-2 text-sm text-closed" role="alert">
               {error}
             </p>
           ) : null}
@@ -263,7 +263,7 @@ export function ApplicationDialog({ application, onClose, onSave, onDelete }: Ap
                     onClick={() => setDraft({ ...draft, status })}
                     className={cx(
                       "inline-flex items-center gap-2 rounded-xl px-3 py-2.5 text-left text-sm font-medium ring-1 transition-colors",
-                      selected ? "bg-ink text-white ring-ink" : "bg-white text-ink ring-black/10 hover:bg-soft",
+                      selected ? "bg-fill text-white ring-1 ring-inset ring-black" : "bg-white text-ink ring-hairline hover:bg-soft",
                     )}
                   >
                     <span

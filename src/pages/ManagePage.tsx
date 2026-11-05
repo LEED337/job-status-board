@@ -363,7 +363,7 @@ function ManageEditor() {
                   <span
                     className={cx(
                       "rounded-full px-2 py-0.5 text-xs font-semibold",
-                      dirty ? "bg-[#f6efe3] text-quiet" : "bg-[#e3f5eb] text-live",
+                      dirty ? "bg-[var(--quiet-bg)] text-quiet" : "bg-[var(--live-bg)] text-live",
                     )}
                   >
                     {dirty ? "Local changes" : "Matches shared board"}
@@ -432,7 +432,7 @@ function ManageEditor() {
                 {drifts.map((drift) => (
                   <li
                     key={drift.id}
-                    className="flex flex-col gap-3 rounded-xl border-[3px] border-black bg-[#d4f3e4] px-3 py-3 sm:flex-row sm:items-center sm:justify-between"
+                    className="flex flex-col gap-3 rounded-xl border-[3px] border-black bg-mint px-3 py-3 sm:flex-row sm:items-center sm:justify-between"
                   >
                     <div>
                       <p className="text-sm font-semibold text-ink">

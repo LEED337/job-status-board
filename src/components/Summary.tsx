@@ -429,7 +429,7 @@ export function Summary({ applications, now }: SummaryProps) {
           </div>
         </div>
 
-        <div className="mt-4 grid grid-cols-2 gap-x-1 gap-y-4 border-t border-black/15 pt-4 sm:mt-5 sm:grid-cols-4 sm:gap-x-3 sm:pt-5">
+        <div className="mt-4 grid grid-cols-2 gap-x-1 gap-y-4 border-t border-rule pt-4 sm:mt-5 sm:grid-cols-4 sm:gap-x-3 sm:pt-5">
           {STATUSES.map((status) => {
             const meta = STATUS_META[status];
             const dim = active !== null && active !== status;
@@ -474,7 +474,7 @@ export function Summary({ applications, now }: SummaryProps) {
         </div>
       </div>
 
-      <div className="flex h-full flex-col rounded-[22px] border-[3px] border-black bg-[#d4f3e4] p-5 text-ink sm:p-6">
+      <div className="flex h-full flex-col rounded-[22px] border-[3px] border-black bg-mint p-5 text-ink sm:p-6">
         <div className="flex items-center justify-between gap-3">
           <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-muted">Next interview</p>
           <CalendarIcon className="h-4 w-4 text-live" />
@@ -485,12 +485,12 @@ export function Summary({ applications, now }: SummaryProps) {
               {relativeDayLabel(upcoming.interview.at, now)}
             </p>
             <p className="mt-2 text-sm text-muted">{formatConcrete(upcoming.interview.at)}</p>
-            <div className="mt-auto border-t border-black/15 pt-4">
+            <div className="mt-auto border-t border-rule pt-4">
               <p className="font-medium text-ink">{upcoming.application.company}</p>
               <p className="mt-0.5 text-sm text-muted">
                 <RoleTitle role={upcoming.application.role} jobUrl={upcoming.application.jobUrl} />
               </p>
-              <p className="mt-3 inline-flex rounded-full border-[2px] border-black/20 bg-white/70 px-2.5 py-1 text-xs font-medium text-ink">
+              <p className="mt-3 inline-flex rounded-full border-[2px] border-rule-strong bg-[var(--mint-chip)] px-2.5 py-1 text-xs font-medium text-ink">
                 {upcoming.interview.kind}
               </p>
               <p className="mt-3 text-xs text-muted">
