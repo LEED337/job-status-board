@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-11-05T03:28:27Z",
+  "updatedAt": "2026-11-05T15:33:50Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -652,10 +652,11 @@
       "company": "IFS Nexus Black",
       "role": "AI Engineer (US)",
       "jobUrl": "https://www.linkedin.com/jobs/view/4469220934/",
-      "status": "Applied",
+      "status": "Not hired",
       "appliedOn": "2026-09-19",
       "location": "Remote \u00b7 USA",
-      "interviews": []
+      "interviews": [],
+      "notes": "Nov 4, 2026 ~5:35 PM MT: Ashby email — role closed; application will not progress. Lee replied thanking them and staying interested in future openings."
     },
     {
       "id": "cyberforce-tam",
@@ -1766,11 +1767,11 @@
       "company": "New Relic",
       "role": "Technical Success Manager",
       "jobUrl": "https://job-boards.greenhouse.io/newrelic/jobs/5462648008",
-      "status": "Applied",
+      "status": "Not hired",
       "appliedOn": "2026-10-29",
       "location": "Field role with travel (Atlanta, Charlotte, Chicago, Dallas, Houston; also tagged remote)",
       "interviews": [],
-      "notes": "$177K-$221K OTE. Greenhouse, TAM resume. Applied by Scout Oct 29, 2026 ~9:49 AM MT."
+      "notes": "$177K-$221K OTE. Greenhouse, TAM resume. Applied by Scout Oct 29, 2026 ~9:49 AM MT. Nov 4, 2026 ~11:03 AM MT: New Relic emailed they are moving forward with other candidates."
     },
     {
       "id": "baseten-security-engineer",
@@ -1995,22 +1996,22 @@
       "company": "Torq",
       "role": "Customer Success Engineer, West Coast U.S.",
       "jobUrl": "https://job-boards.greenhouse.io/torq/jobs/6240590004",
-      "status": "Applied",
+      "status": "Not hired",
       "appliedOn": "2026-11-03",
       "location": "Remote (US)",
       "interviews": [],
-      "notes": "Applied by Scout Nov 3, 2026 ~11:50 AM MT via Greenhouse with CSE resume. Pay not posted."
+      "notes": "Applied by Scout Nov 3, 2026 ~11:50 AM MT via Greenhouse with CSE resume. Pay not posted. Nov 4, 2026 ~3:00 PM MT: Torq emailed they are moving forward with other candidates."
     },
     {
       "id": "netcraft-cybercrime-analyst",
       "company": "Netcraft",
       "role": "Cybercrime Analyst",
       "jobUrl": "https://job-boards.eu.greenhouse.io/netcraft/jobs/5008339101",
-      "status": "Applied",
+      "status": "Not hired",
       "appliedOn": "2026-11-03",
       "location": "Lehi, UT (Hybrid)",
       "interviews": [],
-      "notes": "Applied by Scout Nov 3, 2026 ~9:50 PM MT via Greenhouse (job 5008339101) with CSE resume and cover letter. Pay $50K. Nov 4, 2026: Netcraft emailed asking Lee to complete an aptitude test."
+      "notes": "Applied by Scout Nov 3, 2026 ~9:50 PM MT via Greenhouse (job 5008339101) with CSE resume and cover letter. Pay $50K. Nov 4, 2026: Netcraft emailed asking Lee to complete an aptitude test. Nov 5, 2026 ~5:22 AM MT: Netcraft emailed they will not progress the application (after aptitude-test ask)."
     },
     {
       "id": "journeyteam-assoc-dev-bc",
@@ -2194,6 +2195,28 @@
       "location": "Salt Lake City, UT (part-time)",
       "interviews": [],
       "notes": "Part-time. Applied Nov 4, 2026 ~4:40 PM MT with CSE_Resume (Lee self-applied). Workday JR-026370."
+    },
+    {
+      "id": "safebreach-tam",
+      "company": "SafeBreach",
+      "role": "Technical Account Manager (TAM)",
+      "jobUrl": "https://job-boards.greenhouse.io/safebreach/jobs/4407442009",
+      "status": "Applied",
+      "appliedOn": "2026-11-05",
+      "location": "Remote (North America, Eastern Time Zone)",
+      "interviews": [],
+      "notes": "Applied Nov 5, 2026 ~2:22 AM MT via Greenhouse (confirmation email). Base $130K–$150K."
+    },
+    {
+      "id": "primordial-labs-it-cloud-sec-admin",
+      "company": "Primordial Labs",
+      "role": "IT, Cloud & Security Administrator",
+      "jobUrl": "https://careers.primordial-labs.com/jobs/715695-it-cloud-security-administrator",
+      "status": "Applied",
+      "appliedOn": "2026-11-05",
+      "location": "Remote (US)",
+      "interviews": [],
+      "notes": "Applied Nov 5, 2026 ~2:22 AM MT via Teamtailor (welcome email from Katie Hawk). Base $125K–$175K. US citizen/residency required."
     }
   ]
 }
