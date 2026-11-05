@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-11-04T16:48:11Z",
+  "updatedAt": "2026-11-05T03:28:27Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -2139,6 +2139,61 @@
       "location": "Remote (US)",
       "interviews": [],
       "notes": "Applied by Scout Nov 4, 2026 ~9:41 AM MT via Greenhouse with TAM resume. Pay $155K-$180K. Separate from the Oct 18 Ping TAM application."
+    },
+    {
+      "id": "wiz-tpe-us-public-sector-east",
+      "company": "Wiz",
+      "role": "Technical Product Expert - US Public Sector (East Coast)",
+      "jobUrl": "https://job-boards.greenhouse.io/wizinc/jobs/4708704006",
+      "status": "Applied",
+      "appliedOn": "2026-11-04",
+      "location": "Remote (USA)",
+      "interviews": [],
+      "notes": "$163K–$223K base. Applied Nov 4, 2026 ~3:45 PM MT with TAM_Resume (Scout). Greenhouse wizinc 4708704006."
+    },
+    {
+      "id": "wiz-sec-eng-product-prod-infra",
+      "company": "Wiz",
+      "role": "Security Engineer, Product & Production Infrastructure",
+      "jobUrl": "https://job-boards.greenhouse.io/wizinc/jobs/4711762006",
+      "status": "Applied",
+      "appliedOn": "2026-11-04",
+      "location": "Remote (USA)",
+      "interviews": [],
+      "notes": "$207K–$283K base. Applied Nov 4, 2026 ~3:49 PM MT with CSE_Resume (Scout). Greenhouse wizinc 4711762006."
+    },
+    {
+      "id": "extra-space-security-engineer",
+      "company": "Extra Space Storage",
+      "role": "Security Engineer",
+      "jobUrl": "https://extraspace.wd5.myworkdayjobs.com/en-US/ESS_External/job/Security-Engineer_R-82115",
+      "status": "Applied",
+      "appliedOn": "2026-11-04",
+      "location": "Hybrid, Cottonwood Heights UT",
+      "interviews": [],
+      "notes": "Pay not posted; salary ask $110K. Applied Nov 4, 2026 ~4:07 PM MT with CSE_Resume (Scout). Workday ESS_External R-82115."
+    },
+    {
+      "id": "wgu-incident-response-analyst-ii",
+      "company": "Western Governors University",
+      "role": "Incident Response Analyst II",
+      "jobUrl": "https://wgu.wd5.myworkdayjobs.com/en-US/External/job/Incident-Response-Analyst-II_JR-026295",
+      "status": "Applied",
+      "appliedOn": "2026-11-04",
+      "location": "Salt Lake City, UT",
+      "interviews": [],
+      "notes": "Applied Nov 4, 2026 ~4:40 PM MT with CSE_Resume (Lee self-applied). Workday JR-026295."
+    },
+    {
+      "id": "wgu-intern-data-governance",
+      "company": "Western Governors University",
+      "role": "Intern, Data Governance",
+      "jobUrl": "https://wgu.wd5.myworkdayjobs.com/en-US/External/job/Intern---Technical-Writing_JR-026370",
+      "status": "Applied",
+      "appliedOn": "2026-11-04",
+      "location": "Salt Lake City, UT (part-time)",
+      "interviews": [],
+      "notes": "Part-time. Applied Nov 4, 2026 ~4:40 PM MT with CSE_Resume (Lee self-applied). Workday JR-026370."
     }
   ]
 }

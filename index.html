@@ -4,7 +4,26 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#e4efe8" />
+    <meta name="theme-color" content="#2a2d32" />
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem("job-board-theme");
+          var theme =
+            saved === "light" || saved === "dark"
+              ? saved
+              : window.matchMedia("(prefers-color-scheme: dark)").matches
+                ? "dark"
+                : "light";
+          var page = theme === "dark" ? "#0e1014" : "#2a2d32";
+          document.documentElement.dataset.theme = theme;
+          document.documentElement.style.colorScheme = theme;
+          document.documentElement.style.backgroundColor = page;
+          var meta = document.querySelector('meta[name="theme-color"]');
+          if (meta) meta.setAttribute("content", page);
+        } catch (e) {}
+      })();
+    </script>
     <meta
       name="description"
       content="A calm, read-only board of job applications: submitted, waiting, interviewing, and closed."
@@ -19,7 +38,11 @@
     <style>
       html,
       body {
-        background: #e4efe8;
+        background: #2a2d32;
+      }
+      html[data-theme="dark"],
+      html[data-theme="dark"] body {
+        background: #0e1014;
       }
     </style>
   </head>

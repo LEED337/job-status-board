@@ -27,7 +27,7 @@ export function RoleTitle({ role, jobUrl, className }: RoleTitleProps) {
       rel="noopener noreferrer"
       title={jobUrl}
       className={cx(
-        "text-[#0645ad] underline-offset-[3px] hover:text-[#053a91] hover:underline focus-visible:underline",
+        "text-link underline-offset-[3px] hover:text-link-hover hover:underline focus-visible:underline",
         withoutInkOverride(className),
       )}
     >

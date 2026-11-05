@@ -6,7 +6,7 @@ export function StatusPill({ status }: { status: ApplicationStatus }) {
   return (
     <span
       className="inline-flex items-center whitespace-nowrap rounded-full px-2.5 py-1 text-xs font-semibold"
-      style={{ background: meta.soft, color: meta.text }}
+      style={{ background: meta.chip, color: meta.text }}
     >
       {status}
     </span>

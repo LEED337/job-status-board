@@ -7,40 +7,44 @@ import type { ApplicationStatus } from "../types.ts";
  */
 export const STATUS_META: Record<
   ApplicationStatus,
-  { soft: string; text: string; onDark: string; caption: string }
+  { soft: string; chip: string; text: string; onDark: string; caption: string }
 > = {
   Applied: {
     soft: "#e7edfb",
-    text: "#3451c7",
+    chip: "var(--chip-applied-bg)",
+    text: "var(--chip-applied-fg)",
     onDark: "#657bd4",
     caption: "Waiting to hear back",
   },
   Interviewing: {
     soft: "#e3f5eb",
-    text: "#15724a",
+    chip: "var(--chip-interview-bg)",
+    text: "var(--chip-interview-fg)",
     onDark: "#448e6e",
     caption: "Active conversations",
   },
   "Not hired": {
     soft: "#f8e9ec",
-    text: "#9d4454",
+    chip: "var(--chip-closed-bg)",
+    text: "var(--chip-closed-fg)",
     onDark: "#b26d79",
     caption: "Closed",
   },
   Ghosted: {
     soft: "#eeeef0",
-    text: "#55575d",
+    chip: "var(--chip-ghost-bg)",
+    text: "var(--chip-ghost-fg)",
     onDark: "#808186",
     caption: "No reply after 30 days",
   },
 };
 
 export const AVATAR_COLORS = [
-  { bg: "#e7eefc", fg: "#2a4494" },
-  { bg: "#e5f5ec", fg: "#176b42" },
-  { bg: "#f8eaed", fg: "#8d3a48" },
-  { bg: "#f6efe4", fg: "#7a5520" },
-  { bg: "#f0eaf8", fg: "#5b3d86" },
-  { bg: "#e6f4f4", fg: "#1d5c5c" },
-  { bg: "#fdeee4", fg: "#8a4b22" },
+  { bg: "var(--avatar-1-bg)", fg: "var(--avatar-1-fg)" },
+  { bg: "var(--avatar-2-bg)", fg: "var(--avatar-2-fg)" },
+  { bg: "var(--avatar-3-bg)", fg: "var(--avatar-3-fg)" },
+  { bg: "var(--avatar-4-bg)", fg: "var(--avatar-4-fg)" },
+  { bg: "var(--avatar-5-bg)", fg: "var(--avatar-5-fg)" },
+  { bg: "var(--avatar-6-bg)", fg: "var(--avatar-6-fg)" },
+  { bg: "var(--avatar-7-bg)", fg: "var(--avatar-7-fg)" },
 ];

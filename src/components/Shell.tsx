@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import { cx } from "../lib/styles.ts";
+import { ThemeToggle } from "./ThemeToggle.tsx";
 
 type ShellProps = {
   title: string;
@@ -56,7 +57,10 @@ export function Shell({ title, subtitle, embed = false, actions, footer, childre
                 {subtitle ? <p className="mt-1.5 text-sm text-muted">{subtitle}</p> : null}
               </div>
             </div>
-            {actions ? <div className="flex flex-wrap items-center gap-2">{actions}</div> : null}
+            <div className="flex flex-wrap items-center gap-2">
+              {actions}
+              <ThemeToggle />
+            </div>
           </header>
           <div className={cx("dot-bg flex-1", embed ? "px-3 py-3" : "px-4 py-4 sm:px-6 sm:py-6")}>
             {children}
@@ -73,7 +77,7 @@ export function Shell({ title, subtitle, embed = false, actions, footer, childre
 function Mark() {
   return (
     <div
-      className="grid h-11 w-11 shrink-0 place-items-center rounded-2xl bg-ink shadow-[inset_0_1px_0_rgba(255,255,255,0.14)]"
+      className="grid h-11 w-11 shrink-0 place-items-center rounded-2xl bg-fill shadow-[inset_0_1px_0_rgba(255,255,255,0.14)]"
       aria-hidden="true"
     >
       <svg width="22" height="22" viewBox="0 0 22 22" fill="none">

@@ -41,3 +41,30 @@ export function CloseIcon({ className = "h-4 w-4" }: IconProps) {
     </svg>
   );
 }
+
+export function SunIcon({ className = "h-4 w-4" }: IconProps) {
+  return (
+    <svg className={className} viewBox="0 0 20 20" fill="none" aria-hidden="true">
+      <circle cx="10" cy="10" r="3.1" stroke="currentColor" strokeWidth="1.6" />
+      <path
+        d="M10 2.7v1.8M10 15.5v1.8M2.7 10h1.8M15.5 10h1.8M4.8 4.8l1.3 1.3M13.9 13.9l1.3 1.3M15.2 4.8l-1.3 1.3M6.1 13.9l-1.3 1.3"
+        stroke="currentColor"
+        strokeWidth="1.6"
+        strokeLinecap="round"
+      />
+    </svg>
+  );
+}
+
+export function MoonIcon({ className = "h-4 w-4" }: IconProps) {
+  return (
+    <svg className={className} viewBox="0 0 20 20" fill="none" aria-hidden="true">
+      <path
+        d="M16.3 12.7A6.35 6.35 0 0 1 7.3 3.7a6.35 6.35 0 1 0 9 9Z"
+        stroke="currentColor"
+        strokeWidth="1.6"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}

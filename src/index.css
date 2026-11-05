@@ -1,17 +1,141 @@
 @import "tailwindcss";
 
-@theme {
+/*
+  Runtime palette. Light values match the original board.
+  `data-theme` is set before paint from localStorage, or from
+  prefers-color-scheme when no preference is saved.
+  Keep the key in sync with src/lib/theme.ts and index.html.
+*/
+:root {
+  color-scheme: light;
+  --page: #2a2d32;
+  --card: #ffffff;
+  --ink: #0a0a0a;
+  --muted: #3a3a3a;
+  --line: #000000;
+  --soft: #e8e8e8;
+  --sheet: #f0f0f0;
+  --mint: #d4f3e4;
+  --row: #ececec;
+  --press: #dcdcdc;
+  --tint: rgba(0, 0, 0, 0.05);
+  --hairline: rgba(0, 0, 0, 0.1);
+  --rule: rgba(0, 0, 0, 0.15);
+  --rule-strong: rgba(0, 0, 0, 0.2);
+  --mint-chip: rgba(255, 255, 255, 0.7);
+  --dots: #c5c9cf;
+  --dot: rgba(0, 0, 0, 0.16);
+  --quiet: #7a4e12;
+  --quiet-bg: #f6efe3;
+  --live: #0d5c38;
+  --live-bg: #e3f5eb;
+  --closed: #8a2f3d;
+  --applied: #1d3fb8;
+  --link: #0645ad;
+  --link-hover: #053a91;
+  --focus: #000000;
+  --selection: #c8c8c8;
+  --chip-applied-bg: #e7edfb;
+  --chip-applied-fg: #3451c7;
+  --chip-interview-bg: #e3f5eb;
+  --chip-interview-fg: #15724a;
+  --chip-closed-bg: #f8e9ec;
+  --chip-closed-fg: #9d4454;
+  --chip-ghost-bg: #eeeef0;
+  --chip-ghost-fg: #55575d;
+  --avatar-1-bg: #e7eefc;
+  --avatar-1-fg: #2a4494;
+  --avatar-2-bg: #e5f5ec;
+  --avatar-2-fg: #176b42;
+  --avatar-3-bg: #f8eaed;
+  --avatar-3-fg: #8d3a48;
+  --avatar-4-bg: #f6efe4;
+  --avatar-4-fg: #7a5520;
+  --avatar-5-bg: #f0eaf8;
+  --avatar-5-fg: #5b3d86;
+  --avatar-6-bg: #e6f4f4;
+  --avatar-6-fg: #1d5c5c;
+  --avatar-7-bg: #fdeee4;
+  --avatar-7-fg: #8a4b22;
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --page: #0e1014;
+  --card: #1b1e26;
+  --ink: #f3f4f7;
+  --muted: #b7bdc8;
+  --line: #d5dae3;
+  --soft: #2a303b;
+  --sheet: #242833;
+  --mint: #14352a;
+  --row: #2c323d;
+  --press: #353b48;
+  --tint: rgba(255, 255, 255, 0.08);
+  --hairline: rgba(213, 218, 227, 0.42);
+  --rule: rgba(213, 218, 227, 0.32);
+  --rule-strong: rgba(213, 218, 227, 0.5);
+  --mint-chip: rgba(255, 255, 255, 0.1);
+  --dots: #14171d;
+  --dot: rgba(255, 255, 255, 0.09);
+  --quiet: #f0d3a4;
+  --quiet-bg: #3a2e1c;
+  --live: #8fd4b4;
+  --live-bg: #16382b;
+  --closed: #f3c0cb;
+  --applied: #c5d2fb;
+  --link: #9eb6ff;
+  --link-hover: #d5e0ff;
+  --focus: #f3f4f7;
+  --selection: #3a4d7a;
+  --chip-applied-bg: #243456;
+  --chip-applied-fg: #c9d6ff;
+  --chip-interview-bg: #16382b;
+  --chip-interview-fg: #b7ebcf;
+  --chip-closed-bg: #3f242c;
+  --chip-closed-fg: #f6c9d2;
+  --chip-ghost-bg: #2e3036;
+  --chip-ghost-fg: #d8d9de;
+  --avatar-1-bg: #243056;
+  --avatar-1-fg: #d5def8;
+  --avatar-2-bg: #1a3d2e;
+  --avatar-2-fg: #c6ecd8;
+  --avatar-3-bg: #3d242c;
+  --avatar-3-fg: #f6cdd4;
+  --avatar-4-bg: #3a2e1c;
+  --avatar-4-fg: #f0d7b0;
+  --avatar-5-bg: #2e2440;
+  --avatar-5-fg: #e0d2f5;
+  --avatar-6-bg: #1a3333;
+  --avatar-6-fg: #c5e8e8;
+  --avatar-7-bg: #3d2a1c;
+  --avatar-7-fg: #f6d3c0;
+}
+
+@theme inline {
   --font-sans: "Plus Jakarta Sans", "Segoe UI", ui-sans-serif, system-ui, sans-serif;
-  --color-wash: #2a2d32;
-  --color-ink: #0a0a0a;
-  --color-muted: #3a3a3a;
-  --color-line: #000000;
-  --color-soft: #e8e8e8;
-  --color-sheet: #f0f0f0;
-  --color-applied: #1d3fb8;
-  --color-quiet: #7a4e12;
-  --color-live: #0d5c38;
-  --color-closed: #8a2f3d;
+  --color-wash: var(--page);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-soft: var(--soft);
+  --color-sheet: var(--sheet);
+  --color-mint: var(--mint);
+  --color-row: var(--row);
+  --color-press: var(--press);
+  --color-tint: var(--tint);
+  --color-hairline: var(--hairline);
+  --color-rule: var(--rule);
+  --color-rule-strong: var(--rule-strong);
+  --color-applied: var(--applied);
+  --color-quiet: var(--quiet);
+  --color-live: var(--live);
+  --color-closed: var(--closed);
+  --color-link: var(--link);
+  --color-link-hover: var(--link-hover);
+  --color-white: var(--card);
+  --color-black: var(--line);
+  --color-fill: #0a0a0a;
 }
 
 html,
@@ -22,8 +146,8 @@ body,
 
 body {
   margin: 0;
-  color: #0a0a0a;
-  background: #2a2d32;
+  color: var(--ink);
+  background: var(--page);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -34,16 +158,17 @@ input,
 textarea,
 select {
   font: inherit;
-  color-scheme: light;
+  color-scheme: inherit;
 }
 
 ::selection {
-  background: #c8c8c8;
+  background: var(--selection);
+  color: var(--ink);
 }
 
 .dot-bg {
-  background-color: #c5c9cf;
-  background-image: radial-gradient(rgba(0, 0, 0, 0.16) 1px, transparent 1px);
+  background-color: var(--dots);
+  background-image: radial-gradient(var(--dot) 1px, transparent 1px);
   background-size: 18px 18px;
 }
 
@@ -52,7 +177,7 @@ select {
 }
 
 :focus-visible {
-  outline: 3px solid #000000;
+  outline: 3px solid var(--focus);
   outline-offset: 2px;
 }
 
@@ -62,46 +187,46 @@ select:focus-visible {
   outline: none;
 }
 
-/* Readable type on white panels; keep dark buttons white-labeled */
+/* Readable type on cards. `white` is the card surface, so labels on the
+   near-black fills stay explicitly white. */
 .bg-white {
-  color: #0a0a0a;
+  color: var(--ink);
 }
 
 .bg-white .text-muted,
 .bg-white [class*="text-muted"] {
-  color: #3a3a3a !important;
+  color: var(--muted) !important;
 }
 
 .bg-white .text-ink,
 .bg-white [class*="text-ink"] {
-  color: #0a0a0a !important;
+  color: var(--ink) !important;
 }
 
 .bg-white .text-white,
 .bg-white [class~="text-white"],
-.bg-white .bg-ink,
-.bg-white [class~="bg-ink"] {
+.bg-white .bg-fill,
+.bg-white [class~="bg-fill"] {
   color: #ffffff !important;
 }
 
-.bg-white .bg-ink .text-muted,
-.bg-white .bg-ink [class*="text-muted"] {
+.bg-white .bg-fill .text-muted,
+.bg-white .bg-fill [class*="text-muted"] {
   color: rgba(255, 255, 255, 0.75) !important;
 }
 
-/* Readable type on the mint "next interview" card */
-.bg-\[\#d4f3e4\] {
-  color: #0a0a0a;
+.bg-mint {
+  color: var(--ink);
 }
 
-.bg-\[\#d4f3e4\] .text-muted,
-.bg-\[\#d4f3e4\] [class*="text-muted"] {
-  color: #3a3a3a !important;
+.bg-mint .text-muted,
+.bg-mint [class*="text-muted"] {
+  color: var(--muted) !important;
 }
 
-.bg-\[\#d4f3e4\] .text-ink,
-.bg-\[\#d4f3e4\] [class*="text-ink"] {
-  color: #0a0a0a !important;
+.bg-mint .text-ink,
+.bg-mint [class*="text-ink"] {
+  color: var(--ink) !important;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -114,6 +239,34 @@ select:focus-visible {
 }
 
 @media print {
+  html {
+    color-scheme: light;
+    --page: #ffffff;
+    --card: #ffffff;
+    --ink: #0a0a0a;
+    --muted: #3a3a3a;
+    --line: #000000;
+    --soft: #e8e8e8;
+    --sheet: #f0f0f0;
+    --mint: #d4f3e4;
+    --dots: #ffffff;
+    --dot: rgba(0, 0, 0, 0.16);
+    --quiet: #7a4e12;
+    --live: #0d5c38;
+    --closed: #8a2f3d;
+    --link: #0645ad;
+    --link-hover: #053a91;
+    --focus: #000000;
+    --chip-applied-bg: #e7edfb;
+    --chip-applied-fg: #3451c7;
+    --chip-interview-bg: #e3f5eb;
+    --chip-interview-fg: #15724a;
+    --chip-closed-bg: #f8e9ec;
+    --chip-closed-fg: #9d4454;
+    --chip-ghost-bg: #eeeef0;
+    --chip-ghost-fg: #55575d;
+  }
+
   body {
     background: white;
   }

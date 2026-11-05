@@ -70,7 +70,7 @@ export function BoardList({ applications, now, showNotes = false, onEdit, onDele
             : "Nothing has been published to the shared board."}
         </p>
         {onAdd ? (
-          <button type="button" onClick={onAdd} className="mt-5 text-sm font-semibold text-ink underline decoration-black/20 underline-offset-4">
+          <button type="button" onClick={onAdd} className="mt-5 text-sm font-semibold text-ink underline decoration-ink/30 underline-offset-4">
             Add an application
           </button>
         ) : null}
@@ -132,7 +132,7 @@ export function BoardList({ applications, now, showNotes = false, onEdit, onDele
               setQuery("");
               setFilter("All");
             }}
-            className="mt-4 text-sm font-semibold underline decoration-black/20 underline-offset-4"
+            className="mt-4 text-sm font-semibold text-ink underline decoration-ink/30 underline-offset-4"
           >
             Clear filters
           </button>
@@ -223,7 +223,7 @@ function FilterChip({
       aria-pressed={active}
       className={cx(
         "inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-[13px] font-medium whitespace-nowrap transition-colors",
-        active ? "bg-ink text-white" : "bg-soft text-ink hover:bg-[#dcdcdc]",
+        active ? "bg-fill text-white ring-1 ring-inset ring-black" : "bg-soft text-ink hover:bg-press",
       )}
     >
       {children}
@@ -415,7 +415,7 @@ function ApplicationRow({
   const colSpan = onEdit || onDelete ? 7 : 6;
   return (
     <>
-      <tr className={cx("border-t-[3px] border-black", open ? "bg-[#ececec]" : "hover:bg-[#ececec]")}>
+      <tr className={cx("border-t-[3px] border-black", open ? "bg-row" : "hover:bg-row")}>
         <td className="overflow-hidden py-3.5 pr-3 pl-5">
           <div className="flex items-center gap-2.5">
             <button
@@ -424,7 +424,7 @@ function ApplicationRow({
               aria-controls={panelId}
               aria-label={`${open ? "Hide" : "Show"} interviews for ${application.company}`}
               onClick={onToggle}
-              className="grid h-8 w-8 shrink-0 place-items-center rounded-full text-muted hover:bg-black/5 hover:text-ink"
+              className="grid h-8 w-8 shrink-0 place-items-center rounded-full text-muted hover:bg-tint hover:text-ink"
             >
               <ChevronIcon className={cx("h-4 w-4 transition-transform", open && "rotate-90")} />
             </button>
@@ -465,7 +465,7 @@ function ApplicationRow({
         ) : null}
       </tr>
       {open ? (
-        <tr className="bg-[#ececec]">
+        <tr className="bg-row">
           <td id={panelId} colSpan={colSpan} className="px-5 pt-0 pb-4">
             <Timeline application={application} showNotes={showNotes} now={now} />
           </td>
@@ -540,7 +540,7 @@ function ApplicationCard({
               aria-expanded={open}
               aria-controls={panelId}
               onClick={onToggle}
-              className="text-xs font-semibold text-ink underline decoration-black/20 underline-offset-4"
+              className="text-xs font-semibold text-ink underline decoration-ink/30 underline-offset-4"
             >
               {open ? "Hide interviews" : "Show interviews"}
             </button>
