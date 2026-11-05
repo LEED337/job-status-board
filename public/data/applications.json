@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-11-05T15:33:50Z",
+  "updatedAt": "2026-11-05T15:36:43Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -2168,11 +2168,11 @@
       "company": "Extra Space Storage",
       "role": "Security Engineer",
       "jobUrl": "https://extraspace.wd5.myworkdayjobs.com/en-US/ESS_External/job/Security-Engineer_R-82115",
-      "status": "Applied",
+      "status": "Interviewing",
       "appliedOn": "2026-11-04",
       "location": "Hybrid, Cottonwood Heights UT",
       "interviews": [],
-      "notes": "Pay not posted; salary ask $110K. Applied Nov 4, 2026 ~4:07 PM MT with CSE_Resume (Scout). Workday ESS_External R-82115."
+      "notes": "Pay not posted; salary ask $110K. Applied Nov 4, 2026 ~4:07 PM MT with CSE_Resume (Scout). Workday ESS_External R-82115. Nov 4, 2026: Completed AI interview (Scout)."
     },
     {
       "id": "wgu-incident-response-analyst-ii",
@@ -2217,6 +2217,17 @@
       "location": "Remote (US)",
       "interviews": [],
       "notes": "Applied Nov 5, 2026 ~2:22 AM MT via Teamtailor (welcome email from Katie Hawk). Base $125K–$175K. US citizen/residency required."
+    },
+    {
+      "id": "harmonic-security-deployment-engineer",
+      "company": "Harmonic Security",
+      "role": "Deployment Engineer",
+      "jobUrl": "https://jobs.ashbyhq.com/harmonic-security-inc/12fff564-5ec2-458b-b2b5-ccf4f9d7eb80",
+      "status": "Applied",
+      "appliedOn": "2026-11-05",
+      "location": "Remote (US)",
+      "interviews": [],
+      "notes": "$190K–$210K. Applied Nov 5, 2026 ~2:20 AM MT with CSE_Resume (Scout). LinkedIn job 4475020579 (Ashby)."
     }
   ]
 }
