@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-11-06T06:17:10Z",
+  "updatedAt": "2026-11-06T15:26:18Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -10,12 +10,17 @@
       "status": "Interviewing",
       "appliedOn": "2026-10-07",
       "location": "Remote / TBD",
-      "notes": "Recruiter screen today 11:30 AM MT. Oct 30, 2026: Comp negotiation with Sam stalled ($130-150K OTE offered); Lee marked Not hired. Will revisit if they come back with more. Nov 1, 2026: Back in process. GC AI sent a form asking for Lee's info and interview availability ahead of the next conversation; time TBD.",
+      "notes": "Recruiter screen today 11:30 AM MT. Oct 30, 2026: Comp negotiation with Sam stalled ($130-150K OTE offered); Lee marked Not hired. Will revisit if they come back with more. Nov 1, 2026: Back in process. GC AI sent a form asking for Lee's info and interview availability ahead of the next conversation; time TBD. Nov 5, 2026: Sales Leader Interview with Erik Gillespie (Senior Director, Enterprise Accounts) scheduled Fri Nov 13, 2026 3:00-3:30 PM MST on Zoom.",
       "interviews": [
         {
           "id": "int-gc-ai-1",
           "at": "2026-10-07T11:30",
           "kind": "Recruiter screen"
+        },
+        {
+          "id": "gc-ai-erik-gillespie",
+          "at": "2026-11-13T15:00",
+          "kind": "Sales Leader Interview (CSM) with Erik Gillespie"
         }
       ]
     },
@@ -1475,7 +1480,7 @@
           "kind": "Hiring manager interview with Michael Hurst"
         }
       ],
-      "notes": "Applied Oct 22, 2026 via internal referral from a friend. $82K\u2013$171K base. Separate from the earlier Everpure DSE process and the Senior Service Account Manager application. Oct 30, 2026: Recruiter called; since Lee already went through the Everpure interview loop, he'll meet directly with the hiring manager. Likely Wed Nov 4, 2026; time TBD. Oct 30, 2026: Interview confirmed Tue Nov 3, 11:00-11:45 AM MT with hiring manager Michael Hurst."
+      "notes": "Applied Oct 22, 2026 via internal referral from a friend. $82K\u2013$171K base. Separate from the earlier Everpure DSE process and the Senior Service Account Manager application. Oct 30, 2026: Recruiter called; since Lee already went through the Everpure interview loop, he'll meet directly with the hiring manager. Likely Wed Nov 4, 2026; time TBD. Oct 30, 2026: Interview confirmed Tue Nov 3, 11:00-11:45 AM MT with hiring manager Michael Hurst. Nov 5, 2026: Loure Blanton emailed that Michael Hurst was impressed and wants to move Lee to the panel interview; Lee replied with next-week availability (Mon Nov 9 8am-2pm and 4-7pm MT; Tue Nov 10 8am-7pm MT blocks among others). Panel time TBD."
     },
     {
       "id": "duplocloud-solutions-architect",
@@ -1855,11 +1860,11 @@
       "company": "Databricks",
       "role": "Sr. Solutions Architect, Customer Lake",
       "jobUrl": "https://www.databricks.com/company/careers/field-engineering---other/sr-solutions-architect-customer-lake-8762360002?gh_jid=8762360002",
-      "status": "Applied",
+      "status": "Not hired",
       "appliedOn": "2026-10-30",
       "location": "United States",
       "interviews": [],
-      "notes": "$219,100-$301,300. Req FEQ327R42, CSE resume. Applied by Scout Oct 30, 2026 ~1:10 PM MT."
+      "notes": "$219,100-$301,300. Req FEQ327R42, CSE resume. Applied by Scout Oct 30, 2026 ~1:10 PM MT. Nov 5, 2026 ~9:16 AM MT: Databricks emailed they will not move forward for Sr. Solutions Architect, Customer Lake."
     },
     {
       "id": "tailscale-sr-se-enterprise",
@@ -2172,7 +2177,7 @@
       "appliedOn": "2026-11-04",
       "location": "Hybrid, Cottonwood Heights UT",
       "interviews": [],
-      "notes": "Pay not posted; salary ask $110K. Applied Nov 4, 2026 ~4:07 PM MT with CSE_Resume (Scout). Workday ESS_External R-82115. Nov 4, 2026: Completed AI interview (Scout)."
+      "notes": "Pay not posted; salary ask $110K. Applied Nov 4, 2026 ~4:07 PM MT with CSE_Resume (Scout). Workday ESS_External R-82115. Nov 4, 2026: Completed AI interview (Scout). Nov 4–5, 2026: Completed Ribbon/AI virtual interview for R-82115; recruiter path continues (Interviewing)."
     },
     {
       "id": "wgu-incident-response-analyst-ii",
@@ -2239,6 +2244,121 @@
       "location": "Remote (US)",
       "interviews": [],
       "notes": "Applied Nov 5, 2026 ~11:15 PM MT through an old AWS colleague's Google/Mandiant referral portal. Posted range $112K–$161K + 15% bonus target + equity. Remote US (Ohio listed as a remote location); travel up to 20%."
+    },
+    {
+      "id": "extra-space-associate-swe",
+      "company": "Extra Space Storage",
+      "role": "Associate Software Engineer",
+      "jobUrl": "https://extraspace.wd5.myworkdayjobs.com/en-US/ESS_External/job/Associate-Software-Engineer_R-82836",
+      "status": "Interviewing",
+      "appliedOn": "2026-11-05",
+      "location": "Hybrid, Cottonwood Heights / Salt Lake City UT",
+      "interviews": [
+        {
+          "id": "extra-space-ase-ai",
+          "at": "2026-11-05T10:25",
+          "kind": "Ribbon AI / virtual interview"
+        }
+      ],
+      "notes": "Applied Nov 5, 2026 ~9:18 AM MT (Workday R-82836). Separate from Security Engineer R-82115. Nov 5: Completed virtual interview; Marvi Blandon forwarding to hiring managers (few business days)."
+    },
+    {
+      "id": "amentum-cybersecurity-engineer-cloud",
+      "company": "Amentum",
+      "role": "Cybersecurity Engineer (Cloud)",
+      "jobUrl": "https://pae.wd1.myworkdayjobs.com/en-US/Amentum_Careers/job/Cybersecurity-Engineer--Cloud-_R0174411",
+      "status": "Applied",
+      "appliedOn": "2026-11-05",
+      "location": "Remote (US-VA-Remote VA999)",
+      "interviews": [],
+      "notes": "Applied Nov 5, 2026 ~9:52 AM MT via Workday (R0174411). Posted ~$130K–$140K. Confirmation email from Amentum Workday."
+    },
+    {
+      "id": "hiredbuddy-ml-engineer",
+      "company": "HiredBuddy",
+      "role": "Machine Learning Engineer",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4486556850/",
+      "status": "Applied",
+      "appliedOn": "2026-11-05",
+      "location": "United States",
+      "interviews": [],
+      "notes": "Applied Nov 5, 2026 ~9:32 AM MT via LinkedIn Easy Apply. LinkedIn confirmation: application sent to HiredBuddy."
+    },
+    {
+      "id": "myriad360-junior-ai-automation",
+      "company": "Myriad360",
+      "role": "Junior AI and Automation Engineer",
+      "jobUrl": "https://boards.greenhouse.io/myriad360/jobs/8930382002?gh_jid=8930382002",
+      "status": "Applied",
+      "appliedOn": "2026-11-05",
+      "location": "Remote (US)",
+      "interviews": [],
+      "notes": "Applied Nov 5, 2026 ~9:31 AM MT via Greenhouse (confirmation email). NYC posting shows $85K base; compensation may vary by geography. Role matched to Junior AI & Automation Engineer posting active at apply time (Greenhouse email did not name the title)."
+    },
+    {
+      "id": "ringcentral-tsm",
+      "company": "RingCentral",
+      "role": "Technical Success Manager",
+      "jobUrl": "https://ringcentral.wd1.myworkdayjobs.com/en-US/RingCentral_Careers/job/Technical-Success-Manager_R078507",
+      "status": "Applied",
+      "appliedOn": "2026-11-05",
+      "location": "Remote (USA)",
+      "interviews": [],
+      "notes": "Applied Nov 5, 2026 ~9:29 AM MT via Workday (R078507). Posted $90K–$144K plus variable/equity."
+    },
+    {
+      "id": "databank-tam",
+      "company": "DataBank",
+      "role": "Technical Account Manager (Remote)",
+      "jobUrl": "https://builtin.com/job/technical-account-manager-remote/12085576",
+      "status": "Applied",
+      "appliedOn": "2026-11-05",
+      "location": "Remote (Dallas, TX listed)",
+      "interviews": [],
+      "notes": "Applied Nov 5, 2026 ~9:14 AM MT via TalentReef. Pay not posted. Domestic travel up to 20%."
+    },
+    {
+      "id": "quilr-tam",
+      "company": "Quilr Inc.",
+      "role": "Technical Account Manager",
+      "jobUrl": "https://ats.rippling.com/quilr-inc/jobs/e429309b-e10c-4cc4-955f-7a57622e1697",
+      "status": "Applied",
+      "appliedOn": "2026-11-05",
+      "location": "Remote (US)",
+      "interviews": [],
+      "notes": "Applied Nov 5, 2026 ~9:00 AM MT via Rippling. Pay not posted."
+    },
+    {
+      "id": "amplitude-sr-tsm-ii",
+      "company": "Amplitude",
+      "role": "Senior Technical Success Manager II",
+      "jobUrl": "https://jobs.ashbyhq.com/amplitude/2bb0f6f7-f335-49ee-89ec-5814b34a5268",
+      "status": "Applied",
+      "appliedOn": "2026-11-05",
+      "location": "Remote (US; West-leaning locations on related Amplitude TSM postings)",
+      "interviews": [],
+      "notes": "Applied Nov 5, 2026 ~8:55 AM MT via Ashby (confirmation titled Senior Technical Success Manager II). Related Amplitude Senior TSM Emerging Enterprise West posting shows $151K–$252K + equity/bonus."
+    },
+    {
+      "id": "icapital-swe-integration-assoc",
+      "company": "iCapital",
+      "role": "Software Integration Engineer - Associate",
+      "jobUrl": "https://job-boards.greenhouse.io/icapitalnetwork/jobs/8919341002",
+      "status": "Applied",
+      "appliedOn": "2026-11-05",
+      "location": "Colorado Springs, CO (or as posting lists)",
+      "interviews": [],
+      "notes": "Applied Nov 5, 2026 ~8:55 AM MT via Greenhouse. Posted ~$80K–$95K."
+    },
+    {
+      "id": "coralogix-tam-remote",
+      "company": "Coralogix",
+      "role": "Technical Account Manager - Remote",
+      "status": "Not hired",
+      "appliedOn": "2026-11-05",
+      "location": "Remote",
+      "interviews": [],
+      "notes": "Applied Nov 5, 2026 (Comeet). Separate from Dallas TAM (already Not hired). Nov 5, 2026 ~11:10 PM MT: Coralogix emailed they are moving forward with other candidates for Technical Account Manager- Remote."
     }
   ]
 }
