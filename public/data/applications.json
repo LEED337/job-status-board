@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-11-05T15:36:43Z",
+  "updatedAt": "2026-11-06T06:17:10Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -2228,6 +2228,17 @@
       "location": "Remote (US)",
       "interviews": [],
       "notes": "$190K–$210K. Applied Nov 5, 2026 ~2:20 AM MT with CSE_Resume (Scout). LinkedIn job 4475020579 (Ashby)."
+    },
+    {
+      "id": "mandiant-cyber-defense-detection-engineer",
+      "company": "Mandiant (Google Cloud)",
+      "role": "Cyber Defense Detection Engineer",
+      "jobUrl": "https://www.google.com/about/careers/applications/jobs/results/87068925161808582-cyber-defense-detection-engineer-mandiant-google-cloud",
+      "status": "Applied",
+      "appliedOn": "2026-11-05",
+      "location": "Remote (US)",
+      "interviews": [],
+      "notes": "Applied Nov 5, 2026 ~11:15 PM MT through an old AWS colleague's Google/Mandiant referral portal. Posted range $112K–$161K + 15% bonus target + equity. Remote US (Ohio listed as a remote location); travel up to 20%."
     }
   ]
 }
