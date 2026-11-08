@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-11-08T16:52:20Z",
+  "updatedAt": "2026-11-08T20:58:17Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1535,11 +1535,11 @@
       "id": "adobe-customer-success-advisor",
       "company": "Adobe",
       "role": "Customer Success Advisor (via Mindlance)",
-      "status": "Interviewing",
+      "status": "Ghosted",
       "appliedOn": "2026-10-26",
       "location": "Remote",
       "interviews": [],
-      "notes": "Via Mindlance (recruiter Manjeet Singh), Job ID 37747770. Remote W2 contract at $65/hr. Lee confirmed RTR and sent an adjusted resume Oct 26, 2026. Adobe Experience Cloud portfolio; 6-8 yrs CS/account management. Separate from the Mindlance TAM role and earlier Adobe applications."
+      "notes": "Via Mindlance (recruiter Manjeet Singh), Job ID 37747770. Remote W2 contract at $65/hr. Lee confirmed RTR and sent an adjusted resume Oct 26, 2026. Adobe Experience Cloud portfolio; 6-8 yrs CS/account management. Separate from the Mindlance TAM role and earlier Adobe applications. Nov 8, 2026: Lee marked this Ghosted."
     },
     {
       "id": "databricks-ssa-aws-infra-ai",
@@ -2178,11 +2178,11 @@
       "company": "Extra Space Storage",
       "role": "Security Engineer",
       "jobUrl": "https://extraspace.wd5.myworkdayjobs.com/en-US/ESS_External/job/Security-Engineer_R-82115",
-      "status": "Interviewing",
+      "status": "Applied",
       "appliedOn": "2026-11-04",
       "location": "Hybrid, Cottonwood Heights UT",
       "interviews": [],
-      "notes": "Pay not posted; salary ask $110K. Applied Nov 4, 2026 ~4:07 PM MT with CSE_Resume (Scout). Workday ESS_External R-82115. Nov 4, 2026: Completed AI interview (Scout). Nov 4–5, 2026: Completed Ribbon/AI virtual interview for R-82115; recruiter path continues (Interviewing)."
+      "notes": "Pay not posted; salary ask $110K. Applied Nov 4, 2026 ~4:07 PM MT with CSE_Resume (Scout). Workday ESS_External R-82115. Nov 4, 2026: Completed AI interview (Scout). Nov 4–5, 2026: Completed Ribbon/AI virtual interview for R-82115; recruiter path continues (Interviewing). Nov 8, 2026: Lee said the Extra Space interviews were AI questionnaires and he has not heard back, so this is marked Applied again."
     },
     {
       "id": "wgu-incident-response-analyst-ii",
@@ -2255,7 +2255,7 @@
       "company": "Extra Space Storage",
       "role": "Associate Software Engineer",
       "jobUrl": "https://extraspace.wd5.myworkdayjobs.com/en-US/ESS_External/job/Associate-Software-Engineer_R-82836",
-      "status": "Interviewing",
+      "status": "Applied",
       "appliedOn": "2026-11-05",
       "location": "Hybrid, Cottonwood Heights / Salt Lake City UT",
       "interviews": [
@@ -2265,7 +2265,7 @@
           "kind": "Ribbon AI / virtual interview"
         }
       ],
-      "notes": "Applied Nov 5, 2026 ~9:18 AM MT (Workday R-82836). Separate from Security Engineer R-82115. Nov 5: Completed virtual interview; Marvi Blandon forwarding to hiring managers (few business days)."
+      "notes": "Applied Nov 5, 2026 ~9:18 AM MT (Workday R-82836). Separate from Security Engineer R-82115. Nov 5: Completed virtual interview; Marvi Blandon forwarding to hiring managers (few business days). Nov 8, 2026: Lee said the Extra Space interviews were AI questionnaires and he has not heard back, so this is marked Applied again."
     },
     {
       "id": "amentum-cybersecurity-engineer-cloud",
