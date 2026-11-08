@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-11-06T15:26:18Z",
+  "updatedAt": "2026-11-08T16:52:20Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -297,11 +297,11 @@
       "company": "Smile Digital Health",
       "role": "Intermediate Cloud Security Engineer",
       "jobUrl": "https://jobs.lever.co/smiledigitalhealth/9d72dcf5-328e-4635-8928-946be68bdf2c",
-      "status": "Applied",
+      "status": "Not hired",
       "appliedOn": "2026-10-08",
       "location": "Remote US",
       "interviews": [],
-      "notes": "Applied through Lever. Full-time; $115,000–$130,000/yr"
+      "notes": "Applied through Lever. Full-time; $115,000–$130,000/yr Nov 6, 2026 ~10:16 AM MT: Smile Digital Health emailed they will not move forward for Intermediate Cloud Security Engineer (Remote US)."
     },
     {
       "id": "origin-tam",
@@ -1478,9 +1478,14 @@
           "id": "everpure-csm-aas-hm",
           "at": "2026-11-03T11:00",
           "kind": "Hiring manager interview with Michael Hurst"
+        },
+        {
+          "id": "everpure-csm-aas-panel",
+          "at": "2026-11-12T11:00",
+          "kind": "Panel interview with Lauren Han, Katharine Parriott, and Daniel Hanson"
         }
       ],
-      "notes": "Applied Oct 22, 2026 via internal referral from a friend. $82K\u2013$171K base. Separate from the earlier Everpure DSE process and the Senior Service Account Manager application. Oct 30, 2026: Recruiter called; since Lee already went through the Everpure interview loop, he'll meet directly with the hiring manager. Likely Wed Nov 4, 2026; time TBD. Oct 30, 2026: Interview confirmed Tue Nov 3, 11:00-11:45 AM MT with hiring manager Michael Hurst. Nov 5, 2026: Loure Blanton emailed that Michael Hurst was impressed and wants to move Lee to the panel interview; Lee replied with next-week availability (Mon Nov 9 8am-2pm and 4-7pm MT; Tue Nov 10 8am-7pm MT blocks among others). Panel time TBD."
+      "notes": "Applied Oct 22, 2026 via internal referral from a friend. $82K\u2013$171K base. Separate from the earlier Everpure DSE process and the Senior Service Account Manager application. Oct 30, 2026: Recruiter called; since Lee already went through the Everpure interview loop, he'll meet directly with the hiring manager. Likely Wed Nov 4, 2026; time TBD. Oct 30, 2026: Interview confirmed Tue Nov 3, 11:00-11:45 AM MT with hiring manager Michael Hurst. Nov 5, 2026: Loure Blanton emailed that Michael Hurst was impressed and wants to move Lee to the panel interview; Lee replied with next-week availability (Mon Nov 9 8am-2pm and 4-7pm MT; Tue Nov 10 8am-7pm MT blocks among others). Panel time TBD. Nov 6, 2026: Alicia Rooks scheduled the panel video interview for Thu Nov 12, 2026, 11:00 AM–12:00 PM MT with Lauren Han (Director, Customer Success), Katharine Parriott (Senior Customer Success Manager), and Daniel Hanson (Senior Customer Success Manager)."
     },
     {
       "id": "duplocloud-solutions-architect",
@@ -2044,11 +2049,11 @@
       "id": "snap-finance-swe-applied-ai",
       "company": "Snap Finance",
       "role": "Software Engineer - Applied AI",
-      "status": "Applied",
+      "status": "Not hired",
       "appliedOn": "2026-11-03",
       "location": "West Valley City, UT",
       "interviews": [],
-      "notes": "Applied by Scout Nov 3, 2026 ~1:48 PM MT via Workday (R-2928) with Dev resume. Desired pay $95K."
+      "notes": "Applied by Scout Nov 3, 2026 ~1:48 PM MT via Workday (R-2928) with Dev resume. Desired pay $95K. Nov 8, 2026 ~1:28 AM MT: Snap Finance emailed they have decided to move forward with other candidates."
     },
     {
       "id": "aegisai-security-admin",
@@ -2162,11 +2167,11 @@
       "company": "Wiz",
       "role": "Security Engineer, Product & Production Infrastructure",
       "jobUrl": "https://job-boards.greenhouse.io/wizinc/jobs/4711762006",
-      "status": "Applied",
+      "status": "Not hired",
       "appliedOn": "2026-11-04",
       "location": "Remote (USA)",
       "interviews": [],
-      "notes": "$207K–$283K base. Applied Nov 4, 2026 ~3:49 PM MT with CSE_Resume (Scout). Greenhouse wizinc 4711762006."
+      "notes": "$207K–$283K base. Applied Nov 4, 2026 ~3:49 PM MT with CSE_Resume (Scout). Greenhouse wizinc 4711762006. Nov 6, 2026 ~9:44 AM MT: Wiz emailed they have decided not to move forward for Security Engineer, Product & Production Infrastructure."
     },
     {
       "id": "extra-space-security-engineer",
@@ -2359,6 +2364,79 @@
       "location": "Remote",
       "interviews": [],
       "notes": "Applied Nov 5, 2026 (Comeet). Separate from Dallas TAM (already Not hired). Nov 5, 2026 ~11:10 PM MT: Coralogix emailed they are moving forward with other candidates for Technical Account Manager- Remote."
+    },
+    {
+      "id": "zafran-security-tam",
+      "company": "Zafran Security",
+      "role": "Technical Account Manager",
+      "jobUrl": "https://jobs.ashbyhq.com/zafran-security/c0e29a3e-a9e6-40c5-8602-8c79d1d1982e",
+      "status": "Applied",
+      "appliedOn": "2026-11-06",
+      "location": "Remote (US)",
+      "interviews": [],
+      "notes": "Applied Nov 6, 2026 ~9:03 AM MT via Ashby (confirmation email + Scout). LinkedIn job 4488037994. Pay not posted. Security resume; name Lee Denning."
+    },
+    {
+      "id": "netapp-customer-success-engr-136281",
+      "company": "NetApp",
+      "role": "Customer Success Engineer (AWS)",
+      "jobUrl": "https://jobs.netapp.com/job/Atlanta-Customer-Success-Engr-GA-30342/1428813600/",
+      "status": "Applied",
+      "appliedOn": "2026-11-06",
+      "location": "United States (posting lists Atlanta, Morrisville NC, San Francisco, New York)",
+      "interviews": [],
+      "notes": "Applied Nov 6, 2026 ~9:29 AM MT via SuccessFactors. Confirmation email: Customer Success Engr, Req Id #136281 (AWS Customer Success Engineer). Public posting OTE $175K–$190K."
+    },
+    {
+      "id": "wgu-associate-software-engineer",
+      "company": "Western Governors University",
+      "role": "Associate Software Engineer",
+      "jobUrl": "https://wgu.wd5.myworkdayjobs.com/en-US/External/job/Associate-Software-Engineer_JR-026548",
+      "status": "Applied",
+      "appliedOn": "2026-11-06",
+      "location": "Salt Lake City, UT (in office 5 days/week)",
+      "interviews": [],
+      "notes": "Applied Nov 6, 2026 ~9:34 AM MT via Workday (confirmation email). Separate from Incident Response Analyst II (JR-026295), Intern Data Governance (JR-026370), and Senior Cloud Engineer. Posting JR-026548; pay $73,800–$110,700."
+    },
+    {
+      "id": "chainguard-nov6",
+      "company": "Chainguard",
+      "role": "Role not named in confirmation email",
+      "status": "Applied",
+      "appliedOn": "2026-11-06",
+      "location": "Unknown",
+      "interviews": [],
+      "notes": "Applied Nov 6, 2026 ~10:32 PM MT via Greenhouse (confirmation email titled \"Thank you for applying to Chainguard!\"). The email did not name the role title."
+    },
+    {
+      "id": "sambanova-nov6",
+      "company": "SambaNova",
+      "role": "Role not named in confirmation email",
+      "status": "Applied",
+      "appliedOn": "2026-11-06",
+      "location": "Unknown",
+      "interviews": [],
+      "notes": "Applied Nov 6, 2026 ~10:41 PM MT via Greenhouse (confirmation email titled \"Thank you for applying to SambaNova\"). The email did not name the role title. Separate from the earlier SambaNova Teqconnect application (already Not hired). A LinkedIn saved-job reminder the next day referenced Cloud Platform Architect at SambaNova, but that title was not confirmed in the application email."
+    },
+    {
+      "id": "orca-security-nov6",
+      "company": "Orca Security",
+      "role": "Role not named in confirmation email",
+      "status": "Applied",
+      "appliedOn": "2026-11-06",
+      "location": "Unknown",
+      "interviews": [],
+      "notes": "Applied Nov 6, 2026 ~10:43 PM MT via Greenhouse (confirmation email titled \"Orca Security - thank you for your interest in joining our pod!\"). The email did not name the role title. Separate from the Nov 2 Senior DevOps Engineer (FedRAMP) application."
+    },
+    {
+      "id": "familysearch-sde5-aws-cloud-architect",
+      "company": "FamilySearch",
+      "role": "Software Dev Engineer 5-AWS Cloud Architect",
+      "status": "Applied",
+      "appliedOn": "2026-11-07",
+      "location": "Lehi, UT",
+      "interviews": [],
+      "notes": "Applied Nov 7, 2026 ~9:53 PM MT. Church Employment confirmation email for Family Search Software Dev Engineer 5-AWS Cloud Architect (Lehi, UT) - 379007. The posting describes a Staff Cloud Platform Architect – Networks & IAM (AWS) role."
     }
   ]
 }
