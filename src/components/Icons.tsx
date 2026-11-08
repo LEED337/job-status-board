@@ -44,27 +44,24 @@ export function CloseIcon({ className = "h-4 w-4" }: IconProps) {
 
 export function SunIcon({ className = "h-4 w-4" }: IconProps) {
   return (
-    <svg className={className} viewBox="0 0 20 20" fill="none" aria-hidden="true">
-      <circle cx="10" cy="10" r="3.1" stroke="currentColor" strokeWidth="1.6" />
-      <path
-        d="M10 2.7v1.8M10 15.5v1.8M2.7 10h1.8M15.5 10h1.8M4.8 4.8l1.3 1.3M13.9 13.9l1.3 1.3M15.2 4.8l-1.3 1.3M6.1 13.9l-1.3 1.3"
-        stroke="currentColor"
-        strokeWidth="1.6"
-        strokeLinecap="round"
-      />
+    <svg className={className} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <circle cx="12" cy="12" r="4" />
+      <rect x="10.7" y="1.05" width="2.6" height="3.85" rx="1.3" />
+      <rect x="10.7" y="1.05" width="2.6" height="3.85" rx="1.3" transform="rotate(45 12 12)" />
+      <rect x="10.7" y="1.05" width="2.6" height="3.85" rx="1.3" transform="rotate(90 12 12)" />
+      <rect x="10.7" y="1.05" width="2.6" height="3.85" rx="1.3" transform="rotate(135 12 12)" />
+      <rect x="10.7" y="1.05" width="2.6" height="3.85" rx="1.3" transform="rotate(180 12 12)" />
+      <rect x="10.7" y="1.05" width="2.6" height="3.85" rx="1.3" transform="rotate(225 12 12)" />
+      <rect x="10.7" y="1.05" width="2.6" height="3.85" rx="1.3" transform="rotate(270 12 12)" />
+      <rect x="10.7" y="1.05" width="2.6" height="3.85" rx="1.3" transform="rotate(315 12 12)" />
     </svg>
   );
 }
 
 export function MoonIcon({ className = "h-4 w-4" }: IconProps) {
   return (
-    <svg className={className} viewBox="0 0 20 20" fill="none" aria-hidden="true">
-      <path
-        d="M16.3 12.7A6.35 6.35 0 0 1 7.3 3.7a6.35 6.35 0 1 0 9 9Z"
-        stroke="currentColor"
-        strokeWidth="1.6"
-        strokeLinejoin="round"
-      />
+    <svg className={className} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
     </svg>
   );
 }
