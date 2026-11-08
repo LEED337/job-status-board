@@ -33,7 +33,7 @@ export function ThemeToggle() {
         setTheme(next);
       }}
     >
-      {dark ? <SunIcon className="h-[18px] w-[18px]" /> : <MoonIcon className="h-[18px] w-[18px]" />}
+      {dark ? <MoonIcon className="h-[18px] w-[18px]" /> : <SunIcon className="h-[18px] w-[18px]" />}
     </button>
   );
 }
