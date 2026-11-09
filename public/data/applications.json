@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-11-08T20:58:17Z",
+  "updatedAt": "2026-11-09T14:48:50Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1282,7 +1282,7 @@
       "company": "1Password",
       "role": "Staff Technical Account Manager",
       "jobUrl": "https://jobs.ashbyhq.com/1password/afebc4c1-b5ea-4ffa-b486-df77782d9874",
-      "status": "Interviewing",
+      "status": "Not hired",
       "appliedOn": "2026-10-19",
       "location": "Remote (US)",
       "interviews": [
@@ -1297,7 +1297,7 @@
           "kind": "Behavioral & skills interview with Phil Capizzi"
         }
       ],
-      "notes": "Applied by Scout Oct 19, 2026 ~12:40 PM MT via Ashby with TAM resume. Pay $143K\u2013$207K base + commission; asked $185K\u2013$200K base / $200K\u2013$230K OTE. Separate from earlier 1Password applications. Oct 26, 2026: Lee scheduled an interview for Thu Oct 29 at 10:00 AM MT. Oct 29, 2026: Lee passed the interview with Sophia. Next round Tue Nov 3, 9:00-9:45 AM MT with Phil Capizzi (45-min behavioral and skills). Process target ~2.5 weeks to offer. Nov 3, 2026: Completed the round with Phil Capizzi; outcome pending."
+      "notes": "Applied by Scout Oct 19, 2026 ~12:40 PM MT via Ashby with TAM resume. Pay $143K\u2013$207K base + commission; asked $185K\u2013$200K base / $200K\u2013$230K OTE. Separate from earlier 1Password applications. Oct 26, 2026: Lee scheduled an interview for Thu Oct 29 at 10:00 AM MT. Oct 29, 2026: Lee passed the interview with Sophia. Next round Tue Nov 3, 9:00-9:45 AM MT with Phil Capizzi (45-min behavioral and skills). Process target ~2.5 weeks to offer. Nov 3, 2026: Completed the round with Phil Capizzi; outcome pending. Nov 9, 2026: Lee said he was not selected; marked Not hired."
     },
     {
       "id": "nebius-sa-enterprise",
