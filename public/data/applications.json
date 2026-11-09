@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-11-09T14:48:50Z",
+  "updatedAt": "2026-11-09T20:47:05Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -356,7 +356,7 @@
       "appliedOn": "2026-10-09",
       "location": "Remote (listed Egg Harbor Township, NJ)",
       "interviews": [],
-      "notes": "Full-time. 100% remote if not within commuting distance. Public Trust and US citizenship required. $87,100–$157,450. Job # R-00193677-OTHLOC-PL-2D0788 Rejected Oct 13, 2026."
+      "notes": "Full-time. 100% remote if not within commuting distance. Public Trust and US citizenship required. $87,100–$157,450. Job # R-00193677-OTHLOC-PL-2D0788 Rejected Oct 13, 2026. Nov 9, 2026: Leidos Global Staffing emailed that its AI recruiting assistant Violet will call this week to gather insights for other Leidos openings (about a previous application, not a status change)."
     },
     {
       "id": "podium-ai-csm-smb",
@@ -2244,11 +2244,11 @@
       "company": "Mandiant (Google Cloud)",
       "role": "Cyber Defense Detection Engineer",
       "jobUrl": "https://www.google.com/about/careers/applications/jobs/results/87068925161808582-cyber-defense-detection-engineer-mandiant-google-cloud",
-      "status": "Applied",
+      "status": "Interviewing",
       "appliedOn": "2026-11-05",
       "location": "Remote (US)",
       "interviews": [],
-      "notes": "Applied Nov 5, 2026 ~11:15 PM MT through an old AWS colleague's Google/Mandiant referral portal. Posted range $112K–$161K + 15% bonus target + equity. Remote US (Ohio listed as a remote location); travel up to 20%."
+      "notes": "Applied Nov 5, 2026 ~11:15 PM MT through an old AWS colleague's Google/Mandiant referral portal. Posted range $112K–$161K + 15% bonus target + equity. Remote US (Ohio listed as a remote location); travel up to 20%. Nov 9, 2026: Google emailed to move forward with the application; next step is an online assessment due Nov 13, 2026 by 1:03 PM MT (email didn't name the role; this is Lee's only Google application on the board)."
     },
     {
       "id": "extra-space-associate-swe",
