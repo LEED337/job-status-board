@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-11-09T21:56:55Z",
+  "updatedAt": "2026-11-10T05:11:33Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -2437,6 +2437,81 @@
       "location": "Lehi, UT",
       "interviews": [],
       "notes": "Applied Nov 7, 2026 ~9:53 PM MT. Church Employment confirmation email for Family Search Software Dev Engineer 5-AWS Cloud Architect (Lehi, UT) - 379007. The posting describes a Staff Cloud Platform Architect – Networks & IAM (AWS) role."
+    },
+    {
+      "id": "keyfactor-associate-swe",
+      "company": "Keyfactor",
+      "role": "Associate Software Engineer",
+      "jobUrl": "https://job-boards.greenhouse.io/keyfactorinc/jobs/6242660004",
+      "status": "Applied",
+      "appliedOn": "2026-11-09",
+      "location": "Remote (US)",
+      "interviews": [],
+      "notes": "Applied Nov 9, 2026 ~2:59 PM MT via Greenhouse (job 6242660004; LinkedIn 4487366099) with Dev resume. Entry level; pay not posted."
+    },
+    {
+      "id": "myto-customer-success-solutions-lead",
+      "company": "Myto",
+      "role": "Customer Success & Solutions Lead",
+      "jobUrl": "https://job-boards.greenhouse.io/myto/jobs/4322310009",
+      "status": "Applied",
+      "appliedOn": "2026-11-09",
+      "location": "Remote or Palo Alto, CA",
+      "interviews": [],
+      "notes": "Applied Nov 9, 2026 ~8:12 PM MT via Greenhouse (job 4322310009; found via Haystack, LinkedIn 4487653139) with CSE resume. $100K–$220K base + equity."
+    },
+    {
+      "id": "clickhouse-sr-technical-cse-federal",
+      "company": "ClickHouse",
+      "role": "Senior Technical Customer Support Engineer, Federal",
+      "jobUrl": "https://jobs.ashbyhq.com/clickhouse/e17a51f3-9b63-4c81-b419-2ea6d3db0211",
+      "status": "Applied",
+      "appliedOn": "2026-11-09",
+      "location": "Remote (US)",
+      "interviews": [],
+      "notes": "Applied Nov 9, 2026 ~8:51 PM MT via Ashby with CSE resume. $139K–$194K."
+    },
+    {
+      "id": "clickhouse-sr-consulting-engineer-amer",
+      "company": "ClickHouse",
+      "role": "Senior Consulting Engineer, AMER",
+      "jobUrl": "https://jobs.ashbyhq.com/clickhouse/acaa223a-663e-445f-85f7-a5a4eb7f4f05",
+      "status": "Applied",
+      "appliedOn": "2026-11-09",
+      "location": "Remote (US)",
+      "interviews": [],
+      "notes": "Applied Nov 9, 2026 ~8:57 PM MT via Ashby with CSE resume. $158K–$220K."
+    },
+    {
+      "id": "cursor-ai-deployment-manager",
+      "company": "Cursor",
+      "role": "AI Deployment Manager",
+      "jobUrl": "https://cursor.com/careers/ai-deployment-manager",
+      "status": "Applied",
+      "appliedOn": "2026-11-09",
+      "location": "Remote",
+      "interviews": [],
+      "notes": "Applied Nov 9, 2026 ~9:23 PM MT with CSE resume."
+    },
+    {
+      "id": "intermountain-ai-ml-engineer",
+      "company": "Intermountain Health",
+      "role": "AI/ML Engineer",
+      "status": "Applied",
+      "appliedOn": "2026-11-09",
+      "location": "Salt Lake City, UT (remote-eligible)",
+      "interviews": [],
+      "notes": "Applied Nov 9, 2026 ~10:07 PM MT via Workday (R187019), referred by a friend at Intermountain. $98K–$118K."
+    },
+    {
+      "id": "cotiviti-intern-gen-ai-research-engineer",
+      "company": "Cotiviti",
+      "role": "Intern - Gen AI Research Engineer",
+      "status": "Not hired",
+      "appliedOn": "2026-09-21",
+      "location": "Unknown",
+      "interviews": [],
+      "notes": "Applied Sep 21, 2026 (iCIMS confirmation). Nov 9, 2026: Cotiviti emailed that they decided to concentrate on other candidates."
     }
   ]
 }
