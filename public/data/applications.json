@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-11-10T18:51:27Z",
+  "updatedAt": "2026-11-10T20:21:20Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1079,11 +1079,17 @@
       "company": "Hightouch",
       "role": "Technical Account Manager, Enterprise (West)",
       "jobUrl": "https://job-boards.greenhouse.io/hightouch/jobs/5379537004",
-      "status": "Not hired",
+      "status": "Interviewing",
       "appliedOn": "2026-09-28",
       "location": "Remote \u00b7 North America",
-      "interviews": [],
-      "notes": "Rejected Sep 30"
+      "interviews": [
+        {
+          "id": "hightouch-tam-linh-nguyen",
+          "at": "2026-11-12T10:00",
+          "kind": "Call with Linh Nguyen (30 min)"
+        }
+      ],
+      "notes": "Rejected Sep 30 Nov 10, 2026: Hightouch's Linh Nguyen scheduled a 30-minute call with Lee about the TAM role for Thu Nov 12, 2026, 10:00-10:30 AM MT (Zoom)."
     },
     {
       "id": "veeam-sr-cse-data-ai",
@@ -1485,7 +1491,7 @@
           "kind": "Panel interview with Lauren Han, Katharine Parriott, and Daniel Hanson"
         }
       ],
-      "notes": "Applied Oct 22, 2026 via internal referral from a friend. $82K\u2013$171K base. Separate from the earlier Everpure DSE process and the Senior Service Account Manager application. Oct 30, 2026: Recruiter called; since Lee already went through the Everpure interview loop, he'll meet directly with the hiring manager. Likely Wed Nov 4, 2026; time TBD. Oct 30, 2026: Interview confirmed Tue Nov 3, 11:00-11:45 AM MT with hiring manager Michael Hurst. Nov 5, 2026: Loure Blanton emailed that Michael Hurst was impressed and wants to move Lee to the panel interview; Lee replied with next-week availability (Mon Nov 9 8am-2pm and 4-7pm MT; Tue Nov 10 8am-7pm MT blocks among others). Panel time TBD. Nov 6, 2026: Alicia Rooks scheduled the panel video interview for Thu Nov 12, 2026, 11:00 AM–12:00 PM MT with Lauren Han (Director, Customer Success), Katharine Parriott (Senior Customer Success Manager), and Daniel Hanson (Senior Customer Success Manager)."
+      "notes": "Applied Oct 22, 2026 via internal referral from a friend. $82K\u2013$171K base. Separate from the earlier Everpure DSE process and the Senior Service Account Manager application. Oct 30, 2026: Recruiter called; since Lee already went through the Everpure interview loop, he'll meet directly with the hiring manager. Likely Wed Nov 4, 2026; time TBD. Oct 30, 2026: Interview confirmed Tue Nov 3, 11:00-11:45 AM MT with hiring manager Michael Hurst. Nov 5, 2026: Loure Blanton emailed that Michael Hurst was impressed and wants to move Lee to the panel interview; Lee replied with next-week availability (Mon Nov 9 8am-2pm and 4-7pm MT; Tue Nov 10 8am-7pm MT blocks among others). Panel time TBD. Nov 6, 2026: Alicia Rooks scheduled the panel video interview for Thu Nov 12, 2026, 11:00 AM–12:00 PM MT with Lauren Han (Director, Customer Success), Katharine Parriott (Senior Customer Success Manager), and Daniel Hanson (Senior Customer Success Manager). Nov 10, 2026: The calendar invite for the Nov 12 panel lists Jorge Benavides (Evergreen//One CSM), Katharine Parriott, and Lauren Han."
     },
     {
       "id": "duplocloud-solutions-architect",
@@ -2497,11 +2503,11 @@
       "id": "intermountain-ai-ml-engineer",
       "company": "Intermountain Health",
       "role": "AI/ML Engineer",
-      "status": "Applied",
+      "status": "Interviewing",
       "appliedOn": "2026-11-09",
       "location": "Salt Lake City, UT (remote-eligible)",
       "interviews": [],
-      "notes": "Applied Nov 9, 2026 ~10:07 PM MT via Workday (R187019), referred by a friend at Intermountain. $98K–$118K."
+      "notes": "Applied Nov 9, 2026 ~10:07 PM MT via Workday (R187019), referred by a friend at Intermountain. $98K–$118K. Nov 10, 2026: Recruiter Wyn Daley started the interview process and sent prescreening questions; Lee completed them the same day. Next step time TBD."
     },
     {
       "id": "cotiviti-intern-gen-ai-research-engineer",
@@ -2617,11 +2623,17 @@
       "company": "1Password",
       "role": "Senior Technical Account Manager",
       "jobUrl": "https://jobs.ashbyhq.com/1password/8a51778c-a965-4f42-b2ba-dbfdffbea883",
-      "status": "Applied",
+      "status": "Interviewing",
       "appliedOn": "2026-11-10",
       "location": "Remote",
-      "interviews": [],
-      "notes": "Nov 10, 2026: After the Staff TAM decision, recruiter Sophia Mastendino offered to put Lee forward for this Sr TAM role at ~$145K-$155K base + $20K OTE; Lee accepted and asked to be put forward. Separate from the Sep 2026 Senior TAM application (onepassword-sr-tam)."
+      "interviews": [
+        {
+          "id": "1password-sr-tam-keith-gleason",
+          "at": "2026-11-17T07:30",
+          "kind": "Interview with Keith Gleason (Mgr, Technical Account Management), 45 min"
+        }
+      ],
+      "notes": "Nov 10, 2026: After the Staff TAM decision, recruiter Sophia Mastendino offered to put Lee forward for this Sr TAM role at ~$145K-$155K base + $20K OTE; Lee accepted and asked to be put forward. Separate from the Sep 2026 Senior TAM application (onepassword-sr-tam). Nov 10, 2026: Invited to the next interview round; Sophia said it would be with Ron Doucette and Keith Gleason (45 min). Confirmed for Tue Nov 17, 2026, 7:30-8:15 AM MT on Zoom with Keith Gleason."
     }
   ]
 }
