@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-11-10T05:11:33Z",
+  "updatedAt": "2026-11-10T16:01:21Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -2512,6 +2512,39 @@
       "location": "Unknown",
       "interviews": [],
       "notes": "Applied Sep 21, 2026 (iCIMS confirmation). Nov 9, 2026: Cotiviti emailed that they decided to concentrate on other candidates."
+    },
+    {
+      "id": "samsara-enterprise-csm-ii",
+      "company": "Samsara",
+      "role": "Enterprise Customer Success Manager II",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4487281326/",
+      "status": "Applied",
+      "appliedOn": "2026-11-10",
+      "location": "Remote US",
+      "interviews": [],
+      "notes": "Applied Nov 10, 2026 via LinkedIn. Remote US (excludes SF Bay, NYC, DC metros); 25-40% customer travel. OTE $111.5K-$168.75K."
+    },
+    {
+      "id": "jetbrains-cse-americas",
+      "company": "JetBrains",
+      "role": "Customer Success Engineer - Americas",
+      "jobUrl": "https://job-boards.eu.greenhouse.io/jetbrains/jobs/4976225101",
+      "status": "Applied",
+      "appliedOn": "2026-11-10",
+      "location": "Remote US",
+      "interviews": [],
+      "notes": "Applied Nov 10, 2026 (Greenhouse; LinkedIn 4487471542) with CSE resume. $100K-$200K."
+    },
+    {
+      "id": "jobgether-customer-solutions-architect",
+      "company": "Jobgether (unnamed cybersecurity company)",
+      "role": "Customer Solutions Architect",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4487996928/",
+      "status": "Applied",
+      "appliedOn": "2026-11-10",
+      "location": "Remote US",
+      "interviews": [],
+      "notes": "Applied Nov 10, 2026 via LinkedIn Easy Apply (Jobgether posting for an unnamed cybersecurity company) with CSE resume. $150K-$185K."
     }
   ]
 }
