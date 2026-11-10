@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-11-10T16:01:21Z",
+  "updatedAt": "2026-11-10T18:51:27Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1951,11 +1951,11 @@
       "company": "Stripe",
       "role": "Cloud Security Engineer",
       "jobUrl": "https://stripe.com/jobs/listing/cloud-security-engineer/7867389",
-      "status": "Applied",
+      "status": "Not hired",
       "appliedOn": "2026-11-02",
       "location": "Remote (US)",
       "interviews": [],
-      "notes": "$144.3K-$216.5K base. CSE resume. Applied Nov 2, 2026 ~11:15 AM MT."
+      "notes": "$144.3K-$216.5K base. CSE resume. Applied Nov 2, 2026 ~11:15 AM MT. Nov 10, 2026: Stripe emailed that they are going in a different direction."
     },
     {
       "id": "instacart-detection-engineer-ii",
@@ -2545,6 +2545,83 @@
       "location": "Remote US",
       "interviews": [],
       "notes": "Applied Nov 10, 2026 via LinkedIn Easy Apply (Jobgether posting for an unnamed cybersecurity company) with CSE resume. $150K-$185K."
+    },
+    {
+      "id": "omnissa-senior-architect-ps",
+      "company": "Omnissa",
+      "role": "Senior Architect, Professional Services",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4480266875/",
+      "status": "Applied",
+      "appliedOn": "2026-11-10",
+      "location": "Remote US",
+      "interviews": [],
+      "notes": "Applied Nov 10, 2026 (Workday R-101877) with CSE resume. $170K-$220K + bonus."
+    },
+    {
+      "id": "orange-logic-technical-solutions-architect",
+      "company": "Orange Logic",
+      "role": "Technical Solutions Architect",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4465409047/",
+      "status": "Applied",
+      "appliedOn": "2026-11-10",
+      "location": "Remote",
+      "interviews": [],
+      "notes": "Applied Nov 10, 2026 via LinkedIn Easy Apply with CSE resume. $140K-$170K."
+    },
+    {
+      "id": "smartfox-cloud-architect",
+      "company": "SMARTFOX",
+      "role": "Cloud Architect",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4487941741/",
+      "status": "Applied",
+      "appliedOn": "2026-11-10",
+      "location": "Remote US",
+      "interviews": [],
+      "notes": "Applied Nov 10, 2026 via LinkedIn Easy Apply with CSE resume. $135K-$175K."
+    },
+    {
+      "id": "flexport-security-engineer-corporate",
+      "company": "Flexport",
+      "role": "Security Engineer, Corporate Security",
+      "jobUrl": "https://job-boards.greenhouse.io/flexport/jobs/8166040",
+      "status": "Applied",
+      "appliedOn": "2026-11-10",
+      "location": "Remote US",
+      "interviews": [],
+      "notes": "Applied Nov 10, 2026 (Greenhouse; LinkedIn 4488110236) with Security resume. $131K-$202K depending on state."
+    },
+    {
+      "id": "gifthealth-cloud-security-engineer",
+      "company": "Gifthealth",
+      "role": "Cloud Security Engineer",
+      "jobUrl": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4506061",
+      "status": "Applied",
+      "appliedOn": "2026-11-10",
+      "location": "Remote",
+      "interviews": [],
+      "notes": "Applied Nov 10, 2026 (Paylocity; LinkedIn 4467776762) with Security resume. Fully remote. $115K-$150K."
+    },
+    {
+      "id": "dscout-cybersecurity-engineer",
+      "company": "Dscout",
+      "role": "Cybersecurity Engineer",
+      "jobUrl": "https://job-boards.greenhouse.io/dscout/jobs/4464542009",
+      "status": "Applied",
+      "appliedOn": "2026-11-10",
+      "location": "Remote US",
+      "interviews": [],
+      "notes": "Applied Nov 10, 2026 (Greenhouse; LinkedIn 4482808600) with Security resume. Pay not posted."
+    },
+    {
+      "id": "1password-sr-tam-nov2026",
+      "company": "1Password",
+      "role": "Senior Technical Account Manager",
+      "jobUrl": "https://jobs.ashbyhq.com/1password/8a51778c-a965-4f42-b2ba-dbfdffbea883",
+      "status": "Applied",
+      "appliedOn": "2026-11-10",
+      "location": "Remote",
+      "interviews": [],
+      "notes": "Nov 10, 2026: After the Staff TAM decision, recruiter Sophia Mastendino offered to put Lee forward for this Sr TAM role at ~$145K-$155K base + $20K OTE; Lee accepted and asked to be put forward. Separate from the Sep 2026 Senior TAM application (onepassword-sr-tam)."
     }
   ]
 }
