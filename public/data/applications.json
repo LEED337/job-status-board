@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-11-11T20:35:03Z",
+  "updatedAt": "2026-11-11T21:39:13Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -10,7 +10,7 @@
       "status": "Interviewing",
       "appliedOn": "2026-10-07",
       "location": "Remote / TBD",
-      "notes": "Recruiter screen today 11:30 AM MT. Oct 30, 2026: Comp negotiation with Sam stalled ($130-150K OTE offered); Lee marked Not hired. Will revisit if they come back with more. Nov 1, 2026: Back in process. GC AI sent a form asking for Lee's info and interview availability ahead of the next conversation; time TBD. Nov 5, 2026: Sales Leader Interview with Erik Gillespie (Senior Director, Enterprise Accounts) scheduled Fri Nov 13, 2026 3:00-3:30 PM MST on Zoom.",
+      "notes": "Recruiter screen today 11:30 AM MT. Oct 30, 2026: Comp negotiation with the recruiter stalled ($130-150K OTE offered); Lee marked Not hired. Will revisit if they come back with more. Nov 1, 2026: Back in process. GC AI sent a form asking for Lee's info and interview availability ahead of the next conversation; time TBD. Nov 5, 2026: Sales Leader Interview with the Senior Director of Enterprise Accounts scheduled Fri Nov 13, 2026 3:00-3:30 PM MST on Zoom.",
       "interviews": [
         {
           "id": "int-gc-ai-1",
@@ -20,7 +20,7 @@
         {
           "id": "gc-ai-erik-gillespie",
           "at": "2026-11-13T15:00",
-          "kind": "Sales Leader Interview (CSM) with Erik Gillespie"
+          "kind": "Sales Leader Interview (CSM)"
         }
       ]
     },
@@ -48,7 +48,7 @@
           "kind": "Technical conversation"
         }
       ],
-      "notes": "Recruiter screen with Jackie Bacic (Sep 14); hiring manager onsite in Lehi with Villi Olafsson & Laura Sacramoni (Sep 21); technical deep dive onsite with Jeff Edwards & Jerry Carson (Sep 28). Oct 5: Kiara Warfield now managing the role. Oct 7: Kiara called — they're finishing final interviews early next week; expect an update by end of next week (~Oct 16). Pure Storage family Not selected; Lee informed Oct 16, 2026."
+      "notes": "Recruiter screen (Sep 14); hiring manager onsite in Lehi with two interviewers (Sep 21); technical deep dive onsite with two interviewers (Sep 28). Oct 5: A recruiter now managing the role. Oct 7: The recruiter called — they're finishing final interviews early next week; expect an update by end of next week (~Oct 16). Pure Storage family Not selected; Lee informed Oct 16, 2026."
     },
     {
       "id": "scaleops",
@@ -65,7 +65,7 @@
           "kind": "Recruiter screen"
         }
       ],
-      "notes": "Recruiter Manpreet; Director of TAM role isn't publicly posted, so it links to the Head of TAM posting for now (recruiter says it's a different role). Recruiter screen done; awaiting next steps Oct 13: emailed Manpreet a follow-up asking about next steps.\nOct 21: Manpreet said ScaleOps isn't hiring for this role right now and has closed the open roles."
+      "notes": "The recruiter; Director of TAM role isn't publicly posted, so it links to the Head of TAM posting for now (recruiter says it's a different role). Recruiter screen done; awaiting next steps Oct 13: emailed the recruiter a follow-up asking about next steps.\nOct 21: The recruiter said ScaleOps isn't hiring for this role right now and has closed the open roles."
     },
     {
       "id": "adobe-mindlance-tam",
@@ -81,7 +81,7 @@
           "kind": "Panel"
         }
       ],
-      "notes": "Via Mindlance / Intelliswift RTR 37653341; AEM prep. Panel done Wed Oct 7 (3:30–4:00 PM MT); awaiting decision Oct 20: Shivangi (Mindlance) says no decision yet and the role isn't closed; Adobe is switching MSPs, so things are slow. She'll keep submitting Lee for other roles. Oct 27, 2026: Lee marked this Ghosted; no decision since the Oct 20 update."
+      "notes": "Via Mindlance / Intelliswift RTR 37653341; AEM prep. Panel done Wed Oct 7 (3:30–4:00 PM MT); awaiting decision Oct 20: the Mindlance recruiter says no decision yet and the role isn't closed; Adobe is switching MSPs, so things are slow. She'll keep submitting Lee for other roles. Oct 27, 2026: Lee marked this Ghosted; no decision since the Oct 20 update."
     },
     {
       "id": "adobe-sr-tam-r171950",
@@ -102,12 +102,12 @@
       "status": "Not hired",
       "appliedOn": "2026-09-28",
       "location": "United States",
-      "notes": "Withdrawn by Lee after recruiter call with Kate on Thu Oct 8: role pays only $120K OTE (80/20), well below target. Open to higher-paying Varonis roles. Jobvite oVLAAfwA",
+      "notes": "Withdrawn by Lee after recruiter call on Thu Oct 8: role pays only $120K OTE (80/20), well below target. Open to higher-paying Varonis roles. Jobvite oVLAAfwA",
       "interviews": [
         {
           "id": "int-varonis-1",
           "at": "2026-10-08T08:00",
-          "kind": "Interview with Kate"
+          "kind": "Interview with recruiter"
         }
       ]
     },
@@ -252,7 +252,7 @@
       "status": "Interviewing",
       "appliedOn": "2026-10-01",
       "location": "Salt Lake City, UT / Oregon Remote",
-      "notes": "Recruiter phone screen with Paola VargasUnfried done Thu Oct 8. She first said fully remote, then said 50% in-office. Comp tops out at $145K base + annual bonus + RSUs (posting range was higher). Lee hoped for $160–170K but would consider near their max. Awaiting next steps. JR-0109357 Moved forward: hiring manager interview Mon Oct 12 at 2:30 PM MT (interviewer not yet known). Interviewer per calendar invite: Alan Spencer (Sr Manager, Technical Account Management). Oct 12 hiring manager interview with Alan Spencer went well: role would be Senior TAM, mostly remote (office optional). Awaiting next steps. Passed hiring manager round; technical interview Thu Oct 15 at 1:00 PM MT. Oct 15 technical with Brandon Pack went well: Brandon said Lee has his vote; possible one more manager round next. Round 3 (virtual): Thu Oct 22, 8:15–9:00 AM MT with Cynthia Andal (Sr TAM), and Fri Oct 23, 2:00–2:45 PM MT with Eric Knapp (Manager of TAMs). Oct 22 session with Cynthia Andal seemed to go well. Oct 23 session with Eric Knapp (Manager of TAMs) went really well. Lee was the first candidate he met; Workday expects to reach out within about a week after all interviews. Eric said Lee would likely be placed in the Senior TAM position. Nov 3, 2026: Recruiter says the process is taking longer than expected; final decision expected by end of next week (~Fri Nov 13).",
+      "notes": "Recruiter phone screen done Thu Oct 8. The recruiter first said fully remote, then said 50% in-office. Comp tops out at $145K base + annual bonus + RSUs (posting range was higher). Lee hoped for $160–170K but would consider near their max. Awaiting next steps. JR-0109357 Moved forward: hiring manager interview Mon Oct 12 at 2:30 PM MT (interviewer not yet known). Interviewer per calendar invite: Sr Manager, Technical Account Management. Oct 12 hiring manager interview with the Sr Manager of Technical Account Management went well: role would be Senior TAM, mostly remote (office optional). Awaiting next steps. Passed hiring manager round; technical interview Thu Oct 15 at 1:00 PM MT. Oct 15 technical with the interviewer went well: the interviewer said Lee has his vote; possible one more manager round next. Round 3 (virtual): Thu Oct 22, 8:15–9:00 AM MT with a Sr TAM, and Fri Oct 23, 2:00–2:45 PM MT with the Manager of TAMs. Oct 22 session with the Sr TAM seemed to go well. Oct 23 session with the Manager of TAMs went really well. Lee was the first candidate he met; Workday expects to reach out within about a week after all interviews. The manager said Lee would likely be placed in the Senior TAM position. Nov 3, 2026: Recruiter says the process is taking longer than expected; final decision expected by end of next week (~Fri Nov 13).",
       "interviews": [
         {
           "id": "int-workday-tam-1",
@@ -272,12 +272,12 @@
         {
           "id": "int-workday-tam-4",
           "at": "2026-10-22T08:15",
-          "kind": "Round 3: Sr TAM (Cynthia Andal)"
+          "kind": "Round 3: Sr TAM"
         },
         {
           "id": "int-workday-tam-5",
           "at": "2026-10-23T14:00",
-          "kind": "Round 3: Manager of TAMs (Eric Knapp)"
+          "kind": "Round 3: Manager of TAMs"
         }
       ]
     },
@@ -1086,10 +1086,10 @@
         {
           "id": "hightouch-tam-linh-nguyen",
           "at": "2026-11-12T10:00",
-          "kind": "Call with Linh Nguyen (30 min)"
+          "kind": "Call with recruiter (30 min)"
         }
       ],
-      "notes": "Rejected Sep 30. Nov 10, 2026: Hightouch's Linh Nguyen scheduled a 30-minute call with Lee about the TAM role for Thu Nov 12, 2026, 10:00-10:30 AM MT (Zoom)."
+      "notes": "Rejected Sep 30. Nov 10, 2026: A Hightouch recruiter scheduled a 30-minute call with Lee about the TAM role for Thu Nov 12, 2026, 10:00-10:30 AM MT (Zoom)."
     },
     {
       "id": "veeam-sr-cse-data-ai",
@@ -1234,15 +1234,15 @@
         {
           "id": "gitlab-csa-recruiter-screen",
           "at": "2026-10-29T12:30",
-          "kind": "Recruiter screening call with Catherine Flagler (30 min)"
+          "kind": "Recruiter screening call (30 min)"
         },
         {
           "id": "gitlab-csa-gavin-peltz",
           "at": "2026-11-09T15:00",
-          "kind": "Interview with Gavin Peltz (Manager, Customer Success Managers)"
+          "kind": "Interview with CSM manager"
         }
       ],
-      "notes": "Applied by Scout Oct 19, 2026 9:22 AM MT with CSE resume. Pay not on posting.\nOct 21: Recruiter screening call scheduled with Catherine Flagler for Mon Oct 26, 11:00\u201311:30 AM MT.\nOct 26: GitLab rescheduled the screen with Catherine Flagler to Thu Oct 29, 12:30-1:00 PM MT.\nOct 30, 2026: Passed recruiter screen. Next interview with Gavin Peltz (Manager, Customer Success Management); Lee submitted availability Oct 30, time TBD.\nNov 2, 2026: GitLab said Lee's submitted times don't work this week; interview with Gavin Peltz expected sometime next week (week of Nov 9), time TBD. Nov 4, 2026: Interview with Gavin Peltz scheduled Mon Nov 9, 3:00-3:30 PM MT (Zoom)."
+      "notes": "Applied by Scout Oct 19, 2026 9:22 AM MT with CSE resume. Pay not on posting.\nOct 21: Recruiter screening call scheduled for Mon Oct 26, 11:00\u201311:30 AM MT.\nOct 26: GitLab rescheduled the recruiter screen to Thu Oct 29, 12:30-1:00 PM MT.\nOct 30, 2026: Passed recruiter screen. Next interview with the Manager of Customer Success Management; Lee submitted availability Oct 30, time TBD.\nNov 2, 2026: GitLab said Lee's submitted times don't work this week; interview with the Manager of Customer Success Management expected sometime next week (week of Nov 9), time TBD. Nov 4, 2026: Interview with the Manager of Customer Success Management scheduled Mon Nov 9, 3:00-3:30 PM MT (Zoom)."
     },
     {
       "id": "stripe-tam-billing",
@@ -1270,7 +1270,7 @@
           "kind": "Recruiter screen"
         }
       ],
-      "notes": "Recruiter Alyssa Nannetti (HRBP) reached out Oct 19, 2026; 10\u201315 min recruiter call Oct 19 at 1:00 PM MT. Database software company. In-office Sandy, UT with hybrid option post-onboarding. Recruiter call with Alyssa done Oct 19 at 1:00 PM MT. Their range ~$80K\u2013$110K; Lee asked $130K\u2013$150K base plus ~$25K OTE. Alyssa checking with her team on salary; response expected by end of next week (~Oct 30). Oct 27, 2026: Alyssa said FairCom can't offer a competitive enough package (~$100K base) and would like to stay in touch for a more senior role."
+      "notes": "The recruiter (HRBP) reached out Oct 19, 2026; 10\u201315 min recruiter call Oct 19 at 1:00 PM MT. Database software company. In-office Sandy, UT with hybrid option post-onboarding. Recruiter call done Oct 19 at 1:00 PM MT. Their range ~$80K\u2013$110K; Lee asked $130K\u2013$150K base plus ~$25K OTE. The recruiter checking with her team on salary; response expected by end of next week (~Oct 30). Oct 27, 2026: The recruiter said FairCom can't offer a competitive enough package (~$100K base) and would like to stay in touch for a more senior role."
     },
     {
       "id": "fusion-risk-agentic-engineer",
@@ -1300,10 +1300,10 @@
         {
           "id": "1password-staff-tam-int2",
           "at": "2026-11-03T09:00",
-          "kind": "Behavioral & skills interview with Phil Capizzi"
+          "kind": "Behavioral & skills interview"
         }
       ],
-      "notes": "Applied by Scout Oct 19, 2026 ~12:40 PM MT via Ashby with TAM resume. Pay $143K\u2013$207K base + commission; asked $185K\u2013$200K base / $200K\u2013$230K OTE. Separate from earlier 1Password applications. Oct 26, 2026: Lee scheduled an interview for Thu Oct 29 at 10:00 AM MT. Oct 29, 2026: Lee passed the interview with Sophia. Next round Tue Nov 3, 9:00-9:45 AM MT with Phil Capizzi (45-min behavioral and skills). Process target ~2.5 weeks to offer. Nov 3, 2026: Completed the round with Phil Capizzi; outcome pending. Nov 9, 2026: Lee said he was not selected; marked Not hired."
+      "notes": "Applied by Scout Oct 19, 2026 ~12:40 PM MT via Ashby with TAM resume. Pay $143K\u2013$207K base + commission; asked $185K\u2013$200K base / $200K\u2013$230K OTE. Separate from earlier 1Password applications. Oct 26, 2026: Lee scheduled an interview for Thu Oct 29 at 10:00 AM MT. Oct 29, 2026: Lee passed the interview with the recruiter. Next round Tue Nov 3, 9:00-9:45 AM MT with an interviewer (45-min behavioral and skills). Process target ~2.5 weeks to offer. Nov 3, 2026: Completed the round with the interviewer; outcome pending. Nov 9, 2026: Lee said he was not selected; marked Not hired."
     },
     {
       "id": "nebius-sa-enterprise",
@@ -1320,7 +1320,7 @@
           "kind": "Recruiter screen"
         }
       ],
-      "notes": "Applied by Scout Oct 19, 2026 3:45 PM MT via Greenhouse with AI resume. OTE $224.4K\u2013$326.3K. Separate from the earlier Nebius TAM, Token Factory application. Oct 20: Nebius requested interview availability; Lee submitted it. Awaiting first interview scheduling. Recruiter phone screen with Lillian Tsui confirmed for Wed Oct 21, 4:30\u20135:00 PM MT.\nOct 21: Recruiter screen with Lillian done. Kubernetes depth is a nice-to-have, not required. She'll follow up sometime next week.\nOct 27, 2026: Lillian emailed ~1:30 PM MT that Nebius won't move forward for the Solutions Architect role. Lee replied asking whether he could interview for the Technical Account Manager role they discussed on the call; awaiting her answer."
+      "notes": "Applied by Scout Oct 19, 2026 3:45 PM MT via Greenhouse with AI resume. OTE $224.4K\u2013$326.3K. Separate from the earlier Nebius TAM, Token Factory application. Oct 20: Nebius requested interview availability; Lee submitted it. Awaiting first interview scheduling. Recruiter phone screen confirmed for Wed Oct 21, 4:30\u20135:00 PM MT.\nOct 21: Recruiter screen done. Kubernetes depth is a nice-to-have, not required. She'll follow up sometime next week.\nOct 27, 2026: The recruiter emailed ~1:30 PM MT that Nebius won't move forward for the Solutions Architect role. Lee replied asking whether he could interview for the Technical Account Manager role they discussed on the call; awaiting her answer."
     },
     {
       "id": "cyera-cse-west",
@@ -1348,7 +1348,7 @@
           "kind": "Hiring manager"
         }
       ],
-      "notes": "Referred by Jason Davis ~Oct 12, 2026 via Ashby. Maggie Tamm (Sr Talent Acquisition Partner) moved Lee forward Oct 19; hiring manager interview with Kyle Johns Fri Oct 23, 11:00\u201311:30 AM MT (Zoom). Oct 26, 2026: Lee reported he was not selected."
+      "notes": "Referred by a contact ~Oct 12, 2026 via Ashby. A recruiter (Sr Talent Acquisition Partner) moved Lee forward Oct 19; hiring manager interview on Fri Oct 23, 11:00\u201311:30 AM MT (Zoom). Oct 26, 2026: Lee reported he was not selected."
     },
     {
       "id": "everpure-sr-service-account-manager",
@@ -1483,15 +1483,15 @@
         {
           "id": "everpure-csm-aas-hm",
           "at": "2026-11-03T11:00",
-          "kind": "Hiring manager interview with Michael Hurst"
+          "kind": "Hiring manager interview"
         },
         {
           "id": "everpure-csm-aas-panel",
           "at": "2026-11-12T11:00",
-          "kind": "Panel interview with Lauren Han, Katharine Parriott, and Daniel Hanson"
+          "kind": "Panel interview"
         }
       ],
-      "notes": "Applied Oct 22, 2026 via internal referral from a friend. $82K\u2013$171K base. Separate from the earlier Everpure DSE process and the Senior Service Account Manager application. Oct 30, 2026: Recruiter called; since Lee already went through the Everpure interview loop, he'll meet directly with the hiring manager. Likely Wed Nov 4, 2026; time TBD. Oct 30, 2026: Interview confirmed Tue Nov 3, 11:00-11:45 AM MT with hiring manager Michael Hurst. Nov 5, 2026: Loure Blanton emailed that Michael Hurst was impressed and wants to move Lee to the panel interview; Lee replied with next-week availability (Mon Nov 9 8am-2pm and 4-7pm MT; Tue Nov 10 8am-7pm MT blocks among others). Panel time TBD. Nov 6, 2026: Alicia Rooks scheduled the panel video interview for Thu Nov 12, 2026, 11:00 AM–12:00 PM MT with Lauren Han (Director, Customer Success), Katharine Parriott (Senior Customer Success Manager), and Daniel Hanson (Senior Customer Success Manager). Nov 10, 2026: The calendar invite for the Nov 12 panel lists Jorge Benavides (Evergreen//One CSM), Katharine Parriott, and Lauren Han."
+      "notes": "Applied Oct 22, 2026 via internal referral from a friend. $82K\u2013$171K base. Separate from the earlier Everpure DSE process and the Senior Service Account Manager application. Oct 30, 2026: Recruiter called; since Lee already went through the Everpure interview loop, he'll meet directly with the hiring manager. Likely Wed Nov 4, 2026; time TBD. Oct 30, 2026: Interview confirmed Tue Nov 3, 11:00-11:45 AM MT with the hiring manager. Nov 5, 2026: The recruiter emailed that the hiring manager was impressed and wants to move Lee to the panel interview; Lee replied with next-week availability (Mon Nov 9 8am-2pm and 4-7pm MT; Tue Nov 10 8am-7pm MT blocks among others). Panel time TBD. Nov 6, 2026: A recruiter scheduled the panel video interview for Thu Nov 12, 2026, 11:00 AM–12:00 PM MT with the Director of Customer Success, a Senior Customer Success Manager, and another Senior Customer Success Manager. Nov 10, 2026: The calendar invite for the Nov 12 panel lists an Evergreen//One CSM, a Senior Customer Success Manager, and the Director of Customer Success."
     },
     {
       "id": "duplocloud-solutions-architect",
@@ -1545,7 +1545,7 @@
       "appliedOn": "2026-10-26",
       "location": "Remote",
       "interviews": [],
-      "notes": "Via Mindlance (recruiter Manjeet Singh), Job ID 37747770. Remote W2 contract at $65/hr. Lee confirmed RTR and sent an adjusted resume Oct 26, 2026. Adobe Experience Cloud portfolio; 6-8 yrs CS/account management. Separate from the Mindlance TAM role and earlier Adobe applications. Nov 8, 2026: Lee marked this Ghosted."
+      "notes": "Via Mindlance (recruiter), Job ID 37747770. Remote W2 contract at $65/hr. Lee confirmed RTR and sent an adjusted resume Oct 26, 2026. Adobe Experience Cloud portfolio; 6-8 yrs CS/account management. Separate from the Mindlance TAM role and earlier Adobe applications. Nov 8, 2026: Lee marked this Ghosted."
     },
     {
       "id": "databricks-ssa-aws-infra-ai",
@@ -2232,7 +2232,7 @@
       "appliedOn": "2026-11-05",
       "location": "Remote (US)",
       "interviews": [],
-      "notes": "Applied Nov 5, 2026 ~2:22 AM MT via Teamtailor (welcome email from Katie Hawk). Base $125K–$175K. US citizen/residency required."
+      "notes": "Applied Nov 5, 2026 ~2:22 AM MT via Teamtailor (welcome email from a recruiter). Base $125K–$175K. US citizen/residency required."
     },
     {
       "id": "harmonic-security-deployment-engineer",
@@ -2271,7 +2271,7 @@
           "kind": "Ribbon AI / virtual interview"
         }
       ],
-      "notes": "Applied Nov 5, 2026 ~9:18 AM MT (Workday R-82836). Separate from Security Engineer R-82115. Nov 5: Completed virtual interview; Marvi Blandon forwarding to hiring managers (few business days). Nov 8, 2026: Lee said the Extra Space interviews were AI questionnaires and he has not heard back, so this is marked Applied again."
+      "notes": "Applied Nov 5, 2026 ~9:18 AM MT (Workday R-82836). Separate from Security Engineer R-82115. Nov 5: Completed virtual interview; a recruiter forwarding to hiring managers (few business days). Nov 8, 2026: Lee said the Extra Space interviews were AI questionnaires and he has not heard back, so this is marked Applied again."
     },
     {
       "id": "amentum-cybersecurity-engineer-cloud",
@@ -2507,7 +2507,7 @@
       "appliedOn": "2026-11-09",
       "location": "Salt Lake City, UT (remote-eligible)",
       "interviews": [],
-      "notes": "Applied Nov 9, 2026 ~10:07 PM MT via Workday (R187019), referred by a friend at Intermountain. $98K–$118K. Nov 10, 2026: Recruiter Wyn Daley started the interview process and sent prescreening questions; Lee completed them the same day. Next step time TBD."
+      "notes": "Applied Nov 9, 2026 ~10:07 PM MT via Workday (R187019), referred by a friend at Intermountain. $98K–$118K. Nov 10, 2026: The recruiter started the interview process and sent prescreening questions; Lee completed them the same day. Next step time TBD."
     },
     {
       "id": "cotiviti-intern-gen-ai-research-engineer",
@@ -2630,10 +2630,10 @@
         {
           "id": "1password-sr-tam-keith-gleason",
           "at": "2026-11-17T07:30",
-          "kind": "Interview with Keith Gleason (Mgr, Technical Account Management), 45 min"
+          "kind": "Interview with TAM manager (45 min)"
         }
       ],
-      "notes": "Nov 10, 2026: After the Staff TAM decision, recruiter Sophia Mastendino offered to put Lee forward for this Sr TAM role at ~$145K-$155K base + $20K OTE; Lee accepted and asked to be put forward. Separate from the Sep 2026 Senior TAM application (onepassword-sr-tam). Nov 10, 2026: Invited to the next interview round; Sophia said it would be with Ron Doucette and Keith Gleason (45 min). Confirmed for Tue Nov 17, 2026, 7:30-8:15 AM MT on Zoom with Keith Gleason."
+      "notes": "Nov 10, 2026: After the Staff TAM decision, the recruiter offered to put Lee forward for this Sr TAM role at ~$145K-$155K base + $20K OTE; Lee accepted and asked to be put forward. Separate from the Sep 2026 Senior TAM application (onepassword-sr-tam). Nov 10, 2026: Invited to the next interview round; the recruiter said it would be with an interviewer and the TAM manager (45 min). Confirmed for Tue Nov 17, 2026, 7:30-8:15 AM MT on Zoom with the TAM manager."
     },
     {
       "id": "tech2i-solutions-architect-proposal-strategy",
