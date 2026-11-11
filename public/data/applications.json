@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-11-10T20:21:20Z",
+  "updatedAt": "2026-11-11T01:22:35Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1078,7 +1078,7 @@
       "id": "hightouch-tam-enterprise-west",
       "company": "Hightouch",
       "role": "Technical Account Manager, Enterprise (West)",
-      "jobUrl": "https://job-boards.greenhouse.io/hightouch/jobs/5379537004",
+      "jobUrl": "https://jobs.ashbyhq.com/hightouch-inc/6d3527b9-4f72-4a53-b837-daec9016b8e5?utm_source=aV6xRPjM6r",
       "status": "Interviewing",
       "appliedOn": "2026-09-28",
       "location": "Remote \u00b7 North America",
@@ -1089,7 +1089,7 @@
           "kind": "Call with Linh Nguyen (30 min)"
         }
       ],
-      "notes": "Rejected Sep 30 Nov 10, 2026: Hightouch's Linh Nguyen scheduled a 30-minute call with Lee about the TAM role for Thu Nov 12, 2026, 10:00-10:30 AM MT (Zoom)."
+      "notes": "Rejected Sep 30. Nov 10, 2026: Hightouch's Linh Nguyen scheduled a 30-minute call with Lee about the TAM role for Thu Nov 12, 2026, 10:00-10:30 AM MT (Zoom)."
     },
     {
       "id": "veeam-sr-cse-data-ai",
@@ -2634,6 +2634,17 @@
         }
       ],
       "notes": "Nov 10, 2026: After the Staff TAM decision, recruiter Sophia Mastendino offered to put Lee forward for this Sr TAM role at ~$145K-$155K base + $20K OTE; Lee accepted and asked to be put forward. Separate from the Sep 2026 Senior TAM application (onepassword-sr-tam). Nov 10, 2026: Invited to the next interview round; Sophia said it would be with Ron Doucette and Keith Gleason (45 min). Confirmed for Tue Nov 17, 2026, 7:30-8:15 AM MT on Zoom with Keith Gleason."
+    },
+    {
+      "id": "tech2i-solutions-architect-proposal-strategy",
+      "company": "Tech2i Inc.",
+      "role": "Solutions Architect-Proposal Strategy & Technical Solutions",
+      "jobUrl": "https://www.indeed.com/viewjob?jk=1c018ed36877ad69",
+      "status": "Applied",
+      "appliedOn": "2026-11-10",
+      "location": "Remote (US)",
+      "interviews": [],
+      "notes": "Applied Nov 10, 2026 via Indeed Apply (TAM resume). Pay $180K–$210K."
     }
   ]
 }
