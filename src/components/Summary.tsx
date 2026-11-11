@@ -1,14 +1,14 @@
 import { useEffect, useId, useState, type FocusEvent, type KeyboardEvent, type MouseEvent, type PointerEvent } from "react";
 import {
   countByStatus,
-  formatConcrete,
-  nextUpcoming,
-  relativeDayLabel,
-  upcomingCount,
+  dayDistance,
+  formatTime,
+  interviewDate,
+  type Scheduled,
 } from "../lib/board.ts";
 import { STATUS_META } from "../lib/status.ts";
 import { STATUSES, type Application, type ApplicationStatus } from "../types.ts";
-import { CalendarIcon } from "./Icons.tsx";
+import { CalendarIcon, ChevronIcon } from "./Icons.tsx";
 import { RoleTitle } from "./RoleTitle.tsx";
 
 type SummaryProps = {
@@ -333,11 +333,202 @@ function DrawnDonut({
   return <StatusDonut {...props} progress={progress} />;
 }
 
+const INTERVIEW_PREVIEW = 4;
+const DENVER_TZ = "America/Denver";
+
+const denverDayKey = new Intl.DateTimeFormat("en-CA", {
+  timeZone: DENVER_TZ,
+  year: "numeric",
+  month: "2-digit",
+  day: "2-digit",
+});
+
+const denverDayHeading = new Intl.DateTimeFormat("en-US", {
+  timeZone: DENVER_TZ,
+  weekday: "short",
+  month: "short",
+  day: "numeric",
+});
+
+type UpcomingDay = {
+  key: string;
+  heading: string;
+  relative: "Today" | "Tomorrow" | null;
+  items: Scheduled[];
+};
+
+/** Upcoming interviews grouped by America/Denver calendar day. Same cutoff as the previous card: any status, at or after `now`. */
+function upcomingDays(applications: Application[], now: Date): UpcomingDay[] {
+  const nowTime = now.getTime();
+  const scheduled: Array<Scheduled & { time: number }> = [];
+  for (const application of applications) {
+    for (const interview of application.interviews) {
+      const time = interviewDate(interview.at).getTime();
+      if (Number.isNaN(time) || time < nowTime) continue;
+      scheduled.push({ application, interview, time });
+    }
+  }
+  scheduled.sort(
+    (a, b) =>
+      a.time - b.time ||
+      a.application.company.localeCompare(b.application.company) ||
+      a.interview.id.localeCompare(b.interview.id),
+  );
+
+  const days: UpcomingDay[] = [];
+  for (const item of scheduled) {
+    const when = interviewDate(item.interview.at);
+    const key = denverDayKey.format(when);
+    const current = days[days.length - 1];
+    if (!current || current.key !== key) {
+      const distance = dayDistance(item.interview.at, now);
+      days.push({
+        key,
+        heading: denverDayHeading.format(when),
+        relative: distance === 0 ? "Today" : distance === 1 ? "Tomorrow" : null,
+        items: [],
+      });
+    }
+    days[days.length - 1].items.push(item);
+  }
+  return days;
+}
+
+function formatInterviewTime(at: string): string {
+  const time = formatTime(at);
+  return time ? `${time} MT` : "";
+}
+
+function dayAnnouncement(day: UpcomingDay): string {
+  return day.relative ? `${day.heading}, ${day.relative}` : day.heading;
+}
+
+function DayArrow({
+  direction,
+  label,
+  disabled,
+  onStep,
+}: {
+  direction: "previous" | "next";
+  label: string;
+  disabled: boolean;
+  onStep: () => void;
+}) {
+  return (
+    <button
+      type="button"
+      aria-label={label}
+      aria-disabled={disabled}
+      onClick={() => {
+        if (!disabled) onStep();
+      }}
+      className={`inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full border-[2px] transition-colors ${
+        disabled
+          ? "cursor-not-allowed border-transparent bg-transparent text-muted opacity-35"
+          : "border-rule-strong bg-[var(--mint-chip)] text-ink hover:bg-tint"
+      }`}
+    >
+      <ChevronIcon className={direction === "previous" ? "h-4 w-4 rotate-180" : "h-4 w-4"} />
+    </button>
+  );
+}
+
+function NextInterviewCard({ applications, now }: SummaryProps) {
+  const days = upcomingDays(applications, now);
+  const [selectedKey, setSelectedKey] = useState<string | null>(null);
+  const [expandedKey, setExpandedKey] = useState<string | null>(null);
+  const listId = useId();
+  const found = selectedKey === null ? -1 : days.findIndex((day) => day.key === selectedKey);
+  const selectedIndex = found === -1 ? 0 : found;
+  const day = days[selectedIndex];
+  const expanded = Boolean(day && expandedKey === day.key);
+  const visible = day ? (expanded ? day.items : day.items.slice(0, INTERVIEW_PREVIEW)) : [];
+  const previous = selectedIndex > 0 ? days[selectedIndex - 1] : undefined;
+  const next = day && selectedIndex < days.length - 1 ? days[selectedIndex + 1] : undefined;
+
+  const step = (index: number) => {
+    const target = days[index];
+    if (!target) return;
+    setSelectedKey(target.key);
+    setExpandedKey(null);
+  };
+
+  return (
+    <div className="flex h-full flex-col rounded-[22px] border-[3px] border-black bg-mint p-5 text-ink sm:p-6">
+      <div className="flex items-center justify-between gap-3">
+        <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-muted">Next interview</p>
+        <CalendarIcon className="h-4 w-4 text-live" />
+      </div>
+      {day ? (
+        <div className="mt-5 flex flex-1 flex-col">
+          <div className="grid grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-2">
+            <DayArrow
+              direction="previous"
+              label={
+                previous
+                  ? `Previous day with interviews, ${dayAnnouncement(previous)}`
+                  : "Previous day with interviews"
+              }
+              disabled={!previous}
+              onStep={() => step(selectedIndex - 1)}
+            />
+            <div className="min-w-0 text-center" aria-live="polite">
+              <p className="text-[1.35rem] font-semibold leading-none tracking-[-0.04em] text-balance text-ink min-[420px]:text-[1.55rem]">
+                {day.heading}
+              </p>
+              {day.relative ? <p className="mt-2 text-sm font-semibold text-live">{day.relative}</p> : null}
+              <p className="num mt-1.5 text-xs text-muted">
+                Day {selectedIndex + 1} of {days.length}
+              </p>
+            </div>
+            <DayArrow
+              direction="next"
+              label={next ? `Next day with interviews, ${dayAnnouncement(next)}` : "Next day with interviews"}
+              disabled={!next}
+              onStep={() => step(selectedIndex + 1)}
+            />
+          </div>
+          <ul id={listId} aria-label={`Interviews on ${dayAnnouncement(day)}`} className="mt-5 divide-y divide-rule border-t border-rule">
+            {visible.map((item) => (
+              <li key={`${item.application.id}-${item.interview.id}`} className="py-3">
+                <p className="num text-sm font-semibold text-ink">{formatInterviewTime(item.interview.at)}</p>
+                <p className="mt-1 font-medium leading-snug text-ink">{item.application.company}</p>
+                <p className="mt-0.5 text-sm leading-snug text-pretty text-muted">
+                  <RoleTitle role={item.application.role} jobUrl={item.application.jobUrl} />
+                </p>
+                <p className="mt-2 inline-block max-w-full rounded-2xl border-[2px] border-rule-strong bg-[var(--mint-chip)] px-2.5 py-1 text-left text-xs font-medium leading-snug break-words text-ink">
+                  {item.interview.kind}
+                </p>
+              </li>
+            ))}
+          </ul>
+          {day.items.length > INTERVIEW_PREVIEW ? (
+            <button
+              type="button"
+              className="mt-4 flex min-h-11 w-full items-center justify-center rounded-full border-[2px] border-rule-strong bg-[var(--mint-chip)] px-3 py-2 text-sm font-semibold text-ink transition-colors hover:bg-tint"
+              aria-expanded={expanded}
+              aria-controls={listId}
+              onClick={() => setExpandedKey(expanded ? null : day.key)}
+            >
+              {expanded ? "Show less" : `Show all (${day.items.length})`}
+            </button>
+          ) : null}
+        </div>
+      ) : (
+        <div className="mt-6">
+          <p className="text-[1.7rem] font-semibold leading-[1.1] tracking-[-0.04em] text-ink">Nothing on the calendar</p>
+          <p className="mt-3 max-w-[16rem] text-sm leading-5 text-muted">
+            The next scheduled conversation will show here.
+          </p>
+        </div>
+      )}
+    </div>
+  );
+}
+
 export function Summary({ applications, now }: SummaryProps) {
   const counts = countByStatus(applications, now);
   const total = applications.length;
-  const upcoming = nextUpcoming(applications, now);
-  const scheduled = upcomingCount(applications, now);
   const segments = buildSegments(counts, total);
   const signature = segments.map((segment) => `${segment.status}:${segment.count}`).join("|");
   const reduced = usePrefersReducedMotion();
@@ -365,7 +556,7 @@ export function Summary({ applications, now }: SummaryProps) {
 
   return (
     <section
-      className="grid gap-4 lg:grid-cols-[minmax(0,1fr)_300px]"
+      className="grid gap-4 lg:grid-cols-[minmax(0,1fr)_minmax(300px,400px)]"
       aria-label="Summary"
       onKeyDown={(event) => {
         if (event.key === "Escape") clear();
@@ -474,39 +665,7 @@ export function Summary({ applications, now }: SummaryProps) {
         </div>
       </div>
 
-      <div className="flex h-full flex-col rounded-[22px] border-[3px] border-black bg-mint p-5 text-ink sm:p-6">
-        <div className="flex items-center justify-between gap-3">
-          <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-muted">Next interview</p>
-          <CalendarIcon className="h-4 w-4 text-live" />
-        </div>
-        {upcoming ? (
-          <div className="mt-6 flex flex-1 flex-col">
-            <p className="text-[1.85rem] font-semibold leading-none tracking-[-0.04em] text-ink">
-              {relativeDayLabel(upcoming.interview.at, now)}
-            </p>
-            <p className="mt-2 text-sm text-muted">{formatConcrete(upcoming.interview.at)}</p>
-            <div className="mt-auto border-t border-rule pt-4">
-              <p className="font-medium text-ink">{upcoming.application.company}</p>
-              <p className="mt-0.5 text-sm text-muted">
-                <RoleTitle role={upcoming.application.role} jobUrl={upcoming.application.jobUrl} />
-              </p>
-              <p className="mt-3 inline-flex rounded-full border-[2px] border-rule-strong bg-[var(--mint-chip)] px-2.5 py-1 text-xs font-medium text-ink">
-                {upcoming.interview.kind}
-              </p>
-              <p className="mt-3 text-xs text-muted">
-                {scheduled > 1 ? `Soonest of ${scheduled} scheduled` : "On the calendar"}
-              </p>
-            </div>
-          </div>
-        ) : (
-          <div className="mt-6">
-            <p className="text-[1.7rem] font-semibold leading-[1.1] tracking-[-0.04em] text-ink">Nothing on the calendar</p>
-            <p className="mt-3 max-w-[16rem] text-sm leading-5 text-muted">
-              The next scheduled conversation will show here.
-            </p>
-          </div>
-        )}
-      </div>
+      <NextInterviewCard applications={applications} now={now} />
     </section>
   );
 }
