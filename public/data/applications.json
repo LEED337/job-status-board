@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-11-11T01:22:35Z",
+  "updatedAt": "2026-11-11T20:35:03Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -2645,6 +2645,78 @@
       "location": "Remote (US)",
       "interviews": [],
       "notes": "Applied Nov 10, 2026 via Indeed Apply (TAM resume). Pay $180K–$210K."
+    },
+    {
+      "id": "caylent-senior-cloud-architect",
+      "company": "Caylent",
+      "role": "Senior Cloud Architect",
+      "jobUrl": "https://job-boards.greenhouse.io/caylent/jobs/5825794004",
+      "status": "Applied",
+      "appliedOn": "2026-11-11",
+      "location": "Remote (US)",
+      "interviews": [],
+      "notes": "Applied Nov 11, 2026 via Greenhouse (CSE resume). Pay $150K–$170K."
+    },
+    {
+      "id": "blue-mantis-cloud-csm",
+      "company": "Blue Mantis",
+      "role": "Cloud Customer Success Manager",
+      "jobUrl": "https://bluemantis.pinpointhq.com/en/postings/86c280d8-620a-4e22-8739-9c07aee54a7f",
+      "status": "Applied",
+      "appliedOn": "2026-11-11",
+      "location": "Remote (US)",
+      "interviews": [],
+      "notes": "Applied Nov 11, 2026 (TAM resume). Pay $140K–$165K."
+    },
+    {
+      "id": "tyk-senior-cse-amer",
+      "company": "Tyk",
+      "role": "Senior Customer Success Engineer - AMER",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4489945845",
+      "status": "Applied",
+      "appliedOn": "2026-11-11",
+      "location": "Remote",
+      "interviews": [],
+      "notes": "Applied Nov 11, 2026 via LinkedIn Easy Apply (CSE resume + cover letter). Pay not posted."
+    },
+    {
+      "id": "tonic-ai-solution-architect-agent-testing",
+      "company": "Tonic.ai",
+      "role": "Solution Architect, Agent & Software Testing",
+      "jobUrl": "https://jobs.ashbyhq.com/TonicAI/c9c2be4b-d7b8-42c0-9f67-1c4579fcfc09",
+      "status": "Applied",
+      "appliedOn": "2026-11-11",
+      "location": "US",
+      "interviews": [],
+      "notes": "Applied Nov 11, 2026 via Ashby (CSE resume). Pay not posted."
+    },
+    {
+      "id": "hypori-tam-commercial",
+      "company": "Hypori",
+      "role": "Technical Account Manager, Commercial",
+      "jobUrl": "https://job-boards.greenhouse.io/hypori/jobs/6238922004",
+      "status": "Applied",
+      "appliedOn": "2026-11-11",
+      "location": "Remote (US)",
+      "interviews": [],
+      "notes": "Applied Nov 11, 2026 via Greenhouse (TAM resume). Pay $130K–$160K + 10% bonus."
+    },
+    {
+      "id": "illumio-sr-tam",
+      "company": "Illumio",
+      "role": "Sr. Technical Account Manager",
+      "jobUrl": "https://jobs.ashbyhq.com/illumio/4eac1240-145c-4bcf-b40b-d9756c90e04c",
+      "status": "Interviewing",
+      "appliedOn": "2026-11-11",
+      "location": "Remote (US)",
+      "interviews": [
+        {
+          "id": "illumio-sr-tam-recruiter-screen",
+          "at": "2026-11-12T08:30",
+          "kind": "Recruiter screening"
+        }
+      ],
+      "notes": "Applied Nov 11, 2026 via Ashby (TAM resume). Pay $148K–$177K. Nov 11, 2026: Recruiter screening scheduled for Thu Nov 12, 2026 at 8:30 AM MT."
     }
   ]
 }
