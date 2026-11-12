@@ -596,7 +596,7 @@ export function Summary({ applications, now }: SummaryProps) {
                 </p>
               </div>
               <div
-                className="absolute inset-0 flex items-center justify-center transition-opacity duration-300"
+                className="pointer-events-none absolute inset-0 flex items-center justify-center transition-opacity duration-300"
                 style={{ opacity: active ? 1 : 0 }}
               >
                 {shown ? (

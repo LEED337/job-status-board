@@ -4,6 +4,7 @@ import { STATUS_META } from "../lib/status.ts";
 import { btnPrimary, btnSecondary, cx, fieldClass } from "../lib/styles.ts";
 import { INTERVIEW_KINDS, STATUSES, type Application, type ApplicationStatus, type Interview } from "../types.ts";
 import { CloseIcon } from "./Icons.tsx";
+import { ModalFrame } from "./ModalFrame.tsx";
 
 type InterviewDraft = {
   id: string;
@@ -27,8 +28,8 @@ type Draft = {
 type ApplicationDialogProps = {
   application: Application | null;
   onClose: () => void;
-  onSave: (application: Application) => void | Promise<void>;
-  onDelete?: () => void | Promise<void>;
+  onSave: (application: Application) => void | Promise<void | string>;
+  onDelete?: () => void | Promise<void | string>;
 };
 
 const DATE_ONLY = /^\d{4}-\d{2}-\d{2}$/;
@@ -82,14 +83,6 @@ export function ApplicationDialog({ application, onClose, onSave, onDelete }: Ap
   }, []);
 
   useEffect(() => {
-    const previous = document.body.style.overflow;
-    document.body.style.overflow = "hidden";
-    return () => {
-      document.body.style.overflow = previous;
-    };
-  }, []);
-
-  useEffect(() => {
     const node = dialogRef.current;
     if (!node) return;
     const onKey = (event: KeyboardEvent) => {
@@ -125,8 +118,8 @@ export function ApplicationDialog({ application, onClose, onSave, onDelete }: Ap
     }));
   };
 
-  const submit = (event: FormEvent) => {
-    event.preventDefault();
+  const submit = async (event?: FormEvent) => {
+    event?.preventDefault();
     if (pending) return;
     const company = draft.company.trim();
     const role = draft.role.trim();
@@ -153,14 +146,15 @@ export function ApplicationDialog({ application, onClose, onSave, onDelete }: Ap
       interviews.push({
         id: interview.id,
         kind,
-        at: `${interview.date}T${interview.time}`,
+        at: `${interview.date}T${interview.time.slice(0, 5)}`,
       });
     }
     interviews.sort((a, b) => a.at.localeCompare(b.at));
     const notes = draft.notes.trim();
     setPending("save");
-    void Promise.resolve(
-      onSave({
+    setError(null);
+    try {
+      const message = await onSave({
         id: draft.id,
         company,
         role,
@@ -170,23 +164,23 @@ export function ApplicationDialog({ application, onClose, onSave, onDelete }: Ap
         location: draft.location.trim(),
         ...(notes ? { notes } : {}),
         interviews,
-      }),
-    ).finally(() => setPending(null));
+      });
+      if (typeof message === "string" && message) setError(message);
+    } catch (err: unknown) {
+      setError(err instanceof Error ? err.message : "Couldn't save that application.");
+    } finally {
+      setPending(null);
+    }
   };
 
   return (
-    <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-[#17191c]/40 p-4"
-      onMouseDown={(event) => {
-        if (event.target === event.currentTarget) onClose();
-      }}
-    >
+    <ModalFrame onDismiss={pending ? undefined : onClose}>
       <div
         ref={dialogRef}
         role="dialog"
         aria-modal="true"
         aria-labelledby={titleId}
-        className="flex max-h-[min(92vh,860px)] w-full max-w-xl flex-col overflow-hidden rounded-[28px] bg-white "
+        className="flex max-h-[min(100dvh-2rem,860px)] w-full flex-col overflow-hidden rounded-[28px] border-[3px] border-black bg-white"
       >
         <div className="flex items-start justify-between gap-4 px-6 pt-6 pb-2">
           <div>
@@ -205,7 +199,13 @@ export function ApplicationDialog({ application, onClose, onSave, onDelete }: Ap
           </button>
         </div>
 
-        <form id="application-form" onSubmit={submit} className="space-y-4 overflow-y-auto px-6 py-4">
+        <form
+          id="application-form"
+          onSubmit={(event) => {
+            void submit(event);
+          }}
+          className="min-h-0 flex-1 space-y-4 overflow-y-auto px-6 py-4"
+        >
           {error ? (
             <p className="rounded-xl bg-[var(--chip-closed-bg)] px-3 py-2 text-sm text-closed" role="alert">
               {error}
@@ -262,8 +262,8 @@ export function ApplicationDialog({ application, onClose, onSave, onDelete }: Ap
                     aria-pressed={selected}
                     onClick={() => setDraft({ ...draft, status })}
                     className={cx(
-                      "inline-flex items-center gap-2 rounded-xl px-3 py-2.5 text-left text-sm font-medium ring-1 transition-colors",
-                      selected ? "bg-fill text-white ring-1 ring-inset ring-black" : "bg-white text-ink ring-hairline hover:bg-soft",
+                      "inline-flex min-h-11 items-center gap-2 rounded-xl border-[3px] border-black px-3 py-2.5 text-left text-sm font-medium transition-colors",
+                      selected ? "bg-fill text-[#ffffff]" : "bg-white text-ink hover:bg-soft",
                     )}
                   >
                     <span
@@ -332,7 +332,7 @@ export function ApplicationDialog({ application, onClose, onSave, onDelete }: Ap
                     ],
                   }))
                 }
-                className="text-sm font-semibold text-ink"
+                className="inline-flex min-h-11 items-center text-sm font-semibold text-ink underline decoration-ink/30 underline-offset-4"
               >
                 Add interview
               </button>
@@ -378,7 +378,7 @@ export function ApplicationDialog({ application, onClose, onSave, onDelete }: Ap
                             interviews: current.interviews.filter((item) => item.id !== interview.id),
                           }))
                         }
-                        className="h-11 rounded-xl px-3 text-sm font-semibold text-muted hover:text-closed"
+                        className="h-11 min-h-11 rounded-xl border-[3px] border-black bg-white px-3 text-sm font-semibold text-ink hover:text-closed"
                       >
                         Remove
                       </button>
@@ -416,7 +416,15 @@ export function ApplicationDialog({ application, onClose, onSave, onDelete }: Ap
                   onClick={() => {
                     if (pending) return;
                     setPending("delete");
-                    void Promise.resolve(onDelete()).finally(() => setPending(null));
+                    setError(null);
+                    void Promise.resolve(onDelete())
+                      .then((message) => {
+                        if (typeof message === "string" && message) setError(message);
+                      })
+                      .catch((err: unknown) => {
+                        setError(err instanceof Error ? err.message : "Couldn't delete that application.");
+                      })
+                      .finally(() => setPending(null));
                   }}
                   className="font-semibold text-closed disabled:opacity-40"
                 >
@@ -437,12 +445,24 @@ export function ApplicationDialog({ application, onClose, onSave, onDelete }: Ap
             <button type="button" onClick={onClose} className={btnSecondary} disabled={pending !== null}>
               Cancel
             </button>
-            <button type="submit" form="application-form" className={btnPrimary} disabled={pending !== null}>
+            <button
+              type="submit"
+              form="application-form"
+              className={btnPrimary}
+              disabled={pending !== null}
+              onClick={(event) => {
+                const form = document.getElementById("application-form");
+                if (!(form instanceof HTMLFormElement)) return;
+                if (event.currentTarget.form === form) return;
+                event.preventDefault();
+                form.requestSubmit();
+              }}
+            >
               {pending === "save" ? "Saving…" : "Save"}
             </button>
           </div>
         </div>
       </div>
-    </div>
+    </ModalFrame>
   );
 }

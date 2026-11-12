@@ -61,9 +61,20 @@ export function unlockManage(password: string): void {
   }
 }
 
+function passwordHash(): string {
+  // Dev-only so a local run can unlock with a test hash without changing the committed one.
+  if (import.meta.env.DEV) {
+    const override = import.meta.env.VITE_MANAGE_PASSWORD_SHA256;
+    if (typeof override === "string" && /^[a-f0-9]{64}$/i.test(override.trim())) {
+      return override.trim().toLowerCase();
+    }
+  }
+  return MANAGE_PASSWORD_SHA256;
+}
+
 export async function passwordMatches(password: string): Promise<boolean> {
   const subtle = globalThis.crypto?.subtle;
   if (!subtle) throw new Error("Web Crypto is unavailable.");
   const digest = await subtle.digest("SHA-256", new TextEncoder().encode(password));
-  return hexEqual(toHex(digest), MANAGE_PASSWORD_SHA256);
+  return hexEqual(toHex(digest), passwordHash());
 }

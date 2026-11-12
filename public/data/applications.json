@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-11-11T21:39:13Z",
+  "updatedAt": "2026-11-12T14:00:00Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -2717,6 +2717,61 @@
         }
       ],
       "notes": "Applied Nov 11, 2026 via Ashby (TAM resume). Pay $148K–$177K. Nov 11, 2026: Recruiter screening scheduled for Thu Nov 12, 2026 at 8:30 AM MT."
+    },
+    {
+      "id": "movate-technical-support-specialist",
+      "company": "Movate",
+      "role": "Technical Support Specialist (Tier 1, supporting Super File launch)",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4485158770/",
+      "status": "Applied",
+      "appliedOn": "2026-11-11",
+      "location": "South Jordan, UT",
+      "interviews": [],
+      "notes": "Applied Nov 11, 2026. Posted pay shows $3,577–$5,700 (likely monthly, ~$43K–$68K/yr). Applied by Lee directly."
+    },
+    {
+      "id": "mastercontrol-ai-engineering-intern",
+      "company": "MasterControl",
+      "role": "AI Engineering Intern",
+      "jobUrl": "https://www.mastercontrol.com/careers/job-listings/role/?role=4738478005&gh_jid=4738478005",
+      "status": "Applied",
+      "appliedOn": "2026-11-11",
+      "location": "Salt Lake City, UT",
+      "interviews": [],
+      "notes": "Applied Nov 11, 2026. Pay $30–$50/hr."
+    },
+    {
+      "id": "mastercontrol-devops-engineering-intern",
+      "company": "MasterControl",
+      "role": "DevOps Engineering Intern",
+      "jobUrl": "https://www.mastercontrol.com/careers/job-listings/role/?role=4738483005&gh_jid=4738483005",
+      "status": "Applied",
+      "appliedOn": "2026-11-11",
+      "location": "Salt Lake City, UT",
+      "interviews": [],
+      "notes": "Applied Nov 11, 2026. Pay $30–$50/hr."
+    },
+    {
+      "id": "oracle-customer-engineering-architect",
+      "company": "Oracle",
+      "role": "Customer Engineering Architect",
+      "jobUrl": "https://eeho.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_45001/job/344031",
+      "status": "Applied",
+      "appliedOn": "2026-11-12",
+      "location": "Nashville, TN / US",
+      "interviews": [],
+      "notes": "Applied Nov 12, 2026. Pay $114.6K–$234.6K."
+    },
+    {
+      "id": "oracle-oci-cloud-architect",
+      "company": "Oracle",
+      "role": "Oracle Cloud Infrastructure, Cloud Architect",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4434504104/",
+      "status": "Applied",
+      "appliedOn": "2026-11-12",
+      "location": "Remote US",
+      "interviews": [],
+      "notes": "Applied Nov 12, 2026. Pay $147.3K–$243.8K (Oracle job 339105)."
     }
   ]
 }

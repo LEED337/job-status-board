@@ -14,6 +14,30 @@ function json(body: unknown, status: number): Response {
   return Response.json(body, { status });
 }
 
+function githubFailure(status: number | undefined, action: "read" | "update"): Response {
+  if (status === 401 || status === 403) {
+    return json(
+      {
+        error: "github",
+        message: "GitHub rejected GITHUB_TOKEN. It may be expired or missing Contents write permission.",
+      },
+      502,
+    );
+  }
+  if (status === 404) {
+    return json(
+      {
+        error: "github",
+        message:
+          "GitHub could not find the repository or public/data/applications.json. Check GITHUB_REPO and that the token can read Contents.",
+      },
+      502,
+    );
+  }
+  const suffix = typeof status === "number" ? ` (GitHub ${status}).` : ".";
+  return json({ error: "github", message: `Couldn't ${action} the shared board${suffix}` }, 502);
+}
+
 function expectedPasswordHash(): string {
   const configured = process.env.MANAGE_PASSWORD_SHA256?.trim().toLowerCase();
   return configured || MANAGE_PASSWORD_SHA256;
@@ -38,10 +62,10 @@ function githubTarget(): { repo: string; branch: string } | Response {
   const repo = (process.env.GITHUB_REPO || "LEED337/job-status-board").trim();
   const branch = (process.env.GITHUB_BRANCH || "main").trim();
   if (!/^[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+$/.test(repo)) {
-    return json({ error: "not_configured" }, 503);
+    return json({ error: "not_configured", message: "GITHUB_REPO is not a valid owner/name." }, 503);
   }
   if (!/^[A-Za-z0-9._/-]+$/.test(branch) || branch.includes("..") || branch.startsWith("/") || branch.endsWith("/")) {
-    return json({ error: "not_configured" }, 503);
+    return json({ error: "not_configured", message: "GITHUB_BRANCH is not a valid branch name." }, 503);
   }
   return { repo, branch };
 }
@@ -67,7 +91,9 @@ async function readApplications(token: string, repo: string, branch: string): Pr
     cache: "no-store",
   });
   if (!response.ok) {
-    throw new Error(`GitHub read failed (${response.status}).`);
+    const error = new Error(`GitHub read failed (${response.status}).`) as Error & { status?: number };
+    error.status = response.status;
+    throw error;
   }
   const payload: unknown = await response.json();
   if (!payload || typeof payload !== "object") throw new Error("GitHub read returned an unreadable file.");
@@ -77,8 +103,18 @@ async function readApplications(token: string, repo: string, branch: string): Pr
   if (typeof record.content === "string" && record.content.trim()) {
     text = Buffer.from(record.content.replace(/\s/g, ""), "base64").toString("utf8");
   } else if (typeof record.download_url === "string" && record.download_url) {
-    const downloaded = await fetch(record.download_url, { headers: githubHeaders(token), cache: "no-store" });
-    if (!downloaded.ok) throw new Error(`GitHub download failed (${downloaded.status}).`);
+    const headers = new Headers({ "User-Agent": "job-status-board" });
+    // Only the GitHub API host should see the token. raw.githubusercontent.com is public.
+    if (record.download_url.startsWith("https://api.github.com/")) {
+      const authed = githubHeaders(token);
+      authed.forEach((value, key) => headers.set(key, value));
+    }
+    const downloaded = await fetch(record.download_url, { headers, cache: "no-store" });
+    if (!downloaded.ok) {
+      const error = new Error(`GitHub download failed (${downloaded.status}).`) as Error & { status?: number };
+      error.status = downloaded.status;
+      throw error;
+    }
     text = await downloaded.text();
   } else {
     throw new Error("GitHub read did not return file content.");
@@ -157,8 +193,9 @@ async function publishEdit(token: string, repo: string, branch: string, edit: Sh
     try {
       current = await readApplications(token, repo, branch);
     } catch (error) {
+      const status = error && typeof error === "object" && "status" in error && typeof error.status === "number" ? error.status : undefined;
       console.error(error instanceof Error ? error.message : "GitHub read failed.");
-      return json({ error: "github", message: "Couldn't read the shared board." }, 502);
+      return githubFailure(status, "read");
     }
 
     let merged;
@@ -184,14 +221,16 @@ async function publishEdit(token: string, repo: string, branch: string, edit: Sh
       );
     } catch (error) {
       console.error(error instanceof Error ? error.message : "GitHub write failed.");
-      return json({ error: "github", message: "Couldn't update the shared board." }, 502);
+      return githubFailure(undefined, "update");
     }
 
     if (!written.ok && written.status === 409 && attempt < MAX_ATTEMPTS - 1) continue;
-    if (!written.ok && written.status === 409) return json({ error: "conflict" }, 409);
+    if (!written.ok && written.status === 409) {
+      return json({ error: "conflict", message: "The shared board changed while saving. Try again." }, 409);
+    }
     if (!written.ok) {
       console.error(`GitHub write failed (${written.status}).`);
-      return json({ error: "github", message: "Couldn't update the shared board." }, 502);
+      return githubFailure(written.status, "update");
     }
 
     return json(
@@ -204,7 +243,7 @@ async function publishEdit(token: string, repo: string, branch: string, edit: Sh
       200,
     );
   }
-  return json({ error: "conflict" }, 409);
+  return json({ error: "conflict", message: "The shared board changed while saving. Try again." }, 409);
 }
 
 async function saveApplication(request: Request): Promise<Response> {
@@ -222,7 +261,7 @@ async function saveApplication(request: Request): Promise<Response> {
   if (!passwordAccepted(record.password)) return json({ error: "unauthorized" }, 401);
 
   const token = process.env.GITHUB_TOKEN?.trim();
-  if (!token) return json({ error: "not_configured" }, 503);
+  if (!token) return json({ error: "not_configured", message: "GITHUB_TOKEN is not set on the server." }, 503);
 
   const target = githubTarget();
   if (target instanceof Response) return target;
