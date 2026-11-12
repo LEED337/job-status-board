@@ -6,14 +6,15 @@ import { Shell } from "./Shell.tsx";
 
 type ManageLockProps = {
   embed?: boolean;
+  notice?: string | null;
   onUnlock: () => void;
 };
 
-export function ManageLock({ embed = false, onUnlock }: ManageLockProps) {
+export function ManageLock({ embed = false, notice = null, onUnlock }: ManageLockProps) {
   const fieldId = useId();
   const errorId = useId();
   const [password, setPassword] = useState("");
-  const [error, setError] = useState<string | null>(null);
+  const [error, setError] = useState<string | null>(notice);
   const [pending, setPending] = useState(false);
 
   useEffect(() => {

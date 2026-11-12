@@ -2,8 +2,9 @@ import { parseBoard } from "./board.ts";
 import type { BoardFile } from "../types.ts";
 
 export async function loadPublished(): Promise<BoardFile> {
-  const url = `${import.meta.env.BASE_URL}data/applications.json`;
-  const response = await fetch(url);
+  const base = import.meta.env.BASE_URL || "/";
+  const path = `${base}data/applications.json`.replace(/([^:]\/)\/+/g, "$1");
+  const response = await fetch(`${path}?t=${Date.now()}`, { cache: "no-store" });
   if (!response.ok) {
     throw new Error(`Could not load applications (${response.status}).`);
   }

@@ -11,7 +11,7 @@ export type PublishResult =
       owner: string;
       updatedAt: string;
     }
-  | { ok: false; reason: PublishReason; message: string };
+  | { ok: false; reason: PublishReason; message: string; status?: number };
 
 function endpoint(): string {
   const base = import.meta.env.BASE_URL || "/";
@@ -43,7 +43,11 @@ export async function publishOperation(input: {
       body: JSON.stringify(body),
     });
   } catch {
-    return { ok: false, reason: "network", message: "Couldn't reach the shared board." };
+    return {
+      ok: false,
+      reason: "network",
+      message: "Couldn't reach the shared board (no HTTP response).",
+    };
   }
 
   let payload: unknown = null;
@@ -55,26 +59,46 @@ export async function publishOperation(input: {
   const record = asRecord(payload);
 
   if (!response.ok) {
+    const withStatus = (message: string) =>
+      message.includes(`HTTP ${response.status}`) ? message : `${message} (HTTP ${response.status})`;
     if (response.status === 503 && record?.error === "not_configured") {
-      return {
-        ok: false,
-        reason: "not_configured",
-        message: "Shared saving isn't configured on the server yet.",
-      };
+      const message =
+        typeof record.message === "string" && record.message
+          ? record.message
+          : "Shared saving isn't configured on the server yet (not_configured).";
+      return { ok: false, reason: "not_configured", message: withStatus(message), status: response.status };
     }
     if (response.status === 401) {
-      return { ok: false, reason: "unauthorized", message: "The password was rejected." };
+      return {
+        ok: false,
+        reason: "unauthorized",
+        message: withStatus("The password was rejected."),
+        status: response.status,
+      };
     }
     if (response.status === 404 && record?.error === "not_found") {
-      return { ok: false, reason: "not_found", message: "That application is not on the shared board." };
+      return {
+        ok: false,
+        reason: "not_found",
+        message: withStatus("That application is not on the shared board."),
+        status: response.status,
+      };
     }
-    const message = typeof record?.message === "string" ? record.message : "The shared board was not updated.";
-    return { ok: false, reason: "rejected", message };
+    const message =
+      typeof record?.message === "string" && record.message
+        ? record.message
+        : "The shared board was not updated.";
+    return { ok: false, reason: "rejected", message: withStatus(message), status: response.status };
   }
 
   const commitSha = typeof record?.commitSha === "string" ? record.commitSha : "";
   if (!commitSha) {
-    return { ok: false, reason: "rejected", message: "The shared board did not confirm the save." };
+    return {
+      ok: false,
+      reason: "rejected",
+      message: `The shared board did not confirm the save (HTTP ${response.status}).`,
+      status: response.status,
+    };
   }
 
   let application: Application | null = null;

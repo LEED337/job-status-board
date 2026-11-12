@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState, type FormEvent } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import { ApplicationDialog } from "../components/ApplicationDialog.tsx";
+import { ModalFrame } from "../components/ModalFrame.tsx";
 import { BoardList } from "../components/BoardList.tsx";
 import { PlusIcon } from "../components/Icons.tsx";
 import { ManageLock } from "../components/ManageLock.tsx";
@@ -21,7 +22,7 @@ import { loadPublished, readBoardFile } from "../lib/load.ts";
 import { clearManagePassword, isManageUnlocked, passwordMatches, readManagePassword, unlockManage } from "../lib/manageAuth.ts";
 import { publishOperation, type PublishResult } from "../lib/publish.ts";
 import { btnPrimary, btnSecondary, cx, fieldClass } from "../lib/styles.ts";
-import { clearDraft, readDraft, saveDraft } from "../lib/storage.ts";
+import { clearDraft, readDraftRecord, reconcileDraft, saveDraft } from "../lib/storage.ts";
 import { useNow } from "../lib/useNow.ts";
 import type { Application, BoardFile } from "../types.ts";
 
@@ -31,26 +32,43 @@ export function ManagePage() {
   const [params] = useSearchParams();
   const embed = params.get("embed") === "1";
   const [unlocked, setUnlocked] = useState(() => isManageUnlocked());
+  const [lockMessage, setLockMessage] = useState<string | null>(null);
   if (!unlocked) {
-    return <ManageLock embed={embed} onUnlock={() => setUnlocked(true)} />;
+    return (
+      <ManageLock
+        embed={embed}
+        notice={lockMessage}
+        onUnlock={() => {
+          setLockMessage(null);
+          setUnlocked(true);
+        }}
+      />
+    );
   }
-  return <ManageEditor />;
+  return (
+    <ManageEditor
+      onLock={(message) => {
+        setLockMessage(message);
+        setUnlocked(false);
+      }}
+    />
+  );
 }
 
 function failureMessage(result: Extract<PublishResult, { ok: false }>, fallback: string): string {
+  const detail = result.message || fallback;
   if (result.reason === "not_configured") {
-    return "Saved only in this browser. Shared saving isn't configured on the server yet.";
-  }
-  if (result.reason === "network") {
-    return "Saved only in this browser. Couldn't reach the shared board.";
+    return `Saved only in this browser. ${detail} (not_configured)`;
   }
   if (result.reason === "unauthorized") {
-    return "Saved only in this browser. The password was rejected, so nothing was published.";
+    return `Saved only in this browser. ${detail} Nothing was published.`;
   }
-  if (result.message && result.message !== "The shared board was not updated.") {
-    return `Saved only in this browser. ${result.message}`;
-  }
-  return fallback;
+  return `Saved only in this browser. ${detail}`;
+}
+
+function stamp(board: BoardFile, updatedAt: string | undefined): BoardFile {
+  if (!updatedAt) return board;
+  return { ...board, updatedAt };
 }
 
 function editedOwner(current: BoardFile, published: BoardFile | null): string | undefined {
@@ -70,7 +88,7 @@ function restoreRemoved(board: BoardFile, published: BoardFile, id: string): Boa
   return { ...board, applications };
 }
 
-function ManageEditor() {
+function ManageEditor({ onLock }: { onLock: (message: string) => void }) {
   const [params] = useSearchParams();
   const embed = params.get("embed") === "1";
   const now = useNow();
@@ -78,10 +96,12 @@ function ManageEditor() {
   const [board, setBoard] = useState<BoardFile | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
-  const [notice, setNotice] = useState<string | null>(null);
+  const [notice, setNotice] = useState<{ text: string; tone: "ok" | "error" } | null>(null);
+  const tell = (text: string, tone: "ok" | "error" = "ok") => setNotice({ text, tone });
   const [editing, setEditing] = useState<Application | null | undefined>(undefined);
   const [busy, setBusy] = useState(false);
   const [prompt, setPrompt] = useState<((password: string | null) => void) | null>(null);
+  const [rowStatus, setRowStatus] = useState<{ id: string; text: string; tone: "ok" | "error" } | null>(null);
   const boardRef = useRef(board);
   const publishedRef = useRef(published);
   const busyRef = useRef(false);
@@ -97,15 +117,24 @@ function ManageEditor() {
   };
 
   const applyFile = (file: BoardFile) => {
-    const draft = readDraft();
     setPublished(file);
     setError(null);
-    if (draft && boardSignature(draft) !== boardSignature(file)) {
-      setBoard(draft);
+    const record = readDraftRecord();
+    if (!record) {
+      setBoard(file);
       return;
     }
-    if (draft) clearDraft();
-    setBoard(file);
+    const next = reconcileDraft(file, record);
+    if (!next || boardSignature(next) === boardSignature(file)) {
+      clearDraft();
+      setBoard(file);
+      if (record.legacy && boardSignature(record.board) !== boardSignature(file)) {
+        tell("This browser had an older copy. Showing the shared board.");
+      }
+      return;
+    }
+    setBoard(next);
+    saveDraft(next, file);
   };
 
   const reload = () => {
@@ -114,12 +143,12 @@ function ManageEditor() {
     loadPublished()
       .then(applyFile)
       .catch((err: unknown) => {
-        const draft = readDraft();
+        const draft = readDraftRecord()?.board ?? null;
         if (draft) {
           setBoard(draft);
           setPublished(null);
           setError(null);
-          setNotice("Couldn't refresh the shared file. Showing the copy in this browser.");
+          tell("Couldn't refresh the shared file. Showing the copy in this browser.", "error");
           return;
         }
         setError(err instanceof Error ? err.message : "Could not load the board.");
@@ -135,11 +164,11 @@ function ManageEditor() {
       })
       .catch((err: unknown) => {
         if (cancelled) return;
-        const draft = readDraft();
+        const draft = readDraftRecord()?.board ?? null;
         if (draft) {
           setBoard(draft);
           setPublished(null);
-          setNotice("Couldn't refresh the shared file. Showing the copy in this browser.");
+          tell("Couldn't refresh the shared file. Showing the copy in this browser.", "error");
           return;
         }
         setError(err instanceof Error ? err.message : "Could not load the board.");
@@ -173,7 +202,7 @@ function ManageEditor() {
     boardRef.current = nextBoard;
     publishedRef.current = nextPublished;
     if (nextPublished && boardSignature(nextBoard) === boardSignature(nextPublished)) clearDraft();
-    else saveDraft(nextBoard);
+    else saveDraft(nextBoard, nextPublished);
   };
 
   const ensurePassword = () => {
@@ -184,8 +213,11 @@ function ManageEditor() {
     });
   };
 
-  const saveApplication = async (application: Application) => {
-    if (busyRef.current || !boardRef.current) return;
+  const saveApplication = async (application: Application): Promise<string | void> => {
+    if (busyRef.current) {
+      return "A publish is already in progress. If you don't see a password box, refresh the page and try again.";
+    }
+    if (!boardRef.current) return "The board isn't loaded, so nothing was published.";
     setWorking(true);
     try {
       const password = await ensurePassword();
@@ -194,9 +226,9 @@ function ManageEditor() {
       if (!latest) return;
       if (!password) {
         remember(upsertApplication(latest, application), latestPublished);
-        setEditing(undefined);
-        setNotice("Saved only in this browser. Enter the password to publish to the shared board.");
-        return;
+        const message = "Saved only in this browser. Enter the password to publish to the shared board.";
+        tell(message, "error");
+        return message;
       }
       const owner = editedOwner(latest, latestPublished);
       const result = await publishOperation({ password, op: "upsert", application, owner });
@@ -204,27 +236,40 @@ function ManageEditor() {
       const freshPublished = publishedRef.current;
       if (result.ok && result.application) {
         const nextOwner = owner !== undefined && fresh.owner.trim() === owner ? result.owner : undefined;
+        const updatedAt = result.updatedAt || undefined;
         remember(
-          upsertApplication(fresh, result.application, nextOwner),
-          freshPublished ? upsertApplication(freshPublished, result.application, nextOwner) : freshPublished,
+          stamp(upsertApplication(fresh, result.application, nextOwner), updatedAt),
+          freshPublished ? stamp(upsertApplication(freshPublished, result.application, nextOwner), updatedAt) : freshPublished,
         );
-        setNotice(SAVED_MESSAGE);
-      } else if (result.ok) {
-        remember(upsertApplication(fresh, application), freshPublished);
-        setNotice("Saved only in this browser. The shared board did not return the application.");
-      } else {
-        if (result.reason === "unauthorized") clearManagePassword();
-        remember(upsertApplication(fresh, application), freshPublished);
-        setNotice(failureMessage(result, "Saved only in this browser. The shared board was not updated."));
+        tell(SAVED_MESSAGE);
+        setEditing(undefined);
+        return;
       }
-      setEditing(undefined);
+      if (result.ok) {
+        remember(upsertApplication(fresh, application), freshPublished);
+        const message = "Saved only in this browser. The shared board did not return the application.";
+        tell(message, "error");
+        return message;
+      }
+      remember(upsertApplication(fresh, application), freshPublished);
+      const message = failureMessage(result, "Saved only in this browser. The shared board was not updated.");
+      if (result.reason === "unauthorized") {
+        clearManagePassword();
+        onLock(message);
+        return message;
+      }
+      tell(message, "error");
+      return message;
     } finally {
       setWorking(false);
     }
   };
 
-  const deleteApplication = async (id: string) => {
-    if (busyRef.current || !boardRef.current) return;
+  const deleteApplication = async (id: string): Promise<string | void> => {
+    if (busyRef.current) {
+      return "A publish is already in progress. If you don't see a password box, refresh the page and try again.";
+    }
+    if (!boardRef.current) return "The board isn't loaded, so nothing was published.";
     setWorking(true);
     try {
       const password = await ensurePassword();
@@ -233,9 +278,9 @@ function ManageEditor() {
       if (!latest) return;
       if (!password) {
         remember(removeApplication(latest, id), latestPublished);
-        setEditing(undefined);
-        setNotice("Saved only in this browser. Enter the password to publish to the shared board.");
-        return;
+        const message = "Saved only in this browser. Enter the password to publish to the shared board.";
+        tell(message, "error");
+        return message;
       }
       const owner = editedOwner(latest, latestPublished);
       const result = await publishOperation({ password, op: "delete", id, owner });
@@ -244,17 +289,24 @@ function ManageEditor() {
       const alreadyGone = !result.ok && result.reason === "not_found";
       if (result.ok || alreadyGone) {
         const nextOwner = result.ok && owner !== undefined && fresh.owner.trim() === owner ? result.owner : undefined;
+        const updatedAt = result.ok ? result.updatedAt || undefined : undefined;
         remember(
-          removeApplication(fresh, id, nextOwner),
-          freshPublished ? removeApplication(freshPublished, id, nextOwner) : freshPublished,
+          stamp(removeApplication(fresh, id, nextOwner), updatedAt),
+          freshPublished ? stamp(removeApplication(freshPublished, id, nextOwner), updatedAt) : freshPublished,
         );
-        setNotice(result.ok ? SAVED_MESSAGE : "That application is already gone from the shared board.");
-      } else {
-        if (result.reason === "unauthorized") clearManagePassword();
-        remember(removeApplication(fresh, id), freshPublished);
-        setNotice(failureMessage(result, "Saved only in this browser. The shared board was not updated."));
+        tell(result.ok ? SAVED_MESSAGE : "That application is already gone from the shared board.");
+        setEditing(undefined);
+        return;
       }
-      setEditing(undefined);
+      remember(removeApplication(fresh, id), freshPublished);
+      const message = failureMessage(result, "Saved only in this browser. The shared board was not updated.");
+      if (result.reason === "unauthorized") {
+        clearManagePassword();
+        onLock(message);
+        return message;
+      }
+      tell(message, "error");
+      return message;
     } finally {
       setWorking(false);
     }
@@ -272,28 +324,28 @@ function ManageEditor() {
       if (original) next = upsertApplication(current, original);
     }
     remember(next, latestPublished);
-    setNotice("Discarded that local edit.");
+    tell("Discarded that local edit.");
   };
 
   const exportJson = () => {
     if (!board || !board.owner.trim()) {
-      setNotice("Add a name before exporting.");
+      tell("Add a name before exporting.", "error");
       return;
     }
     downloadBoard(board);
-    setNotice("Downloaded applications.json. Replace public/data/applications.json only if you need a file backup.");
+    tell("Downloaded applications.json. Replace public/data/applications.json only if you need a file backup.");
   };
 
   const copyJson = async () => {
     if (!board || !board.owner.trim()) {
-      setNotice("Add a name before copying.");
+      tell("Add a name before copying.", "error");
       return;
     }
     try {
       await copyText(serializeBoard(board));
-      setNotice("Copied applications.json. Keep it as a backup, or paste it over the shared file if saving from here fails.");
+      tell("Copied applications.json. Keep it as a backup, or paste it over the shared file if saving from here fails.");
     } catch {
-      setNotice("Couldn't copy. Use Export JSON instead.");
+      tell("Couldn't copy. Use Export JSON instead.", "error");
     }
   };
 
@@ -302,11 +354,11 @@ function ManageEditor() {
     try {
       const next = await readBoardFile(file);
       remember(next, published);
-      setNotice(
+      tell(
         `Imported ${next.applications.length} applications into this browser. Publish them one at a time, or export JSON as a backup.`,
       );
     } catch (err: unknown) {
-      setNotice(err instanceof Error ? err.message : "Couldn't import that file.");
+      tell(err instanceof Error ? err.message : "Couldn't import that file.", "error");
     }
   };
 
@@ -315,7 +367,7 @@ function ManageEditor() {
     clearDraft();
     setBoard(published);
     boardRef.current = published;
-    setNotice("Restored the shared board.");
+    tell("Restored the shared board.");
   };
 
   const ownerChanged = Boolean(board && published && board.owner.trim() !== published.owner.trim());
@@ -380,8 +432,14 @@ function ManageEditor() {
                   </p>
                 ) : null}
                 {notice ? (
-                  <p className="mt-2 text-sm font-medium text-ink" role="status">
-                    {notice}
+                  <p
+                    className={cx(
+                      "mt-3 rounded-xl px-3 py-2 text-sm font-medium",
+                      notice.tone === "error" ? "bg-[var(--chip-closed-bg)] text-closed" : "bg-[var(--live-bg)] text-live",
+                    )}
+                    role="status"
+                  >
+                    {notice.text}
                   </p>
                 ) : null}
               </div>
@@ -442,6 +500,19 @@ function ManageEditor() {
                         </span>
                       </p>
                       <p className="text-sm text-muted">{drift.application.role}</p>
+                      {rowStatus?.id === drift.id ? (
+                        <p
+                          className={cx(
+                            "mt-2 rounded-xl px-3 py-2 text-sm font-medium",
+                            rowStatus.tone === "error"
+                              ? "bg-[var(--chip-closed-bg)] text-closed"
+                              : "bg-[var(--live-bg)] text-live",
+                          )}
+                          role="status"
+                        >
+                          {rowStatus.text}
+                        </p>
+                      ) : null}
                     </div>
                     <div className="flex flex-wrap gap-2">
                       <button
@@ -449,8 +520,20 @@ function ManageEditor() {
                         className={btnPrimary}
                         disabled={busy}
                         onClick={() => {
-                          if (drift.kind === "removed") void deleteApplication(drift.id);
-                          else void saveApplication(drift.application);
+                          setRowStatus({
+                            id: drift.id,
+                            text: "Publishing… If a password box is open, enter the password there.",
+                            tone: "ok",
+                          });
+                          const task =
+                            drift.kind === "removed"
+                              ? deleteApplication(drift.id)
+                              : saveApplication(drift.application);
+                          void task.then((message) => {
+                            setRowStatus(
+                              message ? { id: drift.id, text: message, tone: "error" } : null,
+                            );
+                          });
                         }}
                       >
                         {drift.kind === "removed" ? "Publish removal" : "Publish this one"}
@@ -537,7 +620,7 @@ function PasswordReprompt({
   };
 
   return (
-    <div className="fixed inset-0 z-[60] flex items-center justify-center bg-[#17191c]/40 p-4">
+    <ModalFrame layer="prompt" narrow onDismiss={pending ? undefined : onCancel}>
       <form
         onSubmit={(event) => {
           void submit(event);
@@ -577,6 +660,6 @@ function PasswordReprompt({
           </button>
         </div>
       </form>
-    </div>
+    </ModalFrame>
   );
 }

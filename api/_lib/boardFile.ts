@@ -144,10 +144,19 @@ function isRecord(value: unknown): value is Record<string, unknown> {
 
 function canonicalStatus(value: unknown): ApplicationStatus | null {
   if (typeof value !== "string") return null;
+  const status = value.trim();
   // Straight or curly apostrophe: both mean the old waiting status.
-  if (value === LEGACY_APPLIED_STATUS || value === "Haven’t heard back") return "Applied";
-  if ((STATUSES as readonly string[]).includes(value)) return value as ApplicationStatus;
+  if (status === LEGACY_APPLIED_STATUS || status === "Haven’t heard back") return "Applied";
+  if ((STATUSES as readonly string[]).includes(status)) return status as ApplicationStatus;
   return null;
+}
+
+function freshId(used?: Set<string>): string {
+  let id = "";
+  do {
+    id = crypto.randomUUID();
+  } while (used?.has(id));
+  return id;
 }
 
 export function normalizeJobUrl(value: string): string | null {
@@ -174,12 +183,19 @@ function parseInterview(input: unknown, where: string, index: number): Interview
   if (!isRecord(input)) throw new Error(`${where}: interview ${index + 1} is not an object.`);
   const kind = typeof input.kind === "string" ? input.kind.trim() : "";
   if (!kind) throw new Error(`${where}: interview ${index + 1} needs a kind.`);
-  if (typeof input.at !== "string" || !DATE_TIME.test(input.at)) {
+  const atRaw = typeof input.at === "string" ? input.at.trim() : "";
+  if (!DATE_TIME.test(atRaw)) {
+    throw new Error(`${where}: interview ${index + 1} needs a date and time (YYYY-MM-DDTHH:MM).`);
+  }
+  const at = atRaw.slice(0, 16);
+  const hour = Number(at.slice(11, 13));
+  const minute = Number(at.slice(14, 16));
+  if (hour > 23 || minute > 59) {
     throw new Error(`${where}: interview ${index + 1} needs a date and time (YYYY-MM-DDTHH:MM).`);
   }
   return {
-    id: typeof input.id === "string" && input.id.trim() ? input.id.trim() : crypto.randomUUID(),
-    at: input.at.slice(0, 16),
+    id: typeof input.id === "string" && input.id.trim() ? input.id.trim() : freshId(),
+    at,
     kind,
   };
 }
@@ -195,19 +211,20 @@ function parseApplication(input: unknown, index: number): Application {
   if (!status) {
     throw new Error(`${where}: status must be Applied, Interviewing, Not hired, or Ghosted.`);
   }
-  if (typeof input.appliedOn !== "string" || !DATE_ONLY.test(input.appliedOn)) {
+  const appliedOn = typeof input.appliedOn === "string" ? input.appliedOn.trim() : "";
+  if (!DATE_ONLY.test(appliedOn)) {
     throw new Error(`${where}: appliedOn must be YYYY-MM-DD.`);
   }
   if (!Array.isArray(input.interviews)) throw new Error(`${where}: interviews must be a list.`);
   const notes = typeof input.notes === "string" ? input.notes.trim() : "";
   const jobUrl = optionalJobUrl(input.jobUrl, where);
   return {
-    id: typeof input.id === "string" && input.id.trim() ? input.id.trim() : crypto.randomUUID(),
+    id: typeof input.id === "string" && input.id.trim() ? input.id.trim() : freshId(),
     company,
     role,
     ...(jobUrl ? { jobUrl } : {}),
     status,
-    appliedOn: input.appliedOn,
+    appliedOn,
     location: typeof input.location === "string" ? input.location.trim() : "",
     ...(notes ? { notes } : {}),
     interviews: input.interviews.map((item, interviewIndex) =>
@@ -289,7 +306,13 @@ export function applySharedOperation(rawText: string, edit: SharedEdit, updatedA
     company = existing.company;
     nextApps = originalApps.filter((item) => rawId(item) !== id);
   } else {
-    const application = parseOneApplication(edit.application);
+    const suppliedId =
+      isRecord(edit.application) && typeof edit.application.id === "string" && edit.application.id.trim().length > 0;
+    const usedIds = new Set(before.applications.map((app) => app.id));
+    let application = parseOneApplication(edit.application);
+    if (!suppliedId && usedIds.has(application.id)) {
+      application = { ...application, id: freshId(usedIds) };
+    }
     saved = application;
     touchedId = application.id;
     company = application.company;

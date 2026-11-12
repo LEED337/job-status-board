@@ -6,7 +6,7 @@ import { BoardSkeleton } from "../components/Skeleton.tsx";
 import { Summary } from "../components/Summary.tsx";
 import { formatUpdated } from "../lib/board.ts";
 import { loadPublished } from "../lib/load.ts";
-import { readDraft } from "../lib/storage.ts";
+import { hasDraft } from "../lib/storage.ts";
 import { useNow } from "../lib/useNow.ts";
 import type { BoardFile } from "../types.ts";
 
@@ -17,7 +17,7 @@ export function SharePage() {
   const [board, setBoard] = useState<BoardFile | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
-  const [draftWaiting] = useState(() => readDraft() !== null);
+  const [draftWaiting] = useState(() => hasDraft());
 
   const reload = () => {
     setLoading(true);
