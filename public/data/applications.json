@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-11-12T16:21:00Z",
+  "updatedAt": "2026-11-12T17:22:36Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1079,7 +1079,7 @@
       "company": "Hightouch",
       "role": "Technical Account Manager, Enterprise (West)",
       "jobUrl": "https://jobs.ashbyhq.com/hightouch-inc/6d3527b9-4f72-4a53-b837-daec9016b8e5?utm_source=aV6xRPjM6r",
-      "status": "Interviewing",
+      "status": "Not hired",
       "appliedOn": "2026-09-28",
       "location": "Remote \u00b7 North America",
       "interviews": [
@@ -1089,7 +1089,7 @@
           "kind": "Call with recruiter (30 min)"
         }
       ],
-      "notes": "Rejected Sep 30. Nov 10, 2026: A Hightouch recruiter scheduled a 30-minute call with Lee about the TAM role for Thu Nov 12, 2026, 10:00-10:30 AM MT (Zoom)."
+      "notes": "Rejected Sep 30. Nov 10, 2026: A Hightouch recruiter scheduled a 30-minute call with Lee about the TAM role for Thu Nov 12, 2026, 10:00-10:30 AM MT (Zoom). Nov 12, 2026: Recruiter call done; Lee chose not to move forward (role is marketing-tool focused)."
     },
     {
       "id": "veeam-sr-cse-data-ai",
