@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-11-12T14:00:00Z",
+  "updatedAt": "2026-11-12T16:21:00Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -2714,9 +2714,14 @@
           "id": "illumio-sr-tam-recruiter-screen",
           "at": "2026-11-12T08:30",
           "kind": "Recruiter screening"
+        },
+        {
+          "id": "illumio-sr-tam-interview-2",
+          "at": "2026-11-13T14:00",
+          "kind": "Interview (45 min)"
         }
       ],
-      "notes": "Applied Nov 11, 2026 via Ashby (TAM resume). Pay $148K–$177K. Nov 11, 2026: Recruiter screening scheduled for Thu Nov 12, 2026 at 8:30 AM MT."
+      "notes": "Applied Nov 11, 2026 via Ashby (TAM resume). Pay $148K–$177K. Nov 11, 2026: Recruiter screening scheduled for Thu Nov 12, 2026 at 8:30 AM MT. Recruiter screen completed Nov 12."
     },
     {
       "id": "movate-technical-support-specialist",
@@ -2772,6 +2777,94 @@
       "location": "Remote US",
       "interviews": [],
       "notes": "Applied Nov 12, 2026. Pay $147.3K–$243.8K (Oracle job 339105)."
+    },
+    {
+      "id": "protagona-aws-cloud-engineer",
+      "company": "Protagona",
+      "role": "AWS Cloud Engineer",
+      "jobUrl": "https://protagona.applytojob.com/apply/YDO63zlPbH/AWS-Cloud-Engineer",
+      "status": "Applied",
+      "appliedOn": "2026-11-12",
+      "location": "Remote (100%)",
+      "interviews": [],
+      "notes": "Applied Nov 12, 2026. Pay $105K–$120K + bonus."
+    },
+    {
+      "id": "filevine-security-specialist-intern",
+      "company": "Filevine",
+      "role": "Security Specialist Intern",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4483881194/",
+      "status": "Applied",
+      "appliedOn": "2026-11-12",
+      "location": "Unknown",
+      "interviews": [],
+      "notes": "Applied Nov 12, 2026. Applied by Lee directly."
+    },
+    {
+      "id": "innovative-solutions-cloud-engineer",
+      "company": "Innovative Solutions",
+      "role": "Cloud Engineer",
+      "jobUrl": "https://jobs.lever.co/innovativesolutions/b5ef4fef-ddce-4093-b0dd-4affb7b55df0",
+      "status": "Applied",
+      "appliedOn": "2026-11-12",
+      "location": "Remote (hybrid)",
+      "interviews": [],
+      "notes": "Applied Nov 12, 2026. Applied by Lee directly."
+    },
+    {
+      "id": "gurobi-technical-account-manager",
+      "company": "Gurobi",
+      "role": "Technical Account Manager",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4406688437/",
+      "status": "Applied",
+      "appliedOn": "2026-11-12",
+      "location": "Remote US",
+      "interviews": [],
+      "notes": "Applied Nov 12, 2026. Applied by Lee directly."
+    },
+    {
+      "id": "safe-security-forward-deployed-engineer",
+      "company": "Safe Security",
+      "role": "Forward Deployed Engineer",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4489421782/",
+      "status": "Applied",
+      "appliedOn": "2026-11-12",
+      "location": "Remote US",
+      "interviews": [],
+      "notes": "Applied Nov 12, 2026. Applied by Lee directly."
+    },
+    {
+      "id": "leidos-cloud-infrastructure-engineer",
+      "company": "Leidos",
+      "role": "Cloud Infrastructure Engineer",
+      "jobUrl": "https://leidos.wd5.myworkdayjobs.com/en-US/External/job/Cloud-Infrastructure-Engineer_R-00193640",
+      "status": "Applied",
+      "appliedOn": "2026-11-12",
+      "location": "Remote US",
+      "interviews": [],
+      "notes": "Applied Nov 12, 2026. Pay $57.85K–$104.6K (R-00193640). Applied by Lee directly."
+    },
+    {
+      "id": "verisk-development-operations-engineer",
+      "company": "Verisk",
+      "role": "Development Operations Engineer - Hybrid",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4443621097/",
+      "status": "Applied",
+      "appliedOn": "2026-11-12",
+      "location": "Lehi, UT (hybrid)",
+      "interviews": [],
+      "notes": "Applied Nov 12, 2026. Pay $108K–$135K (Oracle job 4463). Portal shows Under Consideration."
+    },
+    {
+      "id": "microsoft-csa-cloud-ai-infrastructure-dib",
+      "company": "Microsoft",
+      "role": "Cloud Solution Architect - Cloud & AI Infrastructure (Defense Industrial Base)",
+      "jobUrl": "https://apply.careers.microsoft.com/careers/job/1970393557055343",
+      "status": "Applied",
+      "appliedOn": "2026-11-12",
+      "location": "Remote US",
+      "interviews": [],
+      "notes": "Applied Nov 12, 2026. Pay $106.4K–$203.6K (job 200065920). Separate from the Sep 29 Microsoft CSA application."
     }
   ]
 }
