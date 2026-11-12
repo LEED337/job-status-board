@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import { BoardList } from "../components/BoardList.tsx";
+import { InterviewTicker } from "../components/InterviewTicker.tsx";
 import { Shell } from "../components/Shell.tsx";
 import { BoardSkeleton } from "../components/Skeleton.tsx";
 import { Summary } from "../components/Summary.tsx";
 import { formatUpdated } from "../lib/board.ts";
+import { countCompletedInterviews } from "../lib/interviewCount.ts";
 import { loadPublished } from "../lib/load.ts";
 import { hasDraft } from "../lib/storage.ts";
 import { useNow } from "../lib/useNow.ts";
@@ -62,6 +64,7 @@ export function SharePage() {
     <Shell
       title="Job search"
       embed={embed}
+      center={board ? <InterviewTicker count={countCompletedInterviews(board.applications, now)} /> : null}
       actions={
         <div className="flex items-center gap-4">
           {board ? <p className="text-sm text-muted">Updated {formatUpdated(board.updatedAt)}</p> : null}

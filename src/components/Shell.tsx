@@ -7,11 +7,13 @@ type ShellProps = {
   subtitle?: string;
   embed?: boolean;
   actions?: ReactNode;
+  /** Sits between the title and `actions` in the header. */
+  center?: ReactNode;
   footer?: ReactNode;
   children: ReactNode;
 };
 
-export function Shell({ title, subtitle, embed = false, actions, footer, children }: ShellProps) {
+export function Shell({ title, subtitle, embed = false, actions, center, footer, children }: ShellProps) {
   return (
     <div className={embed ? "min-h-screen bg-wash p-2" : "min-h-screen px-3 py-4 sm:px-5 sm:py-6"}>
       <div className="mx-auto flex w-full max-w-[1160px] flex-col gap-4">
@@ -39,8 +41,11 @@ export function Shell({ title, subtitle, embed = false, actions, footer, childre
         >
           <header
             className={cx(
-              "flex flex-col gap-4 border-b-[3px] border-black sm:flex-row sm:items-center sm:justify-between",
+              "border-b-[3px] border-black",
               embed ? "px-4 py-4" : "px-5 py-5 sm:px-7 sm:py-6",
+              center
+                ? "flex flex-col gap-3 lg:grid lg:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] lg:items-center lg:gap-x-4"
+                : "flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between",
             )}
           >
             <div className="flex items-center gap-3.5">
@@ -57,7 +62,8 @@ export function Shell({ title, subtitle, embed = false, actions, footer, childre
                 {subtitle ? <p className="mt-1.5 text-sm text-muted">{subtitle}</p> : null}
               </div>
             </div>
-            <div className="flex flex-wrap items-center gap-2">
+            {center ? <div className="flex min-w-0 justify-start lg:justify-center">{center}</div> : null}
+            <div className={cx("flex flex-wrap items-center gap-2", Boolean(center) && "lg:justify-end")}>
               {actions}
               <ThemeToggle />
             </div>
