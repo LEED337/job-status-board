@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-11-12T17:22:36Z",
+  "updatedAt": "2026-11-13T16:34:06Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1629,11 +1629,11 @@
       "company": "Expel",
       "role": "Senior Technical Account Manager",
       "jobUrl": "https://job-boards.greenhouse.io/expel/jobs/8919466002",
-      "status": "Applied",
+      "status": "Not hired",
       "appliedOn": "2026-10-27",
       "location": "Remote",
       "interviews": [],
-      "notes": "Applied by Scout Oct 27, 2026 ~6:39 PM MT via Greenhouse with TAM resume. $134.7K\u2013$195.3K base; salary ask $185K."
+      "notes": "Applied by Scout Oct 27, 2026 ~6:39 PM MT via Greenhouse with TAM resume. $134.7K\u2013$195.3K base; salary ask $185K. Nov 13, 2026: Rejection email received."
     },
     {
       "id": "delinea-sr-tam",
@@ -1750,11 +1750,11 @@
       "company": "Material Security",
       "role": "Sr. Technical Customer Success Manager",
       "jobUrl": "https://jobs.ashbyhq.com/materialsecurity/19ad06ba-1da9-4b3b-bdef-7b970e00f719",
-      "status": "Applied",
+      "status": "Not hired",
       "appliedOn": "2026-10-29",
       "location": "Remote-first (US)",
       "interviews": [],
-      "notes": "$155K-$165K base. Ashby, CSE resume. Applied by Scout Oct 29, 2026 ~9:44 AM MT."
+      "notes": "$155K-$165K base. Ashby, CSE resume. Applied by Scout Oct 29, 2026 ~9:44 AM MT. Nov 12, 2026: Rejection email received."
     },
     {
       "id": "island-federal-tam-avetix",
@@ -1794,11 +1794,11 @@
       "company": "Baseten",
       "role": "Security Engineer",
       "jobUrl": "https://jobs.ashbyhq.com/baseten/b85e4b1d-6531-46b5-bc8a-238f3761a50e/",
-      "status": "Applied",
+      "status": "Not hired",
       "appliedOn": "2026-10-29",
       "location": "Remote (also SF/NY/Seattle/Toronto/Montreal)",
       "interviews": [],
-      "notes": "$150K-$250K + equity. Ashby, CSE resume. Applied by Scout Oct 29, 2026 ~10:22 PM MT."
+      "notes": "$150K-$250K + equity. Ashby, CSE resume. Applied by Scout Oct 29, 2026 ~10:22 PM MT. Nov 12, 2026: Rejection email received."
     },
     {
       "id": "anrok-partner-solutions-engineer",
@@ -1816,22 +1816,22 @@
       "company": "SentinelOne",
       "role": "Sr. Technical Success Executive",
       "jobUrl": "https://www.linkedin.com/jobs/view/4468815214",
-      "status": "Applied",
+      "status": "Not hired",
       "appliedOn": "2026-10-30",
       "location": "Remote (US)",
       "interviews": [],
-      "notes": "$160K-$220K base. Greenhouse, TAM resume. Applied by Scout Oct 30, 2026 ~8:39 AM MT."
+      "notes": "$160K-$220K base. Greenhouse, TAM resume. Applied by Scout Oct 30, 2026 ~8:39 AM MT. Nov 10, 2026: Rejection email received."
     },
     {
       "id": "opal-security-sr-cse",
       "company": "Opal Security",
       "role": "Senior Customer Success Engineer",
       "jobUrl": "https://jobs.ashbyhq.com/opal/c22b5a80-a976-4283-879b-fc919a61be0b",
-      "status": "Applied",
+      "status": "Not hired",
       "appliedOn": "2026-10-30",
       "location": "Remote (US)",
       "interviews": [],
-      "notes": "$120K-$180K. Ashby, CSE resume. Applied by Scout Oct 30, 2026 ~8:40 AM MT."
+      "notes": "$120K-$180K. Ashby, CSE resume. Applied by Scout Oct 30, 2026 ~8:40 AM MT. Nov 11, 2026: Rejection email received."
     },
     {
       "id": "peraton-aws-cloud-engineer",
@@ -2045,11 +2045,11 @@
       "company": "American Cruise Lines",
       "role": "Front End Developer (Flutter)",
       "jobUrl": "https://www.aclcareers.com/apply?gnk=job&gni=8a78859ea0f425eb01a10dc94822191b",
-      "status": "Applied",
+      "status": "Not hired",
       "appliedOn": "2026-11-03",
       "location": "Sandy, UT (On-site)",
       "interviews": [],
-      "notes": "Applied by Scout Nov 3, 2026 ~1:36 PM MT with Dev resume. Pay not posted."
+      "notes": "Applied by Scout Nov 3, 2026 ~1:36 PM MT with Dev resume. Pay not posted. Nov 11, 2026: Rejection email received."
     },
     {
       "id": "snap-finance-swe-applied-ai",
@@ -2129,11 +2129,11 @@
       "company": "GitHub",
       "role": "Senior Customer Success Manager",
       "jobUrl": "https://githubinc.jibeapply.com/jobs/6301",
-      "status": "Applied",
+      "status": "Not hired",
       "appliedOn": "2026-11-04",
       "location": "Remote (US)",
       "interviews": [],
-      "notes": "Applied by Scout Nov 4, 2026 ~9:30 AM MT (iCIMS 2026-6301). Separate from the Oct 27 Sr CSA application (2026-6335)."
+      "notes": "Applied by Scout Nov 4, 2026 ~9:30 AM MT (iCIMS 2026-6301). Separate from the Oct 27 Sr CSA application (2026-6335). Nov 12, 2026: Rejection email received."
     },
     {
       "id": "akamai-sr-tam-cloud-compute",
@@ -2482,11 +2482,11 @@
       "company": "ClickHouse",
       "role": "Senior Consulting Engineer, AMER",
       "jobUrl": "https://jobs.ashbyhq.com/clickhouse/acaa223a-663e-445f-85f7-a5a4eb7f4f05",
-      "status": "Applied",
+      "status": "Not hired",
       "appliedOn": "2026-11-09",
       "location": "Remote (US)",
       "interviews": [],
-      "notes": "Applied Nov 9, 2026 ~8:57 PM MT via Ashby with CSE resume. $158K–$220K."
+      "notes": "Applied Nov 9, 2026 ~8:57 PM MT via Ashby with CSE resume. $158K–$220K. Nov 12, 2026: Rejection email received."
     },
     {
       "id": "cursor-ai-deployment-manager",
@@ -2568,11 +2568,11 @@
       "company": "Orange Logic",
       "role": "Technical Solutions Architect",
       "jobUrl": "https://www.linkedin.com/jobs/view/4465409047/",
-      "status": "Applied",
+      "status": "Not hired",
       "appliedOn": "2026-11-10",
       "location": "Remote",
       "interviews": [],
-      "notes": "Applied Nov 10, 2026 via LinkedIn Easy Apply with CSE resume. $140K-$170K."
+      "notes": "Applied Nov 10, 2026 via LinkedIn Easy Apply with CSE resume. $140K-$170K. Nov 13, 2026: Rejection email received."
     },
     {
       "id": "smartfox-cloud-architect",
