@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-11-13T16:34:06Z",
+  "updatedAt": "2026-11-13T21:54:38Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -2721,7 +2721,7 @@
           "kind": "Interview (45 min)"
         }
       ],
-      "notes": "Applied Nov 11, 2026 via Ashby (TAM resume). Pay $148K–$177K. Nov 11, 2026: Recruiter screening scheduled for Thu Nov 12, 2026 at 8:30 AM MT. Recruiter screen completed Nov 12."
+      "notes": "Applied Nov 11, 2026 via Ashby (TAM resume). Pay $148K–$177K. Nov 11, 2026: Recruiter screening scheduled for Thu Nov 12, 2026 at 8:30 AM MT. Recruiter screen completed Nov 12. Nov 13, 2026: Second interview completed."
     },
     {
       "id": "movate-technical-support-specialist",
@@ -2761,11 +2761,17 @@
       "company": "Oracle",
       "role": "Customer Engineering Architect",
       "jobUrl": "https://eeho.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_45001/job/344031",
-      "status": "Applied",
+      "status": "Interviewing",
       "appliedOn": "2026-11-12",
       "location": "Nashville, TN / US",
-      "interviews": [],
-      "notes": "Applied Nov 12, 2026. Pay $114.6K–$234.6K."
+      "interviews": [
+        {
+          "id": "oracle-customer-engineering-architect-interview-1",
+          "at": "2026-11-17T11:30",
+          "kind": "Interview"
+        }
+      ],
+      "notes": "Applied Nov 12, 2026. Pay $114.6K–$234.6K. Nov 13, 2026: Interview scheduled for Tue Nov 17, 2026 at 11:30 AM MT."
     },
     {
       "id": "oracle-oci-cloud-architect",
@@ -2865,6 +2871,17 @@
       "location": "Remote US",
       "interviews": [],
       "notes": "Applied Nov 12, 2026. Pay $106.4K–$203.6K (job 200065920). Separate from the Sep 29 Microsoft CSA application."
+    },
+    {
+      "id": "caci-junior-software-developer-334685",
+      "company": "CACI",
+      "role": "Junior Software Developer",
+      "jobUrl": "https://caci.wd1.myworkdayjobs.com/en-US/External/job/Junior-Software-Developer_334685",
+      "status": "Applied",
+      "appliedOn": "2026-11-13",
+      "location": "Remote (US)",
+      "interviews": [],
+      "notes": "Applied Nov 13, 2026 via CACI Workday (req 334685, NASA Agency Data Catalog). Pay $53.1K–$106.3K."
     }
   ]
 }
