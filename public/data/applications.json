@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-11-13T21:54:38Z",
+  "updatedAt": "2026-11-17T15:35:51Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -2882,6 +2882,50 @@
       "location": "Remote (US)",
       "interviews": [],
       "notes": "Applied Nov 13, 2026 via CACI Workday (req 334685, NASA Agency Data Catalog). Pay $53.1K–$106.3K."
+    },
+    {
+      "id": "claroty-technical-account-manager-d7-e67",
+      "company": "Claroty",
+      "role": "Technical Account Manager",
+      "jobUrl": "https://claroty.com/open-positions/D7.E67",
+      "status": "Applied",
+      "appliedOn": "2026-11-14",
+      "location": "Remote (US)",
+      "interviews": [],
+      "notes": "Req D7.E67 (general/Healthcare). Pay $140K–$160K base. Resume: TAM_Resume. LinkedIn: https://www.linkedin.com/jobs/view/4488987283/. Separate from the Oct 26 Public Sector TAM app (9F.F63)."
+    },
+    {
+      "id": "finwise-bank-dev-ops-engineer",
+      "company": "FinWise Bank",
+      "role": "Dev Ops Engineer",
+      "jobUrl": "https://www.paycomonline.net/v4/ats/web.php/portal/6897E5BB605A9248CCAC55282BE01379/jobs/150519",
+      "status": "Applied",
+      "appliedOn": "2026-11-15",
+      "location": "On-site (Murray, UT)",
+      "interviews": [],
+      "notes": "Applied via Paycom. Pay not posted. Resume: Security_Resume."
+    },
+    {
+      "id": "regscale-customer-success-engineer-ii",
+      "company": "RegScale",
+      "role": "Customer Success Engineer II",
+      "jobUrl": "https://jobs.ashbyhq.com/RegScale/0500140b-1ae4-476b-b7d5-e02d264a42df",
+      "status": "Applied",
+      "appliedOn": "2026-11-16",
+      "location": "Remote (US)",
+      "interviews": [],
+      "notes": "Pay not posted. Resume: CSE_Resume."
+    },
+    {
+      "id": "lockheed-martin-junior-automation-openshift-engineer-24423",
+      "company": "Lockheed Martin",
+      "role": "Junior Automation & OpenShift Engineer",
+      "jobUrl": "https://lockheedmartin.eightfold.ai/careers/job/996477760763",
+      "status": "Applied",
+      "appliedOn": "2026-11-16",
+      "location": "Remote (US, full telework)",
+      "interviews": [],
+      "notes": "Req 24423. Pay $72.9K–$188.2K. Resume: Dev_Resume."
     }
   ]
 }
