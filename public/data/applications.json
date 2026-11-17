@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-11-17T19:03:01Z",
+  "updatedAt": "2026-11-17T19:07:51Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -249,10 +249,10 @@
       "company": "Workday",
       "role": "Technical Account Manager (Salt Lake City, UT / Oregon Remote)",
       "jobUrl": "https://workday.wd5.myworkdayjobs.com/en-US/Workday/job/Technical-Account-Manager--Salt-Lake-City-UT---Oregon-Remote--_JR-0109357",
-      "status": "Interviewing",
+      "status": "Offer accepted",
       "appliedOn": "2026-10-01",
       "location": "Salt Lake City, UT / Oregon Remote",
-      "notes": "Recruiter phone screen done Thu Oct 8. The recruiter first said fully remote, then said 50% in-office. Comp tops out at $145K base + annual bonus + RSUs (posting range was higher). Lee hoped for $160–170K but would consider near their max. Awaiting next steps. JR-0109357 Moved forward: hiring manager interview Mon Oct 12 at 2:30 PM MT (interviewer not yet known). Interviewer per calendar invite: Sr Manager, Technical Account Management. Oct 12 hiring manager interview with the Sr Manager of Technical Account Management went well: role would be Senior TAM, mostly remote (office optional). Awaiting next steps. Passed hiring manager round; technical interview Thu Oct 15 at 1:00 PM MT. Oct 15 technical with the interviewer went well: the interviewer said Lee has his vote; possible one more manager round next. Round 3 (virtual): Thu Oct 22, 8:15–9:00 AM MT with a Sr TAM, and Fri Oct 23, 2:00–2:45 PM MT with the Manager of TAMs. Oct 22 session with the Sr TAM seemed to go well. Oct 23 session with the Manager of TAMs went really well. Lee was the first candidate he met; Workday expects to reach out within about a week after all interviews. The manager said Lee would likely be placed in the Senior TAM position. Nov 3, 2026: Recruiter says the process is taking longer than expected; final decision expected by end of next week (~Fri Nov 13).",
+      "notes": "Recruiter phone screen done Thu Oct 8. The recruiter first said fully remote, then said 50% in-office. Comp tops out at $145K base + annual bonus + RSUs (posting range was higher). Lee hoped for $160–170K but would consider near their max. Awaiting next steps. JR-0109357 Moved forward: hiring manager interview Mon Oct 12 at 2:30 PM MT (interviewer not yet known). Interviewer per calendar invite: Sr Manager, Technical Account Management. Oct 12 hiring manager interview with the Sr Manager of Technical Account Management went well: role would be Senior TAM, mostly remote (office optional). Awaiting next steps. Passed hiring manager round; technical interview Thu Oct 15 at 1:00 PM MT. Oct 15 technical with the interviewer went well: the interviewer said Lee has his vote; possible one more manager round next. Round 3 (virtual): Thu Oct 22, 8:15–9:00 AM MT with a Sr TAM, and Fri Oct 23, 2:00–2:45 PM MT with the Manager of TAMs. Oct 22 session with the Sr TAM seemed to go well. Oct 23 session with the Manager of TAMs went really well. Lee was the first candidate he met; Workday expects to reach out within about a week after all interviews. The manager said Lee would likely be placed in the Senior TAM position. Nov 3, 2026: Recruiter says the process is taking longer than expected; final decision expected by end of next week (~Fri Nov 13). Nov 17, 2026: Offer accepted. Offer letter signed. Official title: Senior Technical and Critical Accounts Analyst (Senior TAM role).",
       "interviews": [
         {
           "id": "int-workday-tam-1",

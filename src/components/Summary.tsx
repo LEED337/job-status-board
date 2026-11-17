@@ -620,7 +620,7 @@ export function Summary({ applications, now }: SummaryProps) {
           </div>
         </div>
 
-        <div className="mt-4 grid grid-cols-2 gap-x-1 gap-y-4 border-t border-rule pt-4 sm:mt-5 sm:grid-cols-4 sm:gap-x-3 sm:pt-5">
+        <div className="mt-4 grid grid-cols-2 gap-x-1 gap-y-4 border-t border-rule pt-4 sm:mt-5 sm:grid-cols-5 sm:gap-x-3 sm:pt-5">
           {STATUSES.map((status) => {
             const meta = STATUS_META[status];
             const dim = active !== null && active !== status;

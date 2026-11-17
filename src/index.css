@@ -39,6 +39,9 @@
   --chip-applied-fg: #3451c7;
   --chip-interview-bg: #e3f5eb;
   --chip-interview-fg: #15724a;
+  --chip-offer-bg: #b7f0c8;
+  --chip-offer-fg: #064e2b;
+  --chip-offer-border: #000000;
   --chip-closed-bg: #f8e9ec;
   --chip-closed-fg: #9d4454;
   --chip-ghost-bg: #eeeef0;
@@ -92,6 +95,9 @@ html[data-theme="dark"] {
   --chip-applied-fg: #c9d6ff;
   --chip-interview-bg: #16382b;
   --chip-interview-fg: #b7ebcf;
+  --chip-offer-bg: #14532d;
+  --chip-offer-fg: #dcfce7;
+  --chip-offer-border: #dcfce7;
   --chip-closed-bg: #3f242c;
   --chip-closed-fg: #f6c9d2;
   --chip-ghost-bg: #2e3036;
@@ -261,6 +267,9 @@ select:focus-visible {
     --chip-applied-fg: #3451c7;
     --chip-interview-bg: #e3f5eb;
     --chip-interview-fg: #15724a;
+    --chip-offer-bg: #b7f0c8;
+    --chip-offer-fg: #064e2b;
+    --chip-offer-border: #000000;
     --chip-closed-bg: #f8e9ec;
     --chip-closed-fg: #9d4454;
     --chip-ghost-bg: #eeeef0;
