@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-11-17T15:35:51Z",
+  "updatedAt": "2026-11-17T19:03:01Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1465,11 +1465,11 @@
       "company": "Noma Security",
       "role": "Senior Customer Success Architect",
       "jobUrl": "https://noma.security/positions/position-04_277",
-      "status": "Applied",
+      "status": "Not hired",
       "appliedOn": "2026-10-22",
       "location": "USA Remote",
       "interviews": [],
-      "notes": "Applied by Scout Oct 22, 2026 ~8:57 AM MT with TAM resume. Pay not posted."
+      "notes": "Applied by Scout Oct 22, 2026 ~8:57 AM MT with TAM resume. Pay not posted. Nov 17, 2026: Rejection email received."
     },
     {
       "id": "everpure-csm-aas",
@@ -2239,11 +2239,11 @@
       "company": "Harmonic Security",
       "role": "Deployment Engineer",
       "jobUrl": "https://jobs.ashbyhq.com/harmonic-security-inc/12fff564-5ec2-458b-b2b5-ccf4f9d7eb80",
-      "status": "Applied",
+      "status": "Not hired",
       "appliedOn": "2026-11-05",
       "location": "Remote (US)",
       "interviews": [],
-      "notes": "$190K–$210K. Applied Nov 5, 2026 ~2:20 AM MT with CSE_Resume (Scout). LinkedIn job 4475020579 (Ashby)."
+      "notes": "$190K–$210K. Applied Nov 5, 2026 ~2:20 AM MT with CSE_Resume (Scout). LinkedIn job 4475020579 (Ashby). Nov 17, 2026: Rejection email received."
     },
     {
       "id": "mandiant-cyber-defense-detection-engineer",
@@ -2706,7 +2706,7 @@
       "company": "Illumio",
       "role": "Sr. Technical Account Manager",
       "jobUrl": "https://jobs.ashbyhq.com/illumio/4eac1240-145c-4bcf-b40b-d9756c90e04c",
-      "status": "Interviewing",
+      "status": "Not hired",
       "appliedOn": "2026-11-11",
       "location": "Remote (US)",
       "interviews": [
@@ -2721,7 +2721,7 @@
           "kind": "Interview (45 min)"
         }
       ],
-      "notes": "Applied Nov 11, 2026 via Ashby (TAM resume). Pay $148K–$177K. Nov 11, 2026: Recruiter screening scheduled for Thu Nov 12, 2026 at 8:30 AM MT. Recruiter screen completed Nov 12. Nov 13, 2026: Second interview completed."
+      "notes": "Applied Nov 11, 2026 via Ashby (TAM resume). Pay $148K–$177K. Nov 11, 2026: Recruiter screening scheduled for Thu Nov 12, 2026 at 8:30 AM MT. Recruiter screen completed Nov 12. Nov 13, 2026: Second interview completed. Nov 17, 2026: Rejection email received."
     },
     {
       "id": "movate-technical-support-specialist",
@@ -2771,7 +2771,7 @@
           "kind": "Interview"
         }
       ],
-      "notes": "Applied Nov 12, 2026. Pay $114.6K–$234.6K. Nov 13, 2026: Interview scheduled for Tue Nov 17, 2026 at 11:30 AM MT."
+      "notes": "Applied Nov 12, 2026. Pay $114.6K–$234.6K. Nov 13, 2026: Interview scheduled for Tue Nov 17, 2026 at 11:30 AM MT. Nov 17, 2026: Interview completed. Oracle is checking whether the role can be remote."
     },
     {
       "id": "oracle-oci-cloud-architect",
@@ -2926,6 +2926,17 @@
       "location": "Remote (US, full telework)",
       "interviews": [],
       "notes": "Req 24423. Pay $72.9K–$188.2K. Resume: Dev_Resume."
+    },
+    {
+      "id": "scout-global-technical-customer-success-manager",
+      "company": "Scout Global",
+      "role": "Technical Customer Success Manager",
+      "jobUrl": "https://www.linkedin.com/jobs/view/4489732254",
+      "status": "Applied",
+      "appliedOn": "2026-11-17",
+      "location": "Unknown",
+      "interviews": [],
+      "notes": "LinkedIn Easy Apply. Pay not posted. Resume: CSE_Resume."
     }
   ]
 }
