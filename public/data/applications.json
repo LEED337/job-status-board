@@ -1,16 +1,16 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-11-17T19:11:35Z",
+  "updatedAt": "2026-11-17T21:39:04Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
       "company": "GC AI",
       "role": "Customer Success Manager",
-      "status": "Interviewing",
+      "status": "Not hired",
       "appliedOn": "2026-10-07",
       "location": "Remote / TBD",
-      "notes": "Recruiter screen today 11:30 AM MT. Oct 30, 2026: Comp negotiation with the recruiter stalled ($130-150K OTE offered); Lee marked Not hired. Will revisit if they come back with more. Nov 1, 2026: Back in process. GC AI sent a form asking for Lee's info and interview availability ahead of the next conversation; time TBD. Nov 5, 2026: Sales Leader Interview with the Senior Director of Enterprise Accounts scheduled Fri Nov 13, 2026 3:00-3:30 PM MST on Zoom.",
+      "notes": "Recruiter screen today 11:30 AM MT. Oct 30, 2026: Comp negotiation with the recruiter stalled ($130-150K OTE offered); Lee marked Not hired. Will revisit if they come back with more. Nov 1, 2026: Back in process. GC AI sent a form asking for Lee's info and interview availability ahead of the next conversation; time TBD. Nov 5, 2026: Sales Leader Interview with the Senior Director of Enterprise Accounts scheduled Fri Nov 13, 2026 3:00-3:30 PM MST on Zoom. Nov 17, 2026: Not selected.",
       "interviews": [
         {
           "id": "int-gc-ai-1",
@@ -2937,6 +2937,28 @@
       "location": "Unknown",
       "interviews": [],
       "notes": "LinkedIn Easy Apply. Pay not posted. Resume: CSE_Resume."
+    },
+    {
+      "id": "together-ai-tse-gpu-clusters-us-weekends",
+      "company": "Together AI",
+      "role": "Technical Support Engineer, GPU Clusters, US Weekends",
+      "jobUrl": "https://job-boards.greenhouse.io/togetherai/jobs/5202015007",
+      "status": "Applied",
+      "appliedOn": "2026-11-17",
+      "location": "Remote (US)",
+      "interviews": [],
+      "notes": "Pay $160K\u2013$230K. Resume: AI_Resume."
+    },
+    {
+      "id": "openai-applied-ai-architect",
+      "company": "OpenAI",
+      "role": "Applied AI Architect",
+      "jobUrl": "https://jobs.ashbyhq.com/openai/be87a51f-067f-499c-a4df-97c145946ae6",
+      "status": "Applied",
+      "appliedOn": "2026-11-17",
+      "location": "Remote (US)",
+      "interviews": [],
+      "notes": "Pay $156.6K\u2013$220.5K + equity/commission. Resume: AI_Resume."
     }
   ]
 }
