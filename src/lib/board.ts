@@ -77,7 +77,7 @@ export type Scheduled = {
 };
 
 const STATUS_RANK: Record<ApplicationStatus, number> = {
-  "Offer accepted": 0,
+  Hired: 0,
   Interviewing: 1,
   Applied: 2,
   Ghosted: 3,

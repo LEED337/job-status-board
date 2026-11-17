@@ -6,9 +6,9 @@ export function StatusPill({ status }: { status: ApplicationStatus }) {
   return (
     <span
       className={`inline-flex items-center whitespace-nowrap rounded-full px-2.5 py-1 text-xs font-semibold${
-        status === "Offer accepted" ? " border-2 border-[var(--chip-offer-border)] font-bold" : ""
+        status === "Hired" ? " border-2 border-black font-bold" : ""
       }`}
-      style={{ background: meta.chip, color: meta.text }}
+      style={{ background: meta.chip, color: status === "Hired" ? "var(--chip-hired-fg)" : meta.text }}
     >
       {status}
     </span>

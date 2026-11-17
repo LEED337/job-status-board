@@ -39,9 +39,9 @@
   --chip-applied-fg: #3451c7;
   --chip-interview-bg: #e3f5eb;
   --chip-interview-fg: #15724a;
-  --chip-offer-bg: #b7f0c8;
-  --chip-offer-fg: #064e2b;
-  --chip-offer-border: #000000;
+  --chip-hired-bg: #0a0a0a;
+  --chip-hired-fg: #ffc800;
+  --chip-hired-dot: #d99a00;
   --chip-closed-bg: #f8e9ec;
   --chip-closed-fg: #9d4454;
   --chip-ghost-bg: #eeeef0;
@@ -95,9 +95,6 @@ html[data-theme="dark"] {
   --chip-applied-fg: #c9d6ff;
   --chip-interview-bg: #16382b;
   --chip-interview-fg: #b7ebcf;
-  --chip-offer-bg: #14532d;
-  --chip-offer-fg: #dcfce7;
-  --chip-offer-border: #dcfce7;
   --chip-closed-bg: #3f242c;
   --chip-closed-fg: #f6c9d2;
   --chip-ghost-bg: #2e3036;
@@ -235,6 +232,39 @@ select:focus-visible {
   color: var(--ink) !important;
 }
 
+/* Hired: gold surface with a drifting CSS confetti layer. Locally pins the
+   ink and link colors so text stays near-black on gold in dark mode too. */
+.hired-surface {
+  --ink: #0a0a0a;
+  --muted: #3b2f00;
+  --link: #0a2f8a;
+  --link-hover: #061c57;
+  --tint: rgba(0, 0, 0, 0.12);
+  color: #0a0a0a;
+  background-color: #ffc800 !important;
+  background-repeat: repeat;
+  background-size: 180px 120px;
+  background-image:
+    radial-gradient(circle 3.5px at 14px 18px, #e11d48 96%, transparent),
+    radial-gradient(circle 3px at 62px 84px, #2563eb 96%, transparent),
+    radial-gradient(circle 4px at 112px 30px, #16a34a 96%, transparent),
+    radial-gradient(circle 3px at 150px 96px, #7c3aed 96%, transparent),
+    radial-gradient(circle 3.5px at 88px 58px, #ffffff 96%, transparent),
+    radial-gradient(circle 3px at 36px 52px, #ea580c 96%, transparent),
+    radial-gradient(circle 3px at 164px 44px, #0a0a0a 96%, transparent),
+    radial-gradient(circle 4px at 128px 108px, #db2777 96%, transparent);
+  animation: hired-confetti 9s linear infinite;
+}
+
+@keyframes hired-confetti {
+  from {
+    background-position-y: 0;
+  }
+  to {
+    background-position-y: 120px;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -267,9 +297,6 @@ select:focus-visible {
     --chip-applied-fg: #3451c7;
     --chip-interview-bg: #e3f5eb;
     --chip-interview-fg: #15724a;
-    --chip-offer-bg: #b7f0c8;
-    --chip-offer-fg: #064e2b;
-    --chip-offer-border: #000000;
     --chip-closed-bg: #f8e9ec;
     --chip-closed-fg: #9d4454;
     --chip-ghost-bg: #eeeef0;

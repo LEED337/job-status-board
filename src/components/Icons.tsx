@@ -65,3 +65,13 @@ export function MoonIcon({ className = "h-4 w-4" }: IconProps) {
     </svg>
   );
 }
+
+export function TrophyIcon({ className = "h-5 w-5" }: IconProps) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M7 3.5h10v5.2a5 5 0 0 1-10 0V3.5Z" fill="#fff6c2" stroke="#0a0a0a" strokeWidth="1.8" strokeLinejoin="round" />
+      <path d="M7 5.5H3.8c0 3 1.3 4.6 3.6 5M17 5.5h3.2c0 3-1.3 4.6-3.6 5" stroke="#0a0a0a" strokeWidth="1.8" strokeLinecap="round" />
+      <path d="M12 13.7v3.3M8.2 20.5h7.6M9.5 17h5v3.5h-5z" stroke="#0a0a0a" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" fill="#fff6c2" />
+    </svg>
+  );
+}

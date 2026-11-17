@@ -1,4 +1,4 @@
-export const STATUSES = ["Applied", "Interviewing", "Offer accepted", "Not hired", "Ghosted"] as const;
+export const STATUSES = ["Applied", "Interviewing", "Hired", "Not hired", "Ghosted"] as const;
 
 // Older boards used this for applications that were neither interviewing nor closed.
 const LEGACY_APPLIED_STATUS = "Haven't heard back";
@@ -209,7 +209,7 @@ function parseApplication(input: unknown, index: number): Application {
   if (!role) throw new Error(`${where}: role is required.`);
   const status = canonicalStatus(input.status);
   if (!status) {
-    throw new Error(`${where}: status must be Applied, Interviewing, Offer accepted, Not hired, or Ghosted.`);
+    throw new Error(`${where}: status must be Applied, Interviewing, Hired, Not hired, or Ghosted.`);
   }
   const appliedOn = typeof input.appliedOn === "string" ? input.appliedOn.trim() : "";
   if (!DATE_ONLY.test(appliedOn)) {
