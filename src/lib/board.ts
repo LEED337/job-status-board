@@ -77,10 +77,11 @@ export type Scheduled = {
 };
 
 const STATUS_RANK: Record<ApplicationStatus, number> = {
-  Interviewing: 0,
-  Applied: 1,
-  Ghosted: 2,
-  "Not hired": 3,
+  "Offer accepted": 0,
+  Interviewing: 1,
+  Applied: 2,
+  Ghosted: 3,
+  "Not hired": 4,
 };
 
 /** Applied rows with no upcoming interview roll into Ghosted after this many Denver days. */
