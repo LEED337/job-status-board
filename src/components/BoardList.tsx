@@ -17,6 +17,7 @@ import {
   type SortKey,
   type SortState,
 } from "../lib/board.ts";
+import { TrophyIcon } from "./Icons.tsx";
 import { STATUS_META } from "../lib/status.ts";
 import { cx } from "../lib/styles.ts";
 import { STATUSES, type Application, type ApplicationStatus } from "../types.ts";
@@ -413,9 +414,15 @@ function ApplicationRow({
 }) {
   const panelId = `interviews-${application.id}`;
   const colSpan = onEdit || onDelete ? 7 : 6;
+  const hired = effectiveStatus(application, now) === "Hired";
   return (
     <>
-      <tr className={cx("border-t-[3px] border-black", open ? "bg-row" : "hover:bg-row")}>
+      <tr
+        className={cx(
+          "border-t-[3px] border-black",
+          hired ? "hired-surface border-b-[3px]" : open ? "bg-row" : "hover:bg-row",
+        )}
+      >
         <td className="overflow-hidden py-3.5 pr-3 pl-5">
           <div className="flex items-center gap-2.5">
             <button
@@ -430,8 +437,9 @@ function ApplicationRow({
             </button>
             <Avatar name={application.company} />
             <div className="min-w-0">
-              <p className="font-medium leading-5 text-ink" title={application.company}>
+              <p className="flex items-center gap-1.5 font-medium leading-5 text-ink" title={application.company}>
                 {application.company}
+                {hired ? <TrophyIcon className="h-5 w-5 shrink-0" /> : null}
               </p>
               <p className="text-xs leading-4 text-muted" title={application.location}>
                 {application.location || "Location not set"}
@@ -494,12 +502,16 @@ function ApplicationCard({
 }) {
   const panelId = `interviews-card-${application.id}`;
   const next = nextInterview(application, now);
+  const hired = effectiveStatus(application, now) === "Hired";
   return (
-    <li className="px-4 py-4">
+    <li className={cx("px-4 py-4", hired && "hired-surface border-y-[3px] border-black")}>
       <div className="flex items-start gap-3">
         <Avatar name={application.company} />
         <div className="min-w-0 flex-1">
-          <p className="font-semibold leading-5 text-ink">{application.company}</p>
+          <p className="flex items-center gap-1.5 font-semibold leading-5 text-ink">
+            {application.company}
+            {hired ? <TrophyIcon className="h-5 w-5 shrink-0" /> : null}
+          </p>
           <p className="mt-0.5 text-sm leading-5 text-muted">
             <RoleTitle role={application.role} jobUrl={application.jobUrl} />
           </p>

@@ -23,12 +23,12 @@ export const STATUS_META: Record<
     onDark: "#448e6e",
     caption: "Active conversations",
   },
-  "Offer accepted": {
-    soft: "#b7f0c8",
-    chip: "var(--chip-offer-bg)",
-    text: "var(--chip-offer-fg)",
-    onDark: "#5fd68a",
-    caption: "Job offer accepted",
+  Hired: {
+    soft: "#ffc800",
+    chip: "var(--chip-hired-bg)",
+    text: "var(--chip-hired-dot)",
+    onDark: "#ffc800",
+    caption: "Got the job!",
   },
   "Not hired": {
     soft: "#f8e9ec",
