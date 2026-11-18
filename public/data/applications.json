@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-11-17T21:39:04Z",
+  "updatedAt": "2026-11-18T18:22:26Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -2261,7 +2261,7 @@
       "company": "Extra Space Storage",
       "role": "Associate Software Engineer",
       "jobUrl": "https://extraspace.wd5.myworkdayjobs.com/en-US/ESS_External/job/Associate-Software-Engineer_R-82836",
-      "status": "Applied",
+      "status": "Not hired",
       "appliedOn": "2026-11-05",
       "location": "Hybrid, Cottonwood Heights / Salt Lake City UT",
       "interviews": [
@@ -2271,7 +2271,7 @@
           "kind": "Ribbon AI / virtual interview"
         }
       ],
-      "notes": "Applied Nov 5, 2026 ~9:18 AM MT (Workday R-82836). Separate from Security Engineer R-82115. Nov 5: Completed virtual interview; a recruiter forwarding to hiring managers (few business days). Nov 8, 2026: Lee said the Extra Space interviews were AI questionnaires and he has not heard back, so this is marked Applied again."
+      "notes": "Applied Nov 5, 2026 ~9:18 AM MT (Workday R-82836). Separate from Security Engineer R-82115. Nov 5: Completed virtual interview; a recruiter forwarding to hiring managers (few business days). Nov 8, 2026: Lee said the Extra Space interviews were AI questionnaires and he has not heard back, so this is marked Applied again. Nov 18, 2026: Rejection email received."
     },
     {
       "id": "amentum-cybersecurity-engineer-cloud",
@@ -2778,11 +2778,11 @@
       "company": "Oracle",
       "role": "Oracle Cloud Infrastructure, Cloud Architect",
       "jobUrl": "https://www.linkedin.com/jobs/view/4434504104/",
-      "status": "Applied",
+      "status": "Not hired",
       "appliedOn": "2026-11-12",
       "location": "Remote US",
       "interviews": [],
-      "notes": "Applied Nov 12, 2026. Pay $147.3K–$243.8K (Oracle job 339105)."
+      "notes": "Applied Nov 12, 2026. Pay $147.3K–$243.8K (Oracle job 339105). Nov 18, 2026: Rejection email received."
     },
     {
       "id": "protagona-aws-cloud-engineer",
@@ -2844,11 +2844,11 @@
       "company": "Leidos",
       "role": "Cloud Infrastructure Engineer",
       "jobUrl": "https://leidos.wd5.myworkdayjobs.com/en-US/External/job/Cloud-Infrastructure-Engineer_R-00193640",
-      "status": "Applied",
+      "status": "Not hired",
       "appliedOn": "2026-11-12",
       "location": "Remote US",
       "interviews": [],
-      "notes": "Applied Nov 12, 2026. Pay $57.85K–$104.6K (R-00193640). Applied by Lee directly."
+      "notes": "Applied Nov 12, 2026. Pay $57.85K–$104.6K (R-00193640). Applied by Lee directly. Nov 18, 2026: Rejection email received."
     },
     {
       "id": "verisk-development-operations-engineer",
@@ -2910,11 +2910,11 @@
       "company": "RegScale",
       "role": "Customer Success Engineer II",
       "jobUrl": "https://jobs.ashbyhq.com/RegScale/0500140b-1ae4-476b-b7d5-e02d264a42df",
-      "status": "Applied",
+      "status": "Not hired",
       "appliedOn": "2026-11-16",
       "location": "Remote (US)",
       "interviews": [],
-      "notes": "Pay not posted. Resume: CSE_Resume."
+      "notes": "Pay not posted. Resume: CSE_Resume. Nov 18, 2026: Rejection email received."
     },
     {
       "id": "lockheed-martin-junior-automation-openshift-engineer-24423",
