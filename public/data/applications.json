@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-11-18T18:22:26Z",
+  "updatedAt": "2026-11-19T20:31:48Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -2769,9 +2769,14 @@
           "id": "oracle-customer-engineering-architect-interview-1",
           "at": "2026-11-17T11:30",
           "kind": "Interview"
+        },
+        {
+          "id": "oracle-customer-engineering-architect-interview-2",
+          "at": "2026-11-20T10:30",
+          "kind": "Interview"
         }
       ],
-      "notes": "Applied Nov 12, 2026. Pay $114.6K–$234.6K. Nov 13, 2026: Interview scheduled for Tue Nov 17, 2026 at 11:30 AM MT. Nov 17, 2026: Interview completed. Oracle is checking whether the role can be remote."
+      "notes": "Applied Nov 12, 2026. Pay $114.6K–$234.6K. Nov 13, 2026: Interview scheduled for Tue Nov 17, 2026 at 11:30 AM MT. Nov 17, 2026: Interview completed. Oracle is checking whether the role can be remote. Nov 19, 2026: Next interview scheduled for Fri Nov 20, 2026 at 10:30 AM MT."
     },
     {
       "id": "oracle-oci-cloud-architect",
