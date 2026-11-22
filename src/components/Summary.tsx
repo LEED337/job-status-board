@@ -1,6 +1,7 @@
 import { useEffect, useId, useState, type FocusEvent, type KeyboardEvent, type MouseEvent, type PointerEvent } from "react";
 import {
   countByStatus,
+  countNotHiredSplits,
   dayDistance,
   formatTime,
   interviewDate,
@@ -528,6 +529,7 @@ function NextInterviewCard({ applications, now }: SummaryProps) {
 
 export function Summary({ applications, now }: SummaryProps) {
   const counts = countByStatus(applications, now);
+  const notHiredSplit = countNotHiredSplits(applications, now);
   const total = applications.length;
   const segments = buildSegments(counts, total);
   const signature = segments.map((segment) => `${segment.status}:${segment.count}`).join("|");
@@ -658,6 +660,16 @@ export function Summary({ applications, now }: SummaryProps) {
                 </span>
                 <span className="mt-1 block text-balance text-[10px] leading-snug text-muted min-[380px]:text-[11px] sm:text-xs">
                   {meta.caption}
+                  {status === "Not hired" && counts[status] > 0 ? (
+                    <>
+                      <span className="mt-0.5 block">
+                        <span className="num">{notHiredSplit.afterInterviewing}</span> after interviewing
+                      </span>
+                      <span className="block">
+                        <span className="num">{notHiredSplit.noInterview}</span> no interview
+                      </span>
+                    </>
+                  ) : null}
                 </span>
               </button>
             );
