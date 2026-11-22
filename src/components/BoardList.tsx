@@ -2,11 +2,13 @@ import { useMemo, useState, type ReactNode } from "react";
 import {
   avatarStyle,
   countByStatus,
+  countNotHiredSplits,
   daysSinceApplied,
   effectiveStatus,
   formatApplied,
   formatLong,
   formatTime,
+  hadInterview,
   initialDir,
   initials,
   interviewDate,
@@ -36,6 +38,75 @@ type BoardListProps = {
 
 type Filter = ApplicationStatus | "All";
 
+type NotHiredSection = "after-interview" | "no-interview";
+
+type ListBlock =
+  | { type: "header"; key: NotHiredSection; title: string; count: number; variant: NotHiredSection }
+  | { type: "row"; application: Application };
+
+const NOT_HIRED_SECTION: Record<NotHiredSection, string> = {
+  "after-interview": "Not hired after interviewing",
+  "no-interview": "Not hired (no interview)",
+};
+
+function notHiredSection(application: Application, now: Date): NotHiredSection | null {
+  if (effectiveStatus(application, now) !== "Not hired") return null;
+  return hadInterview(application) ? "after-interview" : "no-interview";
+}
+
+function shouldGroupNotHired(filter: Filter, sort: SortState | null): boolean {
+  if (filter === "Not hired") return true;
+  return filter === "All" && (sort === null || sort.key === "status");
+}
+
+function sectionHeader(variant: NotHiredSection, count: number): ListBlock {
+  return {
+    type: "header",
+    key: variant,
+    title: NOT_HIRED_SECTION[variant],
+    count,
+    variant,
+  };
+}
+
+function buildListBlocks(rows: Application[], now: Date, filter: Filter, sort: SortState | null): ListBlock[] {
+  if (!shouldGroupNotHired(filter, sort)) {
+    return rows.map((application) => ({ type: "row", application }));
+  }
+
+  // When the Not hired filter is on, keep the current sort inside each section.
+  if (filter === "Not hired") {
+    const after = rows.filter((app) => notHiredSection(app, now) === "after-interview");
+    const none = rows.filter((app) => notHiredSection(app, now) === "no-interview");
+    const blocks: ListBlock[] = [];
+    if (after.length > 0) {
+      blocks.push(sectionHeader("after-interview", after.length));
+      for (const application of after) blocks.push({ type: "row", application });
+    }
+    if (none.length > 0) {
+      blocks.push(sectionHeader("no-interview", none.length));
+      for (const application of none) blocks.push({ type: "row", application });
+    }
+    return blocks;
+  }
+
+  const afterCount = rows.filter((app) => notHiredSection(app, now) === "after-interview").length;
+  const noneCount = rows.filter((app) => notHiredSection(app, now) === "no-interview").length;
+  const blocks: ListBlock[] = [];
+  let current: NotHiredSection | null = null;
+  for (const application of rows) {
+    const section = notHiredSection(application, now);
+    if (section && section !== current) {
+      current = section;
+      blocks.push(sectionHeader(section, section === "after-interview" ? afterCount : noneCount));
+    } else if (!section) {
+      current = null;
+    }
+    blocks.push({ type: "row", application });
+  }
+  return blocks;
+}
+
 export function BoardList({ applications, now, showNotes = false, onEdit, onDelete, onAdd }: BoardListProps) {
   const [filter, setFilter] = useState<Filter>("All");
   const [query, setQuery] = useState("");
@@ -47,8 +118,11 @@ export function BoardList({ applications, now, showNotes = false, onEdit, onDele
     [applications, query],
   );
   const counts = useMemo(() => countByStatus(searched, now), [searched, now]);
+  const notHiredSplit = useMemo(() => countNotHiredSplits(searched, now), [searched, now]);
   const filtered = filter === "All" ? searched : searched.filter((app) => effectiveStatus(app, now) === filter);
   const rows = useMemo(() => sortApplications(filtered, sort, now), [filtered, sort, now]);
+  const blocks = useMemo(() => buildListBlocks(rows, now, filter, sort), [rows, now, filter, sort]);
+  const columnCount = onEdit || onDelete ? 7 : 6;
 
   const toggleSort = (key: SortKey) => {
     setSort((current) => {
@@ -87,13 +161,38 @@ export function BoardList({ applications, now, showNotes = false, onEdit, onDele
             All <span className="num">{searched.length}</span>
           </FilterChip>
           {STATUSES.map((status) => (
-            <FilterChip key={status} active={filter === status} onClick={() => setFilter(status)}>
+            <FilterChip
+              key={status}
+              active={filter === status}
+              onClick={() => setFilter(status)}
+              multiline={status === "Not hired"}
+              ariaLabel={
+                status === "Not hired"
+                  ? `Not hired, ${notHiredSplit.afterInterviewing} after interviewing, ${notHiredSplit.noInterview} no interview`
+                  : undefined
+              }
+            >
               <span
                 className="h-1.5 w-1.5 shrink-0 rounded-full"
                 style={{ backgroundColor: STATUS_META[status].text }}
                 aria-hidden="true"
               />
-              {status} <span className="num">{counts[status]}</span>
+              {status === "Not hired" ? (
+                <span className="inline-flex flex-col items-start gap-0.5 leading-tight">
+                  <span>
+                    {status} <span className="num">{counts[status]}</span>
+                  </span>
+                  <span className="text-[10px] font-medium tracking-normal opacity-80">
+                    <span className="num">{notHiredSplit.afterInterviewing}</span> after interviewing
+                    {" · "}
+                    <span className="num">{notHiredSplit.noInterview}</span> no interview
+                  </span>
+                </span>
+              ) : (
+                <>
+                  {status} <span className="num">{counts[status]}</span>
+                </>
+              )}
             </FilterChip>
           ))}
         </div>
@@ -173,34 +272,42 @@ export function BoardList({ applications, now, showNotes = false, onEdit, onDele
                 </tr>
               </thead>
               <tbody>
-                {rows.map((app) => (
-                  <ApplicationRow
-                    key={app.id}
-                    application={app}
-                    now={now}
-                    open={Boolean(open[app.id])}
-                    showNotes={showNotes}
-                    onToggle={() => toggleOpen(app.id)}
-                    onEdit={onEdit}
-                    onDelete={onDelete}
-                  />
-                ))}
+                {blocks.map((block) =>
+                  block.type === "header" ? (
+                    <NotHiredSectionRow key={block.key} block={block} colSpan={columnCount} />
+                  ) : (
+                    <ApplicationRow
+                      key={block.application.id}
+                      application={block.application}
+                      now={now}
+                      open={Boolean(open[block.application.id])}
+                      showNotes={showNotes}
+                      onToggle={() => toggleOpen(block.application.id)}
+                      onEdit={onEdit}
+                      onDelete={onDelete}
+                    />
+                  ),
+                )}
               </tbody>
             </table>
           </div>
           <ul className="divide-y divide-line lg:hidden">
-            {rows.map((app) => (
-              <ApplicationCard
-                key={app.id}
-                application={app}
-                now={now}
-                open={Boolean(open[app.id])}
-                showNotes={showNotes}
-                onToggle={() => toggleOpen(app.id)}
-                onEdit={onEdit}
-                onDelete={onDelete}
-              />
-            ))}
+            {blocks.map((block) =>
+              block.type === "header" ? (
+                <NotHiredSectionItem key={block.key} block={block} />
+              ) : (
+                <ApplicationCard
+                  key={block.application.id}
+                  application={block.application}
+                  now={now}
+                  open={Boolean(open[block.application.id])}
+                  showNotes={showNotes}
+                  onToggle={() => toggleOpen(block.application.id)}
+                  onEdit={onEdit}
+                  onDelete={onDelete}
+                />
+              ),
+            )}
           </ul>
         </>
       )}
@@ -212,23 +319,74 @@ function FilterChip({
   active,
   onClick,
   children,
+  ariaLabel,
+  multiline = false,
 }: {
   active: boolean;
   onClick: () => void;
   children: ReactNode;
+  ariaLabel?: string;
+  multiline?: boolean;
 }) {
   return (
     <button
       type="button"
       onClick={onClick}
       aria-pressed={active}
+      aria-label={ariaLabel}
       className={cx(
-        "inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-[13px] font-medium whitespace-nowrap transition-colors",
+        "inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-[13px] font-medium transition-colors",
+        multiline ? "whitespace-normal text-left" : "whitespace-nowrap",
         active ? "bg-fill text-white ring-1 ring-inset ring-black" : "bg-soft text-ink hover:bg-press",
       )}
     >
       {children}
     </button>
+  );
+}
+
+function notHiredSectionClass(variant: NotHiredSection): string {
+  return variant === "after-interview"
+    ? "border-t-[3px] border-black bg-[var(--chip-closed-bg)] text-ink shadow-[inset_4px_0_0_var(--closed)]"
+    : "border-t-[3px] border-black bg-[var(--chip-ghost-bg)] text-ink";
+}
+
+function NotHiredSectionHeading({
+  block,
+  className,
+}: {
+  block: Extract<ListBlock, { type: "header" }>;
+  className?: string;
+}) {
+  return (
+    <div className={cx("flex flex-wrap items-baseline gap-x-2 gap-y-0.5", className)}>
+      <h3 className="text-sm font-semibold tracking-[-0.02em]">{block.title}</h3>
+      <span className="num text-xs font-medium text-muted">{block.count}</span>
+    </div>
+  );
+}
+
+function NotHiredSectionRow({
+  block,
+  colSpan,
+}: {
+  block: Extract<ListBlock, { type: "header" }>;
+  colSpan: number;
+}) {
+  return (
+    <tr>
+      <th scope="colgroup" colSpan={colSpan} className={cx("px-5 py-2.5 text-left font-semibold", notHiredSectionClass(block.variant))}>
+        <NotHiredSectionHeading block={block} />
+      </th>
+    </tr>
+  );
+}
+
+function NotHiredSectionItem({ block }: { block: Extract<ListBlock, { type: "header" }> }) {
+  return (
+    <li className={cx("list-none px-4 py-2.5 sm:px-5", notHiredSectionClass(block.variant))}>
+      <NotHiredSectionHeading block={block} />
+    </li>
   );
 }
 

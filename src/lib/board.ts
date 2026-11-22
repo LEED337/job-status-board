@@ -264,6 +264,41 @@ export function countByStatus(applications: Application[], now = new Date()): Re
   return counts;
 }
 
+/** Notes that clearly record a completed interview when the interviews array is empty. */
+const COMPLETED_INTERVIEW_IN_NOTES = /\bpost-interview\b|\bafter\b[\s\S]{0,20}\binterview|\binterviewed\b/i;
+
+/**
+ * True when this application had at least one interview.
+ * Primary rule: a non-empty `interviews` array. For Not hired rows only,
+ * also true when notes clearly mention a completed interview or screen.
+ */
+export function hadInterview(app: Application): boolean {
+  if (app.interviews.length > 0) return true;
+  if (app.status !== "Not hired") return false;
+  return COMPLETED_INTERVIEW_IN_NOTES.test(app.notes ?? "");
+}
+
+export type NotHiredSplit = {
+  afterInterviewing: number;
+  noInterview: number;
+};
+
+export function countNotHiredSplits(applications: Application[], now = new Date()): NotHiredSplit {
+  const split: NotHiredSplit = { afterInterviewing: 0, noInterview: 0 };
+  for (const app of applications) {
+    if (effectiveStatus(app, now) !== "Not hired") continue;
+    if (hadInterview(app)) split.afterInterviewing += 1;
+    else split.noInterview += 1;
+  }
+  return split;
+}
+
+/** Within Not hired, after-interviewing rows come before no-interview rows. */
+function notHiredGroupRank(app: Application, now: Date): number {
+  if (effectiveStatus(app, now) !== "Not hired") return 0;
+  return hadInterview(app) ? 0 : 1;
+}
+
 export function matchesQuery(app: Application, query: string): boolean {
   const needle = query.trim().toLowerCase();
   if (!needle) return true;
@@ -279,6 +314,8 @@ function statusRank(app: Application, now: Date): number {
 function defaultSort(a: Application, b: Application, now: Date): number {
   const rank = statusRank(a, now) - statusRank(b, now);
   if (rank !== 0) return rank;
+  const group = notHiredGroupRank(a, now) - notHiredGroupRank(b, now);
+  if (group !== 0) return group;
   const aNext = nextInterview(a, now);
   const bNext = nextInterview(b, now);
   if (aNext && bNext) return interviewDate(aNext.at).getTime() - interviewDate(bNext.at).getTime();
@@ -299,7 +336,10 @@ function compareApplications(a: Application, b: Application, sort: SortState | n
     case "role":
       return directed(a.role.localeCompare(b.role), sort.dir);
     case "status":
-      return directed(statusRank(a, now) - statusRank(b, now), sort.dir);
+      return directed(
+        statusRank(a, now) - statusRank(b, now) || notHiredGroupRank(a, now) - notHiredGroupRank(b, now),
+        sort.dir,
+      );
     case "applied":
       return directed(a.appliedOn.localeCompare(b.appliedOn), sort.dir);
     case "interviews":
