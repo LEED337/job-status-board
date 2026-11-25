@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-11-22T21:17:22Z",
+  "updatedAt": "2026-11-25T23:13:00Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -1242,7 +1242,7 @@
           "kind": "Interview with CSM manager"
         }
       ],
-      "notes": "Applied by Scout Oct 19, 2026 9:22 AM MT with CSE resume. Pay not on posting.\nOct 21: Recruiter screening call scheduled for Mon Oct 26, 11:00\u201311:30 AM MT.\nOct 26: GitLab rescheduled the recruiter screen to Thu Oct 29, 12:30-1:00 PM MT.\nOct 30, 2026: Passed recruiter screen. Next interview with the Manager of Customer Success Management; Lee submitted availability Oct 30, time TBD.\nNov 2, 2026: GitLab said Lee's submitted times don't work this week; interview with the Manager of Customer Success Management expected sometime next week (week of Nov 9), time TBD. Nov 4, 2026: Interview with the Manager of Customer Success Management scheduled Mon Nov 9, 3:00-3:30 PM MT (Zoom)."
+      "notes": "Applied by Scout Oct 19, 2026 9:22 AM MT with CSE resume. Pay not on posting.\nOct 21: Recruiter screening call scheduled for Mon Oct 26, 11:00\u201311:30 AM MT.\nOct 26: GitLab rescheduled the recruiter screen to Thu Oct 29, 12:30-1:00 PM MT.\nOct 30, 2026: Passed recruiter screen. Next interview with the Manager of Customer Success Management; Lee submitted availability Oct 30, time TBD.\nNov 2, 2026: GitLab said Lee's submitted times don't work this week; interview with the Manager of Customer Success Management expected sometime next week (week of Nov 9), time TBD. Nov 4, 2026: Interview with the Manager of Customer Success Management scheduled Mon Nov 9, 3:00-3:30 PM MT (Zoom).\nNov 24, 2026: The recruiter said the Nov 9 interview with Gavin got positive feedback. The next step is a 30-minute interview with another member of Gavin's team; Lee submitted availability, time TBD."
     },
     {
       "id": "stripe-tam-billing",
@@ -2774,9 +2774,14 @@
           "id": "oracle-customer-engineering-architect-interview-2",
           "at": "2026-11-20T10:30",
           "kind": "Interview"
+        },
+        {
+          "id": "oracle-customer-engineering-architect-interview-3",
+          "at": "2026-11-24T15:00",
+          "kind": "Interview"
         }
       ],
-      "notes": "Applied Nov 12, 2026. Pay $114.6K–$234.6K. Nov 13, 2026: Interview scheduled for Tue Nov 17, 2026 at 11:30 AM MT. Nov 17, 2026: Interview completed. Oracle is checking whether the role can be remote. Nov 19, 2026: Next interview scheduled for Fri Nov 20, 2026 at 10:30 AM MT."
+      "notes": "Applied Nov 12, 2026. Pay $114.6K–$234.6K. Nov 13, 2026: Interview scheduled for Tue Nov 17, 2026 at 11:30 AM MT. Nov 17, 2026: Interview completed. Oracle is checking whether the role can be remote. Nov 19, 2026: Next interview scheduled for Fri Nov 20, 2026 at 10:30 AM MT. Nov 24, 2026: No interviewer joined the Zoom (no-show). Lee emailed Oracle about it, and rescheduling is pending."
     },
     {
       "id": "oracle-oci-cloud-architect",
@@ -2975,6 +2980,16 @@
       "location": "Remote (US)",
       "interviews": [],
       "notes": "Pay $170K\u2013$190K base. Resume: TAM_Resume."
+    },
+    {
+      "id": "everpure-csm-commercial",
+      "company": "Everpure",
+      "role": "CSM, Commercial",
+      "status": "Interviewing",
+      "appliedOn": "2026-11-23",
+      "location": "",
+      "interviews": [],
+      "notes": "Nov 23, 2026: Recruiter said panel interviews will finish before a final-round decision; update expected next week."
     }
   ]
 }
