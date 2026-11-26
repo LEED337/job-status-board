@@ -1,7 +1,7 @@
 {
   "version": 1,
   "owner": "Lee Denning",
-  "updatedAt": "2026-11-25T23:13:00Z",
+  "updatedAt": "2026-11-26T15:52:47Z",
   "applications": [
     {
       "id": "app-gc-ai-csm",
@@ -2975,11 +2975,11 @@
       "company": "Redpanda Data",
       "role": "Technical Customer Success Manager",
       "jobUrl": "https://jobs.ashbyhq.com/redpanda-data/e97eda3f-c629-4f9e-af05-071d5fe9030b",
-      "status": "Applied",
+      "status": "Not hired",
       "appliedOn": "2026-11-22",
       "location": "Remote (US)",
       "interviews": [],
-      "notes": "Pay $170K\u2013$190K base. Resume: TAM_Resume."
+      "notes": "Pay $170K\u2013$190K base. Resume: TAM_Resume. Nov 25, 2026: Not selected (rejection email from Redpanda Data hiring team)."
     },
     {
       "id": "everpure-csm-commercial",
